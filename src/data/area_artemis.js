@@ -2,13 +2,20 @@
 
     let area = LAM.createArea("Artemis", {
         kr: "아르테미스",
-        path: "maps/areas/Artemis"
+        path: "maps/areas/Artemis",
+        zoomLevel: 3
     });
 
     area.registerMap("Leonhard", {
         kr: "레온하트",
         img: "Leonhard.png",
-        type: MapTypeEnum.City
+        type: MapTypeEnum.City,
+        markers: [
+            { x: -417.5, y: 12.75, type: MarkerTypeEnum.Mokoko },
+            { x: -420.375, y: 15.25, type: MarkerTypeEnum.Mokoko },
+            { x: -404.5, y: 56.51, type: MarkerTypeEnum.Mokoko },
+            { x: -403.62, y: 57.89, title: "사슬전쟁 종전 기념수", type: MarkerTypeEnum.Vista }
+        ]
     });
 
     area.registerMap("Loghills", {

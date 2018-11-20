@@ -2,13 +2,17 @@
 
     let area = LAM.createArea("Anich", {
         kr: "애니츠",
-        path: "maps/areas/Anich"
+        path: "maps/areas/Anich",
+        zoomLevel: 3
     });
 
     area.registerMap("Mirror Valley", {
         kr: "거울 계곡",
         img: "MirrorValley.png",
-        type: MapTypeEnum.Continent
+        type: MapTypeEnum.Continent,
+        markers: [
+            { x: 100, y: 100, title: "Test", type: MarkerTypeEnum.Mokoko, popupText: "longer text" }
+        ]
     });
 
     area.registerMap("Delphi Prefecture", {

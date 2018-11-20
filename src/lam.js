@@ -4,40 +4,39 @@ let LAM = (function(){
 
         constructor() {
             this.areas = {};
+            this.markerIcons = {};
+            this.activeArea = undefined;
         }
 
         initialize() {
-            overviewer.util.initialize();
+            //overviewer.util.initialize();
+
+            this.map = L.map('la_map', {
+                crs: L.CRS.Simple,
+                minZoom: 0});
+
+            this.map.setView([0, 0], 1)
+
+            this.map.on("click", function(e) {
+
+                let x = e.latlng.lat;
+                let y = e.latlng.lng;
+
+                x = Math.round(x * 100) / 100;
+                y = Math.round(y * 100) / 100;
+
+                console.log("{ x: " + x + ", y: " + y + ", title: \"<Title>\", type: MarkerTypeEnum.<UNKNOWN> }");
+            });
 
             for (let name in this.areas) {
-                overviewer.collections.mapTypes[name] = {};
-                overviewer.collections.overlays[name] = {};
-                overviewer.worldCtrl.addWorld(name);
+                this.areas[name].initialize();
 
-                this.areas[name].registerMapsInOV();
+                if(this.activeArea === undefined) {
+                    this.activateArea(name);
+                }
             }
 
-            overviewer.currentWorld = Object.keys(this.areas)[0];
-
-            overviewer.layerCtrl = L.control.layers(
-                overviewer.collections.mapTypes[overviewer.currentWorld],
-                overviewer.collections.overlays[overviewer.currentWorld],
-                {collapsed: false})
-                .addTo(overviewer.map);
-
-            let center = overviewer.collections.centers[overviewer.currentWorld];
-            overviewer.map.setView(center[0], center[1]);
-
-            if (!overviewer.util.initHash()) {
-                overviewer.worldCtrl.onChange({target: {value: overviewer.currentWorld}});
-            }
-
-            overviewer.map.on("click", function(e) {
-                console.log(e.latlng);
-                var area = LAM.areas[overviewer.currentWorld];
-                var point = overviewer.util.fromLatLngToWorld(e.latlng.lat, e.latlng.lng, area.ovTileSet);
-                console.log(point);
-            });
+            feather.replace();
         }
 
         registerArea(name, entry) {
@@ -45,7 +44,61 @@ let LAM = (function(){
 
             console.log("Registered Area " + name);
 
+        }
 
+        activateArea(name) {
+            if(this.activeArea !== undefined) {
+                this.areas[this.activeArea].deactivate(this.map);
+            }
+
+            this.areas[name].activate(this.map);
+            this.activeArea = name;
+        }
+
+        getMarkerIcon(markerType) {
+            let result = this.markerIcons[markerType];
+            if (result === undefined) {
+                result = L.icon({
+                    iconUrl: 'images/icons/' + markerType,
+                    iconSize: [20, 20],
+                    className: "ov-marker"});
+                this.markerIcons[markerType] = result;
+            }
+
+            return result;
+        }
+
+        getMarkerDefaultTitle(markerType) {
+            switch (markerType) {
+                case MarkerTypeEnum.Mokoko: {
+                    return "Mokoko Seed";
+                }
+
+                case MarkerTypeEnum.Vista: {
+                    return "Vista";
+                }
+            }
+        }
+
+        getMapTileUrl(path) {
+            return function(o) {
+                var url = path;
+                var zoom = o.z;
+                if (o.x < 0 || o.x >= Math.pow(2, zoom) ||
+                    o.y < 0 || o.y >= Math.pow(2, zoom)) {
+                    url += '/blank';
+                } else if (zoom === 0) {
+                    url += '/base';
+                } else {
+                    for (var z = zoom - 1; z >= 0; --z) {
+                        var x = Math.floor(o.x / Math.pow(2, z)) % 2;
+                        var y = Math.floor(o.y / Math.pow(2, z)) % 2;
+                        url += '/' + (x + 2 * y);
+                    }
+                }
+
+                return (url + '.png');
+            }
         }
 
     }

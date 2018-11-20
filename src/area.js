@@ -6,105 +6,135 @@
             this.name = name;
             this.nameKr = data['kr'];
             this.imagePath = data['path'];
-            this.ovTileSet = {
-                /*"spawn": [
-                    0,
-                    80,
-                    204
-                ],*/
-                "isOverlay": false,
-                "name": name,
-                "poititle": "Markers",
-                "north_direction": 0,
-                "minZoom": 0,
-                "bgcolor": "#1a1a1a",
-                "zoomLevels": 1,
-                "base": "",
-                "imgextension": "png",
-                "defaultZoom": 1,
-                "world": name,
-                "maxZoom": 6,
-                "path": data.path,
-                "showlocationmarker": true
-            };
+            this.zoomLevel = data['zoomLevel'];
 
             this.maps = {};
-
-            // TODO
+            this.markers = [];
+            this.activeMarkers = [];
+            this.markerLayer = undefined;
+            this.markerTypeLayers = {};
+            this.mapLayer = undefined;
+            this.layerControl = undefined;
 
             LAM.registerArea(this.name, this);
         }
 
-        registerMap(name, data) {
-            this.maps[name] = data;
+        initialize() {
+            this.initializeUI();
+            this.initializeLayers();
         }
 
-        registerMapsInOV() {
-            let myLayer = new L.tileLayer('', {
-                tileSize: overviewerConfig.CONST.tileSize,
-                noWrap: true,
-                maxZoom: this.ovTileSet.maxZoom,
-                minZoom: this.ovTileSet.minZoom,
-                errorTileUrl: this.ovTileSet.base + this.ovTileSet.path + "/blank." + this.ovTileSet.imgextension,
-            });
+        activate(targetMap) {
+            this.activateLink.addClass('active');
 
-            myLayer.getTileUrl = overviewer.util.getTileUrlGenerator(this.ovTileSet.path, this.ovTileSet.base, this.ovTileSet.imgextension);
+            targetMap.addLayer(this.mapLayer);
+            targetMap.addLayer(this.markerLayer);
 
-            if (this.ovTileSet.isOverlay) {
-                overviewer.collections.overlays[this.ovTileSet.world][this.ovTileSet.name] = myLayer;
-            } else {
-                overviewer.collections.mapTypes[this.ovTileSet.world][this.ovTileSet.name] = myLayer;
+            for (let type in this.markerTypeLayers) {
+                targetMap.addLayer(this.markerTypeLayers[type]);
             }
 
-            this.ovTileSet.marker_groups = undefined;
-
-            /*if (overviewer.collections.haveSigns == true) {
-                // if there are markers for this tileset, create them now
-                if ((typeof markers !== 'undefined') && (this.ovTileSet.path in markers)) {
-                    console.log("this tileset has markers:", obj);
-                    this.ovTileSet.marker_groups = {};
-
-                    for (var mkidx = 0; mkidx < markers[obj.path].length; mkidx++) {
-                        var marker_group = new L.layerGroup();
-                        var marker_entry = markers[this.ovTileSet.path][mkidx];
-                        var icon =  L.icon({iconUrl: marker_entry.icon,
-                            className: "ov-marker"});
-                        console.log("marker group:", marker_entry.displayName, marker_entry.groupName);
-
-                        for (var dbidx = 0; dbidx < markersDB[marker_entry.groupName].raw.length; dbidx++) {
-                            var db = markersDB[marker_entry.groupName].raw[dbidx];
-                            var latlng = overviewer.util.fromWorldToLatLng(db.x, db.y, db.z, obj);
-                            var m_icon;
-                            if (db.icon != undefined) {
-                                m_icon = L.icon({iconUrl: db.icon,
-                                    className: "ov-marker"});
-                            } else {
-                                m_icon = icon;
-                            }
-                            let new_marker = new L.marker(latlng, {icon: m_icon, title: db.hovertext});
-                            if (marker_entry.createInfoWindow) {
-                                new_marker.bindPopup(db.text);
-                            }
-                            marker_group.addLayer(new_marker);
-                        }
-                        obj.marker_groups[marker_entry.displayName] = marker_group;
-                    }
-
-
-                    //var latlng = overviewer.util.fromWorldToLatLng(
-                    //        ovconf.spawn[0],
-                    //        ovconf.spawn[1],
-                    //        ovconf.spawn[2],
-                    //        obj);
-                    //marker_group.addLayer(L.marker(
-                }
-            }*/
-
-            myLayer["tileSetConfig"] = this.ovTileSet;
-
-            overviewer.collections.centers[this.ovTileSet.world] = [ [0, 0], this.ovTileSet.defaultZoom ];
+            this.layerControl.addTo(targetMap);
         }
 
+        deactivate(targetMap) {
+            this.activateLink.removeClass('active');
+
+            targetMap.removeLayer(this.markerLayer);
+
+            for (let type in this.markerTypeLayers) {
+                targetMap.removeLayer(this.markerTypeLayers[type]);
+            }
+
+            targetMap.removeLayer(this.mapLayer);
+
+            this.layerControl.remove();
+        }
+
+        registerMap(name, data) {
+            this.maps[name] = data;
+
+            for (let i in data.markers) {
+                let markerData = data.markers[i];
+                if(markerData.title === undefined) {
+                    markerData.title = LAM.getMarkerDefaultTitle(markerData.type);
+                }
+
+                this.markers.push(markerData);
+            }
+        }
+
+        initializeUI() {
+            // Create the navigation link
+            let element = $('<li class="nav-item"></li>');
+            this.activateLink = $('<a class="nav-link" href="#"></a>');
+            this.activateLink.html('<span data-feather="layers"></span>' + this.name);
+
+            this.activateLink.click({id: this.name}, function(e) {
+                LAM.activateArea(e.data.id);
+            });
+
+            element.append(this.activateLink);
+
+            $('#mapNav').append(element);
+        }
+
+        initializeLayers() {
+            this.mapLayer = L.tileLayer('', {
+                tileSize: Constants.TileSize,
+                noWrap: true,
+                maxZoom: this.zoomLevel ? this.zoomLevel : 0,
+                minZoom: 0,
+                errorTileUrl: Constants.ErrorImagePath
+            });
+
+            this.mapLayer.getTileUrl = LAM.getMapTileUrl(this.imagePath);
+
+            this.markerLayer = L.layerGroup();
+
+            // Create all markers on the local layer
+            for (let i in this.markers) {
+                let markerData = this.markers[i];
+                this.createMarker(markerData);
+            }
+
+            let baseLayers = {
+                "Map": this.mapLayer
+            };
+
+            let overlays = {
+                "All Markers": this.markerLayer
+            };
+
+            for (let type in this.markerTypeLayers) {
+                overlays[LAM.getMarkerDefaultTitle(type)] = this.markerTypeLayers[type];
+            }
+
+            this.layerControl = L.control.layers(baseLayers, overlays);
+        }
+
+        createMarker(markerData) {
+            let icon = LAM.getMarkerIcon(markerData.type);
+            let marker = L.marker([markerData.x, markerData.y], {
+                icon: icon,
+                title: markerData.title
+            });
+
+            if (markerData.popupText !== undefined) {
+                marker.bindPopup(markerData.popupText);
+            }
+
+            this.activeMarkers.push(marker);
+            this.markerLayer.addLayer(marker);
+
+            let typeLayer = this.markerTypeLayers[markerData.type];
+            if (typeLayer === undefined){
+                typeLayer = L.layerGroup();
+                this.markerTypeLayers[markerData.type] = typeLayer;
+            }
+
+            typeLayer.addLayer(marker);
+        }
 
     }
 
