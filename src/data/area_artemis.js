@@ -88,6 +88,57 @@
         markers: [
             { x: -496.5, y: 229.76, title: "To Leonhard", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-397.5, 145.63]},
+
+            { x: -472.25, y: 235.14, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/LoghillsMokokoHint1.png"},
+
+            { x: -460.75, y: 228, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/LoghillsMokokoHint2.png"},
+
+            { x: -456.12, y: 253.51, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/LoghillsMokokoHint3.png"},
+
+            { x: -436.37, y: 220.89, type: MarkerTypeEnum.Mokoko,
+                hintText: "hidden behind the tree, need to activate secret entrance below to access",
+                hintImage: "artemis/LoghillsMokokoHint4.png"},
+
+            { x: -435.25, y: 222.39, type: MarkerTypeEnum.Mokoko,
+                hintText: "hidden behind the tree, need to activate secret entrance below to access",
+                hintImage: "artemis/LoghillsMokokoHint4.png"},
+
+            { x: -470.62, y: 223.77, popupText: "오래된 낚시터", type: MarkerTypeEnum.Vista,
+                hintImage: "artemis/LoghillsVistaHint1.png"},
+
+            { x: -443, y: 262.51, popupText: "예배당 폐허", type: MarkerTypeEnum.Vista,
+                hintImage: "artemis/LoghillsVistaHint2.png"},
+
+            { x: -460.75, y: 217.63, popupText: "해바라기 같은 사랑 #2", type: MarkerTypeEnum.HiddenStory,
+                hintText: "시간제한 20분",
+                hintImage: "artemis/LoghillsHiddenStoryHint1.png"},
+
+            { x: -462.62, y: 230.38, popupText: "상자(랜덤)", type: MarkerTypeEnum.TreasureBox,
+                hintText: "낡은 금열쇠 필요",
+                hintImage: "artemis/LoghillsTreasureHint1.png"},
+
+            { x: -454.75, y: 237.13, popupText: "독발톱 도굴단 탐색가", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/LoghillsBossHint1.png"},
+
+            { x: -460.12, y: 244.64, popupText: "우두머리 붉은 부리 백새 #1", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/LoghillsBossHint2.png"},
+
+            { x: -439.25, y: 256.89, popupText: "우두머리 붉은 부리 백새 #2", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/LoghillsBossHint3.png"},
+
+            { x: -455.25, y: 239.26, popupText: "공명의 노래", type: MarkerTypeEnum.PlayInstrument,
+                hintImage: "artemis/LoghillsPlayMusicHint1.png"},
+
+            { x: -460.62, y: 258.76, popupText: "토악질 덩어리", type: MarkerTypeEnum.FoodIngredient,
+                hintText: "레온하트 요리사NPC - 헬리<br>고단백 백새 스튜 식재료",
+                hintImage: "artemis/LoghillsFoodIngredientHint1.png"},
+
+            { x: -437.12, y: 222.89, type: MarkerTypeEnum.SecretPassage,
+                hintText: "Activated by killing a golem around the statue",
+                hintImage: "artemis/LoghillsSecretPassageHint1.png"}
         ]
     });
 

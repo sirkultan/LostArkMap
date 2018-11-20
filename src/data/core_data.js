@@ -16,7 +16,9 @@ let MarkerTypeEnum = Object.freeze({
     "FavorNPC": "favornpc.png",
     "CookingIngredient": "cookingingredient.png",
     "FoodIngredient": "foodingredient.png",
-    "Zoning": "zooning.png"
+    "Zoning": "zooning.png",
+    "TreasureBox": "treasurebox.png",
+    "PlayInstrument": "playinstrument.png"
 });
 
 let Constants = Object.freeze({

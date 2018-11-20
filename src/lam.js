@@ -108,6 +108,10 @@ let LAM = (function(){
                 case MarkerTypeEnum.Zoning: {
                     return "Zone change";
                 }
+
+                case MarkerTypeEnum.TreasureBox: {
+                    return "Treasure Box";
+                }
             }
         }
 
