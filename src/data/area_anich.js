@@ -11,7 +11,6 @@
         img: "MirrorValley.png",
         type: MapTypeEnum.Continent,
         markers: [
-            { x: 100, y: 100, title: "Test", type: MarkerTypeEnum.Mokoko, popupText: "longer text" }
         ]
     });
 
