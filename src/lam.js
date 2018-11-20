@@ -127,7 +127,7 @@ let LAM = (function(){
                         url += '/' + (x + 2 * y);
                     }
                 }
-                console.log(url);
+                
                 return (url + '.png');
             }
         }
