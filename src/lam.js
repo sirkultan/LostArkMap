@@ -9,7 +9,6 @@ let LAM = (function(){
         }
 
         initialize() {
-            //overviewer.util.initialize();
 
             this.map = L.map('la_map', {
                 crs: L.CRS.Simple,
@@ -76,6 +75,38 @@ let LAM = (function(){
 
                 case MarkerTypeEnum.Vista: {
                     return "Vista";
+                }
+
+                case MarkerTypeEnum.SecretPassage: {
+                    return "Secret Passage";
+                }
+
+                case MarkerTypeEnum.Boss: {
+                    return "Boss";
+                }
+
+                case MarkerTypeEnum.HiddenStory: {
+                    return "Hidden Story";
+                }
+
+                case MarkerTypeEnum.WorldBoss: {
+                    return "World Boss";
+                }
+
+                case MarkerTypeEnum.FavorNPC: {
+                    return "Favor NPC";
+                }
+
+                case MarkerTypeEnum.CookingIngredient: {
+                    return "Cooking Ingredient";
+                }
+
+                case MarkerTypeEnum.FoodIngredient: {
+                    return "Food Ingredient";
+                }
+
+                case MarkerTypeEnum.Zoning: {
+                    return "Zone change";
                 }
             }
         }

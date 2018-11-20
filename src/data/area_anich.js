@@ -3,7 +3,7 @@
     let area = LAM.createArea("Anich", {
         kr: "애니츠",
         path: "maps/areas/Anich",
-        zoomLevel: 3
+        zoomLevel: 4
     });
 
     area.registerMap("Mirror Valley", {

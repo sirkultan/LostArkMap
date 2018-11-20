@@ -120,8 +120,28 @@
                 title: markerData.title
             });
 
-            if (markerData.popupText !== undefined) {
-                marker.bindPopup(markerData.popupText);
+            if (markerData.popupText !== undefined || markerData.hintText !== undefined || markerData.hintImage !== undefined) {
+                let popupContent = $('<div></div>');
+                if(markerData.popupText !== undefined){
+                    popupContent.append($('<h4>' + markerData.popupText + '</h4>'))
+                }
+
+                if(markerData.hintImage !== undefined){
+                    popupContent.append($('<img src="images/marker_hints/' + markerData.hintImage + '"/>'))
+                }
+
+                if(markerData.hintText !== undefined){
+                    popupContent.append($('<p>' + markerData.hintText + '</p>'))
+                }
+
+                marker.bindPopup(popupContent.html());
+            }
+
+            if (markerData.teleportTo !== undefined) {
+                marker.teleportData = markerData.teleportTo;
+                marker.on('click', function(e){
+                    LAM.map.flyTo(this.teleportData);
+                });
             }
 
             this.activeMarkers.push(marker);
