@@ -112,6 +112,10 @@ let LAM = (function(){
                 case MarkerTypeEnum.TreasureBox: {
                     return "Treasure Box";
                 }
+
+                case MarkerTypeEnum.PlayInstrument: {
+                    return "Play Instrument";
+                }
             }
         }
 
