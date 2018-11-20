@@ -293,7 +293,7 @@ overviewer.util = {
 
 
 
-        overviewer.map = L.map('mcmap', {
+        overviewer.map = L.map('la_map', {
                 crs: L.CRS.Simple,
                 minZoom: 0});
 
@@ -321,7 +321,7 @@ overviewer.util = {
             overviewer.compass.render(ovconf.north_direction);
 
             // Set the background colour
-            document.getElementById("mcmap").style.backgroundColor = ovconf.bgcolor;
+            document.getElementById("la_map").style.backgroundColor = ovconf.bgcolor;
 
             if (overviewer.collections.locationMarker) {
                 overviewer.collections.locationMarker.remove();
@@ -373,8 +373,6 @@ overviewer.util = {
             var point = overviewer.util.fromLatLngToWorld(e.latlng.lat, e.latlng.lng, tset);
             console.log(point);
         });
-
-        var tilesetLayers = {}
 
         overviewer.worldCtrl = new overviewer.control();
         overviewer.compass = new overviewer.compassClass(

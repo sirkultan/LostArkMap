@@ -1,37 +1,14 @@
 var overviewerConfig = {
     "worlds": [
-        "world",
         "sea"
     ], 
     "tilesets": [
         {
-            "spawn": [
-                0, 
-                80, 
-                204
-            ], 
-            "isOverlay": false, 
-            "last_rendertime": 1454034070, 
-            "name": "Overviewer Render (lighting)", 
-            "poititle": "Markers", 
-            "north_direction": 0, 
-            "minZoom": 0, 
-            "bgcolor": "#1a1a1a", 
-            "zoomLevels": 6, 
-            "base": "", 
-            "imgextension": "png", 
-            "defaultZoom": 1, 
-            "world": "world", 
-            "maxZoom": 6, 
-            "path": "maps/world-lighting",
-            "showlocationmarker": true
-        },
-        {
-            "spawn": [
+            /*"spawn": [
                 0,
                 80,
                 204
-            ],
+            ],*/
             "isOverlay": false,
             "last_rendertime": 1454034070,
             "name": "Sea Map",
@@ -50,9 +27,9 @@ var overviewerConfig = {
         }
     ], 
     "CONST": {
-        "mapDivId": "mcmap", 
-        "UPPERLEFT": 0, 
-        "tileSize": 384, 
+        "mapDivId": "la_map",
+        "UPPERLEFT": 0,
+        "tileSize": 512,
         "UPPERRIGHT": 1, 
         "image": {
             "queryMarker": "icons/marker_location.png", 
@@ -61,13 +38,12 @@ var overviewerConfig = {
             "signMarker": "signpost_icon.png", 
             "queryMarker2x": "icons/marker_location_2x.png", 
             "compass": {
-                "0": "compass_upper-left.png", 
-                "1": "compass_upper-right.png", 
-                "2": "compass_lower-right.png", 
-                "3": "compass_lower-left.png"
+                "0": "images/compass_upper-left.png",
+                "1": "images/compass_upper-right.png",
+                "2": "images/compass_lower-right.png",
+                "3": "images/compass_lower-left.png"
             }, 
-            "defaultMarker": "signpost.png", 
-            "bedMarker": "bed.png"
+            "defaultMarker": "signpost.png",
         }, 
         "LOWERRIGHT": 2, 
         "LOWERLEFT": 3
@@ -85,9 +61,9 @@ var overviewerConfig = {
             "pan": true
         }, 
         "center": [
-            -314, 
-            67, 
-            94
+            0,
+            0,
+            0
         ], 
         "cacheTag": "1542657278"
     }
