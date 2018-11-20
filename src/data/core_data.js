@@ -1,0 +1,1 @@
+let MapTypeEnum = Object.freeze({"Continent": 1, "City": 2, "World": 3, "Dungeon": 4, "Island": 5})

@@ -1,16 +1,15 @@
 var overviewerConfig = {
-    "worlds": [
+    /*"worlds": [
         "sea"
     ], 
     "tilesets": [
         {
-            /*"spawn": [
+            "spawn": [
                 0,
                 80,
                 204
-            ],*/
+            ],
             "isOverlay": false,
-            "last_rendertime": 1454034070,
             "name": "Sea Map",
             "poititle": "Markers",
             "north_direction": 0,
@@ -25,7 +24,7 @@ var overviewerConfig = {
             "path": "maps/sea",
             "showlocationmarker": true
         }
-    ], 
+    ], */
     "CONST": {
         "mapDivId": "la_map",
         "UPPERLEFT": 0,

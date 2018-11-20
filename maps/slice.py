@@ -67,7 +67,7 @@ targetDir = sys.argv[3]
 
 split_image(sourceFile, targetDir, 0)
 
-shutil.copyfile("maps\\blank.png", targetDir + "\\blank.png")
+shutil.copyfile("blank.png", targetDir + "\\blank.png")
 shutil.copyfile(sourceFile, targetDir + "\\base.png")
 resize_image(targetDir + "\\base.png")
 
