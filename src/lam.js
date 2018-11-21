@@ -36,6 +36,8 @@ let LAM = (function(){
             }
 
             feather.replace();
+
+            this.rebuildStats();
         }
 
         registerArea(name, entry) {
@@ -116,6 +118,10 @@ let LAM = (function(){
                 case MarkerTypeEnum.PlayInstrument: {
                     return "Play Instrument";
                 }
+
+                default: {
+                    console.warn("Unhandled Marker Type: " + markerType);
+                }
             }
         }
 
@@ -137,6 +143,47 @@ let LAM = (function(){
                 }
                 
                 return (url + '.png');
+            }
+        }
+
+        rebuildStats() {
+            let statsPanel = $('#stats');
+            statsPanel.empty();
+
+            let markerStats = {};
+            for (let name in this.areas) {
+                let area = this.areas[name];
+                for (let i in area.markers) {
+                    let markerData = area.markers[i];
+                    if (markerStats[markerData.type] === undefined) {
+                        markerStats[markerData.type] = 0;
+                    }
+
+                    markerStats[markerData.type]++;
+                }
+            }
+
+            for (let typeName in MarkerTypeEnum) {
+                let markerImage = MarkerTypeEnum[typeName];
+                switch (markerImage) {
+                    // Ignore some markers
+                    case MarkerTypeEnum.Zoning: {
+                        continue;
+                    }
+                }
+                let markerTitle = this.getMarkerDefaultTitle(markerImage);
+                let markerCount = markerStats[markerImage];
+                if(markerCount === undefined) {
+                    markerCount = 0;
+                }
+
+                let element = $('<li class="nav-item"></li>');
+                this.activateLink = $('<a class="nav-link" href="#"></a>');
+                this.activateLink.html('<span><img class="feather" src="images/icons/' + markerImage + '"/></span>' + markerCount + " " + markerTitle);
+
+                element.append(this.activateLink);
+
+                statsPanel.append(element);
             }
         }
 

@@ -8,17 +8,17 @@ let MapTypeEnum = Object.freeze({
 
 let MarkerTypeEnum = Object.freeze({
     "Boss": "boss.png",
-    "Mokoko": "mokoko.png",
-    "WorldBoss": "world_boss.png",
-    "Vista": "vista.png",
-    "SecretPassage": "secretpassage.png",
-    "HiddenStory": "hiddenstory.png",
-    "FavorNPC": "favornpc.png",
     "CookingIngredient": "cookingingredient.png",
+    "FavorNPC": "favornpc.png",
     "FoodIngredient": "foodingredient.png",
-    "Zoning": "zooning.png",
+    "HiddenStory": "hiddenstory.png",
+    "Mokoko": "mokoko.png",
+    "PlayInstrument": "playinstrument.png",
+    "SecretPassage": "secretpassage.png",
     "TreasureBox": "treasurebox.png",
-    "PlayInstrument": "playinstrument.png"
+    "Vista": "vista.png",
+    "WorldBoss": "world_boss.png",
+    "Zoning": "zooning.png",
 });
 
 let Constants = Object.freeze({

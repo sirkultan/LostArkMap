@@ -106,15 +106,37 @@
                 hintText: "hidden behind the tree, need to activate secret entrance below to access",
                 hintImage: "artemis/LoghillsMokokoHint4.png"},
 
+            { x: -420.25, y: 255.69, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/LoghillsMokokoHint5.png"},
+
+            { x: -386.56, y: 291.93, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/LoghillsMokokoHint6.png"},
+
+            { x: -379, y: 216.94, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/LoghillsMokokoHint7.png"},
+
+            { x: -378.37, y: 215.32, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/LoghillsMokokoHint7.png"},
+
             { x: -470.62, y: 223.77, popupText: "오래된 낚시터", type: MarkerTypeEnum.Vista,
                 hintImage: "artemis/LoghillsVistaHint1.png"},
 
             { x: -443, y: 262.51, popupText: "예배당 폐허", type: MarkerTypeEnum.Vista,
                 hintImage: "artemis/LoghillsVistaHint2.png"},
 
+            { x: -422.75, y: 258.07, popupText: "폭포 다리", type: MarkerTypeEnum.Vista,
+                hintImage: "artemis/LoghillsVistaHint3.png"},
+
+            { x: -420.31, y: 271.07, popupText: "무너진 다리", type: MarkerTypeEnum.Vista,
+                hintImage: "artemis/LoghillsVistaHint4.png"},
+
             { x: -460.75, y: 217.63, popupText: "해바라기 같은 사랑 #2", type: MarkerTypeEnum.HiddenStory,
                 hintText: "시간제한 20분",
                 hintImage: "artemis/LoghillsHiddenStoryHint1.png"},
+
+            { x: -388.69, y: 268.31, popupText: "백마를 탄 왕자님 #1", type: MarkerTypeEnum.HiddenStory,
+                hintText: "시간제한 20분",
+                hintImage: "artemis/LoghillsHiddenStoryHint2.png"},
 
             { x: -462.62, y: 230.38, popupText: "상자(랜덤)", type: MarkerTypeEnum.TreasureBox,
                 hintText: "낡은 금열쇠 필요",
@@ -129,8 +151,15 @@
             { x: -439.25, y: 256.89, popupText: "우두머리 붉은 부리 백새 #2", type: MarkerTypeEnum.Boss,
                 hintImage: "artemis/LoghillsBossHint3.png"},
 
+            { x: -384.94, y: 290.62, popupText: "우두머리 크리클로우", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/LoghillsBossHint4.png"},
+
             { x: -455.25, y: 239.26, popupText: "공명의 노래", type: MarkerTypeEnum.PlayInstrument,
                 hintImage: "artemis/LoghillsPlayMusicHint1.png"},
+
+            { x: -381.06, y: 217.25, popupText: "숲의 미뉴에트", type: MarkerTypeEnum.PlayInstrument,
+                hintText: "Play 'Minuet of the forest' (숲의 미뉴에트)<br>grants access to the Mokoko Seeds here",
+                hintImage: "artemis/LoghillsPlayMusicHint2.png"},
 
             { x: -460.62, y: 258.76, popupText: "토악질 덩어리", type: MarkerTypeEnum.FoodIngredient,
                 hintText: "레온하트 요리사NPC - 헬리<br>고단백 백새 스튜 식재료",
