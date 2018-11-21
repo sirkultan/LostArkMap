@@ -73,8 +73,56 @@
         img: "DiorikaPlains.png",
         type: MapTypeEnum.Continent,
         markers: [
-            { x: -357, y: 71.5, title: "<Title>", type: MarkerTypeEnum.Zoning,
-                teleportTo: [-368.84, 60.35]}
+            { x: -357, y: 71.5, title: "To Castle of Lutheran", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-368.84, 60.35]},
+
+            { x: -357.69, y: 119.43, title: "To Solar Halo Hill", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-381.31, 159.11]},
+
+            { x: -375.87, y: 90.53, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/DiorikaMokokoHint1.png"},
+
+            { x: -373.87, y: 90.47, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/DiorikaMokokoHint2.png"},
+
+            { x: -367.37, y: 83.54, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/DiorikaMokokoHint3.png"},
+
+            { x: -368.41, y: 106.94, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/DiorikaMokokoHint4.png"},
+
+            { x: -351.69, y: 82.57, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/DiorikaMokokoHint5.png"},
+
+            { x: -347.37, y: 92.22, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/DiorikaMokokoHint6.png"},
+
+            { x: -350.37, y: 103.63, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/DiorikaMokokoHint7.png"},
+
+            { x: -339.31, y: 69, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/DiorikaMokokoHint8.png"},
+
+            { x: -341.78, y: 89.72, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/DiorikaMokokoHint9.png"},
+
+            { x: -348.84, y: 116.75, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/DiorikaMokokoHint10.png"},
+
+            { x: -323.81, y: 110.1, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/DiorikaMokokoHint11.png"},
+
+            { x: -353.69, y: 115.78, popupText: "절벽 위에서 바라본 로나운의 생가", type: MarkerTypeEnum.Vista,
+                hintImage: "lutheran/DiorikaVistaHint1.png"},
+
+            { x: -350.06, y: 115.16, popupText: "상자(낡은 금열쇠)", type: MarkerTypeEnum.TreasureBox,
+                hintImage: "lutheran/DiorikaTreasureHint1.png"},
+
+            { x: -348.62, y: 114.35, popupText: "덩치 큰 까마귀", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/DiorikaBossHint1.png"},
+
+            { x: -325.59, y: 104.78, popupText: "딱딱한 붉은 귀 이새", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/DiorikaBossHint2.png"}
         ]
     });
 
@@ -83,6 +131,8 @@
         img: "Solar Halo Hill.png",
         type: MapTypeEnum.Continent,
         markers: [
+            { x: -381.31, y: 159.11, title: "To Diorika Plains", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-357.69, 119.43]}
         ]
     });
 
