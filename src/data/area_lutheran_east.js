@@ -11,6 +11,60 @@
         img: "CastleOfLutheran.png",
         type: MapTypeEnum.City,
         markers: [
+            { x: -368.84, y: 60.35, title: "To Diorika Plains", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-357, 71.5]},
+
+            { x: -371.37, y: 35.35, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LutheranCastleMokokoHint1.png"},
+
+            { x: -363.16, y: 36.41, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LutheranCastleMokokoHint2.png"},
+
+            { x: -360.5, y: 58.19, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LutheranCastleMokokoHint3.png"},
+
+            { x: -351.59, y: 14.25, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "lutheran/LutheranCastleMokokoHint4.png"},
+
+            { x: -352.03, y: 14.66, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "lutheran/LutheranCastleMokokoHint4.png"},
+
+            { x: -345.28, y: 12.82, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LutheranCastleMokokoHint5.png"},
+
+            { x: -342.94, y: 16.41, type: MarkerTypeEnum.Mokoko,
+                hintText: "3 seeds at this location",
+                hintImage: "lutheran/LutheranCastleMokokoHint6.png"},
+
+            { x: -343.22, y: 15.69, type: MarkerTypeEnum.Mokoko,
+                hintText: "3 seeds at this location",
+                hintImage: "lutheran/LutheranCastleMokokoHint6.png"},
+
+            { x: -343.69, y: 16.04, type: MarkerTypeEnum.Mokoko,
+                hintText: "3 seeds at this location",
+                hintImage: "lutheran/LutheranCastleMokokoHint6.png"},
+
+            { x: -330.22, y: 27.19, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LutheranCastleMokokoHint7.png"},
+
+            { x: -359.69, y: 56.97, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "lutheran/LutheranCastleSecretHint1.png"},
+
+            { x: -350.62, y: 13.97, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "lutheran/LutheranCastleSecretHint2.png"},
+
+            { x: -343.03, y: 19.1, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "lutheran/LutheranCastleSecretHint3.png"},
+
+            { x: -347.12, y: 21.06, popupText: "상자 #1", type: MarkerTypeEnum.TreasureBox },
+
+            { x: -341.16, y: 21.19, popupText: "하녀장의 은밀한...", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "lutheran/LutheranCastleHiddenStoryHint1.png"},
+
+            { x: -340.69, y: 39.91, popupText: "흙 묻은 칠색사탕", type: MarkerTypeEnum.CookingIngredient,
+                hintImage: "lutheran/LutheranCastleCookingIngredientHint1.png"}
         ]
     });
 
@@ -19,6 +73,8 @@
         img: "DiorikaPlains.png",
         type: MapTypeEnum.Continent,
         markers: [
+            { x: -357, y: 71.5, title: "<Title>", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-368.84, 60.35]}
         ]
     });
 
