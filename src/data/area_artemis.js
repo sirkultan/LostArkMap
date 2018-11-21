@@ -239,6 +239,85 @@
         markers: [
             { x: -148.75, y: 251.78, title: "To Angemos Mountains", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-206.75, 236.28]},
+
+            { x: -33.5, y: 234.54, title: "Agiloth's Tail Dungeon", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-154.5, 81.03]},
+
+            { x: -139.37, y: 253.76, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/BorderlandsMokokoHint1.png"},
+
+            { x: -134.25, y: 242.89, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/BorderlandsMokokoHint2.png"},
+
+            { x: -120, y: 245.76, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/BorderlandsMokokoHint3.png"},
+
+            { x: -82.25, y: 257.32, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 Seeds at this location",
+                hintImage: "artemis/BorderlandsMokokoHint4.png"},
+
+            { x: -82.62, y: 255.94, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 Seeds at this location",
+                hintImage: "artemis/BorderlandsMokokoHint4.png"},
+
+            { x: -82.25, y: 277.13, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/BorderlandsMokokoHint5.png"},
+
+            { x: -65.69, y: 277.88, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/BorderlandsMokokoHint6.png"},
+
+            { x: -86.5, y: 209.57, type: MarkerTypeEnum.Mokoko,
+                hintText: "3 Seeds at this location",
+                hintImage: "artemis/BorderlandsMokokoHint7.png"},
+
+            { x: -83.87, y: 210.13, type: MarkerTypeEnum.Mokoko,
+                hintText: "3 Seeds at this location",
+                hintImage: "artemis/BorderlandsMokokoHint7.png"},
+
+            { x: -83.25, y: 212.76, type: MarkerTypeEnum.Mokoko,
+                hintText: "3 Seeds at this location",
+                hintImage: "artemis/BorderlandsMokokoHint7.png"},
+
+            { x: -89.37, y: 217.63, type: MarkerTypeEnum.SecretPassage,
+                hintText: "Killing the closest monster group unlocks the access point to use",
+                hintImage: "artemis/BorderlandsSecretHint1.png"},
+
+            { x: -118, y: 228.01, popupText: "불타버린 사랑", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "artemis/BorderlandsHiddenStoryHint1.png"},
+
+            { x: -111.12, y: 276.37, popupText: "백마를 탄 왕자님 #3", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "artemis/BorderlandsHiddenStoryHint2.png"},
+
+            { x: -72.5, y: 245.75, popupText: "저주받은 묘지기", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "artemis/BorderlandsHiddenStoryHint3.png"},
+
+            { x: -88.5, y: 247.25, popupText: "레그리아 꽃 기름", type: MarkerTypeEnum.CookingIngredient,
+                hintImage: "artemis/BorderlandsCookingIngredientHint1.png"},
+
+            { x: -52.25, y: 262, popupText: "적아목 새순", type: MarkerTypeEnum.FoodIngredient,
+                hintText: "레온하트 요리사NPC - 헬리<br>적아목 새순 발효주 식재료",
+                hintImage: "artemis/BorderlandsFoodIngredientHint1.png"},
+
+            { x: -78.25, y: 259.38, popupText: "국경지대 수도원", type: MarkerTypeEnum.Vista,
+                hintImage: "artemis/BorderlandsVistaHint1.png"},
+
+            { x: -57.5, y: 222.13, popupText: "여신상", type: MarkerTypeEnum.Vista,
+                hintImage: "artemis/BorderlandsVistaHint2.png"},
+
+            { x: -79.75, y: 235.82, popupText: "루드릭", type: MarkerTypeEnum.WorldBoss,
+                hintText: "활동범위가 매우 넓으니 공동묘지 주변을 잘 찾아보자"},
+
+            { x: -99.56, y: 253.81, popupText: "끔찍한 역병충 #1", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/BorderlandsBossHint1.png"},
+
+            { x: -88.25, y: 229.01, popupText: "우두머리 불완전 변이체", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/BorderlandsBossHint2.png"},
+
+            { x: -68.69, y: 241.25, popupText: "끔찍한 역병충 #2", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/BorderlandsBossHint3.png"},
+
+            { x: -57, y: 254.25, popupText: "우두머리 시체거미", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/BorderlandsBossHint4.png"}
         ]
     });
 
@@ -330,10 +409,14 @@
         ]
     });
 
-    area.registerMap("아길로스의", {
-        kr: "아길로스의",
-        img: "아길로스의.png",
-        type: MapTypeEnum.Dungeon
+    area.registerMap("Agiloth's Tail", {
+        kr: "아길로스의 꼬리",
+        img: "AgilothsTail.png",
+        type: MapTypeEnum.Dungeon,
+        markers: [
+            { x: -154.5, y: 81.03, title: "To Borderlands", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-33.5, 234.54]},
+        ]
     });
 
 })();
