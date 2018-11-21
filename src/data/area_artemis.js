@@ -416,6 +416,40 @@
         markers: [
             { x: -154.5, y: 81.03, title: "To Borderlands", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-33.5, 234.54]},
+
+            { x: -89.69, y: 97.94, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/AgilothTailMokokoHint1.png"},
+
+            { x: -78.5, y: 84.01, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/AgilothTailMokokoHint2.png"},
+
+            { x: -91.44, y: 69.95, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "artemis/AgilothTailMokokoHint3.png"},
+
+            { x: -91.5, y: 71.44, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "artemis/AgilothTailMokokoHint3.png"},
+
+            { x: -93.62, y: 55.08, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "artemis/AgilothTailMokokoHint4.png"},
+
+            { x: -93, y: 52.95, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "artemis/AgilothTailMokokoHint4.png"},
+
+            { x: -81.37, y: 66.82, popupText: "늙은 메라뱀", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/AgilothTailBossHint1.png"},
+
+            { x: -43.12, y: 77.19, popupText: "썩어문드러진 감염자", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/AgilothTailBossHint2.png"},
+
+            { x: -89.25, y: 67.94, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "artemis/AgilothTailSecretHint1.png"},
+
+            { x: -88.06, y: 58.32, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "artemis/AgilothTailSecretHint2.png"}
         ]
     });
 
