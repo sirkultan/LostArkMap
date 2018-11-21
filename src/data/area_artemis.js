@@ -12,7 +12,7 @@
         type: MapTypeEnum.City,
         markers: [
             { x: -409.62, y: 18.76, type: MarkerTypeEnum.SecretPassage,
-                hintImage: 'artemis/LeaonhardHiddenPassage.png' },
+                hintImage: 'artemis/LeonhardHiddenPassage.png' },
 
             { x: -417.5, y: 12.75, type: MarkerTypeEnum.Mokoko,
                 hintImage: 'artemis/LeonhardMokokoHint1.png' },
@@ -88,6 +88,12 @@
         markers: [
             { x: -496.5, y: 229.76, title: "To Leonhard", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-397.5, 145.63]},
+
+            { x: -356.12, y: 260.89, title: "To Angemos Mountains", type: MarkerTypeEnum.Zoning,
+                teleportTo: [ -314.25, 249.03]},
+
+            { x: -404.87, y: 284.02, title: "Poisonclaw Robber Cave Dungeon", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-356.12, 444.63]},
 
             { x: -472.25, y: 235.14, type: MarkerTypeEnum.Mokoko,
                 hintImage: "artemis/LoghillsMokokoHint1.png"},
@@ -174,7 +180,11 @@
     area.registerMap("Angemos Mountains", {
         kr: "안게모스 산 기슭",
         img: "AngemosMountains.png",
-        type: MapTypeEnum.Continent
+        type: MapTypeEnum.Continent,
+        markers: [
+            { x: -314.25, y: 249.03, title: "To Loghills", type: MarkerTypeEnum.Zoning,
+                teleportTo: [ -356.12, 260.89 ]},
+        ]
     });
 
     area.registerMap("Borderlands", {
@@ -183,10 +193,42 @@
         type: MapTypeEnum.Continent
     });
 
-    area.registerMap("독발톱 도굴단의 동굴", {
+    area.registerMap("Poisonclaw Robber Cave", {
         kr: "독발톱 도굴단의 동굴",
-        img: "독발톱 도굴단의 동굴.png",
-        type: MapTypeEnum.Dungeon
+        img: "PoisonclawRobberCave.png",
+        type: MapTypeEnum.Dungeon,
+        markers: [
+            { x: -356.12, y: 444.63, title: "To Loghills", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-404.87, 284.02]},
+
+            { x: -460.5, y: 399.94, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/PoisonclawRobberCaveMokokoHint1.png"},
+
+            { x: -457.87, y: 410.43, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/PoisonclawRobberCaveMokokoHint2.png"},
+
+            { x: -441.62, y: 392.94, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/PoisonclawRobberCaveMokokoHint3.png"},
+
+            { x: -441, y: 394.44, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/PoisonclawRobberCaveMokokoHint3.png"},
+
+            { x: -431.19, y: 405.63, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/PoisonclawRobberCaveMokokoHint4.png"},
+
+            { x: -369.81, y: 403.44, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/PoisonclawRobberCaveMokokoHint5.png"},
+
+            { x: -423.06, y: 416.76, type: MarkerTypeEnum.SecretPassage,
+                hintText: "해당구역 몬스터를 다 잡으면 부셔지게 바뀜",
+                hintImage: "artemis/PoisonclawRobberCaveSecretHint1.png"},
+
+            { x: -427.75, y: 427.88, popupText: "독발톱 도굴단 탐색가", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/PoisonclawRobberCaveBossHint1.png"},
+
+            { x: -430.5, y: 407.76, popupText: "독발톱 도굴단 궁수", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/PoisonclawRobberCaveBossHint2.png"},
+        ]
     });
 
     area.registerMap("아길로스의 머리", {
