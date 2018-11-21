@@ -280,13 +280,53 @@
         ]
     });
 
-    area.registerMap("아길로스의 머리", {
+    area.registerMap("Agiloth's head", {
         kr: "아길로스의 머리",
-        img: "아길로스의 머리.png",
+        img: "AgilothsHead.png",
         type: MapTypeEnum.Dungeon,
         markers: [
             { x: -249, y: 494.98, title: "To Angemos Mountains", type: MarkerTypeEnum.Zoning,
-                teleportTo: [-206.25, 307.02]}
+                teleportTo: [-206.25, 307.02]},
+
+            { x: -271.5, y: 459.26, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/AgilothHeadMokokoHint1.png"},
+
+            { x: -271.37, y: 462.14, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/AgilothHeadMokokoHint1.png"},
+
+            { x: -316.87, y: 394.52, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/AgilothHeadMokokoHint2.png"},
+
+            { x: -259.25, y: 413.52, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/AgilothHeadMokokoHint3.png"},
+
+            { x: -269.37, y: 397.02, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/AgilothHeadMokokoHint4.png"},
+
+            { x: -220.87, y: 427.89, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/AgilothHeadMokokoHint5.png"},
+
+            { x: -261.37, y: 453.5, popupText: "우두머리 역병충 무리", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/AgilothHeadBossHint1.png"},
+
+            { x: -295.37, y: 406.63, popupText: "늙은 메라뱀", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/AgilothHeadBossHint2.png"},
+
+            { x: -216.62, y: 388.63, popupText: "악취나는 역병지기", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/AgilothHeadBossHint3.png"},
+
+            { x: -266.12, y: 458.37, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "artemis/AgilothHeadSecretHint1.png"},
+
+            { x: -312.5, y: 393.51, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "artemis/AgilothHeadSecretHint2.png"},
+
+            { x: -272.25, y: 403.26, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "artemis/AgilothHeadSecretHint3.png"},
+
+            { x: -313.12, y: 396.63, popupText: "499년된 메라주", type: MarkerTypeEnum.FoodIngredient,
+                hintText: "2시간이 지나면 500년된 메라주로 바뀜 그 때 마시면 된다. 미리 마시거나 유효기간이 지나고 마시면 모험의 서를 완료할 수 없다",
+                hintImage: "artemis/AgilothHeadFoodIngredientHint1.png"}
         ]
     });
 
