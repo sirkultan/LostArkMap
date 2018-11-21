@@ -184,13 +184,62 @@
         markers: [
             { x: -314.25, y: 249.03, title: "To Loghills", type: MarkerTypeEnum.Zoning,
                 teleportTo: [ -356.12, 260.89 ]},
+
+            { x: -206.75, y: 236.28, title: "To Borderlands", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-148.75, 251.78]},
+
+            { x: -206.25, y: 307.02, title: "아길로스의 머리 Dungeon", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-249, 494.98]},
+
+            { x: -279.5, y: 234.76, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/AngemosMokokoHint1.png"},
+
+            { x: -264.12, y: 287.12, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/AngemosMokokoHint2.png"},
+
+            { x: -236, y: 247.38, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/AngemosMokokoHint3.png"},
+
+            { x: -210.37, y: 252.88, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/AngemosMokokoHint4.png"},
+
+            { x: -255.87, y: 205.64, type: MarkerTypeEnum.Mokoko,
+                hintImage: "artemis/AngemosMokokoHint5.png"},
+
+            { x: -309.37, y: 245.13, popupText: "백마를 탄 왕자님 #2", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "artemis/AngemosHiddenStoryHint1.png"},
+
+            { x: -277, y: 228.89, popupText: "주정뱅이의 진실", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "artemis/AngemosHiddenStoryHint2.png"},
+
+            { x: -284.12, y: 243.26, popupText: "우두머리 이끼늑대 #1", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/AngemosBossHint1.png"},
+
+            { x: -264.5, y: 293.75, popupText: "악취나는 뼈다귀 점액 괴물", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/AngemosBossHint2.png"},
+
+            { x: -259.5, y: 283.25, popupText: "우두머리 이끼늑대 #2", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/AngemosBossHint3.png"},
+
+            { x: -268.25, y: 203.39, popupText: "알수없이 뒤엉킨 변이체", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/AngemosBossHint4.png"},
+
+            { x: -224.12, y: 286.37, popupText: "우두머리 신비뱀", type: MarkerTypeEnum.Boss,
+                hintImage: "artemis/AngemosBossHint5.png"},
+
+            { x: -233.37, y: 262.75, popupText: "폭포가 떨어지는 계곡", type: MarkerTypeEnum.Vista,
+                hintImage: "artemis/AngemosVistaHint1.png"}
         ]
     });
 
     area.registerMap("Borderlands", {
         kr: "국경지대",
         img: "Borderlands.png",
-        type: MapTypeEnum.Continent
+        type: MapTypeEnum.Continent,
+        markers: [
+            { x: -148.75, y: 251.78, title: "To Angemos Mountains", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-206.75, 236.28]},
+        ]
     });
 
     area.registerMap("Poisonclaw Robber Cave", {
@@ -202,39 +251,43 @@
                 teleportTo: [-404.87, 284.02]},
 
             { x: -460.5, y: 399.94, type: MarkerTypeEnum.Mokoko,
-                hintImage: "artemis/PoisonclawRobberCaveMokokoHint1.png"},
+                hintImage: "artemis/PoisonclawCaveMokokoHint1.png"},
 
             { x: -457.87, y: 410.43, type: MarkerTypeEnum.Mokoko,
-                hintImage: "artemis/PoisonclawRobberCaveMokokoHint2.png"},
+                hintImage: "artemis/PoisonclawCaveMokokoHint2.png"},
 
             { x: -441.62, y: 392.94, type: MarkerTypeEnum.Mokoko,
-                hintImage: "artemis/PoisonclawRobberCaveMokokoHint3.png"},
+                hintImage: "artemis/PoisonclawCaveMokokoHint3.png"},
 
             { x: -441, y: 394.44, type: MarkerTypeEnum.Mokoko,
-                hintImage: "artemis/PoisonclawRobberCaveMokokoHint3.png"},
+                hintImage: "artemis/PoisonclawCaveMokokoHint3.png"},
 
             { x: -431.19, y: 405.63, type: MarkerTypeEnum.Mokoko,
-                hintImage: "artemis/PoisonclawRobberCaveMokokoHint4.png"},
+                hintImage: "artemis/PoisonclawCaveMokokoHint4.png"},
 
             { x: -369.81, y: 403.44, type: MarkerTypeEnum.Mokoko,
-                hintImage: "artemis/PoisonclawRobberCaveMokokoHint5.png"},
+                hintImage: "artemis/PoisonclawCaveMokokoHint5.png"},
 
             { x: -423.06, y: 416.76, type: MarkerTypeEnum.SecretPassage,
                 hintText: "해당구역 몬스터를 다 잡으면 부셔지게 바뀜",
-                hintImage: "artemis/PoisonclawRobberCaveSecretHint1.png"},
+                hintImage: "artemis/PoisonclawCaveSecretHint1.png"},
 
             { x: -427.75, y: 427.88, popupText: "독발톱 도굴단 탐색가", type: MarkerTypeEnum.Boss,
-                hintImage: "artemis/PoisonclawRobberCaveBossHint1.png"},
+                hintImage: "artemis/PoisonclawCaveBossHint1.png"},
 
             { x: -430.5, y: 407.76, popupText: "독발톱 도굴단 궁수", type: MarkerTypeEnum.Boss,
-                hintImage: "artemis/PoisonclawRobberCaveBossHint2.png"},
+                hintImage: "artemis/PoisonclawCaveBossHint2.png"},
         ]
     });
 
     area.registerMap("아길로스의 머리", {
         kr: "아길로스의 머리",
         img: "아길로스의 머리.png",
-        type: MapTypeEnum.Dungeon
+        type: MapTypeEnum.Dungeon,
+        markers: [
+            { x: -249, y: 494.98, title: "To Angemos Mountains", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-206.25, 307.02]}
+        ]
     });
 
     area.registerMap("아길로스의", {
