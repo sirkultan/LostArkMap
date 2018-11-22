@@ -225,7 +225,10 @@
                 hintImage: "artemis/AngemosBossHint5.jpg"},
 
             { x: -233.37, y: 262.75, popupText: "폭포가 떨어지는 계곡", type: MarkerTypeEnum.Vista,
-                hintImage: "artemis/AngemosVistaHint1.jpg"}
+                hintImage: "artemis/AngemosVistaHint1.jpg"},
+
+            { x: -252.56, y: 282.57, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap1.jpg"},
         ]
     });
 

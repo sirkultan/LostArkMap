@@ -7,6 +7,7 @@ let LAM = (function(){
             this.markerIcons = {};
             this.dynamicLayers = {};
             this.activeArea = undefined;
+            this.activeDynamicLayer = undefined;
         }
 
         initialize() {
@@ -75,7 +76,6 @@ let LAM = (function(){
             }
 
             this.activateArea(area);
-            //this.map.setZoom(zoom);
             this.map.setView([x, y], zoom);
         }
 
@@ -100,16 +100,21 @@ let LAM = (function(){
             this.dynamicLayers[entry.id] = entry;
         }
 
-        unregisterDynamicLayer(entry) {
-            delete this.dynamicLayers[entry.id];
+        unregisterDynamicLayer(id) {
+            if(this.activeDynamicLayer === id) {
+                this.dynamicLayers[id].deactivate();
+            }
+
+            delete this.dynamicLayers[id];
         }
 
         activateDynamicLayer(id) {
-            // TODO
-        }
+            if(this.activeDynamicLayer !== undefined) {
+                this.dynamicLayers[this.activeDynamicLayer].deactivate();
+            }
 
-        deactivateDynamicLayer(id) {
-            // TODO
+            this.dynamicLayers[id].activate();
+            this.activeDynamicLayer = id;
         }
 
         getMarkerIcon(markerType) {
@@ -181,6 +186,10 @@ let LAM = (function(){
 
                 case MarkerTypeEnum.OtherStory: {
                     return "Other Story";
+                }
+
+                case MarkerTypeEnum.TreasureMap: {
+                    return "Treasure Map";
                 }
 
                 default: {

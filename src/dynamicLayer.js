@@ -7,7 +7,6 @@
         constructor(name, data) {
             this.name = name;
             this.id = nextDynamicLayerId++;
-            this.isVisible = true;
 
             LAM.registerDynamicLayer(this);
 
@@ -32,8 +31,12 @@
             feather.replace();
         }
 
-        toggleVisible() {
+        activate() {
+            this.activateLink.addClass('active');
+        }
 
+        deactivate() {
+            this.activateLink.removeClass('active');
         }
     }
 
