@@ -175,7 +175,7 @@ let LAM = (function(){
                     }
                 }
                 
-                return (url + '.png');
+                return (url + '.jpg');
             }
         }
 
