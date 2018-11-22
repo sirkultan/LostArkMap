@@ -232,7 +232,53 @@
         type: MapTypeEnum.Dungeon,
         markers: [
             { x: -209.5, y: 25.77, title: "To Ozhorn Hills", type: MarkerTypeEnum.Zoning,
-                teleportTo: [-197.75, 142.63]}
+                teleportTo: [-197.75, 142.63]},
+
+            { x: -243.87, y: 90.51, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/SapiraMokokoHint1.jpg"},
+
+            { x: -224.75, y: 68.14, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/SapiraMokokoHint2.jpg"},
+
+            { x: -193.75, y: 55.01, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/SapiraMokokoHint3.jpg"},
+
+            { x: -193.06, y: 56.32, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/SapiraMokokoHint3.jpg"},
+
+            { x: -189.5, y: 43.82, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/SapiraMokokoHint4.jpg"},
+
+            { x: -174.94, y: 88.57, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/SapiraMokokoHint5.jpg"},
+
+            { x: -173.81, y: 99.69, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/SapiraMokokoHint6.jpg"},
+
+            { x: -158.44, y: 53.2, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/SapiraMokokoHint7.jpg"},
+
+            { x: -157.94, y: 54.32, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/SapiraMokokoHint7.jpg"},
+
+            { x: -234.87, y: 97.01, popupText: "더러운 점액 덩어리", type: MarkerTypeEnum.Boss,
+                hintImage: "yudia/SapiraBossHint1.jpg"},
+
+            { x: -187.25, y: 103.13, popupText: "타락한 붉은눈 바위악마", type: MarkerTypeEnum.Boss,
+                hintImage: "yudia/SapiraBossHint2.jpg"},
+
+            { x: -176.5, y: 57.14, popupText: "되살아난 피그미족 족장", type: MarkerTypeEnum.Boss,
+                hintImage: "yudia/SapiraBossHint3.jpg"},
+
+            { x: -196, y: 58.14, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "yudia/SapiraSecretHint1.jpg"},
+
+            { x: -163.19, y: 59.57, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "yudia/SapiraSecretHint2.jpg"},
+
+            { x: -230.75, y: 99.63, popupText: "숨겨진 카바티안의 술병", type: MarkerTypeEnum.FoodIngredient,
+                hintText: "살란드 구릉지 요리사NPC - 헬라<br>카바티안의 오래된 술 식재료",
+                hintImage: "yudia/SapiraFoodIngredientHint1.jpg"},
         ]
     });
 
