@@ -38,6 +38,34 @@ let LAM = (function(){
             feather.replace();
 
             this.rebuildStats();
+
+            $.urlParam = function(name){
+                var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+                if (results==null) {
+                    return null;
+                }
+                return decodeURI(results[1]) || 0;
+            };
+
+            this.processUrlParameters();
+        }
+
+        processUrlParameters() {
+            let area = $.urlParam('area');
+            let x = $.urlParam('x');
+            let y = $.urlParam('y');
+            let zoom = $.urlParam('zoom');
+            if(area === undefined || x === undefined || y === undefined) {
+                return;
+            }
+
+            if(zoom === undefined) {
+                zoom = 0;
+            }
+
+            this.activateArea(area);
+            //this.map.setZoom(zoom);
+            this.map.setView([x, y], zoom);
         }
 
         registerArea(name, entry) {

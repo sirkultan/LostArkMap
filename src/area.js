@@ -122,6 +122,12 @@
 
             if (markerData.popupText !== undefined || markerData.hintText !== undefined || markerData.hintImage !== undefined) {
                 let popupContent = $('<div></div>');
+
+                let locationLink = "?area=" + this.name + '&x=' + markerData.x + '&y=' + markerData.y + '&zoom=' + LAM.map.getMaxZoom();
+                let copyLocationButton = $('<a href="'+locationLink+'"><img src="images/icons/map-pin.svg"/></a>');
+
+                popupContent.append(copyLocationButton);
+
                 if(markerData.popupText !== undefined){
                     popupContent.append($('<h4>' + markerData.popupText + '</h4>'))
                 }
