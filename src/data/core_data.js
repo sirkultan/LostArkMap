@@ -19,6 +19,7 @@ let MarkerTypeEnum = Object.freeze({
     "Vista": "vista.png",
     "WorldBoss": "world_boss.png",
     "Zoning": "zooning.png",
+    "GroupQuest": "groupquest.png"
 });
 
 let Constants = Object.freeze({

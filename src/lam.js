@@ -119,6 +119,10 @@ let LAM = (function(){
                     return "Play Instrument";
                 }
 
+                case MarkerTypeEnum.GroupQuest: {
+                    return "Group Quest";
+                }
+
                 default: {
                     console.warn("Unhandled Marker Type: " + markerType);
                 }
