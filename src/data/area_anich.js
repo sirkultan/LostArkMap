@@ -62,4 +62,10 @@
         type: MapTypeEnum.Dungeon
     });
 
+    area.registerMap("만월의 고택", {
+        kr: "만월의 고택",
+        img: "만월의 고택.png",
+        type: MapTypeEnum.Dungeon
+    });
+
 })();
