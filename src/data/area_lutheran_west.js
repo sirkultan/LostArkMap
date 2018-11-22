@@ -111,6 +111,63 @@
         markers: [
             { x: -421.12, y: 324.14, title: "To Zagoras Mountain", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-438.5, 359.26]},
+
+            { x: -443.87, y: 304.77, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LakeBarsMokokoHint1.jpg"},
+
+            { x: -483.75, y: 268.78, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LakeBarsMokokoHint2.jpg"},
+
+            { x: -479.37, y: 255.16, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LakeBarsMokokoHint3.jpg"},
+
+            { x: -470.25, y: 230.29, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LakeBarsMokokoHint4.jpg"},
+
+            { x: -453.87, y: 244.41, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LakeBarsMokokoHint5.jpg"},
+
+            { x: -425.87, y: 238.66, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LakeBarsMokokoHint6.jpg"},
+
+            { x: -386.5, y: 246.25, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LakeBarsMokokoHint7.jpg"},
+
+            { x: -391.62, y: 290.07, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "lutheran/LakeBarsMokokoHint8.jpg"},
+
+            { x: -391.62, y: 292.51, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "lutheran/LakeBarsMokokoHint8.jpg"},
+
+            { x: -422.25, y: 268.28, popupText: "영웅의 조건 #1", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "lutheran/LakeBarsHiddenStoryHint1.jpg"},
+
+            { x: -475.62, y: 268.53, popupText: "정예 습격대 보급병", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/LakeBarsBossHint1.jpg"},
+
+            { x: -425.5, y: 187.52, popupText: "흉폭한 붉은 크란", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/LakeBarsBossHint2.jpg"},
+
+            { x: -498.87, y: 254.28, popupText: "황금상자 #1", type: MarkerTypeEnum.TreasureBox,
+                hintImage: "lutheran/LakeBarsTreasureHint1.jpg"},
+
+            { x: -456, y: 246.28, popupText: "루테란의 보부상", type: MarkerTypeEnum.OtherStory,
+                hintImage: "lutheran/LakeBarsOtherStoryHint1.jpg"},
+
+            { x: -447.25, y: 222.16, popupText: "Minuet of the forest #1", type: MarkerTypeEnum.PlayInstrument,
+                hintText: "Play 'Minuet of the forest' (숲의 미뉴에트)",
+                hintImage: "lutheran/LakeBarsPlayInstrumentHint1.jpg"},
+
+            { x: -426.62, y: 210.17, popupText: "천둥날개", type: MarkerTypeEnum.WorldBoss,
+                hintImage: "lutheran/LakeBarsWorldBossHint1.jpg"},
+
+            { x: -389.31, y: 271.75, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "lutheran/LakeBarsSecretHint1.jpg"},
+
+            { x: -393.62, y: 290.43, popupText: "레이크바 고목", type: MarkerTypeEnum.Vista,
+                hintImage: "lutheran/LakeBarsVistaHint1.jpg"},
         ]
     });
 
