@@ -1,8 +1,8 @@
 (function() {
 
-    let area = LAM.createArea("Sea", {
+    let area = LAM.createArea("World", {
         kr: "항해",
-        path: "maps/sea",
+        path: "maps/World",
         zoomLevel: 5
     });
 
