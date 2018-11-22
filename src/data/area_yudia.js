@@ -162,7 +162,7 @@
             { x: -197.75, y: 142.63, title: "Sapira Cave Dungeon", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-209.5, 25.77]},
 
-            { x: -43.31, y: 277.19, popupText: "To Zagoras Mountain (Lutheran West)", type: MarkerTypeEnum.Zoning,
+            { x: -43.31, y: 277.19, title: "To Zagoras Mountain (Lutheran West)", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-489.12, 438.14],
                 teleportArea: "Lutheran West"},
 
