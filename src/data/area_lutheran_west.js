@@ -112,6 +112,9 @@
             { x: -421.12, y: 324.14, title: "To Zagoras Mountain", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-438.5, 359.26]},
 
+            { x: -429, y: 180.07, title: "Ridge of Brilliance Dungeon", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-468.5, 110.8]},
+
             { x: -443.87, y: 304.77, type: MarkerTypeEnum.Mokoko,
                 hintImage: "lutheran/LakeBarsMokokoHint1.jpg"},
 
@@ -196,6 +199,39 @@
         kr: "광휘의 능선",
         type: MapTypeEnum.Dungeon,
         markers: [
+            { x: -468.5, y: 110.8, title: "To Lake Bars", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-429, 180.07]},
+
+            { x: -455.12, y: 113.65, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RidgeMokokoHint1.jpg"},
+
+            { x: -451, y: 92.28, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RidgeMokokoHint2.jpg"},
+
+            { x: -456.62, y: 65.16, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RidgeMokokoHint3.jpg"},
+
+            { x: -414.5, y: 26.17, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RidgeMokokoHint4.jpg"},
+
+            { x: -415.69, y: 23.14, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RidgeMokokoHint4.jpg"},
+
+            { x: -417.31, y: 22.51, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RidgeMokokoHint4.jpg"},
+
+            { x: -398.25, y: 41.13, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RidgeMokokoHint5.jpg"},
+
+            { x: -419.5, y: 31.91, type: MarkerTypeEnum.SecretPassage,
+                hintText: "Kill nearby monsters and the path will open",
+                hintImage: "lutheran/RidgeSecretHint1.jpg"},
+
+            { x: -413.62, y: 24.7, popupText: "상자(랜덤)", type: MarkerTypeEnum.TreasureBox,
+                hintImage: "lutheran/RidgeTreasureHint1.jpg"},
+
+            { x: -364.37, y: 86.94, popupText: "루테란 대왕비", type: MarkerTypeEnum.Vista,
+                hintImage: "lutheran/RidgeVistaHint1.jpg"},
         ]
     });
 
