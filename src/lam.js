@@ -5,6 +5,7 @@ let LAM = (function(){
         constructor() {
             this.areas = {};
             this.markerIcons = {};
+            this.dynamicLayers = {};
             this.activeArea = undefined;
         }
 
@@ -48,6 +49,15 @@ let LAM = (function(){
                 return decodeURI(results[1]) || 0;
             };
 
+            $('#createLayerButton').on('click', function (e) {
+                let name = $('#createLayerForm-name').val();
+                if(name === undefined || name === null || name === "") {
+                    return;
+                }
+
+                LAM.createDynamicLayer(name, {});
+            });
+
             this.processUrlParameters();
         }
 
@@ -74,6 +84,7 @@ let LAM = (function(){
 
             console.log("Registered Area " + name);
 
+            $('#createLayerForm-targetArea').append($('<option>' + name + '</option>'));
         }
 
         activateArea(name) {
@@ -83,6 +94,22 @@ let LAM = (function(){
 
             this.areas[name].activate(this.map);
             this.activeArea = name;
+        }
+
+        registerDynamicLayer(entry) {
+            this.dynamicLayers[entry.id] = entry;
+        }
+
+        unregisterDynamicLayer(entry) {
+            delete this.dynamicLayers[entry.id];
+        }
+
+        activateDynamicLayer(id) {
+            // TODO
+        }
+
+        deactivateDynamicLayer(id) {
+            // TODO
         }
 
         getMarkerIcon(markerType) {
