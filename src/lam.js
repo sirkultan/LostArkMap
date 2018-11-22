@@ -24,7 +24,7 @@ let LAM = (function(){
                 x = Math.round(x * 100) / 100;
                 y = Math.round(y * 100) / 100;
 
-                console.log("{ x: " + x + ", y: " + y + ", title: \"<Title>\", type: MarkerTypeEnum.<UNKNOWN> }");
+                console.log("{ x: " + x + ", y: " + y + ", popupText: \"NOTSET\", type: MarkerTypeEnum.NOTSET }");
             });
 
             for (let name in this.areas) {

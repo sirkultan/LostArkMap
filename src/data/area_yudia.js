@@ -174,6 +174,66 @@
         markers: [
             { x: -457.94, y: 297.07, title: "To Saland Hills", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-353.75, 426.74]},
+
+            { x: -432.56, y: 297.26, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/MoraiMokokoHint1.jpg"},
+
+            { x: -413.75, y: 284.2, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/MoraiMokokoHint2.jpg"},
+
+            { x: -397.25, y: 294.88, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "yudia/MoraiMokokoHint3.jpg"},
+
+            { x: -396.31, y: 295.94, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "yudia/MoraiMokokoHint3.jpg"},
+
+            { x: -385.75, y: 304.13, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/MoraiMokokoHint4.jpg"},
+
+            { x: -385.75, y: 303.13, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "yudia/MoraiMokokoHint4.jpg"},
+
+            { x: -382, y: 307.07, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "yudia/MoraiMokokoHint5.jpg"},
+
+            { x: -381.44, y: 308, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "yudia/MoraiMokokoHint5.jpg"},
+
+            { x: -371.06, y: 310.69, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "yudia/MoraiMokokoHint6.jpg"},
+
+            { x: -370.31, y: 311.69, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "yudia/MoraiMokokoHint6.jpg"},
+
+            { x: -391.87, y: 318.63, type: MarkerTypeEnum.Mokoko,
+                hintText: "2 seeds at this location",
+                hintImage: "yudia/MoraiMokokoHint7.jpg"},
+
+            { x: -411.25, y: 286.07, popupText: "우두머리 모라이 주술사 토병", type: MarkerTypeEnum.Boss,
+                hintImage: "yudia/MoraiBossHint1.jpg"},
+
+            { x: -390, y: 323.19, popupText: "외로운 모라이 전사 토병", type: MarkerTypeEnum.Boss,
+                hintImage: "yudia/MoraiBossHint2.jpg"},
+
+            { x: -401.44, y: 300.5, type: MarkerTypeEnum.SecretPassage,
+                hintText: "쭉 가면 모코코2개",
+                hintImage: "yudia/MoraiSecretHint1.jpg"},
+
+            { x: -392.81, y: 319.19, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "yudia/MoraiSecretHint2.jpg"},
+
+            { x: -387.75, y: 305.69, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "yudia/MoraiSecretHint3.jpg"},
+
+            { x: -383.69, y: 308.25, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "yudia/MoraiSecretHint4.jpg"}
         ]
     });
 
