@@ -139,7 +139,12 @@
 
             if (markerData.teleportTo !== undefined) {
                 marker.teleportData = markerData.teleportTo;
+                marker.teleportArea = markerData.teleportArea;
                 marker.on('click', function(e){
+                    if(this.teleportArea !== undefined) {
+                        LAM.activateArea(this.teleportArea);
+                    }
+
                     LAM.map.flyTo(this.teleportData);
                 });
             }

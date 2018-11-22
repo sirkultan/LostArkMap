@@ -11,6 +11,9 @@
         img: "SalandHills.png",
         type: MapTypeEnum.Continent,
         markers: [
+            { x: -468.69, y: 416.88, title: "To Borderlands (Artemis)", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-16.94, 255.63],
+                teleportArea: 'Artemis'}
         ]
     });
 

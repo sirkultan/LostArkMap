@@ -243,6 +243,10 @@
             { x: -33.5, y: 234.54, title: "Agiloth's Tail Dungeon", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-154.5, 81.03]},
 
+            { x: -16.94, y: 255.63, title: "To Saland Hills (Yudia)", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-468.69, 416.88],
+                teleportArea: 'Yudia'},
+
             { x: -139.37, y: 253.76, type: MarkerTypeEnum.Mokoko,
                 hintImage: "artemis/BorderlandsMokokoHint1.png"},
 
