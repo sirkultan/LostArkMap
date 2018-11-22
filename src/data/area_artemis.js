@@ -229,6 +229,12 @@
 
             { x: -252.56, y: 282.57, type: MarkerTypeEnum.TreasureMap,
                 hintImage: "artemis/TreasureMap1.jpg"},
+
+            { x: -266.12, y: 269.38, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap2.jpg"},
+
+            { x: -266.69, y: 210.82, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap3.jpg"}
         ]
     });
 
@@ -320,7 +326,13 @@
                 hintImage: "artemis/BorderlandsBossHint3.jpg"},
 
             { x: -57, y: 254.25, popupText: "우두머리 시체거미", type: MarkerTypeEnum.Boss,
-                hintImage: "artemis/BorderlandsBossHint4.jpg"}
+                hintImage: "artemis/BorderlandsBossHint4.jpg"},
+
+            { x: -72.75, y: 285.38, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap4.jpg"},
+
+            { x: -55.56, y: 266.57, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap5.jpg"}
         ]
     });
 
