@@ -152,6 +152,10 @@ let LAM = (function(){
                     return "Group Quest";
                 }
 
+                case MarkerTypeEnum.OtherStory: {
+                    return "Other Story";
+                }
+
                 default: {
                     console.warn("Unhandled Marker Type: " + markerType);
                 }

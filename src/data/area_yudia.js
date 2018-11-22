@@ -158,6 +158,72 @@
         markers: [
             { x: -229.62, y: 418.38, title: "To Saland Hills", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-317.44, 409.07]},
+
+            { x: -197.75, y: 142.63, title: "Sapira Cave Dungeon", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-209.5, 25.77]},
+
+            { x: -43.31, y: 277.19, popupText: "To Zagoras Mountain (Lutheran West)", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-489.12, 438.14],
+                teleportArea: "Lutheran West"},
+
+            { x: -182.25, y: 162.27, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/OzhornMokokoHint1.jpg"},
+
+            { x: -213.5, y: 204.63, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/OzhornMokokoHint2.jpg"},
+
+            { x: -114.75, y: 222.63, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/OzhornMokokoHint3.jpg"},
+
+            { x: -127.62, y: 254.62, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/OzhornMokokoHint4.jpg"},
+
+            { x: -227.37, y: 271.51, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/OzhornMokokoHint5.jpg"},
+
+            { x: -270.25, y: 298.38, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/OzhornMokokoHint6.jpg"},
+
+            { x: -219.5, y: 310.62, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/OzhornMokokoHint7.jpg"},
+
+            { x: -164.87, y: 387.88, type: MarkerTypeEnum.Mokoko,
+                hintImage: "yudia/OzhornMokokoHint8.jpg"},
+
+            { x: -158.5, y: 174.51, popupText: "아름다운 현혹의 주술사", type: MarkerTypeEnum.Boss,
+                hintImage: "yudia/OzhornBossHint1.jpg"},
+
+            { x: -235.37, y: 198.26, popupText: "강력한 웜주먹", type: MarkerTypeEnum.Boss,
+                hintImage: "yudia/OzhornBossHint2.jpg"},
+
+            { x: -125.25, y: 227, popupText: "우두머리 베티모스", type: MarkerTypeEnum.Boss,
+                hintImage: "yudia/OzhornBossHint3.jpg"},
+
+            { x: -262, y: 261.76, popupText: "날카로운 왈루 선인장", type: MarkerTypeEnum.Boss,
+                hintImage: "yudia/OzhornBossHint4.jpg"},
+
+            { x: -197.62, y: 353.99, popupText: "되살아난 피그미족 족장", type: MarkerTypeEnum.Boss,
+                hintImage: "yudia/OzhornBossHint5.jpg"},
+
+            { x: -126.37, y: 363.13, popupText: "우두머리 하얀모래 벨치", type: MarkerTypeEnum.Boss,
+                hintImage: "yudia/OzhornBossHint6.jpg"},
+
+            { x: -101.87, y: 254.12, popupText: "피에 젖은 소금길", type: MarkerTypeEnum.Vista,
+                hintImage: "yudia/OzhornVistaHint1.jpg"},
+
+            { x: -264.87, y: 281.63, popupText: "신기루", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "yudia/OzhornHiddenStoryHint1.jpg"},
+
+            { x: -257.12, y: 320.5, popupText: "오래된 카바티안의 식량 상자", type: MarkerTypeEnum.FoodIngredient,
+                hintText: "살란드 구릉지 요리사NPC - 헬라<br>소금이 가득찬 식량 상자 식재료",
+                hintImage: "yudia/OzhornFoodIngredientHint1.jpg"},
+
+            { x: -191, y: 431.75, popupText: "Morina (모리나)", type: MarkerTypeEnum.FavorNPC,
+                hintText: "고대의 금화x5 (5000실링)<br>루페온의 인장 100개 상자x5<br>생활 포인트 물약(+4)",
+                hintImage: "yudia/OzhornFavorNPCHint1.jpg"},
+
+            { x: -163.75, y: 239.39, popupText: "악마의 근원", type: MarkerTypeEnum.OtherStory,
+                hintImage: "yudia/OzhornOtherStoryHint1.jpg"}
         ]
     });
 
@@ -165,6 +231,8 @@
         kr: "사피라 동굴",
         type: MapTypeEnum.Dungeon,
         markers: [
+            { x: -209.5, y: 25.77, title: "To Ozhorn Hills", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-197.75, 142.63]}
         ]
     });
 

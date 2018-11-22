@@ -10,6 +10,9 @@
         kr: "자고라스 산",
         type: MapTypeEnum.Continent,
         markers: [
+            { x: -489.12, y: 438.14, popupText: "To Ozhorn Hills (Yudia)", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-43.31, 277.19],
+                teleportArea: "Yudia"}
         ]
     });
 
