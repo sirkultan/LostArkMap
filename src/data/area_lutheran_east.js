@@ -135,7 +135,7 @@
             { x: -381.31, y: 159.11, title: "To Diorika Plains", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-357.69, 119.43]},
 
-            { x: -340.16, y: 178.35, title: "Lastra Forest Dungeon", type: MarkerTypeEnum.Zoning,
+            { x: -340.16, y: 178.35, title: "Lastra Forest (+Kings Tomb) Dungeon", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-317.28, 156.54]},
 
             { x: -350.31, y: 182.94, title: "To Nursery Rhizome", type: MarkerTypeEnum.Zoning,
@@ -243,20 +243,46 @@
         ]
     });
 
-    area.registerMap("King's Tomb", {
-        kr: "왕의무덤",
-        type: MapTypeEnum.Dungeon,
-        markers: [
-        ]
-    });
-
-    area.registerMap("Lastra Forest", {
-        kr: "라스트라 숲",
+    area.registerMap("Lastra Forest (+King's Tomb)", {
+        kr: "라스트라 숲 / 왕의무덤",
         type: MapTypeEnum.Dungeon,
         markers: [
             { x: -317.28, y: 156.54, title: "To Solar Halo Hill", type: MarkerTypeEnum.Zoning,
-                teleportTo: [-340.16, 178.35]}
-        ]
+                teleportTo: [-340.16, 178.35]},
+
+            { x: -303.06, y: 152.81, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LastraMokokoHint1.jpg"},
+
+            { x: -311.03, y: 161.75, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LastraMokokoHint2.jpg"},
+
+            { x: -310.16, y: 163.06, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LastraMokokoHint3.jpg"},
+
+            { x: -306.87, y: 163.91, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LastraMokokoHint4.jpg"},
+
+            { x: -304.97, y: 164.09, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LastraMokokoHint5.jpg"},
+
+            { x: -296.72, y: 164.16, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LastraMokokoHint6.jpg"},
+
+            { x: -283.97, y: 169.28, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LastraMokokoHint7.jpg"},
+
+            { x: -290.28, y: 131.13, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LastraMokokoHint8.jpg"},
+
+            { x: -284, y: 138.04, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LastraMokokoHint9.jpg"},
+
+            { x: -287.22, y: 141.47, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/LastraMokokoHint10.jpg"},
+
+            { x: -305.5, y: 163.25, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "lutheran/LastraSecretHint1.jpg"}
+]
     });
 
 })();
