@@ -12,6 +12,9 @@
         markers: [
             { x: -221.62, y: 336.58, type: MarkerTypeEnum.TreasureMap,
                 hintImage: "world/TreasureMap1.jpg"},
+
+            { x: -188.24, y: 455.74, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "world/TreasureMap2.jpg"},
         ]
     });
 
