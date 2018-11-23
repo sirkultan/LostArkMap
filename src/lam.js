@@ -188,12 +188,19 @@ let LAM = (function(){
 
         registerTreasureMap(area, markerData) {
             let locationLink = "?c=" + ContentTypeEnum.AreaMap + "&a=" + area + '&x=' + markerData.x + '&y=' + markerData.y + '&z=' + this.areas[area].zoomLevel;
-            let guideElement = $('<div class="card" style="margin: 8px">' +
+            let elementText = '<div class="card" style="margin: 8px">' +
                 '<img class="card-img-top" src="images/marker_hints/'+ markerData.hintImage +'" style="width: 180px; height: 228px;"/>' +
                 '<div>' +
-                '<p class="card-text">' + markerData.area + '<br><b>' + area + '</b></p>' +
-                '<a role="button" class="btn btn-sm btn-outline-secondary" href="' + locationLink + '">Show</a>' +
-                '</div></div>');
+                '<p class="card-text">' + markerData.area + '<br><b>' + area + '</b></p>';
+
+            if(markerData.hintText !== undefined) {
+                elementText = elementText + '<p class="small" style="width: 180px;">' + markerData.hintText + '</p>';
+            }
+
+            elementText = elementText + '<a role="button" class="btn btn-sm btn-outline-secondary" href="' + locationLink + '">Show</a>' +
+                '</div></div>';
+
+            let guideElement = $(elementText);
 
             $('#content_treasure_map_list').append(guideElement);
         }

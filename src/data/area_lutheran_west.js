@@ -178,6 +178,9 @@
         kr: "메드리닉 수도원",
         type: MapTypeEnum.Continent,
         markers: [
+            { x: -309.31, y: 252.26, type: MarkerTypeEnum.TreasureMap,
+                hintText: "Might need special action to activate",
+                hintImage: "lutheran/TreasureMap1.jpg"},
         ]
     });
 
