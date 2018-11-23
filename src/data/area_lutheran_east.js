@@ -133,7 +133,55 @@
         type: MapTypeEnum.Continent,
         markers: [
             { x: -381.31, y: 159.11, title: "To Diorika Plains", type: MarkerTypeEnum.Zoning,
-                teleportTo: [-357.69, 119.43]}
+                teleportTo: [-357.69, 119.43]},
+
+            { x: -340.16, y: 178.35, title: "Lastra Forest Dungeon", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-317.28, 156.54]},
+
+            { x: -350.31, y: 182.94, title: "To Nursery Rhizome", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-381.19, 223.66]},
+
+            { x: -357.19, y: 135.38, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/SolarMokokoHint1.jpg"},
+
+            { x: -367.75, y: 148.35, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/SolarMokokoHint2.jpg"},
+
+            { x: -352.22, y: 150.44, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/SolarMokokoHint3.jpg"},
+
+            { x: -355.75, y: 155.88, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/SolarMokokoHint4.jpg"},
+
+            { x: -349.16, y: 159.28, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/SolarMokokoHint5.jpg"},
+
+            { x: -362.97, y: 159.81, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/SolarMokokoHint6.jpg"},
+
+            { x: -359.53, y: 163.63, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/SolarMokokoHint7.jpg"},
+
+            { x: -373.72, y: 170.34, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/SolarMokokoHint8.jpg"},
+
+            { x: -366.91, y: 181.62, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/SolarMokokoHint9.jpg"},
+
+            { x: -342.84, y: 170.41, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/SolarMokokoHint10.jpg"},
+
+            { x: -369.56, y: 150.44, popupText: "슈헤리트단 검투사", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/SolarBossHint1.jpg"},
+
+            { x: -332.22, y: 165.5, popupText: "윌리윌리", type: MarkerTypeEnum.WorldBoss,
+                hintImage: "lutheran/SolarWorldBossHint1.jpg"},
+
+            { x: -351.81, y: 135.32, popupText: "호박당의 숭고한 의식", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "lutheran/SolarHiddenStoryHint1.jpg"},
+
+            { x: -346.19, y: 162.35, popupText: "해바라기 밭", type: MarkerTypeEnum.Vista,
+                hintImage: "lutheran/SolarVistaHint1.jpg"},
         ]
     });
 
@@ -141,6 +189,8 @@
         kr: "배꽃나무 자생지",
         type: MapTypeEnum.Continent,
         markers: [
+            { x: -381.19, y: 223.66, title: "To Solar Halo Hill", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-350.31, 182.94]},
         ]
     });
 
@@ -204,6 +254,8 @@
         kr: "라스트라 숲",
         type: MapTypeEnum.Dungeon,
         markers: [
+            { x: -317.28, y: 156.54, title: "To Solar Halo Hill", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-340.16, 178.35]}
         ]
     });
 
