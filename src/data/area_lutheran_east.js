@@ -456,6 +456,34 @@
         markers: [
             { x: -291.12, y: 400.07, title: "To Borea Manor", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-277.62, 366.13]},
+
+            { x: -303.69, y: 405.75, title: "To Crocnice Beach", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-324.94, 432.32]},
+
+            { x: -283.81, y: 437.72, popupText: "To World", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-360.5, 323.76],
+                teleportArea: "World"},
+
+            { x: -290.25, y: 405.63, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/ManeWavesMokokoHint1.jpg"},
+
+            { x: -287.62, y: 411.88, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/ManeWavesMokokoHint2.jpg"},
+
+            { x: -292.31, y: 419.56, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/ManeWavesMokokoHint3.jpg"},
+
+            { x: -284.81, y: 420.81, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/ManeWavesMokokoHint4.jpg"},
+
+            { x: -277.25, y: 405.57, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/ManeWavesMokokoHint5.jpg"},
+
+            { x: -271.12, y: 401.44, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/ManeWavesMokokoHint6.jpg"},
+
+            { x: -273.31, y: 389.94, popupText: "귀족의 삶", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "lutheran/ManeWavesHiddenStoryHint1.jpg"},
         ]
     });
 
@@ -463,6 +491,8 @@
         kr: "크로커니스 해변",
         type: MapTypeEnum.Continent,
         markers: [
+            { x: -324.94, y: 432.32, title: "To Mane Waves Harbor", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-303.69, 405.75]},
         ]
     });
 

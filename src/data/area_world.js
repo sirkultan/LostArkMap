@@ -10,6 +10,10 @@
         kr: "",
         type: MapTypeEnum.World,
         markers: [
+            { x: -360.5, y: 323.76, popupText: "Mane Waves Harbor (Lutheran East)", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-283.81, 437.72],
+                teleportArea: "Lutheran East"},
+
             { x: -221.62, y: 336.58, type: MarkerTypeEnum.TreasureMap,
                 hintImage: "world/TreasureMap1.jpg"},
 
