@@ -18,12 +18,14 @@
 
     LAM.registerGuide("Heart of Island Guide", "https://docs.google.com/presentation/d/1iHX7s4Kn0ODiEWyuRjyJXrIYV9p1Ie-_9Ef0m3s6OOs/edit#slide=id.g4721363615_0_12", 'HeartOfIslandGuide.jpg');
 
+    LAM.registerGuide("Early Island Heart Guide", "https://docs.google.com/document/d/1zVKeOxVr6tJRa_HEseNN3obBL_KQ83peDlfrCvTbpCk/edit", 'EarlyIslandHeartGuide.jpg');
+
     LAM.registerGuide("Skilltree Builder", "http://lostarktree.ru/skill/", 'SkilltreeBuilder.jpg');
 
     LAM.registerGuide("Koleverii's Guide", "https://www.docdroid.net/WBeRmVP/koleveriis-lost-ark-english-guide.pdf#page=31", 'KoleveriisGuide.jpg');
 
-    LAM.registerGuide("Runes 101", "https://docs.google.com/document/d/1wdlaRiURE3gcZtw6uSabDRASHRw9_m7y6fuJ-evZo_k/edit", 'blank.png');
+    LAM.registerGuide("Runes 101", "https://docs.google.com/document/d/1wdlaRiURE3gcZtw6uSabDRASHRw9_m7y6fuJ-evZo_k/edit", 'Runes101.jpg');
 
-    LAM.registerGuide("Darkalord Unofficial Guide", "https://drive.google.com/file/d/15dbbcTksoa2v2Fvk8PH5AB0OJdj4u2Mp/view", 'blank.png');
+    LAM.registerGuide("Darkalord Unofficial Guide", "https://drive.google.com/file/d/15dbbcTksoa2v2Fvk8PH5AB0OJdj4u2Mp/view", 'DarkalordUnofficialGuide.jpg');
 
 }());

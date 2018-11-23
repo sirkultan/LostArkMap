@@ -13,6 +13,10 @@
             { x: -368.84, y: 60.35, title: "To Diorika Plains", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-357, 71.5]},
 
+            { x: -376.31, y: 47.44, title: "To Plains of Battle", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-37, 473.14],
+                teleportArea: "Lutheran West"},
+
             { x: -371.37, y: 35.35, type: MarkerTypeEnum.Mokoko,
                 hintImage: "lutheran/LutheranCastleMokokoHint1.jpg"},
 
