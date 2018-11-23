@@ -248,6 +248,7 @@ let LAM = (function(){
                 switch (markerImage) {
                     // Ignore some markers
                     case MarkerTypeEnum.Internal:
+                    case MarkerTypeEnum.Notice:
                     case MarkerTypeEnum.Zoning: {
                         continue;
                     }

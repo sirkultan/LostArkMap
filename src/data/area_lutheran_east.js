@@ -324,6 +324,68 @@
         markers: [
             { x: -292.97, y: 266.82, title: "To Black Rose Chapel", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-283.34, 253.91]},
+
+            { x: -280.34, y: 311.88, title: "To Borea Manor", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-310.5, 340.35]},
+
+            { x: -293.75, y: 266.53, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RiaMokokoHint1.jpg"},
+
+            { x: -310.5, y: 277.69, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RiaMokokoHint2.jpg"},
+
+            { x: -298.09, y: 291.4, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RiaMokokoHint3.jpg"},
+
+            { x: -288.19, y: 300.28, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RiaMokokoHint4.jpg"},
+
+            { x: -278.66, y: 283.34, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RiaMokokoHint5.jpg"},
+
+            { x: -278.78, y: 289.78, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RiaMokokoHint6.jpg"},
+
+            { x: -270.06, y: 272.75, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RiaMokokoHint7.jpg"},
+
+            { x: -266.28, y: 280.66, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/RiaMokokoHint8.jpg"},
+
+            { x: -286.72, y: 286.18, popupText: "광기에 물든 홍학 우두머리", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/RiaBossHint1.jpg"},
+
+            { x: -300.22, y: 293.18, popupText: "마군단 거인병 우두머리", type: MarkerTypeEnum.Boss},
+
+            { x: -276.69, y: 284.5, popupText: "지배당한 물 회오리 정령", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/RiaBossHint3.jpg"},
+
+            { x: -272.56, y: 294.03, popupText: "지배당한 거대 푸름 전사", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/RiaBossHint4.jpg"},
+
+            { x: -285.66, y: 274.56, popupText: "천재의 비애", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "lutheran/RiaHiddenStoryHint1.jpg"},
+
+            { x: -275.16, y: 284.75, popupText: "푸름의 기원#2", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "lutheran/RiaHiddenStoryHint2.jpg"},
+
+            { x: -269, y: 280.16, popupText: "푸름의 기원 #1", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "lutheran/RiaHiddenStoryHint3.jpg"},
+
+            { x: -269.16, y: 284.82, popupText: "푸름의 기원 #3", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "lutheran/RiaHiddenStoryHint4.jpg"},
+
+            { x: -263.34, y: 287.13, popupText: "푸름의 기원 #4", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "lutheran/RiaHiddenStoryHint5.jpg"},
+
+            { x: -287.72, y: 272, popupText: "아제나포리움", type: MarkerTypeEnum.Vista,
+                hintImage: "lutheran/RiaVistaHint1.jpg"},
+
+            { x: -271.19, y: 271.38, popupText: "푸름의 땅 폭포", type: MarkerTypeEnum.Vista,
+                hintImage: "lutheran/RiaVistaHint2.jpg"},
+
+            { x: -267.62, y: 278.5, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "lutheran/RiaSecretHint1.jpg"},
         ]
     });
 
@@ -331,6 +393,60 @@
         kr: "보레아 영지",
         type: MapTypeEnum.Continent,
         markers: [
+            { x: -310.5, y: 340.35, title: "To Ria Monogamies", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-280.34, 311.88]},
+
+            { x: -277.62, y: 366.13, title: "To Mane Waves Harbor", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-291.12, 400.07]},
+
+            { x: -300.34, y: 338.22, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BoreaManorMokokoHint1.jpg"},
+
+            { x: -294.28, y: 329.6, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BoreaManorMokokoHint2.jpg"},
+
+            { x: -294.03, y: 342.91, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BoreaManorMokokoHint3.jpg"},
+
+            { x: -293.34, y: 357.96, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BoreaManorMokokoHint4.jpg"},
+
+            { x: -282.44, y: 334.78, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BoreaManorMokokoHint5.jpg"},
+
+            { x: -284.19, y: 337.5, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BoreaManorMokokoHint6.jpg"},
+
+            { x: -281.34, y: 345.5, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BoreaManorMokokoHint7.jpg"},
+
+            { x: -274.78, y: 336.78, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BoreaManorMokokoHint8.jpg"},
+
+            { x: -268.56, y: 346.97, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BoreaManorMokokoHint9.jpg"},
+
+            { x: -285.97, y: 328.88, popupText: "잔인한 트릴", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/BoreaManorBossHint1.jpg"},
+
+            { x: -272.81, y: 332.44, popupText: "폭주한 마법사 임프", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/BoreaManorBossHint2.jpg"},
+
+            { x: -270.94, y: 342.31, popupText: "폭주한 이카루스", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/BoreaManorBossHint3.jpg"},
+
+            { x: -271.5, y: 357.31, popupText: "고독한 게르드", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/BoreaManorBossHint4.jpg"},
+
+            { x: -282.41, y: 352.06, popupText: "Minuet of the Forest", type: MarkerTypeEnum.PlayInstrument,
+                hintText: "Play Minuet of the forest at this location (숲의 미뉴에트)",
+                hintImage: "lutheran/BoreaManorPlayInstrumentHint1.jpg"},
+
+            { x: -274.62, y: 337.16, popupText: "폐허가 된 요새", type: MarkerTypeEnum.Vista,
+                hintImage: "lutheran/BoreaManorVistaHint1.jpg"},
+
+            { x: -287.25, y: 332.5, type: MarkerTypeEnum.HiddenQuest,
+                hintImage: "lutheran/BoreaManorHiddenQuestHint1.jpg"},
         ]
     });
 
@@ -338,6 +454,8 @@
         kr: "갈기파도 항구",
         type: MapTypeEnum.City,
         markers: [
+            { x: -291.12, y: 400.07, title: "To Borea Manor", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-277.62, 366.13]},
         ]
     });
 
