@@ -458,7 +458,7 @@
                 teleportTo: [-277.62, 366.13]},
 
             { x: -303.69, y: 405.75, title: "To Crocnice Beach", type: MarkerTypeEnum.Zoning,
-                teleportTo: [-324.94, 432.32]},
+                teleportTo: [-363, 390.51]},
 
             { x: -283.81, y: 437.72, popupText: "To World", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-360.5, 323.76],
@@ -491,8 +491,91 @@
         kr: "크로커니스 해변",
         type: MapTypeEnum.Continent,
         markers: [
-            { x: -324.94, y: 432.32, title: "To Mane Waves Harbor", type: MarkerTypeEnum.Zoning,
+            { x: -363, y: 390.51, title: "To Mane Waves Harbor", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-303.69, 405.75]},
+
+            { x: -324.94, y: 432.32, title: "Crying Storm Dungeon", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-359.22, 458.03]},
+
+            { x: -330.37, y: 426.22, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint1.jpg" },
+
+            { x: -338.78, y: 426.13, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint2.jpg" },
+
+            { x: -336.72, y: 415.47, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint3.jpg" },
+
+            { x: -339.53, y: 414.79, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint4.jpg" },
+
+            { x: -353, y: 425.25, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint5.jpg" },
+
+            { x: -353.09, y: 415.5, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint6.jpg" },
+
+            { x: -359.72, y: 424.72, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint7.jpg" },
+
+            { x: -350.47, y: 410.54, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint8.jpg" },
+
+            { x: -348.53, y: 405.13, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint9.jpg" },
+
+            { x: -348.53, y: 404.57, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint9.jpg" },
+
+            { x: -352.81, y: 404.29, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint10.jpg" },
+
+            { x: -352.41, y: 404.23, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint10.jpg" },
+
+            { x: -363.28, y: 404.1, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint11.jpg" },
+
+            { x: -361.81, y: 395.73, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint12.jpg" },
+
+            { x: -367.12, y: 394.48, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint13.jpg" },
+
+            { x: -370.97, y: 406.26, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint14.jpg" },
+
+            { x: -370.12, y: 401.44, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint15.jpg" },
+
+            { x: -374.41, y: 398.2, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CrocniceMokokoHint16.jpg" },
+
+            { x: -360.28, y: 403.72, popupText: "포식자 크록", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/CrocniceBossHint1.jpg"},
+
+            { x: -342.87, y: 415.16, popupText: "난파된 배", type: MarkerTypeEnum.Vista,
+                hintImage: "lutheran/CrocniceVistaHint1.jpg"},
+
+            { x: -359.66, y: 397.47, popupText: "아름다운 해변가", type: MarkerTypeEnum.Vista,
+                hintImage: "lutheran/CrocniceVistaHint2.jpg"},
+
+            { x: -346.72, y: 426.12, popupText: "도적이 떠난 야영지", type: MarkerTypeEnum.Vista,
+                hintImage: "lutheran/CrocniceVistaHint3.jpg"},
+
+            { x: -349.53, y: 419.59, popupText: "바위동굴 조개", type: MarkerTypeEnum.FoodIngredient,
+                hintText: "루테란성 요리사NPC - 하이드<br>최고급 해산물 스튜 식재료",
+                hintImage: "lutheran/CrocniceFoodIngredientHint1.jpg"},
+
+            { x: -352.69, y: 418.88, popupText: "바위동굴 새우", type: MarkerTypeEnum.FoodIngredient,
+                hintText: "루테란성 요리사NPC - 하이드<br>최고급 해산물 스튜 식재료",
+                hintImage: "lutheran/CrocniceFoodIngredientHint2.jpg"},
+
+            { x: -350.16, y: 406.19, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "lutheran/CrocniceSecretHint1.jpg"},
+
+            { x: -353.31, y: 403.82, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "lutheran/CrocniceSecretHint2.jpg"},
         ]
     });
 
@@ -500,6 +583,41 @@
         kr: "크라잉스톰",
         type: MapTypeEnum.Continent,
         markers: [
+            { x: -359.22, y: 458.03, title: "To Crocnice Beach", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-324.94, 432.32]},
+
+            { x: -350.84, y: 468.53, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CryingStormMokokoHint1.jpg" },
+
+            { x: -372.09, y: 473.97, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CryingStormMokokoHint2.jpg" },
+
+            { x: -367.22, y: 478.59, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CryingStormMokokoHint3.jpg" },
+
+            { x: -366.66, y: 477.28, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CryingStormMokokoHint3.jpg" },
+
+            { x: -356.94, y: 483.75, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CryingStormMokokoHint4.jpg" },
+
+            { x: -348.03, y: 476.03, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CryingStormMokokoHint5.jpg" },
+
+            { x: -348.78, y: 475.37, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CryingStormMokokoHint5.jpg" },
+
+            { x: -335.97, y: 479.28, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CryingStormMokokoHint6.jpg" },
+
+            { x: -335.41, y: 488.59, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/CryingStormMokokoHint7.jpg" },
+
+            { x: -368, y: 480.13, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "lutheran/CryingStormSecretHint1.jpg"},
+
+            { x: -343.41, y: 474.44, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "lutheran/CryingStormSecretHint2.jpg"},
         ]
     });
 
