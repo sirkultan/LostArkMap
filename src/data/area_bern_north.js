@@ -54,6 +54,9 @@
         kr: "페스나르 고원",
         type: MapTypeEnum.Continent,
         markers: [
+            { x: -189.75, y: 215.32, type: MarkerTypeEnum.TreasureMap,
+                hintText: "spot is not fixed, have to go to the area of the map and walk around, map description will dynamically change (ex: 20m south)",
+                hintImage: "bern/TreasureMap2.jpg"},
         ]
     });
 
