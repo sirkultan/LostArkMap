@@ -8,6 +8,7 @@ let LAM = (function(){
             this.dynamicLayers = {};
             this.activeArea = undefined;
             this.activeDynamicLayer = undefined;
+            this.activeContent = undefined;
         }
 
         initialize() {
@@ -59,24 +60,63 @@ let LAM = (function(){
                 LAM.createDynamicLayer(name, {});
             });
 
+            for(let content in ContentTypeEnum) {
+                $('#' + ContentTypeEnum[content]).hide();
+
+                // content_treasure_map_toggle
+                let contentToggle = $('#' + ContentTypeEnum[content] + '_toggle');
+                contentToggle.click({id: ContentTypeEnum[content]}, function(e) {
+                    LAM.activateContent(e.data.id);
+                });
+
+                contentToggle.removeClass('active');
+            }
+
             this.processUrlParameters();
         }
 
         processUrlParameters() {
-            let area = $.urlParam('area');
-            let x = $.urlParam('x');
-            let y = $.urlParam('y');
-            let zoom = $.urlParam('zoom');
-            if(area === undefined || x === undefined || y === undefined) {
+            let content = $.urlParam('c');
+            if(content === undefined){
+                this.activateContent(ContentTypeEnum.AreaMap);
                 return;
             }
 
-            if(zoom === undefined) {
-                zoom = 0;
+            if(content === ContentTypeEnum.AreaMap) {
+
+                let area = $.urlParam('a');
+                let x = $.urlParam('x');
+                let y = $.urlParam('y');
+                let zoom = $.urlParam('z');
+                if (area === undefined || x === undefined || y === undefined) {
+                    return;
+                }
+
+                if (zoom === undefined) {
+                    zoom = 0;
+                }
+
+                this.activateArea(area);
+                this.map.setView([x, y], zoom);
+            } else {
+                this.activateContent(content);
+            }
+        }
+
+        activateContent(type) {
+            if(this.activeContent !== undefined) {
+                $('#' + this.activeContent).hide();
+                $('#' + this.activeContent + '_toggle').removeClass('active');
+
+                if(this.activeContent === ContentTypeEnum.AreaMap && this.activeArea !== undefined) {
+                    this.areas[this.activeArea].deactivate(this.map);
+                }
             }
 
-            this.activateArea(area);
-            this.map.setView([x, y], zoom);
+            this.activeContent = type;
+            $('#' + type).show();
+
+            $('#' + type + '_toggle').addClass('active');
         }
 
         registerArea(name, entry) {
@@ -88,6 +128,8 @@ let LAM = (function(){
         }
 
         activateArea(name) {
+            this.activateContent(ContentTypeEnum.AreaMap);
+
             if(this.activeArea !== undefined) {
                 this.areas[this.activeArea].deactivate(this.map);
             }
@@ -130,72 +172,30 @@ let LAM = (function(){
             return result;
         }
 
-        getMarkerDefaultTitle(markerType) {
-            switch (markerType) {
-                case MarkerTypeEnum.Mokoko: {
-                    return "Mokoko Seed";
-                }
+        registerGuide(title, url, preview) {
+            let guideElement = $('<div class="col-sm" >' +
+                '<div class="card mb-4 shadow-sm" style="width: 250px;">' +
+                '<img class="card-img-top" src="images/guides/'+ preview +'" style="width: 230px; height: 230px;" />' +
+                '<div class="card-body">' +
+                '<p class="card-text">' + title + '</p>' +
+                '<div class="d-flex justify-content-between align-items-center">' +
+                '<div class="btn-group">' +
+                '<a role="button" class="btn btn-sm btn-outline-secondary" href="' + url +'" target="_blank">Show</a>' +
+                '</div></div></div></div></div>');
 
-                case MarkerTypeEnum.Vista: {
-                    return "Vista";
-                }
+            $('#content_guides_list').append(guideElement);
+        }
 
-                case MarkerTypeEnum.SecretPassage: {
-                    return "Secret Passage";
-                }
+        registerTreasureMap(area, markerData) {
+            let locationLink = "?c=" + ContentTypeEnum.AreaMap + "&a=" + area + '&x=' + markerData.x + '&y=' + markerData.y + '&z=' + this.areas[area].zoomLevel;
+            let guideElement = $('<div class="card" style="margin: 8px">' +
+                '<img class="card-img-top" src="images/marker_hints/'+ markerData.hintImage +'" style="width: 180px; height: 228px;"/>' +
+                '<div>' +
+                '<p class="card-text">' + markerData.area + '<br><b>' + area + '</b></p>' +
+                '<a role="button" class="btn btn-sm btn-outline-secondary" href="' + locationLink + '">Show</a>' +
+                '</div></div>');
 
-                case MarkerTypeEnum.Boss: {
-                    return "Boss";
-                }
-
-                case MarkerTypeEnum.HiddenStory: {
-                    return "Hidden Story";
-                }
-
-                case MarkerTypeEnum.WorldBoss: {
-                    return "World Boss";
-                }
-
-                case MarkerTypeEnum.FavorNPC: {
-                    return "Favor NPC";
-                }
-
-                case MarkerTypeEnum.CookingIngredient: {
-                    return "Cooking Ingredient";
-                }
-
-                case MarkerTypeEnum.FoodIngredient: {
-                    return "Food Ingredient";
-                }
-
-                case MarkerTypeEnum.Zoning: {
-                    return "Zone change";
-                }
-
-                case MarkerTypeEnum.TreasureBox: {
-                    return "Treasure Box";
-                }
-
-                case MarkerTypeEnum.PlayInstrument: {
-                    return "Play Instrument";
-                }
-
-                case MarkerTypeEnum.GroupQuest: {
-                    return "Group Quest";
-                }
-
-                case MarkerTypeEnum.OtherStory: {
-                    return "Other Story";
-                }
-
-                case MarkerTypeEnum.TreasureMap: {
-                    return "Treasure Map";
-                }
-
-                default: {
-                    console.warn("Unhandled Marker Type: " + markerType);
-                }
-            }
+            $('#content_treasure_map_list').append(guideElement);
         }
 
         getMapTileUrl(path) {
@@ -244,7 +244,7 @@ let LAM = (function(){
                         continue;
                     }
                 }
-                let markerTitle = this.getMarkerDefaultTitle(markerImage);
+                let markerTitle = MarkerTypeDefaultTitle(markerImage);
                 let markerCount = markerStats[markerImage];
                 if(markerCount === undefined) {
                     markerCount = 0;

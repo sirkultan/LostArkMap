@@ -56,8 +56,9 @@
 
             for (let i in data.markers) {
                 let markerData = data.markers[i];
+                markerData.area = name;
                 if(markerData.title === undefined) {
-                    markerData.title = LAM.getMarkerDefaultTitle(markerData.type);
+                    markerData.title = MarkerTypeDefaultTitle(markerData.type);
                 }
 
                 this.markers.push(markerData);
@@ -107,7 +108,7 @@
             };
 
             for (let type in this.markerTypeLayers) {
-                overlays[LAM.getMarkerDefaultTitle(type)] = this.markerTypeLayers[type];
+                overlays[MarkerTypeDefaultTitle(type)] = this.markerTypeLayers[type];
             }
 
             this.layerControl = L.control.layers(baseLayers, overlays);
@@ -123,7 +124,7 @@
             if (markerData.popupText !== undefined || markerData.hintText !== undefined || markerData.hintImage !== undefined) {
                 let popupContent = $('<div></div>');
 
-                let locationLink = "?area=" + this.name + '&x=' + markerData.x + '&y=' + markerData.y + '&zoom=' + LAM.map.getMaxZoom();
+                let locationLink = "?c=" + ContentTypeEnum.AreaMap + "&a=" + this.name + '&x=' + markerData.x + '&y=' + markerData.y + '&z=' + this.zoomLevel;
                 let copyLocationButton = $('<a href="'+locationLink+'"><img src="images/icons/map-pin.svg"/></a>');
 
                 popupContent.append(copyLocationButton);
@@ -165,6 +166,10 @@
             }
 
             typeLayer.addLayer(marker);
+
+            if(markerData.type === MarkerTypeEnum.TreasureMap) {
+                LAM.registerTreasureMap(this.name, markerData);
+            }
         }
 
     }
