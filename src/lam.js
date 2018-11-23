@@ -77,8 +77,8 @@ let LAM = (function(){
 
         processUrlParameters() {
             let content = $.urlParam('c');
-            if(content === undefined){
-                this.activateContent(ContentTypeEnum.AreaMap);
+            if (content === undefined) {
+                this.activateArea('Artemis');
                 return;
             }
 
