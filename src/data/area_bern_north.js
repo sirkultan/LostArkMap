@@ -24,6 +24,8 @@
         kr: "베르닐 삼림",
         type: MapTypeEnum.Continent,
         markers: [
+            { x: -208.44, y: 276.44, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "bern/TreasureMap1.jpg"},
         ]
     });
 

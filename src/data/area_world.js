@@ -18,6 +18,9 @@
 
             { x: -409.87, y: 394.89, type: MarkerTypeEnum.TreasureMap,
                 hintImage: "world/TreasureMap3.jpg"},
+
+            { x: -230.25, y: 423.32, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "world/TreasureMap4.jpg"},
         ]
     });
 

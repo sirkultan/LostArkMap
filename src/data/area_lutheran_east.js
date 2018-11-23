@@ -198,6 +198,8 @@
         kr: "흑장미 교회당",
         type: MapTypeEnum.Continent,
         markers: [
+            { x: -308.12, y: 229.63, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "lutheran/TreasureMap2.jpg"},
         ]
     });
 
