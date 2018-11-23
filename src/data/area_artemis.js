@@ -177,7 +177,19 @@
                 hintImage: "artemis/TreasureMap6.jpg"},
 
             { x: -359.25, y: 237.34, type: MarkerTypeEnum.TreasureMap,
-                hintImage: "artemis/TreasureMap7.jpg"}
+                hintImage: "artemis/TreasureMap7.jpg"},
+
+            { x: -389.87, y: 262.97, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap8.jpg"},
+
+            { x: -397.74, y: 243.28, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap10.jpg"},
+
+            { x: -415.06, y: 261.58, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap12.jpg"},
+
+            { x: -464.68, y: 210.66, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap13.jpg"}
         ]
     });
 
@@ -240,7 +252,16 @@
                 hintImage: "artemis/TreasureMap2.jpg"},
 
             { x: -266.69, y: 210.82, type: MarkerTypeEnum.TreasureMap,
-                hintImage: "artemis/TreasureMap3.jpg"}
+                hintImage: "artemis/TreasureMap3.jpg"},
+
+            { x: -238.12, y: 191.92, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap9.jpg"},
+
+            { x: -225.19, y: 218.23, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap11.jpg"},
+
+            { x: -221.37, y: 199.9, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap14.jpg"}
         ]
     });
 
