@@ -8,7 +8,11 @@
 
     area.registerMap("Main", {
         kr: "",
-        type: MapTypeEnum.World
+        type: MapTypeEnum.World,
+        markers: [
+            { x: -221.62, y: 336.58, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "world/TreasureMap1.jpg"},
+        ]
     });
 
 

@@ -171,7 +171,13 @@
 
             { x: -437.12, y: 222.89, type: MarkerTypeEnum.SecretPassage,
                 hintText: "Activated by killing a golem around the statue",
-                hintImage: "artemis/LoghillsSecretPassageHint1.jpg"}
+                hintImage: "artemis/LoghillsSecretPassageHint1.jpg"},
+
+            { x: -383.31, y: 289.21, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap6.jpg"},
+
+            { x: -359.25, y: 237.34, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap7.jpg"}
         ]
     });
 
