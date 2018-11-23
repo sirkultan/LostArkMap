@@ -10,10 +10,17 @@ let MapTypeEnum = Object.freeze({
     "City": 2,
     "World": 3,
     "Dungeon": 4,
-    "Island": 5
+    "Island": 5,
+    "Internal": 999
+});
+
+let MarkerStyleEnum = Object.freeze({
+    "Point": 1,
+    "Rectangle": 2
 });
 
 let MarkerTypeEnum = Object.freeze({
+    "Internal": undefined,
     "Boss": "boss.png",
     "CookingIngredient": "cookingingredient.png",
     "FavorNPC": "favornpc.png",
@@ -36,6 +43,10 @@ let MarkerTypeEnum = Object.freeze({
  */
 MarkerTypeDefaultTitle = function(markerType) {
     switch (markerType) {
+        case MarkerTypeEnum.Internal: {
+            return "_";
+        }
+
         case MarkerTypeEnum.Mokoko: {
             return "Mokoko Seed";
         }
@@ -104,5 +115,6 @@ MarkerTypeDefaultTitle = function(markerType) {
 
 let Constants = Object.freeze({
     "TileSize": 512,
-    "ErrorImagePath": 'maps/blank.png'
+    "ErrorImagePath": 'maps/blank.png',
+    'AchievementMarkerColor': '#ff9900'
 });

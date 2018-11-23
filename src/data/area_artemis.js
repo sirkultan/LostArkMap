@@ -6,6 +6,83 @@
         zoomLevel: 4
     });
 
+    area.registerMap("_achievement", {
+        type: MapTypeEnum.Internal,
+        markers: [
+            { style: MarkerStyleEnum.Rectangle,
+                bounds: [[-225.11, 99.67], [-333.23, 133.9]],
+                color: Constants.AchievementMarkerColor,
+                type: MarkerTypeEnum.Internal,
+                teleportTo: [-80.43, 235.84]},
+
+            { style: MarkerStyleEnum.Rectangle,
+                bounds: [[-221, 1], [-239.5, 19.37]],
+                color: Constants.AchievementMarkerColor,
+                type: MarkerTypeEnum.Internal,
+                teleportTo: [-404.99, 58.44]},
+
+            { style: MarkerStyleEnum.Rectangle,
+                bounds: [[ -221, 20.62], [-239.5, 38.61]],
+                color: Constants.AchievementMarkerColor,
+                type: MarkerTypeEnum.Internal,
+                teleportTo: [-471.98, 223.29]},
+
+            { style: MarkerStyleEnum.Rectangle,
+                bounds: [[-221, 39.73], [-239.5, 57.85]],
+                color: Constants.AchievementMarkerColor,
+                type: MarkerTypeEnum.Internal,
+                teleportTo: [-443.68, 262.63]},
+
+            { style: MarkerStyleEnum.Rectangle,
+                bounds: [[-221, 59.1], [-239.5, 77.59]],
+                color: Constants.AchievementMarkerColor,
+                type: MarkerTypeEnum.Internal,
+                teleportTo: [-423.43, 258.03]},
+
+            { style: MarkerStyleEnum.Rectangle,
+                bounds: [[-221, 78.71], [-239.5, 96.58]],
+                color: Constants.AchievementMarkerColor,
+                type: MarkerTypeEnum.Internal,
+                teleportTo: [-420.99, 270.89]},
+
+            { style: MarkerStyleEnum.Rectangle,
+                bounds: [[-240, 1], [-259, 19.24]],
+                color: Constants.AchievementMarkerColor,
+                type: MarkerTypeEnum.Internal,
+                teleportTo: [-234, 262.77]},
+
+            { style: MarkerStyleEnum.Rectangle,
+                bounds: [[-240, 20.49], [-259, 38.61]],
+                color: Constants.AchievementMarkerColor,
+                type: MarkerTypeEnum.Internal,
+                teleportTo: [-78.25, 259.96]},
+
+            { style: MarkerStyleEnum.Rectangle,
+                bounds: [[-240, 39.86], [-259, 57.97]],
+                color: Constants.AchievementMarkerColor,
+                type: MarkerTypeEnum.Internal,
+                teleportTo: [-58.19, 221.98]},
+
+            { style: MarkerStyleEnum.Rectangle,
+                bounds: [[-267.49, 2.32], [-274.36, 17.81]],
+                color: Constants.AchievementMarkerColor,
+                type: MarkerTypeEnum.Internal,
+                teleportTo: [-405, 283.28]},
+
+            { style: MarkerStyleEnum.Rectangle,
+                bounds: [[ -289.24, 1.82], [-297.11, 18.56]],
+                color: Constants.AchievementMarkerColor,
+                type: MarkerTypeEnum.Internal,
+                teleportTo: [-206.93, 306.4]},
+
+            { style: MarkerStyleEnum.Rectangle,
+                bounds: [[-312.49, 1.82], [-319.23, 17.94]],
+                color: Constants.AchievementMarkerColor,
+                type: MarkerTypeEnum.Internal,
+                teleportTo: [-34.18, 234.42]},
+        ]
+    });
+
     area.registerMap("Leonhard", {
         kr: "레온하트",
         type: MapTypeEnum.City,

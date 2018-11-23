@@ -116,10 +116,38 @@
 
         createMarker(markerData) {
             let icon = LAM.getMarkerIcon(markerData.type);
-            let marker = L.marker([markerData.x, markerData.y], {
-                icon: icon,
-                title: markerData.title
-            });
+
+            let style = markerData.style;
+            if (style === undefined){
+                style = MarkerStyleEnum.Point;
+            }
+
+            let marker = undefined;
+            switch (style) {
+
+                case MarkerStyleEnum.Point: {
+                    marker = L.marker([markerData.x, markerData.y], {
+                        icon: icon,
+                        title: markerData.title
+                    });
+
+                    break;
+                }
+
+                case MarkerStyleEnum.Rectangle: {
+                    marker = L.rectangle(markerData.bounds, {
+                        color: markerData.color
+                    });
+
+                    break;
+                }
+
+                default: {
+                    console.error("Marker Style not supported: " + style);
+                    return;
+                }
+            }
+
 
             if (markerData.popupText !== undefined || markerData.hintText !== undefined || markerData.hintImage !== undefined) {
                 let popupContent = $('<div></div>');
