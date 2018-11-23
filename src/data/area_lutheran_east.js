@@ -253,6 +253,66 @@
             { x: -312.53, y: 224.28, title: "To Nursery Rhizome", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-322.91, 227.31]},
 
+            { x: -283.34, y: 253.91, title: "To Ria Monogamies", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-292.97, 266.82]},
+
+            { x: -281.28, y: 198.82, title: "Underground Chapel Dungeon", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-230.19, 205.51]},
+
+            { x: -291.56, y: 239.47, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BlackRoseMokokoHint1.jpg"},
+
+            { x: -303.72, y: 213.79, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BlackRoseMokokoHint2.jpg"},
+
+            { x: -296.12, y: 214.25, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BlackRoseMokokoHint3.jpg"},
+
+            { x: -296.09, y: 214.75, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BlackRoseMokokoHint3.jpg"},
+
+            { x: -295.25, y: 211.97, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BlackRoseMokokoHint4.jpg"},
+
+            { x: -296.16, y: 206.44, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BlackRoseMokokoHint5.jpg"},
+
+            { x: -296.09, y: 204.97, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BlackRoseMokokoHint6.jpg"},
+
+            { x: -294.72, y: 203.19, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BlackRoseMokokoHint7.jpg"},
+
+            { x: -288.09, y: 216.28, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BlackRoseMokokoHint8.jpg"},
+
+            { x: -281.78, y: 211.66, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BlackRoseMokokoHint9.jpg"},
+
+            { x: -276.5, y: 219.1, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BlackRoseMokokoHint10.jpg"},
+
+            { x: -271.22, y: 200.88, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BlackRoseMokokoHint11.jpg"},
+
+            { x: -261.31, y: 228.41, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/BlackRoseMokokoHint12.jpg"},
+
+            { x: -287.09, y: 244.69, popupText: "거대 흑장미무늬 거미", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/BlackRoseBossHint1.jpg"},
+
+            { x: -275.06, y: 201.69, popupText: "음흉한 사교도 전도자", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/BlackRoseBossHint2.jpg"},
+
+            { x: -287.87, y: 219.44, popupText: "흑장미의 이름", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "lutheran/BlackRoseHiddenStoryHint1.jpg"},
+
+            { x: -297.87, y: 207.41, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "lutheran/BlackRoseSecretHint1.jpg"},
+
+            { x: -259.66, y: 228.19, popupText: "절벽 무덤", type: MarkerTypeEnum.Vista,
+                hintImage: "lutheran/BlackRoseVistaHint1.jpg"},
+
             { x: -308.12, y: 229.63, type: MarkerTypeEnum.TreasureMap,
                 hintImage: "lutheran/TreasureMap2.jpg"},
         ]
@@ -262,6 +322,8 @@
         kr: "라이아 단구",
         type: MapTypeEnum.Continent,
         markers: [
+            { x: -292.97, y: 266.82, title: "To Black Rose Chapel", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-283.34, 253.91]},
         ]
     });
 
@@ -293,10 +355,46 @@
         ]
     });
 
-    area.registerMap("교회당 지하", {
+    area.registerMap("Underground Chapel", {
         kr: "흑장미 교회당",
         type: MapTypeEnum.Dungeon,
         markers: [
+            { x: -230.19, y: 205.51, title: "To Black Rose Chapel", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-281.28, 198.82]},
+
+            { x: -237.28, y: 214.57, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/ChapelMokokoHint1.jpg"},
+
+            { x: -215, y: 214.53, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/ChapelMokokoHint2.jpg"},
+
+            { x: -206.84, y: 220.66, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/ChapelMokokoHint3.jpg"},
+
+            { x: -206.06, y: 220.66, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/ChapelMokokoHint4.jpg"},
+
+            { x: -205.69, y: 221.06, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/ChapelMokokoHint4.jpg"},
+
+            { x: -207, y: 233.09, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/ChapelMokokoHint5.jpg"},
+
+            { x: -206.72, y: 233.56, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/ChapelMokokoHint5.jpg"},
+
+            { x: -215.5, y: 239.28, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/ChapelMokokoHint6.jpg"},
+
+            { x: -207.09, y: 221.72, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "lutheran/ChapelSecretHint1.jpg"},
+
+            { x: -207.87, y: 232.75, type: MarkerTypeEnum.SecretPassage,
+                hintImage: "lutheran/ChapelSecretHint2.jpg"},
+
+            { x: -225.69, y: 228.5, type: MarkerTypeEnum.Notice,
+                hintText: "Certain routes in this dungeon only open when certain passive residents are killed",
+                hintImage: "lutheran/ChapelNoticeHint1.jpg"},
         ]
     });
 

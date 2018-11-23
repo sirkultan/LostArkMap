@@ -12,7 +12,7 @@ def cropImage(file, targetDir):
         print("ERROR: size mismatch " + file + " == " + str(width) + " x " + str(height));
         return
 
-    croppedImage = img.crop((500, 100, width - 500, height-150));
+    croppedImage = img.crop((500, 25, width - 500, height-200));
     width, height = croppedImage.size;
     ratio = float(height) / float(width);
 
