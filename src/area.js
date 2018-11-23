@@ -54,9 +54,19 @@
         registerMap(name, data) {
             this.maps[name] = data;
 
+            let localTypeIdMap = {};
             for (let i in data.markers) {
                 let markerData = data.markers[i];
                 markerData.area = name;
+
+                // Assign unique local id based on type
+                if(localTypeIdMap[markerData.type] === undefined){
+                    localTypeIdMap[markerData.type] = 0;
+                }
+
+                markerData.localId = localTypeIdMap[markerData.type];
+                localTypeIdMap[markerData.type]++;
+
                 if(markerData.title === undefined) {
                     markerData.title = MarkerTypeDefaultTitle(markerData.type);
                 }
@@ -96,6 +106,7 @@
             // Create all markers on the local layer
             for (let i in this.markers) {
                 let markerData = this.markers[i];
+                markerData.areaId = i;
                 this.createMarker(markerData);
             }
 
@@ -128,7 +139,7 @@
                 case MarkerStyleEnum.Point: {
                     marker = L.marker([markerData.x, markerData.y], {
                         icon: icon,
-                        title: markerData.title
+                        title: '#' + (markerData.localId + 1) + ' ' + markerData.title
                     });
 
                     break;
