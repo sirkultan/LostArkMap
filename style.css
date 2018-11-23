@@ -103,3 +103,7 @@ body {
     min-height: 100vh;
     height: 100%;
 }
+
+.leaflet-container {
+    background-color:rgba(32,37,40,255);
+}
