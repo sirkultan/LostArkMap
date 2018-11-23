@@ -191,6 +191,58 @@
         markers: [
             { x: -381.19, y: 223.66, title: "To Solar Halo Hill", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-350.31, 182.94]},
+
+            { x: -322.91, y: 227.31, title: "To Black Rose Chapel", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-312.53, 224.28]},
+
+            { x: -376.66, y: 221, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/NurseryMokokoHint1.jpg"},
+
+            { x: -365.09, y: 215.78, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/NurseryMokokoHint2.jpg"},
+
+            { x: -351.84, y: 215.97, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/NurseryMokokoHint3.jpg"},
+
+            { x: -346.25, y: 213.75, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/NurseryMokokoHint4.jpg"},
+
+            { x: -351.31, y: 203.22, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/NurseryMokokoHint5.jpg"},
+
+            { x: -362.47, y: 228.19, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/NurseryMokokoHint6.jpg"},
+
+            { x: -364.22, y: 245.28, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/NurseryMokokoHint7.jpg"},
+
+            { x: -359.34, y: 251.22, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/NurseryMokokoHint8.jpg"},
+
+            { x: -335.5, y: 227.29, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/NurseryMokokoHint9.jpg"},
+
+            { x: -330.16, y: 230.44, type: MarkerTypeEnum.Mokoko,
+                hintImage: "lutheran/NurseryMokokoHint10.jpg"},
+
+            { x: -368.06, y: 209.88, popupText: "징그러운 과수원 바구미", type: MarkerTypeEnum.Boss,
+                hintImage: "lutheran/NurseryBossHint1.jpg"},
+
+            { x: -366.19, y: 210.97, popupText: "나무에 담긴 마음 #3", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "lutheran/NurseryHiddenStoryHint1.jpg"},
+
+            { x: -367.44, y: 216.88, popupText: "나무에 담긴 마음 #1", type: MarkerTypeEnum.HiddenStory,
+                hintText: "시간제한이 40초로 굉장히 빡빡하니<br>서두르시는게 좋습니다",
+                hintImage: "lutheran/NurseryHiddenStoryHint2.jpg"},
+
+            { x: -363.06, y: 219, popupText: "나무에 담긴 마음 #2", type: MarkerTypeEnum.HiddenStory,
+                hintImage: "lutheran/NurseryHiddenStoryHint3.jpg"},
+
+            { x: -334.81, y: 225.19, type: MarkerTypeEnum.HiddenQuest,
+                hintImage: "lutheran/NurseryHiddenQuest1.jpg"},
+
+            { x: -334.56, y: 219.63, popupText: "폐허가 된 마을", type: MarkerTypeEnum.Vista,
+                hintImage: "lutheran/NurseryVistaHint1.jpg"},
         ]
     });
 
@@ -198,6 +250,9 @@
         kr: "흑장미 교회당",
         type: MapTypeEnum.Continent,
         markers: [
+            { x: -312.53, y: 224.28, title: "To Nursery Rhizome", type: MarkerTypeEnum.Zoning,
+                teleportTo: [-322.91, 227.31]},
+
             { x: -308.12, y: 229.63, type: MarkerTypeEnum.TreasureMap,
                 hintImage: "lutheran/TreasureMap2.jpg"},
         ]

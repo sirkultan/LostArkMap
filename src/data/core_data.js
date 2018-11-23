@@ -35,7 +35,8 @@ let MarkerTypeEnum = Object.freeze({
     "Zoning": "zooning.png",
     "GroupQuest": "groupquest.png",
     "OtherStory": "otherstory.png",
-    "TreasureMap": "treasuremap.svg"
+    "TreasureMap": "treasuremap.svg",
+    "HiddenQuest": "hiddenquest.png"
 });
 
 /**
@@ -105,6 +106,10 @@ MarkerTypeDefaultTitle = function(markerType) {
 
         case MarkerTypeEnum.TreasureMap: {
             return "Treasure Map";
+        }
+
+        case MarkerTypeEnum.HiddenQuest: {
+            return "Hidden Quest";
         }
 
         default: {
