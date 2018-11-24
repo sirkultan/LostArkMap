@@ -32,13 +32,20 @@ let MarkerTypeEnum = Object.freeze({
     "TreasureBox": "treasurebox.png",
     "Vista": "vista.png",
     "WorldBoss": "world_boss.png",
-    "Zoning": "zooning.png",
+    "Zoning": "zoning.png",
     "GroupQuest": "groupquest.png",
     "OtherStory": "otherstory.png",
     "TreasureMap": "treasuremap.svg",
     "HiddenQuest": "hiddenquest.png",
     "Notice": "notice.png"
 });
+
+/**
+ * @return {string}
+ */
+GetKeyByValue = function(object, value) {
+    return Object.keys(object).find(key => object[key] === value);
+};
 
 /**
  * @return {string}
@@ -124,6 +131,7 @@ MarkerTypeDefaultTitle = function(markerType) {
 };
 
 let Constants = Object.freeze({
+    "EditMode": true,
     "TileSize": 512,
     "ErrorImagePath": 'maps/blank.png',
     'AchievementMarkerColor': '#ff9900'

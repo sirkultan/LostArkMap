@@ -191,7 +191,7 @@ let LAM = (function(){
             let elementText = '<div class="card" style="margin: 8px">' +
                 '<img class="card-img-top" src="images/marker_hints/'+ markerData.hintImage +'" style="width: 180px; height: 228px;"/>' +
                 '<div>' +
-                '<p class="card-text">' + markerData.area + '<br><b>' + area + '</b></p>';
+                '<p class="card-text">' + markerData.subArea + '<br><b>' + area + '</b></p>';
 
             if(markerData.hintText !== undefined) {
                 elementText = elementText + '<p class="small" style="width: 180px;">' + markerData.hintText + '</p>';
@@ -203,6 +203,21 @@ let LAM = (function(){
             let guideElement = $(elementText);
 
             $('#content_treasure_map_list').append(guideElement);
+        }
+
+        exportMarkerData(subArea) {
+            if(this.activeArea === undefined) {
+                return '[]';
+            }
+
+            let exportData = JSON.stringify(this.areas[this.activeArea].exportMarkerData(subArea), null, 4);
+
+            // Have to fix the syntax of marker type enum
+            for(let markerType in MarkerTypeEnum) {
+                exportData = exportData.replace(new RegExp('"' + MarkerTypeEnum[markerType]+'"', 'g'), 'MarkerTypeEnum.' + markerType);
+            }
+
+            return exportData;
         }
 
         getMapTileUrl(path) {

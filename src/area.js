@@ -57,7 +57,8 @@
             let localTypeIdMap = {};
             for (let i in data.markers) {
                 let markerData = data.markers[i];
-                markerData.area = name;
+                markerData.area = this.name;
+                markerData.subArea = name;
 
                 // Assign unique local id based on type
                 if(localTypeIdMap[markerData.type] === undefined){
@@ -139,6 +140,7 @@
                 case MarkerStyleEnum.Point: {
                     marker = L.marker([markerData.x, markerData.y], {
                         icon: icon,
+                        draggable: Constants.EditMode,
                         title: '#' + (markerData.localId + 1) + ' ' + markerData.title
                     });
 
@@ -147,6 +149,7 @@
 
                 case MarkerStyleEnum.Rectangle: {
                     marker = L.rectangle(markerData.bounds, {
+                        draggable: Constants.EditMode,
                         color: markerData.color
                     });
 
@@ -159,6 +162,16 @@
                 }
             }
 
+            marker.area = markerData.area;
+            marker.markerDataId = markerData.areaId;
+            if(Constants.EditMode) {
+                marker.on('dragend', function (e) {
+                    let newPosition = e.target.getLatLng();
+                    let markerData = LAM.areas[e.target.area].markers[e.target.markerDataId];
+                    markerData.x = newPosition.lat;
+                    markerData.y = newPosition.lng;
+                });
+            }
 
             if (markerData.popupText !== undefined || markerData.hintText !== undefined || markerData.hintImage !== undefined) {
                 let popupContent = $('<div></div>');
@@ -211,6 +224,41 @@
             }
         }
 
+        exportMarkerData(subArea) {
+            let result = [];
+            for(let i in this.markers) {
+                let markerData = this.markers[i];
+                if(subArea !== undefined && markerData.subArea !== subArea) {
+                    continue;
+                }
+
+                let markerCopy = $.extend(true, {}, markerData);
+                for(let key in markerData) {
+                    switch (key) {
+                        case 'x':
+                        case 'y':
+                        case 'popupText':
+                        case 'hintImage':
+                        case 'hintText':
+                        case 'title':
+                        case 'type':
+                        case 'teleportTo':
+                        case 'teleportArea': {
+                            break;
+                        }
+
+                        default:
+                        {
+                            delete markerCopy[key];
+                        }
+                    }
+                }
+
+                result.push(markerCopy);
+            }
+
+            return result;
+        }
     }
 
     LAM.createArea = function(name, data){
