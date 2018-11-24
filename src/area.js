@@ -224,13 +224,10 @@
             }
         }
 
-        exportMarkerData(subArea) {
+        exportMarkerData() {
             let result = [];
             for(let i in this.markers) {
                 let markerData = this.markers[i];
-                if(subArea !== undefined && markerData.subArea !== subArea) {
-                    continue;
-                }
 
                 let markerCopy = $.extend(true, {}, markerData);
                 for(let key in markerData) {
@@ -240,16 +237,27 @@
                         case 'popupText':
                         case 'hintImage':
                         case 'hintText':
-                        case 'title':
                         case 'type':
                         case 'teleportTo':
-                        case 'teleportArea': {
+                        case 'teleportArea':
+                        case 'color':
+                        case 'style':
+                        case 'bounds': {
+                            break;
+                        }
+
+                        case 'title': {
+                            if(MarkerTypeDefaultTitle(markerData.type) === markerData.title) {
+                                delete markerCopy[key];
+                            }
+
                             break;
                         }
 
                         default:
                         {
                             delete markerCopy[key];
+                            break;
                         }
                     }
                 }

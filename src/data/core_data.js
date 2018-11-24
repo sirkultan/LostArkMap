@@ -1,3 +1,10 @@
+let Constants = Object.freeze({
+    "EditMode": true,
+    "TileSize": 512,
+    "ErrorImagePath": 'maps/blank.png',
+    'AchievementMarkerColor': '#ff9900'
+});
+
 let ContentTypeEnum = Object.freeze({
     "AreaMap": "content_area_map",
     "TreasureMap": "content_treasure_map",
@@ -130,9 +137,7 @@ MarkerTypeDefaultTitle = function(markerType) {
     }
 };
 
-let Constants = Object.freeze({
-    "EditMode": false,
-    "TileSize": 512,
-    "ErrorImagePath": 'maps/blank.png',
-    'AchievementMarkerColor': '#ff9900'
+let EditorModeEnum = Object.freeze({
+    "Add": 0,
+    "Delete": 1
 });

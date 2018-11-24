@@ -19,17 +19,6 @@ let LAM = (function(){
 
             this.map.setView([0, 0], 1)
 
-            this.map.on("click", function(e) {
-
-                let x = e.latlng.lat;
-                let y = e.latlng.lng;
-
-                x = Math.round(x * 100) / 100;
-                y = Math.round(y * 100) / 100;
-
-                console.log("{ x: " + x + ", y: " + y + ", popupText: \"NOTSET\", type: MarkerTypeEnum.NOTSET }");
-            });
-
             for (let name in this.areas) {
                 this.areas[name].initialize();
 
@@ -63,13 +52,16 @@ let LAM = (function(){
             for(let content in ContentTypeEnum) {
                 $('#' + ContentTypeEnum[content]).hide();
 
-                // content_treasure_map_toggle
                 let contentToggle = $('#' + ContentTypeEnum[content] + '_toggle');
                 contentToggle.click({id: ContentTypeEnum[content]}, function(e) {
                     LAM.activateContent(e.data.id);
                 });
 
                 contentToggle.removeClass('active');
+            }
+
+            if(Constants.EditMode) {
+                LAM.editor.initialize();
             }
 
             this.processUrlParameters();
@@ -203,21 +195,6 @@ let LAM = (function(){
             let guideElement = $(elementText);
 
             $('#content_treasure_map_list').append(guideElement);
-        }
-
-        exportMarkerData(subArea) {
-            if(this.activeArea === undefined) {
-                return '[]';
-            }
-
-            let exportData = JSON.stringify(this.areas[this.activeArea].exportMarkerData(subArea), null, 4);
-
-            // Have to fix the syntax of marker type enum
-            for(let markerType in MarkerTypeEnum) {
-                exportData = exportData.replace(new RegExp('"' + MarkerTypeEnum[markerType]+'"', 'g'), 'MarkerTypeEnum.' + markerType);
-            }
-
-            return exportData;
         }
 
         getMapTileUrl(path) {

@@ -1394,78 +1394,67 @@
                 "x": -351.9378331556503,
                 "y": 468.8748119407294,
                 "type": MarkerTypeEnum.Mokoko,
-                "hintImage": "lutheran/CryingStormMokokoHint1.jpg",
-                "title": "Mokoko Seed"
+                "hintImage": "lutheran/CryingStormMokokoHint1.jpg"
             },
             {
                 "x": -372.2500475936643,
                 "y": 474.71833968886403,
                 "type": MarkerTypeEnum.Mokoko,
-                "hintImage": "lutheran/CryingStormMokokoHint2.jpg",
-                "title": "Mokoko Seed"
+                "hintImage": "lutheran/CryingStormMokokoHint2.jpg"
             },
             {
                 "x": -367.28126903746573,
                 "y": 478.6249829037027,
                 "type": MarkerTypeEnum.Mokoko,
-                "hintImage": "lutheran/CryingStormMokokoHint3.jpg",
-                "title": "Mokoko Seed"
+                "hintImage": "lutheran/CryingStormMokokoHint3.jpg"
             },
             {
                 "x": -366.90632614986293,
                 "y": 477.656044844432,
                 "type": MarkerTypeEnum.Mokoko,
-                "hintImage": "lutheran/CryingStormMokokoHint3.jpg",
-                "title": "Mokoko Seed"
+                "hintImage": "lutheran/CryingStormMokokoHint3.jpg"
             },
             {
                 "x": -357.43765229972587,
                 "y": 483.843698711108,
                 "type": MarkerTypeEnum.Mokoko,
-                "hintImage": "lutheran/CryingStormMokokoHint4.jpg",
-                "title": "Mokoko Seed"
+                "hintImage": "lutheran/CryingStormMokokoHint4.jpg"
             },
             {
                 "x": -346.9996858818154,
                 "y": 474.43837191116387,
                 "type": MarkerTypeEnum.Mokoko,
-                "hintImage": "lutheran/CryingStormMokokoHint5.jpg",
-                "title": "Mokoko Seed"
+                "hintImage": "lutheran/CryingStormMokokoHint5.jpg"
             },
             {
                 "x": -347.4683502132196,
                 "y": 473.71965610375855,
                 "type": MarkerTypeEnum.Mokoko,
-                "hintImage": "lutheran/CryingStormMokokoHint5.jpg",
-                "title": "Mokoko Seed"
+                "hintImage": "lutheran/CryingStormMokokoHint5.jpg"
             },
             {
                 "x": -337.68802353030765,
                 "y": 478.7815235407573,
                 "type": MarkerTypeEnum.Mokoko,
-                "hintImage": "lutheran/CryingStormMokokoHint6.jpg",
-                "title": "Mokoko Seed"
+                "hintImage": "lutheran/CryingStormMokokoHint6.jpg"
             },
             {
                 "x": -336.6878902680475,
                 "y": 487.9690919259466,
                 "type": MarkerTypeEnum.Mokoko,
-                "hintImage": "lutheran/CryingStormMokokoHint7.jpg",
-                "title": "Mokoko Seed"
+                "hintImage": "lutheran/CryingStormMokokoHint7.jpg"
             },
             {
                 "x": -367.59362625647276,
                 "y": 480.5622606518374,
                 "type": MarkerTypeEnum.SecretPassage,
-                "hintImage": "lutheran/CryingStormSecretHint1.jpg",
-                "title": "Secret Passage"
+                "hintImage": "lutheran/CryingStormSecretHint1.jpg"
             },
             {
                 "x": -344.8441878617119,
                 "y": 474.3125683851893,
                 "type": MarkerTypeEnum.SecretPassage,
-                "hintImage": "lutheran/CryingStormSecretHint2.jpg",
-                "title": "Secret Passage"
+                "hintImage": "lutheran/CryingStormSecretHint2.jpg"
             }
         ]
     });

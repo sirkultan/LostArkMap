@@ -36,6 +36,7 @@
 
     <script src="src/lam.js"></script>
     <script src="src/area.js"></script>
+    <script src="src/editor.js"></script>
     <script src="src/dynamicLayer.js"></script>
 
     <script src="src/data/core_data.js"></script>
@@ -146,6 +147,43 @@
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
 
             <div class="py-5 bg-light" id="content_area_map">
+                <div id="la_editor">
+                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                        <div id="ed_modeSelectGroup" class="btn-group mr-2" role="group" aria-label="First group"></div>
+                    </div>
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group" id="ed_markerTypeToolbar">
+                        </div>
+                    </div>
+                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Tooltip:</div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="None" aria-label="Tooltip Text" aria-describedby="btnGroupAddon" id="ed_tooltipInput">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Hint image: </div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="None" aria-label="Hint Image" aria-describedby="btnGroupAddon" id="ed_hintImageInput">
+                        </div>
+                    </div>
+                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="input-group w-100">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Hint text:</div>
+                            </div>
+                            <textarea class="form-control" placeholder="None" aria-label="Hint Text" aria-describedby="btnGroupAddon" id="ed_hintTextInput"></textarea>
+                        </div>
+                    </div>
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-secondary" id="ed_exportButton">Export</button>
+                        </div>
+                    </div>
+                </div>
+
                 <div id="la_map" class="my-4 w-100 fill"></div>
             </div>
 
