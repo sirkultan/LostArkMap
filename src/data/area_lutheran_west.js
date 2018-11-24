@@ -434,87 +434,87 @@
         kr: "회색 망치 광산",
         type: MapTypeEnum.Dungeon,
         markers: [
-            { x: -163.75, y: 58.05, title: "To Vilblin Forest", type: MarkerTypeEnum.Zoning,
+            { x: -152.45, y: 70.1, title: "To Vilblin Forest", type: MarkerTypeEnum.Zoning,
                 teleportTo: [-100.12, 190.51]},
 
-            { x: -122.75, y: 113.51, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
+            { x: -109.76, y: 109.78, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
                 hintImage: "lutheran/GrayHammerMokokoHint1.jpg"},
 
-            { x: -111.12, y: 93.14, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
+            { x: -101.82, y: 92.09, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
                 hintImage: "lutheran/GrayHammerMokokoHint2.jpg"},
 
-            { x: -104, y: 108.51, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
+            { x: -94.51, y: 101.16, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
                 hintImage: "lutheran/GrayHammerMokokoHint3.jpg"},
 
-            { x: -102.19, y: 144.94, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
+            { x: -87.82, y: 132.95, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
                 hintImage: "lutheran/GrayHammerMokokoHint4.jpg"},
 
-            { x: -105.12, y: 148.37, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
+            { x: -90.07, y: 136.1, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
                 hintImage: "lutheran/GrayHammerMokokoHint4.jpg"},
 
-            { x: -68.44, y: 116.44, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
+            { x:  -62.75, y: 103.86, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
                 hintImage: "lutheran/GrayHammerMokokoHint5.jpg"},
 
-            { x: -75, y: 87.7, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
+            { x: -71.77, y: 80.36, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
                 hintImage: "lutheran/GrayHammerMokokoHint6.jpg"},
 
-            { x: -37, y: 50.32, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
+            { x: -45.45, y: 43.88, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
                 hintImage: "lutheran/GrayHammerMokokoHint7.jpg"},
 
-            { x: -13.19, y: 68.76, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
+            { x: -22.75, y: 56.06, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
                 hintImage: "lutheran/GrayHammerMokokoHint8.jpg"},
 
-            { x: -41, y: 85.94, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
+            { x: -43.57, y: 74.99, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
                 hintImage: "lutheran/GrayHammerMokokoHint9.jpg"},
 
-            { x: -43.81, y: 100.63, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
+            { x: -44.14, y: 87.48, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
                 hintImage: "lutheran/GrayHammerMokokoHint10.jpg"},
 
-            { x: -7.87, y: 109.81, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
+            { x: -12.38, y: 89.73, popupText: "NOTSET", type: MarkerTypeEnum.Mokoko,
                 hintImage: "lutheran/GrayHammerMokokoHint11.jpg"},
 
-            { x: -108.81, y: 131.75, popupText: "광기어린 어둠의 바위", type: MarkerTypeEnum.Boss,
+            { x: -94.14, y: 122.71, popupText: "광기어린 어둠의 바위", type: MarkerTypeEnum.Boss,
                 hintImage: "lutheran/GrayHammerBossHint1.jpg"},
 
-            { x: -63.31, y: 127.75, popupText: "정예 회색망치 탐색꾼", type: MarkerTypeEnum.Boss,
+            { x: -57.13, y: 113.61, popupText: "정예 회색망치 탐색꾼", type: MarkerTypeEnum.Boss,
                 hintImage: "lutheran/GrayHammerBossHint2.jpg"},
 
-            { x: -19.94, y: 64.82, popupText: "정예 회색 망치 강도", type: MarkerTypeEnum.Boss,
+            { x: -28.51, y: 53.62, popupText: "정예 회색 망치 강도", type: MarkerTypeEnum.Boss,
                 hintImage: "lutheran/GrayHammerBossHint3.jpg"},
 
-            { x: -118.37, y: 100.64, type: MarkerTypeEnum.SecretPassage,
+            { x: -108.01, y: 98.1, type: MarkerTypeEnum.SecretPassage,
                 hintImage: "lutheran/GrayHammerSecretHint1.jpg"},
 
-            { x: -106.37, y: 136.5, type: MarkerTypeEnum.SecretPassage,
+            { x: -91.76, y: 126.14, type: MarkerTypeEnum.SecretPassage,
                 hintText: "주변 적 처리 후 부숴서 들어갈 수 있음<br>단상위에있는 반딧불을 들고 비밀길#2로 가자",
                 hintImage: "lutheran/GrayHammerSecretHint2.jpg"},
 
-            { x: -105.37, y: 109.57, type: MarkerTypeEnum.TreasureBox,
+            { x:  -96.07, y: 102.71, type: MarkerTypeEnum.TreasureBox,
                 hintImage: "lutheran/GrayHammerTreasureHint1.jpg"},
 
-            { x: -60.87, y: 131.57, type: MarkerTypeEnum.TreasureBox,
+            { x: -54.56, y: 115.92, type: MarkerTypeEnum.TreasureBox,
                 hintImage: "lutheran/GrayHammerTreasureHint2.jpg"},
 
-            { x: -59.62, y: 111.07, popupText: "회색망치 광산", type: MarkerTypeEnum.Vista,
+            { x: -56.13, y: 98.8, popupText: "회색망치 광산", type: MarkerTypeEnum.Vista,
                 hintImage: "lutheran/GrayHammerVistaHint1.jpg"},
 
-            { x: -157.87, y: 43.52, popupText: "손은 눈보다 빠르다 #1", type: MarkerTypeEnum.HiddenStory,
+            { x: -148.51, y: 56.48, popupText: "손은 눈보다 빠르다 #1", type: MarkerTypeEnum.HiddenStory,
                 hintText: "시간제한 10분",
                 hintImage: "lutheran/GrayHammerHiddenStory1.jpg"},
 
-            { x: -133, y: 107.26, popupText: "손은 눈보다 빠르다 #2", type: MarkerTypeEnum.HiddenStory,
+            { x: -120.14, y: 105.22, popupText: "손은 눈보다 빠르다 #2", type: MarkerTypeEnum.HiddenStory,
                 hintImage: "lutheran/GrayHammerHiddenStory2.jpg"},
 
-            { x: -23.75, y: 113.44, popupText: "손은 눈보다 빠르다 #5", type: MarkerTypeEnum.HiddenStory,
+            { x: -25.15, y: 94.91, popupText: "손은 눈보다 빠르다 #5", type: MarkerTypeEnum.HiddenStory,
                 hintImage: "lutheran/GrayHammerHiddenStory3.jpg"},
 
-            { x: -17.31, y: 94.31, popupText: "손은 눈보다 빠르다 #3", type: MarkerTypeEnum.HiddenStory,
+            { x: -22.02, y: 78.05, popupText: "손은 눈보다 빠르다 #3", type: MarkerTypeEnum.HiddenStory,
                 hintImage: "lutheran/GrayHammerHiddenStory4.jpg"},
 
-            { x: -12.56, y: 113.81, popupText: "손은 눈보다 빠르다 #4", type: MarkerTypeEnum.HiddenStory,
+            { x: -15.46, y: 93.79, popupText: "손은 눈보다 빠르다 #4", type: MarkerTypeEnum.HiddenStory,
                 hintImage: "lutheran/GrayHammerHiddenStory5.jpg"},
 
-            { x: -98.5, y: 132.69, popupText: "열리지 않는 럼주", type: MarkerTypeEnum.FoodIngredient,
+            { x: -85.88, y: 121.9, popupText: "열리지 않는 럼주", type: MarkerTypeEnum.FoodIngredient,
                 hintText: "레이크바 요리사NPC - 헬렌<br>모험의 서 요리로 제작 가능",
                 hintImage: "lutheran/GrayHammerFoodIngredientHint1.jpg"}
         ]
