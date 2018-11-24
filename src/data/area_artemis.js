@@ -266,7 +266,10 @@
                 hintImage: "artemis/TreasureMap12.jpg"},
 
             { x: -464.68, y: 210.66, type: MarkerTypeEnum.TreasureMap,
-                hintImage: "artemis/TreasureMap13.jpg"}
+                hintImage: "artemis/TreasureMap13.jpg"},
+
+            { x: -444.45, y: 247.27, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap15.jpg"}
         ]
     });
 
@@ -436,7 +439,10 @@
                 hintImage: "artemis/TreasureMap4.jpg"},
 
             { x: -55.56, y: 266.57, type: MarkerTypeEnum.TreasureMap,
-                hintImage: "artemis/TreasureMap5.jpg"}
+                hintImage: "artemis/TreasureMap5.jpg"},
+
+            { x: -72.68, y: 257.21, type: MarkerTypeEnum.TreasureMap,
+                hintImage: "artemis/TreasureMap16.jpg"}
         ]
     });
 
