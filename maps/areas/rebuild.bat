@@ -1,5 +1,5 @@
 python slice.py 4 anich_full.jpg Anich
-python slice.py 4 artemis_full.jpg Artemis
+python slice.py 4 artemis_full.png Artemis
 python slice.py 4 arthetaine_full.jpg Arthetaine
 python slice.py 4 bern_north_full.jpg BernNorth
 python slice.py 6 lutheran_east_full.jpg LutheranEast
