@@ -8,9 +8,7 @@
 
     area.registerMap("Mirror Valley", {
         kr: "거울 계곡",
-        type: MapTypeEnum.Continent,
-        markers: [
-        ]
+        type: MapTypeEnum.Continent
     });
 
     area.registerMap("Delphi Prefecture", {

@@ -24,16 +24,13 @@
                 zoomLevel: this.zoomLevel
             });
 
-            let markerData = LAM.areaMarkerData[this.name];
-            if(markerData === undefined) {
-                console.log("OLD DATA");
-                for (let i in this.legacyMarkers) {
-                    this.markerLayer.createMarker(this.legacyMarkers[i]);
-                }
-            } else {
-                console.log("NEW DATA");
-                for(let i in markerData) {
-                    this.markerLayer.createMarker(markerData[i]);
+            let markerEntries = LAM.areaMarkerData[this.name];
+            if(markerEntries !== undefined) {
+                for (let i in markerEntries) {
+                    let markerData = markerEntries[i];
+                    markerData.area = this.name;
+                    markerData.maxZoomLevel = this.zoomLevel;
+                    this.markerLayer.createMarker(markerData);
                 }
             }
         }
@@ -42,12 +39,14 @@
             this.activateLink.addClass('active');
 
             this.markerLayer.activate();
+            LAM.activeMarkerLayer = this.markerLayer;
         }
 
         deactivate() {
             this.activateLink.removeClass('active');
 
             this.markerLayer.deactivate();
+            LAM.activeMarkerLayer = undefined;
         }
 
         registerMap(name, data) {

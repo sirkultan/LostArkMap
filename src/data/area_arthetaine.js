@@ -8,37 +8,27 @@
 
     area.registerMap("Cracked Land", {
         kr: "갈라진 땅",
-        type: MapTypeEnum.Continent,
-        markers: [
-        ]
+        type: MapTypeEnum.Continent
     });
 
     area.registerMap("Nebelhorn Lab", {
         kr: "네벨호른 연구소",
-        type: MapTypeEnum.Continent,
-        markers: [
-        ]
+        type: MapTypeEnum.Continent
     });
 
     area.registerMap("Totrerich", {
         kr: "토트리치",
-        type: MapTypeEnum.Continent,
-        markers: [
-        ]
+        type: MapTypeEnum.Continent
     });
 
     area.registerMap("Riza Waterfall", {
         kr: "리제 폭포",
-        type: MapTypeEnum.Continent,
-        markers: [
-        ]
+        type: MapTypeEnum.Continent
     });
 
     area.registerMap("Wind Hill", {
         kr: "바람결 구릉지",
-        type: MapTypeEnum.Continent,
-        markers: [
-        ]
+        type: MapTypeEnum.Continent
     });
 
     area.registerMap("Red Sand Desert", {
@@ -50,16 +40,12 @@
 
     area.registerMap("Barren Passage", {
         kr: "메마른 통로",
-        type: MapTypeEnum.Continent,
-        markers: [
-        ]
+        type: MapTypeEnum.Continent
     });
 
     area.registerMap("Stern", {
         kr: "슈테른",
-        type: MapTypeEnum.City,
-        markers: [
-        ]
+        type: MapTypeEnum.City
     });
 
     area.registerMap("크라테르의 심장", {
@@ -71,16 +57,12 @@
 
     area.registerMap("아이히만의 연구기지", {
         kr: "아이히만의 연구기지",
-        type: MapTypeEnum.Dungeon,
-        markers: [
-        ]
+        type: MapTypeEnum.Dungeon
     });
 
     area.registerMap("Nest Of Battle Ants", {
         kr: "전투 개미 둥지",
-        type: MapTypeEnum.Dungeon,
-        markers: [
-        ]
+        type: MapTypeEnum.Dungeon
     });
 
 })();

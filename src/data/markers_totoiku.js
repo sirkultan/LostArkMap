@@ -1,0 +1,5 @@
+(function () {
+
+    LAM.areaMarkerData['Totoiku'] = [];
+
+}());

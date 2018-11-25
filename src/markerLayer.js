@@ -7,6 +7,7 @@
             this.zoomLevel = data['zoomLevel'];
 
             this.markers = [];
+            this.markerIdLookup = {};
             this.markerLayer = undefined;
             this.markerTypeLayers = {};
             this.mapLayer = undefined;
@@ -67,6 +68,28 @@
             this.layerControl.remove();
         }
 
+        deleteMarker(id) {
+            if(id === undefined) {
+                return;
+            }
+
+            let markerData = this.markerIdLookup[id];
+            if(markerData.activeMarker !== undefined){
+                this.markerLayer.removeLayer(markerData.activeMarker);
+                delete markerData['activeMarker'];
+            }
+
+            delete this.markerIdLookup[id];
+            for(var i = this.markers.length - 1; i >= 0; i--) {
+                if(this.markers[i].id === id) {
+                    this.markers.splice(i, 1);
+                    break;
+                }
+            }
+
+            LAM.rebuildStats();
+        }
+
         createMarker(markerData) {
             if(markerData.id === undefined) {
                 markerData.id = this.nextMarkerId++;
@@ -75,6 +98,8 @@
                     this.nextMarkerId = markerData.id + 1;
                 }
             }
+
+            this.markerIdLookup[markerData.id] = markerData;
 
             if(markerData.title === undefined) {
                 markerData.title = MarkerTypeDefaultTitle(markerData.type);
@@ -115,14 +140,16 @@
                 }
             }
 
+            markerData.activeMarker = marker;
             marker.area = markerData.area;
-            marker.markerDataId = markerData.areaId;
+            marker.markerDataId = markerData.id;
             if(Constants.EditMode) {
                 marker.on('dragend', function (e) {
-                    let newPosition = e.target.getLatLng();
-                    let markerData = LAM.areas[e.target.area].markers[e.target.markerDataId];
-                    markerData.x = newPosition.lat;
-                    markerData.y = newPosition.lng;
+                    LAM.editor.markerDragged(e.target);
+                });
+
+                marker.on('click', function(e) {
+                    LAM.editor.markerClicked(e.target);
                 });
             }
 
@@ -175,9 +202,35 @@
             if(markerData.type === MarkerTypeEnum.TreasureMap) {
                 LAM.registerTreasureMap(markerData);
             }
+
+            LAM.rebuildStats();
+            return markerData.id;
+        }
+
+        getMarkerData(id, noErrorIfFail){
+            let result = this.markerIdLookup[id];
+            if(result === undefined && noErrorIfFail !== true){
+                console.error("Marker data not found for id " + id);
+            }
+
+            return result;
+        }
+
+        compareMarker(a, b){
+            if(a.id > b.id) {
+                return 1;
+            }
+
+            if(a.id < b.id) {
+                return -1;
+            }
+
+            return 0;
         }
 
         exportMarkerData() {
+            this.markers.sort(this.compareMarker);
+
             let result = [];
             for(let i in this.markers) {
                 let markerData = this.markers[i];
@@ -220,6 +273,26 @@
             }
 
             return result;
+        }
+
+        changeMarkerId(currentId, newId) {
+            if(currentId === newId) {
+                return;
+            }
+
+            let markerData = this.getMarkerData(currentId);
+            if(markerData === undefined){
+                return;
+            }
+
+            let existingMarkerData = this.getMarkerData(newId, true);
+            if(existingMarkerData !== undefined){
+                console.error("Cannot change marker id from " + id + " to " + newId + ", data already exists with that id");
+                return;
+            }
+
+            markerData.id = newId;
+            console.log("Marker Id changed from " + currentId + " to " + newId);
         }
 
     }

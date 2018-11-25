@@ -9,7 +9,9 @@ let LAM = (function(){
             this.dynamicLayers = {};
             this.activeArea = undefined;
             this.activeDynamicLayer = undefined;
+            this.activeMarkerLayer = undefined;
             this.activeContent = undefined;
+            this.suspendStatUpdate = true;
         }
 
         initialize() {
@@ -63,9 +65,14 @@ let LAM = (function(){
 
             if(Constants.EditMode) {
                 LAM.editor.initialize();
+            } else {
+                $('#la_editor').hide();
             }
 
             this.processUrlParameters();
+
+            this.suspendStatUpdate = false;
+            this.rebuildStats();
         }
 
         processUrlParameters() {
@@ -180,16 +187,20 @@ let LAM = (function(){
         }
 
         registerTreasureMap(markerData) {
-            let zoomLevel = 0;
-            if(markerData.area !== undefined) {
+            let zoomLevel = markerData.maxZoomLevel;
+            if(zoomLevel === undefined) {
                 zoomLevel = this.areas[markerData.area].zoomLevel;
             }
 
             let locationLink = "?c=" + ContentTypeEnum.AreaMap + "&a=" + markerData.area + '&x=' + markerData.x + '&y=' + markerData.y + '&z=' + zoomLevel;
             let elementText = '<div class="card" style="margin: 8px">' +
                 '<img class="card-img-top" src="images/marker_hints/'+ markerData.hintImage +'" style="width: 180px; height: 228px;"/>' +
-                '<div>' +
-                '<p class="card-text">' + markerData.zone + '<br><b>' + markerData.area + '</b></p>';
+                '<div><p class="card-text">';
+            if(markerData.zone !== undefined) {
+                elementText = elementText + markerData.zone + '<br>';
+            }
+
+            elementText = elementText + '<b>' + markerData.area + '</b></p>';
 
             if(markerData.hintText !== undefined) {
                 elementText = elementText + '<p class="small" style="width: 180px;">' + markerData.hintText + '</p>';
@@ -225,14 +236,18 @@ let LAM = (function(){
         }
 
         rebuildStats() {
+            if(this.suspendStatUpdate) {
+                return;
+            }
+
             let statsPanel = $('#stats');
             statsPanel.empty();
 
             let markerStats = {};
             for (let name in this.areas) {
                 let area = this.areas[name];
-                for (let i in area.markers) {
-                    let markerData = area.markers[i];
+                for (let i in area.markerLayer.markers) {
+                    let markerData = area.markerLayer.markers[i];
                     if (markerStats[markerData.type] === undefined) {
                         markerStats[markerData.type] = 0;
                     }

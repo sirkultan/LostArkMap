@@ -5,6 +5,7 @@
         constructor() {
             this.isInitialized = false;
             this.activeMarkerType = undefined;
+            this.markerDataBeingEdited = undefined;
         }
 
         initialize() {
@@ -18,9 +19,7 @@
                 return '[]';
             }
 
-            let markerLayer = LAM.areas[LAM.activeArea].markerLayer;
-
-            let exportData = JSON.stringify(markerLayer.exportMarkerData(), null, 4);
+            let exportData = JSON.stringify(LAM.activeMarkerLayer.exportMarkerData(), null, 4);
 
             // Have to fix the syntax of marker type enum
             for(let markerType in MarkerTypeEnum) {
@@ -62,11 +61,12 @@
             }
 
             LAM.map.on("click", function(e) {
+                if(LAM.editor.mode === EditorModeEnum.Add) {
+                    let x = e.latlng.lat;
+                    let y = e.latlng.lng;
 
-                let x = e.latlng.lat;
-                let y = e.latlng.lng;
-
-                LAM.editor.placeMarker(x, y);
+                    LAM.editor.placeMarker(x, y);
+                }
             });
 
             $('#ed_exportButton').click(function(e){
@@ -80,9 +80,39 @@
                     })[0].click();
             });
 
+            $('#ed_tooltipInput').change(function(e) {
+                LAM.editor.tooltipTextChanged($(this).val());
+            });
+
+            $('#ed_hintTextInput').change(function(e) {
+                LAM.editor.hintTextChanged($(this).val());
+            });
+
+            $('#ed_hintImageInput').change(function(e) {
+                LAM.editor.hintImageChanged($(this).val());
+            });
+
             // Set Default editor state
-            this.selectActiveMarkerType(GetKeyByValue(MarkerTypeEnum, MarkerTypeEnum.Boss));
-            this.setMode(EditorModeEnum.Add);
+            this.resetEditForm();
+            this.setMode(EditorModeEnum.Modify);
+        }
+
+        tooltipTextChanged(text) {
+            if(this.markerDataBeingEdited !== undefined) {
+                this.markerDataBeingEdited.title = text;
+            }
+        }
+
+        hintTextChanged(text) {
+            if(this.markerDataBeingEdited !== undefined) {
+                this.markerDataBeingEdited.hintText = text;
+            }
+        }
+
+        hintImageChanged(text) {
+            if(this.markerDataBeingEdited !== undefined) {
+                this.markerDataBeingEdited.hintImage = text;
+            }
         }
 
         selectActiveMarkerType(type) {
@@ -91,12 +121,35 @@
             }
 
             this.activeMarkerType = type;
+
+            if(this.markerDataBeingEdited !== undefined && this.markerDataBeingEdited.type !== MarkerTypeEnum[type]){
+                this.markerDataBeingEdited.type = MarkerTypeEnum[type];
+
+                if(this.markerDataBeingEdited.id !== undefined) {
+                    LAM.activeMarkerLayer.deleteMarker(this.markerDataBeingEdited.id);
+                    LAM.activeMarkerLayer.createMarker(this.markerDataBeingEdited);
+                }
+            }
+
             $('#ed_markerTypeSelect' + this.activeMarkerType).addClass('active');
             console.log("EDITOR: Active Marker set to " + type);
         }
 
         setMode(mode) {
+            if(this.mode !== undefined){
+                $('#ed_toggleMode' + GetKeyByValue(EditorModeEnum, this.mode)).removeClass('active');
+            }
+
             this.mode = mode;
+            this.resetEditForm();
+
+            if(mode === EditorModeEnum.Add){
+                this.markerDataBeingEdited = {};
+            } else {
+                this.markerDataBeingEdited = undefined;
+            }
+
+            $('#ed_toggleMode' + GetKeyByValue(EditorModeEnum, this.mode)).addClass('active');
             console.log("EDITOR: Mode set to " + GetKeyByValue(EditorModeEnum, mode));
         }
 
@@ -106,29 +159,69 @@
 
             console.log("{ x: " + x + ", y: " + y + ", popupText: \"NOTSET\", type: MarkerTypeEnum.NOTSET }");
 
-            let markerData = {
+            let markerData = $.extend(true, {
                 x: x,
                 y: y,
                 type: MarkerTypeEnum[this.activeMarkerType]
-            };
+            }, this.markerDataBeingEdited);
 
-            let tooltip = $('#ed_tooltipInput').val();
-            if(tooltip !== undefined && tooltip !== ""){
-                markerData.title = tooltip;
+            LAM.activeMarkerLayer.createMarker(markerData);
+        }
+
+        markerDragged(marker) {
+            /*let newPosition = e.target.getLatLng();
+            let markerData = LAM.areas[e.target.area].markers[e.target.markerDataId];
+            markerData.x = newPosition.lat;
+            markerData.y = newPosition.lng;*/
+            let newPosition = marker.getLatLng();
+            let markerId = marker.markerDataId;
+            let markerData = LAM.activeMarkerLayer.getMarkerData(markerId);
+
+            markerData.x = newPosition.lat;
+            markerData.y = newPosition.lng;
+        }
+
+        resetEditForm(){
+            this.selectActiveMarkerType(GetKeyByValue(MarkerTypeEnum, MarkerTypeEnum.Boss));
+
+            $('#ed_tooltipInput').val("");
+            $('#ed_hintTextInput').val("");
+            $('#ed_hintImageInput').val("");
+        }
+
+        markerClicked(marker) {
+            this.markerDataBeingEdited = undefined;
+
+            switch (this.mode) {
+                case EditorModeEnum.Delete: {
+                    LAM.activeMarkerLayer.deleteMarker(marker.markerDataId);
+                    return;
+                }
+
+                case EditorModeEnum.Modify: {
+                    break;
+                }
             }
 
-            let hintText = $('#ed_hintTextInput').val();
-            if(hintText !== undefined && hintText !== ""){
-                markerData.hintText = hintText;
+            this.resetEditForm();
+            let markerId = marker.markerDataId;
+            let markerData = LAM.activeMarkerLayer.getMarkerData(markerId);
+
+            this.selectActiveMarkerType(GetKeyByValue(MarkerTypeEnum, markerData.type));
+
+            if(markerData.title !== undefined && markerData.title !== MarkerTypeDefaultTitle(markerData.type)) {
+                $('#ed_tooltipInput').val(markerData.title);
             }
 
-            let hintImage = $('#ed_hintImageInput').val();
-            if(hintImage !== undefined && hintImage !== "") {
-                markerData.hintImage = LAM.activeArea + '/' + hintImage;
+            if(markerData.hintText !== undefined) {
+                $('#ed_hintTextInput').val(markerData.hintText);
             }
 
-            let markerTarget = LAM.areas[LAM.activeArea].markerLayer;
-            markerTarget.createMarker(markerData);
+            if(markerData.hintImage !== undefined) {
+                $('#ed_hintImageInput').val(markerData.hintImage);
+            }
+
+            this.markerDataBeingEdited = markerData;
         }
 
     }
