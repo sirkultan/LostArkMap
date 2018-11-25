@@ -4,6 +4,7 @@ let LAM = (function(){
 
         constructor() {
             this.areas = {};
+            this.areaMarkerData = {};
             this.markerIcons = {};
             this.dynamicLayers = {};
             this.activeArea = undefined;
@@ -101,7 +102,7 @@ let LAM = (function(){
                 $('#' + this.activeContent + '_toggle').removeClass('active');
 
                 if(this.activeContent === ContentTypeEnum.AreaMap && this.activeArea !== undefined) {
-                    this.areas[this.activeArea].deactivate(this.map);
+                    this.areas[this.activeArea].deactivate();
                 }
             }
 
@@ -123,10 +124,10 @@ let LAM = (function(){
             this.activateContent(ContentTypeEnum.AreaMap);
 
             if(this.activeArea !== undefined) {
-                this.areas[this.activeArea].deactivate(this.map);
+                this.areas[this.activeArea].deactivate();
             }
 
-            this.areas[name].activate(this.map);
+            this.areas[name].activate();
             this.activeArea = name;
         }
 
@@ -178,12 +179,17 @@ let LAM = (function(){
             $('#content_guides_list').append(guideElement);
         }
 
-        registerTreasureMap(area, markerData) {
-            let locationLink = "?c=" + ContentTypeEnum.AreaMap + "&a=" + area + '&x=' + markerData.x + '&y=' + markerData.y + '&z=' + this.areas[area].zoomLevel;
+        registerTreasureMap(markerData) {
+            let zoomLevel = 0;
+            if(markerData.area !== undefined) {
+                zoomLevel = this.areas[markerData.area].zoomLevel;
+            }
+
+            let locationLink = "?c=" + ContentTypeEnum.AreaMap + "&a=" + markerData.area + '&x=' + markerData.x + '&y=' + markerData.y + '&z=' + zoomLevel;
             let elementText = '<div class="card" style="margin: 8px">' +
                 '<img class="card-img-top" src="images/marker_hints/'+ markerData.hintImage +'" style="width: 180px; height: 228px;"/>' +
                 '<div>' +
-                '<p class="card-text">' + markerData.subArea + '<br><b>' + area + '</b></p>';
+                '<p class="card-text">' + markerData.zone + '<br><b>' + markerData.area + '</b></p>';
 
             if(markerData.hintText !== undefined) {
                 elementText = elementText + '<p class="small" style="width: 180px;">' + markerData.hintText + '</p>';

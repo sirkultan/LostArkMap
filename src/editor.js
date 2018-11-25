@@ -18,7 +18,9 @@
                 return '[]';
             }
 
-            let exportData = JSON.stringify(LAM.areas[LAM.activeArea].exportMarkerData(), null, 4);
+            let markerLayer = LAM.areas[LAM.activeArea].markerLayer;
+
+            let exportData = JSON.stringify(markerLayer.exportMarkerData(), null, 4);
 
             // Have to fix the syntax of marker type enum
             for(let markerType in MarkerTypeEnum) {
@@ -125,8 +127,8 @@
                 markerData.hintImage = LAM.activeArea + '/' + hintImage;
             }
 
-            console.log(markerData);
-            LAM.areas[LAM.activeArea].createMarker(markerData);
+            let markerTarget = LAM.areas[LAM.activeArea].markerLayer;
+            markerTarget.createMarker(markerData);
         }
 
     }
