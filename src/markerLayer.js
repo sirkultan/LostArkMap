@@ -193,6 +193,11 @@
                 marker.teleportData = markerData.teleportTo;
                 marker.teleportArea = markerData.teleportArea;
                 marker.on('click', function(e){
+                    if(Constants.EditMode) {
+                        console.warn("TeleportMarker disabled in EditMode");
+                        return;
+                    }
+
                     if(this.teleportArea !== undefined) {
                         LAM.activateArea(this.teleportArea);
                     }
@@ -254,9 +259,7 @@
                         case 'id':
                         case 'x':
                         case 'y':
-                        case 'popupText':
                         case 'hintImage':
-                        case 'hintText':
                         case 'type':
                         case 'teleportTo':
                         case 'teleportArea':
@@ -266,8 +269,17 @@
                             break;
                         }
 
+                        case 'hintText':
+                        case 'popupText': {
+                            if(markerCopy[key] === "") {
+                                delete markerCopy[key];
+                            }
+
+                            break;
+                        }
+
                         case 'title': {
-                            if(MarkerTypeDefaultTitle(markerData.type) === markerData.title) {
+                            if(markerCopy.title === "" || MarkerTypeDefaultTitle(markerData.type) === markerData.title) {
                                 delete markerCopy[key];
                             }
 

@@ -4,14 +4,14 @@
         {
             "x": -360.5,
             "y": 323.76,
-            "popupText": "Mane Waves Harbor (Lutheran East)",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -283.81,
                 437.72
             ],
             "teleportArea": "Lutheran East",
-            "id": 0
+            "id": 0,
+            "title": "To Mane Waves Harbor (Lutheran East)"
         },
         {
             "x": -221.62,
@@ -40,6 +40,18 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "world/TreasureMap4.jpg",
             "id": 4
+        },
+        {
+            "x": -310.18,
+            "y": 364.14,
+            "type": MarkerTypeEnum.Zoning,
+            "id": 5,
+            "title": "To Ocean Scent Forest (Totoiku)",
+            "teleportTo": [
+                -489,
+                306
+            ],
+            "teleportArea": "Totoiku"
         }
     ];
 

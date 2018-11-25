@@ -87,12 +87,24 @@
                 LAM.editor.tooltipTextChanged($(this).val());
             });
 
+            $('#ed_popupTitleInput').change(function(e) {
+                LAM.editor.popupTitleTextChanged($(this).val());
+            });
+
             $('#ed_hintTextInput').change(function(e) {
                 LAM.editor.hintTextChanged($(this).val());
             });
 
             $('#ed_hintImageInput').change(function(e) {
                 LAM.editor.hintImageChanged($(this).val());
+            });
+
+            $('#ed_teleportTo').change(function(e){
+                LAM.editor.teleportToChanged($(this).val());
+            });
+
+            $('#ed_teleportArea').change(function(e){
+                LAM.editor.teleportAreaChanged($(this).val());
             });
 
             // Set Default editor state
@@ -106,6 +118,12 @@
             }
         }
 
+        popupTitleTextChanged(text){
+            if(this.markerDataBeingEdited !== undefined) {
+                this.markerDataBeingEdited.popupText = text;
+            }
+        }
+
         hintTextChanged(text) {
             if(this.markerDataBeingEdited !== undefined) {
                 this.markerDataBeingEdited.hintText = text;
@@ -115,6 +133,18 @@
         hintImageChanged(text) {
             if(this.markerDataBeingEdited !== undefined) {
                 this.markerDataBeingEdited.hintImage = text;
+            }
+        }
+
+        teleportToChanged(text) {
+            if(this.markerDataBeingEdited !== undefined) {
+                this.markerDataBeingEdited.teleportTo = JSON.parse(text);
+            }
+        }
+
+        teleportAreaChanged(text) {
+            if(this.markerDataBeingEdited !== undefined) {
+                this.markerDataBeingEdited.teleportArea = text;
             }
         }
 
@@ -139,6 +169,8 @@
         }
 
         setMode(mode) {
+            this.markerDataBeingEdited = undefined;
+
             if(this.mode !== undefined){
                 $('#ed_toggleMode' + GetKeyByValue(EditorModeEnum, this.mode)).removeClass('active');
             }
@@ -182,8 +214,11 @@
             this.selectActiveMarkerType(GetKeyByValue(MarkerTypeEnum, MarkerTypeEnum.Boss));
 
             $('#ed_tooltipInput').val("");
+            $('#ed_popupTitleInput').val("");
             $('#ed_hintTextInput').val("");
             $('#ed_hintImageInput').val("");
+            $('#ed_teleportTo').val("");
+            $('#ed_teleportArea').val("");
         }
 
         markerClicked(marker) {
@@ -210,12 +245,24 @@
                 $('#ed_tooltipInput').val(markerData.title);
             }
 
+            if(markerData.popupText !== undefined){
+                $('#ed_popupTitleInput').val(markerData.popupText);
+            }
+
             if(markerData.hintText !== undefined) {
                 $('#ed_hintTextInput').val(markerData.hintText);
             }
 
             if(markerData.hintImage !== undefined) {
                 $('#ed_hintImageInput').val(markerData.hintImage);
+            }
+
+            if(markerData.teleportTo !== undefined) {
+                $('#ed_teleportTo').val(JSON.stringify(markerData.teleportTo))
+            }
+
+            if(markerData.teleportArea !== undefined) {
+                $('#ed_teleportArea').val(markerData.teleportArea);
             }
 
             this.markerDataBeingEdited = markerData;
