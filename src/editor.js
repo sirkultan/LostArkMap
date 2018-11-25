@@ -61,12 +61,15 @@
             }
 
             LAM.map.on("click", function(e) {
-                if(LAM.editor.mode === EditorModeEnum.Add) {
-                    let x = e.latlng.lat;
-                    let y = e.latlng.lng;
+                let x = e.latlng.lat;
+                let y = e.latlng.lng;
 
+                if(LAM.editor.mode === EditorModeEnum.Add) {
                     LAM.editor.placeMarker(x, y);
+                    return;
                 }
+
+                console.log("[" + Math.round(x) + ", " + Math.round(y) + ']');
             });
 
             $('#ed_exportButton').click(function(e){
@@ -157,8 +160,6 @@
             x = Math.round(x * 100) / 100;
             y = Math.round(y * 100) / 100;
 
-            console.log("{ x: " + x + ", y: " + y + ", popupText: \"NOTSET\", type: MarkerTypeEnum.NOTSET }");
-
             let markerData = $.extend(true, {
                 x: x,
                 y: y,
@@ -169,10 +170,6 @@
         }
 
         markerDragged(marker) {
-            /*let newPosition = e.target.getLatLng();
-            let markerData = LAM.areas[e.target.area].markers[e.target.markerDataId];
-            markerData.x = newPosition.lat;
-            markerData.y = newPosition.lng;*/
             let newPosition = marker.getLatLng();
             let markerId = marker.markerDataId;
             let markerData = LAM.activeMarkerLayer.getMarkerData(markerId);

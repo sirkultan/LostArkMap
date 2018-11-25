@@ -8,7 +8,8 @@
 
     area.registerMap("Main", {
         kr: "",
-        type: MapTypeEnum.World
+        type: MapTypeEnum.World,
+        bounds: [[-39, -31], [-531, 545]]
     });
 
 

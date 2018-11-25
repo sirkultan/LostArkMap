@@ -11,8 +11,6 @@
             this.maps = {};
             this.markerLayer = undefined;
 
-            this.legacyMarkers = [];
-
             LAM.registerArea(this.name, this);
         }
 
@@ -21,16 +19,15 @@
 
             this.markerLayer = LAM.createMarkerLayer({
                 imagePath: this.imagePath,
-                zoomLevel: this.zoomLevel
+                zoomLevel: this.zoomLevel,
+                area: this.name,
+                getZoneCallback: this.getZoneForPoint
             });
 
             let markerEntries = LAM.areaMarkerData[this.name];
             if(markerEntries !== undefined) {
                 for (let i in markerEntries) {
-                    let markerData = markerEntries[i];
-                    markerData.area = this.name;
-                    markerData.maxZoomLevel = this.zoomLevel;
-                    this.markerLayer.createMarker(markerData);
+                    this.markerLayer.createMarker(markerEntries[i]);
                 }
             }
         }
@@ -51,25 +48,33 @@
 
         registerMap(name, data) {
             this.maps[name] = data;
-
-            for(let i in data.markers) {
-                this.legacyMarkers.push(data.markers[i]);
-            }
         }
 
-        /*registerMarker(markerData) {
-            markerData.area = this.name;
-
-            // TODO: Use marker position and zone lookup
-            markerData.zone = "TODO";
-
-            // Assign unique local id based on type
-            if(markerData.id === undefined) {
-                markerData.id = this.nextMarkerId++;
+        getZoneForPoint(x, y) {
+            if(x === undefined || y === undefined) {
+                return undefined;
             }
 
-            this.markers.push(markerData);
-        }*/
+            // AABB check against map bounds to find the right map (zone)
+            for(let mapName in this.maps) {
+                let map = this.maps[mapName];
+                if(map.bounds === undefined) {
+                    continue;
+                }
+
+                if(x > map.bounds[0][0] || x < map.bounds[1][0]) {
+                    continue;
+                }
+
+                if(y < map.bounds[0][1] || y > map.bounds[1][1]) {
+                    continue;
+                }
+
+                return mapName;
+            }
+
+            return undefined;
+        }
 
         initializeUI() {
             // Create the navigation link

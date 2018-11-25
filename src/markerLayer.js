@@ -5,6 +5,7 @@
         constructor(data) {
             this.imagePath = data['imagePath'];
             this.zoomLevel = data['zoomLevel'];
+            this.area = data['area'];
 
             this.markers = [];
             this.markerIdLookup = {};
@@ -103,6 +104,18 @@
 
             if(markerData.title === undefined) {
                 markerData.title = MarkerTypeDefaultTitle(markerData.type);
+            }
+
+            markerData.area = this.area;
+            markerData.maxZoomLevel = this.zoomLevel;
+
+            if(this.area !== undefined && markerData.type !== MarkerTypeEnum.Internal) {
+                let markerZone = LAM.areas[this.area].getZoneForPoint(markerData.x, markerData.y);
+                if(markerZone === undefined){
+                    console.warn("Marker is not in any area zone: [" + markerData.x + "," + markerData.y + "] @ " + markerData.area);
+                } else {
+                    markerData.zone = markerZone;
+                }
             }
 
             let icon = LAM.getMarkerIcon(markerData.type);
