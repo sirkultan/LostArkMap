@@ -21,7 +21,7 @@
         type: MapTypeEnum.Continent
     });
 
-    area.registerMap("Forest of sound", {
+    area.registerMap("Forest of Sound", {
         kr: "소리의 숲",
         type: MapTypeEnum.Continent
     });
@@ -36,23 +36,28 @@
         type: MapTypeEnum.Continent
     });
 
-    area.registerMap("연의 결계", {
-        kr: "연의 결계",
-        type: MapTypeEnum.Dungeon
-    });
-
-    area.registerMap("사령의 동굴", {
+    area.registerMap("Headquarter Cave", {
         kr: "사령의 동굴",
         type: MapTypeEnum.Dungeon
     });
 
-    area.registerMap("적의 결계", {
+    area.registerMap("Full House", {
+        kr: "만월의 고택",
+        type: MapTypeEnum.Dungeon
+    });
+
+    area.registerMap("Boundary of Life and Death", {
+        kr: "삶과 죽음의 경계",
+        type: MapTypeEnum.Dungeon
+    });
+
+    area.registerMap("Enemy within", {
         kr: "적의 결계",
         type: MapTypeEnum.Dungeon
     });
 
-    area.registerMap("만월의 고택", {
-        kr: "만월의 고택",
+    area.registerMap("Inner Circle of Yan", {
+        kr: "연의 결계",
         type: MapTypeEnum.Dungeon
     });
 
