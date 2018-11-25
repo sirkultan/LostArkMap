@@ -19,13 +19,18 @@
         zoomLevel: 4
     });
 
+    area.registerMap("Stern", {
+        kr: "슈테른",
+        type: MapTypeEnum.City
+    });
+
     area.registerMap("Cracked Land", {
         kr: "갈라진 땅",
         type: MapTypeEnum.Continent
     });
 
-    area.registerMap("Nebelhorn Lab", {
-        kr: "네벨호른 연구소",
+    area.registerMap("Nebelhorn", {
+        kr: "네벨호른",
         type: MapTypeEnum.Continent
     });
 
@@ -54,11 +59,6 @@
     area.registerMap("Barren Passage", {
         kr: "메마른 통로",
         type: MapTypeEnum.Continent
-    });
-
-    area.registerMap("Stern", {
-        kr: "슈테른",
-        type: MapTypeEnum.City
     });
 
     area.registerMap("Heart of Klaer", {
