@@ -1348,6 +1348,13 @@
             "type": MarkerTypeEnum.SecretPassage,
             "hintImage": "artemis/AgilothTailSecretHint2.jpg",
             "id": 152
+        },
+        {
+            "x": -83.59,
+            "y": 223.83,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 153,
+            "hintImage": "artemis/TreasureMap17.jpg"
         }
     ];
 

@@ -1246,6 +1246,13 @@
                 -293,
                 160
             ]
+        },
+        {
+            "x": -303.29,
+            "y": 115.23,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 164,
+            "hintImage": "anich/TreasureMap1.jpg"
         }
     ];
 
