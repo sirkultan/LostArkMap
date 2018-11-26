@@ -1,18 +1,5 @@
 (function(){
 
-    /*메마른 통로
-슈테른[대도시]
-갈라진 땅
-네벨호른
-바람결 구릉지
-토트리치
-전투개미 둥지[던전]
-리제 폭포
-크라테르의 심장[던전]
-아이히만의 연구기지[던전]
-붉은 모래 사막
-에어가이츠[던*/
-
     let area = LAM.createArea("Arthetaine", {
         kr: "아르데타인",
         path: "maps/areas/Arthetaine",
