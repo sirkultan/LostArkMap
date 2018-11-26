@@ -95,7 +95,6 @@
             "x": -464.35,
             "y": 196.22,
             "type": MarkerTypeEnum.HiddenStory,
-            "hintImage": "anich/ChangchunHiddenStoryHint4.jpg",
             "id": 12,
             "popupText": "창천의 괴도 #3"
         },
@@ -189,7 +188,6 @@
             "x": -414.9,
             "y": 125.31,
             "type": MarkerTypeEnum.SecretPassage,
-            "hintImage": "anich/WisteriaHills",
             "id": 22
         },
         {
@@ -511,8 +509,7 @@
             "y": 136.09,
             "type": MarkerTypeEnum.WorldBoss,
             "id": 65,
-            "popupText": "혼재의 추오",
-            "hintImage": "anich/SoundWorldBossHint1.jpg"
+            "popupText": "혼재의 추오"
         },
         {
             "x": -245.81,

@@ -286,7 +286,7 @@
             "type": MarkerTypeEnum.Vista,
             "id": 35,
             "popupText": "주택가",
-            "hintImage": "raina/RaniaVistaHint1.jpg"
+            "hintImage": "bern/RaniaVistaHint1.jpg"
         },
         {
             "x": -330.81,
@@ -294,7 +294,7 @@
             "type": MarkerTypeEnum.Vista,
             "id": 36,
             "popupText": "뒷골목",
-            "hintImage": "raina/RaniaVistaHint2.jpg"
+            "hintImage": "bern/RaniaVistaHint2.jpg"
         },
         {
             "x": -312.19,
@@ -302,7 +302,7 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 37,
             "popupText": "기사의 맹세",
-            "hintImage": "raina/RaniaHiddenStoryHint1.jpg"
+            "hintImage": "bern/RaniaHiddenStoryHint1.jpg"
         },
         {
             "x": -307.81,
@@ -317,7 +317,7 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 39,
             "popupText": "취미에 국경은 없다",
-            "hintImage": "raina/RaniaHiddenStoryHint3.jpg"
+            "hintImage": "bern/RaniaHiddenStoryHint3.jpg"
         },
         {
             "x": -306.81,
@@ -326,7 +326,7 @@
             "id": 40,
             "popupText": "베른 건국 기념주",
             "hintText": "라니아 마을 - 로이의 와인바 - NPC로이에게 구매 가능<br>18000실링",
-            "hintImage": "raina/RaniaCookingIngredientHint1.jpg"
+            "hintImage": "bern/RaniaCookingIngredientHint1.jpg"
         },
         {
             "x": -362.94,
@@ -334,7 +334,7 @@
             "type": MarkerTypeEnum.PlayInstrument,
             "id": 41,
             "popupText": "공명의 노래",
-            "hintImage": "raina/RaniaPlayInstrumentHint1.jpg"
+            "hintImage": "bern/RaniaPlayInstrumentHint1.jpg"
         },
         {
             "x": -318.56,
@@ -343,7 +343,7 @@
             "id": 42,
             "popupText": "프록시마 줄기, 프록시마 뿌리",
             "hintText": "라니아 마을 요리상인NPC - 루이지아<br>프록시마 줄기, 프록시마 뿌리 구매가능<br>베른성 요리사NPC - 스텔리아<br>프록시마 샐러드, 프록시마 뿌리 완자(둘 다 절대 먹지마세요), 자연산 프록시마 외피(필드보스 프록시마가 드랍)로 요리 제작가능",
-            "hintImage": "RaniaFoodIngredientHint1.jpg"
+            "hintImage": "bern/RaniaFoodIngredientHint1.jpg"
         },
         {
             "x": -363.66,
@@ -356,35 +356,35 @@
             "y": 300.38,
             "type": MarkerTypeEnum.Mokoko,
             "id": 44,
-            "hintImage": "rania/RaniaMokokoHint1.jpg"
+            "hintImage": "bern/RaniaMokokoHint1.jpg"
         },
         {
             "x": -335.28,
             "y": 293.82,
             "type": MarkerTypeEnum.Mokoko,
             "id": 45,
-            "hintImage": "rania/RaniaMokokoHint2.jpg"
+            "hintImage": "bern/RaniaMokokoHint2.jpg"
         },
         {
             "x": -334.72,
             "y": 293.13,
             "type": MarkerTypeEnum.Mokoko,
             "id": 46,
-            "hintImage": "rania/RaniaMokokoHint2.jpg"
+            "hintImage": "bern/RaniaMokokoHint2.jpg"
         },
         {
             "x": -315.19,
             "y": 304.01,
             "type": MarkerTypeEnum.Mokoko,
             "id": 47,
-            "hintImage": "rania/RaniaMokokoHint3.jpg"
+            "hintImage": "bern/RaniaMokokoHint3.jpg"
         },
         {
             "x": -330.44,
             "y": 326.26,
             "type": MarkerTypeEnum.Mokoko,
             "id": 48,
-            "hintImage": "rania/RaniaMokokoHint4.jpg"
+            "hintImage": "bern/RaniaMokokoHint4.jpg"
         },
         {
             "x": -307.375,
@@ -829,8 +829,7 @@
             "type": MarkerTypeEnum.PlayInstrument,
             "id": 105,
             "hintText": "Play 'Minuet of the forest' (숲의 미뉴에트)",
-            "popupText": "Minuet of the forest",
-            "hintImage": "bern/ParnaPlayInstrumentHint1.jpg"
+            "popupText": "Minuet of the forest"
         },
         {
             "x": -202.06,

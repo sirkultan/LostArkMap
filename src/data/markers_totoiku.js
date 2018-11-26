@@ -7,7 +7,7 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 1,
             "popupText": "내 꿈은 나루니 전문가 #1",
-            "hintImage": "totoiku/OceanScentHiddenStory1.jpg"
+            "hintImage": "totoiku/OceanScentHiddenStoryHint1.jpg"
         },
         {
             "x": -494.75,
@@ -45,7 +45,7 @@
             "y": 332.29,
             "type": MarkerTypeEnum.HiddenStory,
             "id": 6,
-            "hintImage": "totoiku/OceanScentHiddenStory2.jpg",
+            "hintImage": "totoiku/OceanScentHiddenStoryHint2.jpg",
             "popupText": "카울의 움직이는 로카록 #1"
         },
         {
@@ -378,7 +378,6 @@
             "x": -249.04,
             "y": 180.85,
             "type": MarkerTypeEnum.Zoning,
-            "hintImage": "totoiku/SilentGiant",
             "id": 44,
             "title": "To Rocky Forest",
             "teleportTo": [

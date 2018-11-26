@@ -220,7 +220,7 @@ let LAM = (function(){
                 var zoom = o.z;
                 if (o.x < 0 || o.x >= Math.pow(2, zoom) ||
                     o.y < 0 || o.y >= Math.pow(2, zoom)) {
-                    url += '/blank';
+                    return path + '/../blank.png';
                 } else if (zoom === 0) {
                     url += '/base';
                 } else {
