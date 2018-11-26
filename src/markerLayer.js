@@ -259,7 +259,6 @@
                         case 'id':
                         case 'x':
                         case 'y':
-                        case 'hintImage':
                         case 'type':
                         case 'teleportTo':
                         case 'teleportArea':
@@ -270,6 +269,7 @@
                         }
 
                         case 'hintText':
+                        case 'hintImage':
                         case 'popupText': {
                             if(markerCopy[key] === "") {
                                 delete markerCopy[key];

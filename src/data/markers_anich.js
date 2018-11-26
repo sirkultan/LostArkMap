@@ -49,7 +49,6 @@
             "x": -486.04,
             "y": 190.1,
             "type": MarkerTypeEnum.CookingIngredient,
-            "hintImage": "",
             "id": 6,
             "popupText": "모험의서(요리 상인)"
         },
@@ -66,7 +65,6 @@
             "x": -468.85,
             "y": 185.92,
             "type": MarkerTypeEnum.CookingIngredient,
-            "hintImage": "",
             "id": 8,
             "popupText": "모험의서(요리사)"
         },
@@ -113,7 +111,6 @@
             "x": -486.23,
             "y": 176.61,
             "type": MarkerTypeEnum.Zoning,
-            "hintImage": "",
             "id": 14,
             "title": "To Wisteria Hills",
             "teleportTo": [
@@ -125,14 +122,18 @@
             "x": -488.04,
             "y": 234.14,
             "type": MarkerTypeEnum.Zoning,
-            "hintImage": "anich/Changchun",
-            "id": 15
+            "id": 15,
+            "title": "To World",
+            "teleportTo": [
+                -254,
+                381
+            ],
+            "teleportArea": "World"
         },
         {
             "x": -448.35,
             "y": 244.32,
             "type": MarkerTypeEnum.Zoning,
-            "hintImage": "",
             "id": 16,
             "title": "To Delphi Prefecture",
             "teleportTo": [

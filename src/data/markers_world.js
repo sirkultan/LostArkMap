@@ -52,6 +52,18 @@
                 306
             ],
             "teleportArea": "Totoiku"
+        },
+        {
+            "x": -254.17,
+            "y": 380.2,
+            "type": MarkerTypeEnum.Zoning,
+            "id": 6,
+            "title": "To Port City Changchun (Anich)",
+            "teleportTo": [
+                -488,
+                235
+            ],
+            "teleportArea": "Anich"
         }
     ];
 
