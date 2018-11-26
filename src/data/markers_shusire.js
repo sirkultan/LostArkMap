@@ -317,7 +317,11 @@
             "y": 255,
             "type": MarkerTypeEnum.Zoning,
             "id": 39,
-            "title": "Circleside Dungeon"
+            "title": "Circleside Dungeon",
+            "teleportTo": [
+                -198,
+                258
+            ]
         },
         {
             "x": -288.69,
@@ -897,6 +901,133 @@
             "type": MarkerTypeEnum.Mokoko,
             "id": 114,
             "hintImage": "shusire/BladeMokokoHint7.jpg"
+        },
+        {
+            "x": -133,
+            "y": 262.43,
+            "type": MarkerTypeEnum.SecretPassage,
+            "id": 115,
+            "hintImage": "shusire/CirclesideSecretHint1.jpg"
+        },
+        {
+            "x": -122.49,
+            "y": 253.93,
+            "type": MarkerTypeEnum.SecretPassage,
+            "id": 116,
+            "hintImage": "shusire/CirclesideSecretHint2.jpg",
+            "hintText": "Break the ice pillars to gain access"
+        },
+        {
+            "x": -132.21,
+            "y": 263.61,
+            "type": MarkerTypeEnum.TreasureBox,
+            "id": 117,
+            "hintImage": "shusire/CirclesideTreasureHint1.jpg"
+        },
+        {
+            "x": -173.62,
+            "y": 234.02,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 118,
+            "hintImage": "shusire/CirclesideMokokoHint1.jpg"
+        },
+        {
+            "x": -132.53,
+            "y": 264.54,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 119,
+            "hintImage": "shusire/CirclesideMokokoHint2.jpg",
+            "popupText": "상자(일반)"
+        },
+        {
+            "x": -116.59,
+            "y": 249.16,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 120,
+            "hintImage": "shusire/CirclesideMokokoHint3.jpg"
+        },
+        {
+            "x": -198,
+            "y": 257.27,
+            "type": MarkerTypeEnum.Zoning,
+            "id": 121,
+            "title": "To Frost Prison Plateau",
+            "teleportTo": [
+                -220,
+                256
+            ]
+        },
+        {
+            "x": -150.53,
+            "y": 439.53,
+            "type": MarkerTypeEnum.HiddenStory,
+            "id": 122,
+            "popupText": "벗에게 보내는 편지 #2",
+            "hintImage": "shusire/MirrorsHiddenStoryHint1.jpg"
+        },
+        {
+            "x": -215.12,
+            "y": 428.65,
+            "type": MarkerTypeEnum.Vista,
+            "id": 123,
+            "hintImage": "shusire/ShadowsVistaHint1.jpg",
+            "popupText": "미궁"
+        },
+        {
+            "x": -241.22,
+            "y": 438.1,
+            "type": MarkerTypeEnum.HiddenStory,
+            "id": 124,
+            "hintImage": "shusire/ShadowsHiddenStoryHint1.jpg",
+            "popupText": "벗에게 보내는 편지 #3"
+        },
+        {
+            "x": -302.26,
+            "y": 461.4,
+            "type": MarkerTypeEnum.HiddenQuest,
+            "id": 125,
+            "hintText": "스크린샷의 설명이 잘못됐습니다.<br>첫 진입은 검은색 ① 이 아닌<br>빨간색 ① 입니다. "
+        },
+        {
+            "x": -358.35,
+            "y": 327.05,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 126,
+            "hintImage": "shusire/BaedanMokokoHint1.jpg"
+        },
+        {
+            "x": -378.24,
+            "y": 341.43,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 127,
+            "hintImage": "shusire/BaedanMokokoHint2.jpg"
+        },
+        {
+            "x": -375.99,
+            "y": 353.55,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 128,
+            "hintImage": "shusire/BaedanMokokoHint3.jpg"
+        },
+        {
+            "x": -354.72,
+            "y": 363.3,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 129,
+            "hintImage": "shusire/BaedanMokokoHint4.jpg"
+        },
+        {
+            "x": -352.35,
+            "y": 374.05,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 130,
+            "hintImage": "shusire/BaedanMokokoHint5.jpg"
+        },
+        {
+            "x": -396.8,
+            "y": 349.93,
+            "type": MarkerTypeEnum.Zoning,
+            "id": 131
         }
     ];
 
