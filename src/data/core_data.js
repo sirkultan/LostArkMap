@@ -1,5 +1,5 @@
 let Constants = Object.freeze({
-    "EditMode": false,
+    "EditMode": true,
     "TileSize": 512,
     "ErrorImagePath": 'maps/blank.png',
     'AchievementMarkerColor': '#ff9900'

@@ -2,8 +2,8 @@
 
     LAM.areaMarkerData['Bern North'] = [
         {
-            "x": -208.44,
-            "y": 276.44,
+            "x": -207.31215732561682,
+            "y": 273.25174382232774,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "bern/TreasureMap1.jpg",
             "id": 0

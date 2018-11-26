@@ -2,8 +2,8 @@
 
     LAM.areaMarkerData['World'] = [
         {
-            "x": -360.5,
-            "y": 323.76,
+            "x": -354.40439384709106,
+            "y": 319.689722518653,
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -283.81,
@@ -14,36 +14,36 @@
             "title": "To Mane Waves Harbor (Lutheran East)"
         },
         {
-            "x": -221.62,
-            "y": 336.58,
+            "x": -224.25079957356076,
+            "y": 330.8781457187089,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "world/TreasureMap1.jpg",
             "id": 1
         },
         {
-            "x": -188.24,
-            "y": 455.74,
+            "x": -191.1258757234237,
+            "y": 442.3823172152577,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "world/TreasureMap2.jpg",
             "id": 2
         },
         {
-            "x": -409.87,
-            "y": 394.89,
+            "x": -398.5590542187024,
+            "y": 385.25526565957796,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "world/TreasureMap3.jpg",
             "id": 3
         },
         {
-            "x": -230.25,
-            "y": 423.32,
+            "x": -231.75045689917758,
+            "y": 413.38047081514594,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "world/TreasureMap4.jpg",
             "id": 4
         },
         {
-            "x": -310.18,
-            "y": 364.14,
+            "x": -306.8739910143162,
+            "y": 357.4723915113315,
             "type": MarkerTypeEnum.Zoning,
             "id": 5,
             "title": "To Ocean Scent Forest (Totoiku)",

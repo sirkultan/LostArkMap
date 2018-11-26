@@ -3,7 +3,12 @@
     let area = LAM.createArea("Anich", {
         kr: "애니츠",
         path: "maps/areas/Anich",
-        zoomLevel: 4
+        zoomLevel: 5
+    });
+
+    area.registerMap("Port City Changchun", {
+        kr: "항구도시 창천",
+        type: MapTypeEnum.City
     });
 
     area.registerMap("Mirror Valley", {
@@ -24,11 +29,6 @@
     area.registerMap("Forest of Sound", {
         kr: "소리의 숲",
         type: MapTypeEnum.Continent
-    });
-
-    area.registerMap("Port City Changchun", {
-        kr: "항구도시 창천",
-        type: MapTypeEnum.City
     });
 
     area.registerMap("Twilight Mist", {

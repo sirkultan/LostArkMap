@@ -1,16 +1,5 @@
 (function(){
 
-    /*얼어붙은 바다
-리겐스 마을
-칼날바람 언덕
-머무른 시간의 호수
-서리감옥 고원
-얼음나비 절벽
-거울의 미궁[던전]
-바에단의 은신처[던전]
-그림자 미궁[던전]
-서클사이드[던전]*/
-
     let area = LAM.createArea("Shusire", {
         kr: "슈샤이어",
         path: "maps/areas/Shusire",

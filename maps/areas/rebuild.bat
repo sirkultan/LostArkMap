@@ -1,4 +1,4 @@
-python slice.py 6 anich_full.png Anich
+python slice.py 5 anich_full.png Anich
 python slice.py 4 artemis_full.png Artemis
 python slice.py 4 arthetaine_full.png Arthetaine
 python slice.py 4 bern_north_full.png BernNorth

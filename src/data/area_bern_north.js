@@ -1,15 +1,5 @@
 (function(){
 
-    /*라니아 마을[마을]
-파르나 숲
-페스나르 고원
-베르닐 삼림
-발란카르 산맥
-고르곤의 둥지[던전]
-고대유적 엘베리아[던전]
-베른 성[대도시] (임시)
-크로나 항구*/
-
     let area = LAM.createArea("Bern North", {
         kr: "베른 북부",
         path: "maps/areas/BernNorth",

@@ -3,7 +3,7 @@
     let area = LAM.createArea("Lutheran East", {
         kr: "루테란 동부",
         path: "maps/areas/LutheranEast",
-        zoomLevel: 5
+        zoomLevel: 6
     });
 
     area.registerMap("Castle of Lutheran", {
