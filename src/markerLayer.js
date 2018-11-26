@@ -39,10 +39,6 @@
                 "All Markers": this.markerLayer
             };
 
-            for (let type in this.markerTypeLayers) {
-                overlays[MarkerTypeDefaultTitle(type)] = this.markerTypeLayers[type];
-            }
-
             this.layerControl = L.control.layers(baseLayers, overlays);
         }
 
@@ -212,6 +208,7 @@
             let typeLayer = this.markerTypeLayers[markerData.type];
             if (typeLayer === undefined){
                 typeLayer = L.layerGroup();
+                this.layerControl.addOverlay(typeLayer, GetKeyByValue(MarkerTypeEnum, markerData.type));
                 this.markerTypeLayers[markerData.type] = typeLayer;
             }
 
