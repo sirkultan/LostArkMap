@@ -28,4 +28,8 @@
 
     LAM.registerGuide("Darkalord Unofficial Guide", "https://drive.google.com/file/d/15dbbcTksoa2v2Fvk8PH5AB0OJdj4u2Mp/view", 'DarkalordUnofficialGuide.jpg');
 
+    LAM.registerGuide("Interactive Island Map", "https://loahae.com/wmap/", "islandmap.jpg");
+
+    LAM.registerGuide("Bakinot's Infobook", "https://docs.google.com/spreadsheets/d/1XnI7kznh5daFyVzTLtN-JRdfVjw6ReMPeeOi-62apTQ/edit#gid=1003668517", "bakinot.jpg")
+
 }());
