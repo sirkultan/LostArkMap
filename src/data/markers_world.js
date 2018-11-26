@@ -64,6 +64,20 @@
                 235
             ],
             "teleportArea": "Anich"
+        },
+        {
+            "x": -142.85,
+            "y": 418.25,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 7,
+            "hintImage": "world/TreasureMap5.jpg"
+        },
+        {
+            "x": -179.4883307055446,
+            "y": 254.4000015258789,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 8,
+            "hintImage": "world/TreasureMap6.jpg"
         }
     ];
 
