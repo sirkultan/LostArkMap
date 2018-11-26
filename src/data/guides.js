@@ -32,4 +32,6 @@
 
     LAM.registerGuide("Bakinot's Infobook", "https://docs.google.com/spreadsheets/d/1XnI7kznh5daFyVzTLtN-JRdfVjw6ReMPeeOi-62apTQ/edit#gid=1003668517", "bakinot.jpg")
 
+    LAM.registerGuide("Roadmap to ilvl 330", "https://i.redd.it/ats6ofkpqo021.png", "roadmap50.jpg")
+
 }());
