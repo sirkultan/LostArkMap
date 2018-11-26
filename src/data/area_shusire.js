@@ -23,12 +23,12 @@
     });
 
     area.registerMap("Lake of Time", {
-        kr: "시간의 호수",
+        kr: "머무른 시간의 호수",
         type: MapTypeEnum.Continent
     });
 
     area.registerMap("Frost Prison Plateau", {
-        kr: "서리 감옥 고원",
+        kr: "서리감옥 고원",
         type: MapTypeEnum.Continent
     });
 
