@@ -42,6 +42,13 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 8,
             "hintImage": "world/TreasureMap6.jpg"
+        },
+        {
+            "x": -260.78,
+            "y": 367.44,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 9,
+            "hintImage": "world/TreasureMap7.jpg"
         }
     ];
 
