@@ -968,7 +968,7 @@
         {
             "x": -284.1876142247944,
             "y": 437.0628761185413,
-            "type": MarkerTypeEnum.Zoning,
+            "type": MarkerTypeEnum.ZoningWorld,
             "teleportTo": [
                 -354,
                 320
