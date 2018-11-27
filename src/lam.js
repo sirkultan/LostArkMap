@@ -164,7 +164,7 @@ let LAM = (function(){
             if (result === undefined) {
                 result = L.icon({
                     iconUrl: 'images/icons/' + markerType,
-                    iconSize: [20, 20],
+                    iconSize: [30, 30],
                     className: "ov-marker"});
                 this.markerIcons[markerType] = result;
             }

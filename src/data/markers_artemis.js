@@ -1355,6 +1355,41 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 153,
             "hintImage": "artemis/TreasureMap17.jpg"
+        },
+        {
+            "x": -441.97,
+            "y": 263.59,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 154,
+            "hintImage": "artemis/TreasureMap18.jpg"
+        },
+        {
+            "x": -380.29,
+            "y": 243.04,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 155,
+            "hintImage": "artemis/TreasureMap19.jpg"
+        },
+        {
+            "x": -145.53,
+            "y": 246.4,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 156,
+            "hintImage": "artemis/TreasureMap20.jpg"
+        },
+        {
+            "x": -270.72,
+            "y": 252.83,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 157,
+            "hintImage": "artemis/TreasureMap21.jpg"
+        },
+        {
+            "x": -231.41,
+            "y": 254.27,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 158,
+            "hintImage": "artemis/TreasureMap22.jpg"
         }
     ];
 
