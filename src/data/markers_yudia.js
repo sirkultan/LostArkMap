@@ -2,18 +2,6 @@
 
     LAM.areaMarkerData['Yudia'] = [
         {
-            "x": -468.69,
-            "y": 416.88,
-            "title": "To Borderlands (Artemis)",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -16.94,
-                255.63
-            ],
-            "teleportArea": "Artemis",
-            "id": 0
-        },
-        {
             "x": -353.75,
             "y": 426.74,
             "title": "Morai Ruins Dungeon",
@@ -367,17 +355,6 @@
             "id": 44
         },
         {
-            "x": -229.62,
-            "y": 418.38,
-            "title": "To Saland Hills",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -317.44,
-                409.07
-            ],
-            "id": 45
-        },
-        {
             "x": -197.75,
             "y": 142.63,
             "title": "Sapira Cave Dungeon",
@@ -547,17 +524,6 @@
             "id": 66
         },
         {
-            "x": -209.5,
-            "y": 25.77,
-            "title": "To Ozhorn Hills",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -197.75,
-                142.63
-            ],
-            "id": 67
-        },
-        {
             "x": -243.87,
             "y": 90.51,
             "type": MarkerTypeEnum.Mokoko,
@@ -666,17 +632,6 @@
             "hintText": "살란드 구릉지 요리사NPC - 헬라<br>카바티안의 오래된 술 식재료",
             "hintImage": "yudia/SapiraFoodIngredientHint1.jpg",
             "id": 82
-        },
-        {
-            "x": -457.94,
-            "y": 297.07,
-            "title": "To Saland Hills",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -353.75,
-                426.74
-            ],
-            "id": 83
         },
         {
             "x": -432.56,

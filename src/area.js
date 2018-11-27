@@ -23,7 +23,9 @@
                 area: this.name,
                 getZoneCallback: this.getZoneForPoint
             });
+        }
 
+        loadMarkers() {
             let markerEntries = LAM.areaMarkerData[this.name];
             if(markerEntries !== undefined) {
                 for (let i in markerEntries) {
@@ -74,6 +76,15 @@
             }
 
             return undefined;
+        }
+
+        getZoneType(zone) {
+            let zoneData = this.maps[zone];
+            if(zoneData === undefined){
+                return undefined;
+            }
+
+            return zoneData.type;
         }
 
         initializeUI() {

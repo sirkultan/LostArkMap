@@ -75,12 +75,12 @@
         {
             "x": -488.73,
             "y": 304.79,
-            "type": MarkerTypeEnum.Zoning,
+            "type": MarkerTypeEnum.ZoningWorld,
             "id": 10,
             "title": "To World",
             "teleportTo": [
-                -310,
-                364
+                -307,
+                357
             ],
             "teleportArea": "World"
         },
@@ -93,17 +93,6 @@
             "teleportTo": [
                 -477,
                 161
-            ]
-        },
-        {
-            "x": -476.97,
-            "y": 159.81,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 12,
-            "title": "To Ocean Scent Forest",
-            "teleportTo": [
-                -420,
-                270
             ]
         },
         {
@@ -125,17 +114,6 @@
             "teleportTo": [
                 -371,
                 315
-            ]
-        },
-        {
-            "x": -371.18,
-            "y": 315,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 15,
-            "title": "To Mokoko Village",
-            "teleportTo": [
-                -443,
-                238
             ]
         },
         {
@@ -247,17 +225,6 @@
             "id": 28,
             "popupText": "매우 사나운 까마귀",
             "hintImage": "totoiku/SweetForestBossHint4.jpg"
-        },
-        {
-            "x": -376.23,
-            "y": 198.59,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 29,
-            "title": "To Sweet Forest",
-            "teleportTo": [
-                -320,
-                276
-            ]
         },
         {
             "x": -260.94,
@@ -375,17 +342,6 @@
             "popupText": "깨어난 플라피"
         },
         {
-            "x": -249.04,
-            "y": 180.85,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 44,
-            "title": "To Rocky Forest",
-            "teleportTo": [
-                -261,
-                194
-            ]
-        },
-        {
             "x": -216.56,
             "y": 178.07,
             "type": MarkerTypeEnum.HiddenStory,
@@ -437,34 +393,12 @@
             ]
         },
         {
-            "x": -98.43,
-            "y": 192.05,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 51,
-            "title": "To Silent Giants Forest",
-            "teleportTo": [
-                -157,
-                207
-            ]
-        },
-        {
             "x": -149.57,
             "y": 335.93,
             "type": MarkerTypeEnum.HiddenStory,
             "id": 52,
             "popupText": "해적왕이 될거야! #3",
             "hintImage": "totoiku/PirateLairHiddenStoryHint1.jpg"
-        },
-        {
-            "x": -228.22,
-            "y": 279.96,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 53,
-            "title": "To Sweet Forest",
-            "teleportTo": [
-                -269,
-                325
-            ]
         },
         {
             "x": -27.53,

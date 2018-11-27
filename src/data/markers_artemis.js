@@ -398,17 +398,6 @@
             "id": 32
         },
         {
-            "x": -496.5,
-            "y": 229.76,
-            "title": "To Leonhard",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -397.5,
-                145.63
-            ],
-            "id": 33
-        },
-        {
             "x": -356.12,
             "y": 260.89,
             "title": "To Angemos Mountains",
@@ -670,17 +659,6 @@
             "id": 66
         },
         {
-            "x": -314.25,
-            "y": 249.03,
-            "title": "To Loghills",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -356.12,
-                260.89
-            ],
-            "id": 67
-        },
-        {
             "x": -206.75,
             "y": 236.28,
             "title": "To Borderlands",
@@ -842,17 +820,6 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap14.jpg",
             "id": 88
-        },
-        {
-            "x": -148.75,
-            "y": 251.78,
-            "title": "To Angemos Mountains",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -206.75,
-                236.28
-            ],
-            "id": 89
         },
         {
             "x": -33.5,
@@ -1079,17 +1046,6 @@
             "id": 117
         },
         {
-            "x": -356.12,
-            "y": 444.63,
-            "title": "To Loghills",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -404.87,
-                284.02
-            ],
-            "id": 118
-        },
-        {
             "x": -460.5,
             "y": 399.94,
             "type": MarkerTypeEnum.Mokoko,
@@ -1154,17 +1110,6 @@
             "type": MarkerTypeEnum.Boss,
             "hintImage": "artemis/PoisonclawCaveBossHint2.jpg",
             "id": 127
-        },
-        {
-            "x": -249,
-            "y": 494.98,
-            "title": "To Angemos Mountains",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -206.25,
-                307.02
-            ],
-            "id": 128
         },
         {
             "x": -271.5,
@@ -1261,17 +1206,6 @@
             "hintText": "2시간이 지나면 500년된 메라주로 바뀜 그 때 마시면 된다. 미리 마시거나 유효기간이 지나고 마시면 모험의 서를 완료할 수 없다",
             "hintImage": "artemis/AgilothHeadFoodIngredientHint1.jpg",
             "id": 141
-        },
-        {
-            "x": -154.5,
-            "y": 81.03,
-            "title": "To Borderlands",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -33.5,
-                234.54
-            ],
-            "id": 142
         },
         {
             "x": -89.69,

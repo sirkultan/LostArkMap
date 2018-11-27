@@ -2,18 +2,6 @@
 
     LAM.areaMarkerData['Lutheran West'] = [
         {
-            "x": -489.12,
-            "y": 438.14,
-            "title": "To Ozhorn Hills (Yudia)",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -43.31,
-                277.19
-            ],
-            "teleportArea": "Yudia",
-            "id": 0
-        },
-        {
             "x": -438.5,
             "y": 359.26,
             "title": "To Lake Bars",
@@ -228,17 +216,6 @@
             "id": 27
         },
         {
-            "x": -421.12,
-            "y": 324.14,
-            "title": "To Zagoras Mountain",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -438.5,
-                359.26
-            ],
-            "id": 28
-        },
-        {
             "x": -429,
             "y": 180.07,
             "title": "Ridge of Brilliance Dungeon",
@@ -396,17 +373,6 @@
             "type": MarkerTypeEnum.Vista,
             "hintImage": "lutheran/LakeBarsVistaHint1.jpg",
             "id": 48
-        },
-        {
-            "x": -328.19,
-            "y": 260.57,
-            "title": "To Lake Bars",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -354,
-                258.14
-            ],
-            "id": 49
         },
         {
             "x": -180.81,
@@ -577,17 +543,6 @@
             "id": 71
         },
         {
-            "x": -158.19,
-            "y": 248.51,
-            "title": "To Medlinic Monastery",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -180.81,
-                254.51
-            ],
-            "id": 72
-        },
-        {
             "x": -89,
             "y": 320.01,
             "title": "To Plains of Battle",
@@ -604,8 +559,8 @@
             "title": "Gray Hammer Mine Dungeon",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
-                -163.75,
-                58.05
+                -153,
+                68
             ],
             "id": 74
         },
@@ -779,24 +734,13 @@
             "id": 96
         },
         {
-            "x": -72.75,
-            "y": 356.75,
-            "title": "To Vilblin Forest",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -89,
-                320.01
-            ],
-            "id": 97
-        },
-        {
             "x": -37,
             "y": 473.14,
             "title": "To Castle of Lutheran",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
-                -376.31,
-                47.44
+                -376,
+                42
             ],
             "teleportArea": "Lutheran East",
             "id": 98
@@ -899,17 +843,6 @@
             "id": 111
         },
         {
-            "x": -468.5,
-            "y": 110.8,
-            "title": "To Lake Bars",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -429,
-                180.07
-            ],
-            "id": 112
-        },
-        {
             "x": -455.12,
             "y": 113.65,
             "type": MarkerTypeEnum.Mokoko,
@@ -981,17 +914,6 @@
             "type": MarkerTypeEnum.Vista,
             "hintImage": "lutheran/RidgeVistaHint1.jpg",
             "id": 122
-        },
-        {
-            "x": -152.45,
-            "y": 70.1,
-            "title": "To Vilblin Forest",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -100.12,
-                190.51
-            ],
-            "id": 123
         },
         {
             "x": -109.76,

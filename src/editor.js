@@ -19,7 +19,7 @@
                 return '[]';
             }
 
-            let exportData = JSON.stringify(LAM.activeMarkerLayer.exportMarkerData(), null, 4);
+            let exportData = JSON.stringify(LAM.activeMarkerLayer.exportAllMarkerData(), null, 4);
 
             // Have to fix the syntax of marker type enum
             for(let markerType in MarkerTypeEnum) {
@@ -236,8 +236,12 @@
             }
 
             this.resetEditForm();
+
             let markerId = marker.markerDataId;
             let markerData = LAM.activeMarkerLayer.getMarkerData(markerId);
+            if(markerData === undefined){
+                return;
+            }
 
             this.selectActiveMarkerType(GetKeyByValue(MarkerTypeEnum, markerData.type));
 

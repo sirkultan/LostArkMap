@@ -8,13 +8,6 @@
             "id": 0
         },
         {
-            "x": -394.32,
-            "y": 66.8,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 1,
-            "title": "To Stern"
-        },
-        {
             "x": -479.3,
             "y": 30.79,
             "type": MarkerTypeEnum.Vista,
@@ -344,17 +337,6 @@
             ]
         },
         {
-            "x": -243.87,
-            "y": 202.02,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 43,
-            "title": "To Stern",
-            "teleportTo": [
-                -284,
-                186
-            ]
-        },
-        {
             "x": -211.59,
             "y": 183.26,
             "type": MarkerTypeEnum.FoodIngredient,
@@ -487,17 +469,6 @@
             "hintImage": "arthetaine/CrackedMokokoHint6.jpg"
         },
         {
-            "x": -111.12,
-            "y": 195.53,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 61,
-            "title": "To Cracked Land",
-            "teleportTo": [
-                -141,
-                186
-            ]
-        },
-        {
             "x": -96.44,
             "y": 205.14,
             "type": MarkerTypeEnum.Mokoko,
@@ -575,17 +546,6 @@
             "type": MarkerTypeEnum.Mokoko,
             "id": 72,
             "hintImage": "arthetaine/NestMokokoHint5.jpg"
-        },
-        {
-            "x": -223.44,
-            "y": 93.76,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 73,
-            "title": "To Cracked Land",
-            "teleportTo": [
-                -175,
-                152
-            ]
         },
         {
             "x": -186.22,
@@ -726,17 +686,6 @@
             "hintImage": "arthetaine/NebelhornSecretHint2.jpg"
         },
         {
-            "x": -110.53,
-            "y": 65.94,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 93,
-            "title": "To Nebelhorn",
-            "teleportTo": [
-                -188,
-                68
-            ]
-        },
-        {
             "x": -325.06,
             "y": 422.64,
             "type": MarkerTypeEnum.HiddenStory,
@@ -819,17 +768,6 @@
             "hintImage": "arthetaine/TotrerichMokokoHint6.jpg"
         },
         {
-            "x": -328.62,
-            "y": 407.51,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 105,
-            "title": "To Wind Hill",
-            "teleportTo": [
-                -413,
-                359
-            ]
-        },
-        {
             "x": -363.34,
             "y": 436.69,
             "type": MarkerTypeEnum.Zoning,
@@ -845,7 +783,11 @@
             "y": 331.53,
             "type": MarkerTypeEnum.Zoning,
             "id": 107,
-            "title": "Air Gate Dungeon"
+            "title": "Air Gate Dungeon",
+            "teleportTo": [
+                -121,
+                272
+            ]
         },
         {
             "x": -192.16,
@@ -856,28 +798,6 @@
             "teleportTo": [
                 -174,
                 405
-            ]
-        },
-        {
-            "x": -232.59,
-            "y": 289.82,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 109,
-            "title": "To Stern",
-            "teleportTo": [
-                -285,
-                239
-            ]
-        },
-        {
-            "x": -172.31,
-            "y": 405,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 110,
-            "title": "To Riza Waterfall",
-            "teleportTo": [
-                -192,
-                370
             ]
         },
         {
@@ -1004,17 +924,6 @@
             "type": MarkerTypeEnum.Mokoko,
             "id": 127,
             "hintImage": "arthetaine/RizaMokokoHint9.jpg"
-        },
-        {
-            "x": -421.62,
-            "y": 272.77,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 128,
-            "title": "To Stern",
-            "teleportTo": [
-                -334,
-                237
-            ]
         },
         {
             "x": -412.12,
@@ -1214,17 +1123,6 @@
             "hintText": "Kill the machine guns seen in the hint, the lift will then become available."
         },
         {
-            "x": -426.12,
-            "y": 400.02,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 156,
-            "title": "To Totrerich",
-            "teleportTo": [
-                -364,
-                437
-            ]
-        },
-        {
             "x": -482.19,
             "y": 461.38,
             "type": MarkerTypeEnum.SecretPassage,
@@ -1292,6 +1190,17 @@
             "type": MarkerTypeEnum.Mokoko,
             "id": 165,
             "hintImage": "arthetaine/AishmanMokokoHint4.jpg"
+        },
+        {
+            "x": -335.44,
+            "y": 186.87,
+            "type": MarkerTypeEnum.Zoning,
+            "id": 166,
+            "title": "To Barren Passage",
+            "teleportTo": [
+                -395,
+                67
+            ]
         }
     ];
 

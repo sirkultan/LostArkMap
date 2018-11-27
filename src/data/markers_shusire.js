@@ -128,17 +128,6 @@
             "title": "Baedan's Hideout Dungeon"
         },
         {
-            "x": -467.22,
-            "y": 12.2,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 16,
-            "title": "To Blade Wind Hill",
-            "teleportTo": [
-                -402,
-                170
-            ]
-        },
-        {
             "x": -476.09,
             "y": 33.82,
             "type": MarkerTypeEnum.HiddenQuest,
@@ -443,21 +432,10 @@
         {
             "x": -272.44,
             "y": 11.65,
-            "type": MarkerTypeEnum.Zoning,
+            "type": MarkerTypeEnum.ZoningWorld,
             "id": 56,
             "title": "To World",
             "teleportArea": "World"
-        },
-        {
-            "x": -245.94,
-            "y": 96.01,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 57,
-            "title": "To Regens Village",
-            "teleportTo": [
-                -270,
-                121
-            ]
         },
         {
             "x": -259.69,
@@ -588,28 +566,6 @@
             "type": MarkerTypeEnum.Zoning,
             "id": 74,
             "title": "Shadow Labyrinth Dungeon"
-        },
-        {
-            "x": -258.44,
-            "y": 316.14,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 75,
-            "title": "To Frost Prison Plateau",
-            "teleportTo": [
-                -267,
-                281
-            ]
-        },
-        {
-            "x": -199.19,
-            "y": 433,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 76,
-            "title": "To Ice Butterfly Cliff",
-            "teleportTo": [
-                -256,
-                390
-            ]
         },
         {
             "x": -283.09,
@@ -756,28 +712,6 @@
             "type": MarkerTypeEnum.Mokoko,
             "id": 95,
             "hintImage": "shusire/ButterflyMokokoHint5.jpg"
-        },
-        {
-            "x": -319.78,
-            "y": 133.32,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 96,
-            "title": "To Frost Prison Plateau",
-            "teleportTo": [
-                -292,
-                240
-            ]
-        },
-        {
-            "x": -331.84,
-            "y": 125.76,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 97,
-            "title": "To Regens Village",
-            "teleportTo": [
-                -296,
-                181
-            ]
         },
         {
             "x": -400.66,
@@ -947,17 +881,6 @@
             "hintImage": "shusire/CirclesideMokokoHint3.jpg"
         },
         {
-            "x": -198,
-            "y": 257.27,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 121,
-            "title": "To Frost Prison Plateau",
-            "teleportTo": [
-                -220,
-                256
-            ]
-        },
-        {
             "x": -150.53,
             "y": 439.53,
             "type": MarkerTypeEnum.HiddenStory,
@@ -1022,12 +945,6 @@
             "type": MarkerTypeEnum.Mokoko,
             "id": 130,
             "hintImage": "shusire/BaedanMokokoHint5.jpg"
-        },
-        {
-            "x": -396.8,
-            "y": 349.93,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 131
         }
     ];
 

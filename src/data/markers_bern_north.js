@@ -65,7 +65,7 @@
         {
             "x": -459.69,
             "y": 312.64,
-            "type": MarkerTypeEnum.Zoning,
+            "type": MarkerTypeEnum.ZoningWorld,
             "id": 8,
             "title": "To World",
             "teleportArea": "World"
@@ -224,28 +224,6 @@
             "y": 166.27,
             "type": MarkerTypeEnum.Mokoko,
             "id": 29
-        },
-        {
-            "x": -477.97,
-            "y": 170.39,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 30,
-            "title": "To Crona Harbor",
-            "teleportTo": [
-                -423,
-                279
-            ]
-        },
-        {
-            "x": -373.44,
-            "y": 303.63,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 31,
-            "title": "To Crona Harbor",
-            "teleportTo": [
-                -393,
-                303
-            ]
         },
         {
             "x": -268.69,
@@ -513,17 +491,6 @@
             ]
         },
         {
-            "x": -327.19,
-            "y": 229.98,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 65,
-            "title": "To Rania Village",
-            "teleportTo": [
-                -325,
-                276
-            ]
-        },
-        {
             "x": -312.47,
             "y": 138.01,
             "type": MarkerTypeEnum.Mokoko,
@@ -550,17 +517,6 @@
             "y": 196.37,
             "type": MarkerTypeEnum.Mokoko,
             "id": 69
-        },
-        {
-            "x": -363.28,
-            "y": 75.69,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 70,
-            "title": "To Balancar Mountains",
-            "teleportTo": [
-                -270,
-                192
-            ]
         },
         {
             "x": -324.19,
@@ -697,17 +653,6 @@
             "id": 90
         },
         {
-            "x": -233.06,
-            "y": 296.4,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 91,
-            "title": "To Rania Village",
-            "teleportTo": [
-                -272,
-                344
-            ]
-        },
-        {
             "x": -169.19,
             "y": 358.26,
             "type": MarkerTypeEnum.Zoning,
@@ -716,28 +661,6 @@
             "teleportTo": [
                 -117,
                 451
-            ]
-        },
-        {
-            "x": -117.37,
-            "y": 451.5,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 93,
-            "title": "To Bernil Forest",
-            "teleportTo": [
-                -170,
-                358
-            ]
-        },
-        {
-            "x": -247.84,
-            "y": 456.63,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 94,
-            "title": "To Rania Village",
-            "teleportTo": [
-                -288,
-                352
             ]
         },
         {
@@ -912,17 +835,6 @@
             "y": 476.5,
             "type": MarkerTypeEnum.Mokoko,
             "id": 117
-        },
-        {
-            "x": -242.56,
-            "y": 190.89,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 118,
-            "title": "To Rania Village",
-            "teleportTo": [
-                -269,
-                316
-            ]
         },
         {
             "x": -222.81,

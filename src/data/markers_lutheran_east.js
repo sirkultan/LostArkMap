@@ -7,22 +7,10 @@
             "title": "To Diorika Plains",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
-                -357,
-                71.5
+                -363,
+                76
             ],
             "id": 0
-        },
-        {
-            "x": -376.2812404812671,
-            "y": 42.315303792762286,
-            "title": "To Plains of Battle",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -37,
-                473.14
-            ],
-            "teleportArea": "Lutheran West",
-            "id": 1
         },
         {
             "x": -371.62507614986293,
@@ -144,24 +132,13 @@
             "id": 17
         },
         {
-            "x": -362.7517514468474,
-            "y": 76.18493555540034,
-            "title": "To Castle of Lutheran",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -368.84,
-                60.35
-            ],
-            "id": 18
-        },
-        {
             "x": -352.4046413341456,
             "y": 116.62653866675979,
             "title": "To Solar Halo Hill",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
-                -381.31,
-                159.11
+                -376,
+                160
             ],
             "id": 19
         },
@@ -275,24 +252,13 @@
             "id": 34
         },
         {
-            "x": -375.5607485531526,
-            "y": 160.43678195551212,
-            "title": "To Diorika Plains",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -357.69,
-                119.43
-            ],
-            "id": 35
-        },
-        {
             "x": -338.24941935729515,
             "y": 172.53442991130356,
             "title": "Lastra Forest (+Kings Tomb) Dungeon",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
-                -317.28,
-                156.54
+                -313,
+                167
             ],
             "id": 36
         },
@@ -302,8 +268,8 @@
             "title": "To Nursery Rhizome",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
-                -381.19,
-                223.66
+                -377,
+                225
             ],
             "id": 37
         },
@@ -410,24 +376,13 @@
             "id": 51
         },
         {
-            "x": -377.43635775205604,
-            "y": 225.24914518513344,
-            "title": "To Solar Halo Hill",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -350.31,
-                182.94
-            ],
-            "id": 52
-        },
-        {
             "x": -326.68864224794396,
             "y": 219.94153472617012,
             "title": "To Black Rose Chapel",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
-                -312.53,
-                224.28
+                -309,
+                220
             ],
             "id": 53
         },
@@ -550,24 +505,13 @@
             "id": 69
         },
         {
-            "x": -308.74885775205604,
-            "y": 220.002325096437,
-            "title": "To Nursery Rhizome",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -322.91,
-                227.31
-            ],
-            "id": 70
-        },
-        {
             "x": -284.4378426743832,
             "y": 247.31612441503415,
             "title": "To Ria Monogamies",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
-                -292.97,
-                266.82
+                -299,
+                268
             ],
             "id": 71
         },
@@ -577,8 +521,8 @@
             "title": "Underground Chapel Dungeon",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
-                -230.19,
-                205.51
+                -233,
+                199
             ],
             "id": 72
         },
@@ -720,24 +664,13 @@
             "id": 91
         },
         {
-            "x": -298.50167529698444,
-            "y": 267.4371580740534,
-            "title": "To Black Rose Chapel",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -283.34,
-                253.91
-            ],
-            "id": 92
-        },
-        {
             "x": -276.93647197685044,
             "y": 311.0629445037306,
             "title": "To Borea Manor",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
-                -310.5,
-                340.35
+                -311,
+                346
             ],
             "id": 93
         },
@@ -892,24 +825,13 @@
             "id": 113
         },
         {
-            "x": -311.12519037465734,
-            "y": 345.62212782204836,
-            "title": "To Ria Monogamies",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -280.34,
-                311.88
-            ],
-            "id": 114
-        },
-        {
             "x": -276.43713828815106,
             "y": 370.4976065183737,
             "title": "To Mane Waves Harbor",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
-                -291.12,
-                400.07
+                -293,
+                399
             ],
             "id": 115
         },
@@ -1033,38 +955,27 @@
             "id": 131
         },
         {
-            "x": -293.00057112397195,
-            "y": 398.6257864296772,
-            "title": "To Borea Manor",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -277.62,
-                366.13
-            ],
-            "id": 132
-        },
-        {
             "x": -303.93757614986293,
             "y": 405.5001367703786,
             "title": "To Crocnice Beach",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
-                -363,
-                390.51
+                -362,
+                391
             ],
             "id": 133
         },
         {
             "x": -284.1876142247944,
             "y": 437.0628761185413,
-            "popupText": "To World",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
-                -360.5,
-                323.76
+                -354,
+                320
             ],
             "teleportArea": "World",
-            "id": 134
+            "id": 134,
+            "title": "To World"
         },
         {
             "x": -291.43786171184894,
@@ -1117,24 +1028,13 @@
             "id": 141
         },
         {
-            "x": -362.56236673773986,
-            "y": 391.062192266648,
-            "title": "To Mane Waves Harbor",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -303.69,
-                405.75
-            ],
-            "id": 142
-        },
-        {
             "x": -327.2507043862321,
             "y": 434.7486664888082,
             "title": "Crying Storm Dungeon",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
-                -359.22,
-                458.03
+                -360,
+                459
             ],
             "id": 143
         },
@@ -1329,17 +1229,6 @@
             "id": 169
         },
         {
-            "x": -360.37535219311604,
-            "y": 458.8433054962694,
-            "title": "To Crocnice Beach",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -324.94,
-                432.32
-            ],
-            "id": 170
-        },
-        {
             "x": -351.9378331556503,
             "y": 468.8748119407294,
             "type": MarkerTypeEnum.Mokoko,
@@ -1415,17 +1304,6 @@
             "type": MarkerTypeEnum.SecretPassage,
             "hintImage": "lutheran/CryingStormSecretHint2.jpg",
             "id": 181
-        },
-        {
-            "x": -233.18841379835516,
-            "y": 198.94109022243953,
-            "title": "To Black Rose Chapel",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -281.28,
-                198.82
-            ],
-            "id": 182
         },
         {
             "x": -239.5632043862321,
@@ -1504,17 +1382,6 @@
             "hintText": "Certain routes in this dungeon only open when certain passive residents are killed",
             "hintImage": "lutheran/ChapelNoticeHint1.jpg",
             "id": 193
-        },
-        {
-            "x": -313.49885775205604,
-            "y": 166.6194949922594,
-            "title": "To Solar Halo Hill",
-            "type": MarkerTypeEnum.Zoning,
-            "teleportTo": [
-                -340.16,
-                178.35
-            ],
-            "id": 194
         },
         {
             "x": -300.5304789826378,

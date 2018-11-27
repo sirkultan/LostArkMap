@@ -40,6 +40,8 @@ let MarkerTypeEnum = Object.freeze({
     "Vista": "vista.png",
     "WorldBoss": "world_boss.png",
     "Zoning": "zoning.png",
+    "ZoningWorld": "zoningworld.png",
+    "ZoningIsland": "zoningisland.png",
     "GroupQuest": "groupquest.png",
     "OtherStory": "otherstory.png",
     "TreasureMap": "treasuremap.svg",
@@ -101,6 +103,14 @@ MarkerTypeDefaultTitle = function(markerType) {
 
         case MarkerTypeEnum.Zoning: {
             return "Zone change";
+        }
+
+        case MarkerTypeEnum.ZoningIsland: {
+            return "Area change";
+        }
+
+        case MarkerTypeEnum.ZoningWorld: {
+            return "Area change";
         }
 
         case MarkerTypeEnum.TreasureBox: {

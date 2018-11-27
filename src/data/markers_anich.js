@@ -120,7 +120,7 @@
         {
             "x": -488.04,
             "y": 234.14,
-            "type": MarkerTypeEnum.Zoning,
+            "type": MarkerTypeEnum.ZoningWorld,
             "id": 15,
             "title": "To World",
             "teleportTo": [
@@ -136,30 +136,8 @@
             "id": 16,
             "title": "To Delphi Prefecture",
             "teleportTo": [
-                -418,
-                293
-            ]
-        },
-        {
-            "x": -332.62519037465734,
-            "y": 36.68719226664804,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 17,
-            "title": "To Port City Changchun",
-            "teleportTo": [
-                -448,
-                245
-            ]
-        },
-        {
-            "x": -415.75007614986293,
-            "y": 132.49521303674732,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 18,
-            "title": "To Port City Chanchun",
-            "teleportTo": [
-                -487,
-                177
+                -333,
+                37
             ]
         },
         {
@@ -337,17 +315,6 @@
             "popupText": "정예 습격대 보급병"
         },
         {
-            "x": -405.82,
-            "y": 180.44,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 45,
-            "title": "To Wisteria Hills",
-            "teleportTo": [
-                -379,
-                154
-            ]
-        },
-        {
             "x": -266.54,
             "y": 122.45,
             "type": MarkerTypeEnum.Zoning,
@@ -359,29 +326,22 @@
             ]
         },
         {
-            "x": -324.81,
-            "y": 127.2,
+            "x": -291.92,
+            "y": 159.3,
             "type": MarkerTypeEnum.Zoning,
-            "id": 47,
-            "title": "To Wisteria Hills",
+            "id": 48,
+            "title": "Barrier of Red Dungeon"
+        },
+        {
+            "x": -291.92,
+            "y": 159.3,
+            "type": MarkerTypeEnum.Zoning,
+            "id": 48,
+            "title": "Barrier of Red Dungeon",
             "teleportTo": [
-                -357,
-                149
+                -309,
+                197
             ]
-        },
-        {
-            "x": -291.92,
-            "y": 159.3,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 48,
-            "title": "Barrier of Red Dungeon"
-        },
-        {
-            "x": -291.92,
-            "y": 159.3,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 48,
-            "title": "Barrier of Red Dungeon"
         },
         {
             "x": -313.66,
@@ -512,17 +472,6 @@
             "popupText": "혼재의 추오"
         },
         {
-            "x": -245.81,
-            "y": 141.66,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 66,
-            "title": "To Forest of Sound",
-            "teleportTo": [
-                -266,
-                123
-            ]
-        },
-        {
             "x": -200.04,
             "y": 101.42,
             "type": MarkerTypeEnum.Zoning,
@@ -542,17 +491,6 @@
             "teleportTo": [
                 -162,
                 129
-            ]
-        },
-        {
-            "x": -162.04,
-            "y": 130.26,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 70,
-            "title": "To Twilight Mist",
-            "teleportTo": [
-                -180,
-                132
             ]
         },
         {
@@ -689,28 +627,6 @@
             "id": 88,
             "popupText": "단단한 비조",
             "hintImage": "anich/TwilightBossHint3.jpg"
-        },
-        {
-            "x": -200.57,
-            "y": 52.44,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 89,
-            "title": "To Twiglight Mist",
-            "teleportTo": [
-                -201,
-                101
-            ]
-        },
-        {
-            "x": -246.73,
-            "y": 45.35,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 90,
-            "title": "To Delphi Prefecture",
-            "teleportTo": [
-                -262,
-                43
-            ]
         },
         {
             "x": -261.93,
@@ -1232,17 +1148,6 @@
             "y": 133.17,
             "type": MarkerTypeEnum.Mokoko,
             "id": 161
-        },
-        {
-            "x": -309.44,
-            "y": 197.28,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 162,
-            "title": "To Forest of Sound",
-            "teleportTo": [
-                -293,
-                160
-            ]
         },
         {
             "x": -303.29,

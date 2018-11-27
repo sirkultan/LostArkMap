@@ -22,8 +22,13 @@ let LAM = (function(){
 
             this.map.setView([0, 0], 1)
 
+            // Initialize all areas before loading the markers
             for (let name in this.areas) {
                 this.areas[name].initialize();
+            }
+
+            for (let name in this.areas) {
+                this.areas[name].loadMarkers();
 
                 if(this.activeArea === undefined) {
                     this.activateArea(name);
@@ -235,6 +240,24 @@ let LAM = (function(){
             }
         }
 
+        getZoneType(area, zone) {
+            let areaData = this.areas[area];
+            if(areaData === undefined){
+                return undefined;
+            }
+
+            return areaData.getZoneType(zone);
+        }
+
+        getAreaMarkerLayer(area) {
+            let areaData = this.areas[area];
+            if(areaData === undefined) {
+                return undefined;
+            }
+
+            return areaData.markerLayer;
+        }
+
         rebuildStats() {
             if(this.suspendStatUpdate) {
                 return;
@@ -262,7 +285,9 @@ let LAM = (function(){
                     // Ignore some markers
                     case MarkerTypeEnum.Internal:
                     case MarkerTypeEnum.Notice:
-                    case MarkerTypeEnum.Zoning: {
+                    case MarkerTypeEnum.Zoning:
+                    case MarkerTypeEnum.ZoningIsland:
+                    case MarkerTypeEnum.ZoningWorld: {
                         continue;
                     }
                 }
