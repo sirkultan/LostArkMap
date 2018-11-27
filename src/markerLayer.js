@@ -203,8 +203,8 @@
 
             let popupContent = $('<div></div>');
 
-            let locationLink = "?c=" + ContentTypeEnum.AreaMap + "&a=" + markerData.area + '&x=' + markerData.x + '&y=' + markerData.y + '&z=' + markerData.zoomLevel;
-            let copyLocationButton = $('<a href="'+locationLink+'"><img src="images/icons/map-pin.svg"/></a>');
+            let pinId = 'markerPin_' + markerData.area + '_' + markerData.id;
+            let copyLocationButton = $('<a href="#" class="markerPinLink" id="' + pinId + '"><img src="images/icons/map-pin.svg"/></a>');
 
             popupContent.append(copyLocationButton);
 
@@ -221,6 +221,15 @@
             }
 
             marker.bindPopup(popupContent.html());
+        }
+
+        getMarkerPinLink(id) {
+            let markerData = this.markerIdLookup[id];
+            return LAM.getMapLink(markerData.x, markerData.y, undefined, markerData.area) + '&mid=' + id;
+        }
+
+        showCopyMarkerPin(id) {
+            LAM.showCopyLinkDialog(this.getMarkerPinLink(id), "Direct link for " + this.area + " Marker #" + id);
         }
 
         processMarkerSpecialContent(marker, markerData) {
@@ -417,8 +426,14 @@
 
             return markerCopy;
         }
-
     }
+
+    $(document).ready(function() {
+        $('body').on('click', 'a.markerPinLink', function() {
+            let idSegments = this.id.split('_');
+            LAM.activeMarkerLayer.showCopyMarkerPin(idSegments[2]);
+        });
+    });
 
     LAM.createMarkerLayer = function(data){
         return new LostArkMarkerLayer(data);

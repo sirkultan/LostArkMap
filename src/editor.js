@@ -36,7 +36,8 @@
         initializeUI() {
             for(let marker in MarkerTypeEnum) {
                 switch (MarkerTypeEnum[marker]) {
-                    case MarkerTypeEnum.Internal: {
+                    case MarkerTypeEnum.Internal:
+                    case MarkerTypeEnum.TargetMark: {
                         continue;
                     }
                 }

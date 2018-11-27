@@ -46,7 +46,8 @@ let MarkerTypeEnum = Object.freeze({
     "OtherStory": "otherstory.png",
     "TreasureMap": "treasuremap.svg",
     "HiddenQuest": "hiddenquest.png",
-    "Notice": "notice.png"
+    "Notice": "notice.png",
+    "TargetMark": "targetmark.png"
 });
 
 /**

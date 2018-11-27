@@ -15,6 +15,9 @@
     <!-- Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"/>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css" type="text/css"/>
 
     <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
@@ -31,6 +34,8 @@
 
     <!-- Leaflet -->
     <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
 
     <!-- feather -->
     <script defer src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
@@ -88,8 +93,7 @@
                 </button>
             </div>
             <div class="modal-body mx-3">
-                <div class="md-form mb-5">
-                    <i class="fa fa-envelope prefix grey-text"></i>
+                <div class="md-form mb-4">
                     <input type="text" id="createLayerForm-name" class="form-control">
                     <label data-error="wrong" data-success="right" for="createLayerForm-name">Name</label>
                 </div>
@@ -111,6 +115,25 @@
     </div>
 </div>
 
+<div class="modal fade" id="copyTextModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold" id="copyTextModalTitle">NOT_SET</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="md-form mb-2">
+                    <input type="text" id="copyTextModal-text" class="form-control">
+                    <button class="btn btn-default" id="copyTextModal-copy">Copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container-fluid">
     <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
@@ -126,8 +149,7 @@
 
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                     <span>Custom Layers</span>
-                    <a class="d-flex align-items-center text-muted" href="#" data-toggle="modal"
-                       data-target="#createLayerModal">
+                    <a class="d-flex align-items-center text-muted" href="#" data-toggle="modal" data-target="#createLayerModal">
                         <span data-feather="plus-circle"></span>
                     </a>
                 </h6>

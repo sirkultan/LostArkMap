@@ -12,6 +12,57 @@ let LAM = (function(){
             this.activeMarkerLayer = undefined;
             this.activeContent = undefined;
             this.suspendStatUpdate = true;
+            this.copyLocationMode = false;
+        }
+
+        onMapClick(e) {
+            let x = e.latlng.lat;
+            let y = e.latlng.lng;
+
+            if (this.copyLocationMode === true) {
+                console.log('[' + x + ', ' + y + ']');
+                L.DomUtil.removeClass(LAM.map._container,'crosshair-cursor-enabled');
+                this.showCopyLinkDialog(this.getMapLink(x, y));
+            }
+        }
+
+        showCopyLinkDialog(path, title) {
+            let link = "";
+            if(window.location.origin !== null && window.location.origin !== "null") {
+                link = window.location.origin;
+            } else {
+                link = 'file://';
+            }
+
+            this.showCopyTextDialog(link + window.location.pathname + path, title);
+        }
+
+        showCopyTextDialog(text, title){
+            $('#copyTextModalTitle').text(title);
+            $('#copyTextModal-text').val(text);
+            $('#copyTextModal').modal();
+        }
+
+        getMapLink(x, y, customZoomLevel, customArea){
+            if(x === undefined || y === undefined){
+                return;
+            }
+
+            let area = customArea || this.activeArea;
+            let zoomLevel = customZoomLevel || LAM.map.getZoom();
+            let areaMaxZoomLevel = this.areas[area].zoomLevel;
+
+            // Ensure we have a valid zoom level
+            if(zoomLevel > areaMaxZoomLevel || zoomLevel === undefined){
+                zoomLevel = areaMaxZoomLevel;
+            }
+
+            // Ensure we don't link too far zoomed out
+            if(zoomLevel < areaMaxZoomLevel - 1){
+                zoomLevel = areaMaxZoomLevel - 1;
+            }
+
+            return "?c=" + ContentTypeEnum.AreaMap + "&a=" + area + '&x=' + x + '&y=' + y + '&z=' + zoomLevel;
         }
 
         initialize() {
@@ -20,7 +71,11 @@ let LAM = (function(){
                 crs: L.CRS.Simple,
                 minZoom: 0});
 
-            this.map.setView([0, 0], 1)
+            this.map.setView([0, 0], 1);
+
+            LAM.map.on("click", function(e) {
+                LAM.onMapClick(e);
+            });
 
             // Initialize all areas before loading the markers
             for (let name in this.areas) {
@@ -74,6 +129,18 @@ let LAM = (function(){
                 $('#la_editor').hide();
             }
 
+            $('#copyTextModal-copy').click(function(e){
+                $('#copyTextModal-text').select();
+                document.execCommand("copy");
+                $('#copyTextModal').modal('toggle');
+            });
+
+            L.easyButton('fa-crosshairs', function(btn, map){
+                //helloPopup.setLatLng(map.getCenter()).openOn(map);
+                L.DomUtil.addClass(map._container,'crosshair-cursor-enabled');
+                LAM.copyLocationMode = true;
+            }).addTo( this.map );
+
             this.processUrlParameters();
 
             this.suspendStatUpdate = false;
@@ -93,6 +160,7 @@ let LAM = (function(){
                 let x = $.urlParam('x');
                 let y = $.urlParam('y');
                 let zoom = $.urlParam('z');
+                let markerId = $.urlParam('mid');
                 if (area === undefined || x === undefined || y === undefined) {
                     return;
                 }
@@ -103,6 +171,17 @@ let LAM = (function(){
 
                 this.activateArea(area);
                 this.map.setView([x, y], zoom);
+
+                if(markerId === undefined) {
+                    this.activeMarkerLayer.createMarker({
+                        x: x,
+                        y: y,
+                        type: MarkerTypeEnum.TargetMark,
+                        title: area + ' ' + Math.round(x) + ' x ' + Math.round(y),
+                        isGenerated: true
+                    });
+                }
+
             } else {
                 this.activateContent(content);
             }
@@ -287,7 +366,8 @@ let LAM = (function(){
                     case MarkerTypeEnum.Notice:
                     case MarkerTypeEnum.Zoning:
                     case MarkerTypeEnum.ZoningIsland:
-                    case MarkerTypeEnum.ZoningWorld: {
+                    case MarkerTypeEnum.ZoningWorld:
+                    case MarkerTypeEnum.TargetMark: {
                         continue;
                     }
                 }
