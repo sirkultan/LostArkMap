@@ -16,10 +16,9 @@ for x in range(tileCountWorld):
     for y in range(tileCountWorld):
         file = 'islands_' + str(x) + '_' + str(y) + '.png'
         if not os.path.isfile(file):
-            print("Missing file: " + file)
-            sys.exit()
-
-        images.append(file)
+                images.append('islands_empty.png')
+        else:
+                images.append(file)
 
 output = Image.new('RGB', (imageSize, imageSize))
 
