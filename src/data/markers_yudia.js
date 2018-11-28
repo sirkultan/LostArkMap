@@ -768,7 +768,8 @@
             "y": 280.19,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 101,
-            "hintImage": "yudia/TreasureMap1.jpg"
+            "hintImage": "yudia/TreasureMap1.jpg",
+            "hintText": "requires Song of Temptation (rewarded by getting 80% completion in Yudia)"
         }
     ];
 
