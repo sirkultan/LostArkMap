@@ -79,8 +79,18 @@
 <body onload="LAM.initialize()">
 
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="https://github.com/Craiel/LostArkMap">Lost Ark Map</a>
+    <div class="navbar-brand col-sm-3 col-md-2 mr-0">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="TECJZJDYVSQ7Q" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+    </div>
+
     <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+    <a class="navbar-brand col-sm-0 col-md-0 mr-0 text-center" style="width: 50px" href="https://github.com/Craiel/LostArkMap" target="_blank"><img src="images/icons/mark-github.svg"></a>
+    <a class="navbar-brand col-sm-0 col-md-0 mr-0 text-center" style="width: 50px" href="https://www.reddit.com/r/lostarkgame/" target="_blank"><img src="images/icons/reddit.svg"></a>
 </nav>
 
 <div class="modal fade" id="createLayerModal" tabindex="-1" role="dialog">
