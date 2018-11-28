@@ -41,6 +41,7 @@
     <!-- feather -->
     <script defer src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
 
+    <script src="src/utils.js"></script>
     <script src="src/lam.js"></script>
     <script src="src/area.js"></script>
     <script src="src/editor.js"></script>
@@ -151,12 +152,6 @@
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
             <div class="sidebar-sticky">
                 <ul class="nav flex-column" id="mapNav">
-                    <!--<li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span data-feather="home"></span>
-                            Dashboard <span class="sr-only">(current)</span>
-                        </a>
-                    </li>-->
                 </ul>
 
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
@@ -204,10 +199,35 @@
             <div class="py-5 bg-light" id="content_area_map">
                 <div id="la_editor">
                     <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                        <div id="ed_modeSelectGroup" class="btn-group mr-2" role="group" aria-label="First group"></div>
+                        <div id="ed_modeSelectGroup" class="btn-group mr-2" role="group"></div>
+                    </div>
+                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                        <div id="ed_styleSelectGroup" class="btn-group mr-2" role="group"></div>
                     </div>
                     <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="btn-group mr-2" role="group" aria-label="First group" id="ed_markerTypeToolbar">
+                        <div class="btn-group mr-2" role="group" id="ed_markerTypeToolbar">
+                        </div>
+                        <div class="btn-group mr-2" role="group" id="ed_rectangleSettings">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Width: </div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="None" id="ed_squareWidth">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Height: </div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="None" id="ed_squareHeight">
+                            </div>
+                        </div>
+                        <div class="btn-group mr-2" role="group" id="ed_circleSettings">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Radius: </div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="None" id="ed_circleRadius">
+                            </div>
                         </div>
                     </div>
                     <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
@@ -215,19 +235,19 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text">Tooltip:</div>
                             </div>
-                            <input type="text" class="form-control" placeholder="None" aria-label="Tooltip Text" aria-describedby="btnGroupAddon" id="ed_tooltipInput">
+                            <input type="text" class="form-control" placeholder="None" id="ed_tooltipInput">
                         </div>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">Popup Title:</div>
                             </div>
-                            <input type="text" class="form-control" placeholder="None" aria-label="Tooltip Text" aria-describedby="btnGroupAddon" id="ed_popupTitleInput">
+                            <input type="text" class="form-control" placeholder="None" id="ed_popupTitleInput">
                         </div>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">Hint image: </div>
                             </div>
-                            <input type="text" class="form-control" placeholder="None" aria-label="Hint Image" aria-describedby="btnGroupAddon" id="ed_hintImageInput">
+                            <input type="text" class="form-control" placeholder="None" id="ed_hintImageInput">
                         </div>
                     </div>
                     <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
@@ -235,7 +255,7 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text">Hint text:</div>
                             </div>
-                            <textarea class="form-control" placeholder="None" aria-label="Hint Text" aria-describedby="btnGroupAddon" id="ed_hintTextInput"></textarea>
+                            <textarea class="form-control" placeholder="None" id="ed_hintTextInput"></textarea>
                         </div>
                     </div>
                     <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">

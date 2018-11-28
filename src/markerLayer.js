@@ -152,10 +152,48 @@
                 }
 
                 case MarkerStyleEnum.Rectangle: {
-                    return L.rectangle(markerData.bounds, {
-                        draggable: Constants.EditMode,
+                    // Upgrade old bounds data
+                    if(markerData.bounds !== undefined){
+                        let center = GetBoundsCenter(markerData.bounds);
+                        markerData.x = center[0];
+                        markerData.y = center[1];
+                        markerData.size = GetBoundsSize(markerData.bounds);
+                        delete markerData.bounds;
+                    }
+
+                    let result = L.rectangle([[0,0],[10, 10]], {
                         color: markerData.color
                     });
+
+                    RepositionRectangleMarker(result, markerData);
+
+                    if(Constants.EditMode && markerData.isGenerated !== true) {
+                        result.on('mousedown', function (e){
+                            LAM.editor.beginDragElement(e);
+                        });
+                    }
+
+                    return result;
+                }
+
+                case MarkerStyleEnum.Circle: {
+                    if(markerData.radius === undefined) {
+                        console.error("Circle marker is missing radius information");
+                        return undefined;
+                    }
+
+                    let result = L.circle([markerData.x, markerData.y], {
+                        radius: markerData.radius,
+                        color: markerData.color
+                    });
+
+                    if(Constants.EditMode && markerData.isGenerated !== true) {
+                        result.on('mousedown', function (e){
+                            LAM.editor.beginDragElement(e);
+                        });
+                    }
+
+                    return result;
                 }
 
                 default: {
@@ -396,7 +434,8 @@
                     case 'teleportZoom':
                     case 'color':
                     case 'style':
-                    case 'bounds': {
+                    case 'size':
+                    case 'radius': {
                         break;
                     }
 

@@ -6,6 +6,7 @@
             this.isInitialized = false;
             this.activeMarkerType = undefined;
             this.markerDataBeingEdited = undefined;
+            this.isDraggingMarker = false;
         }
 
         initialize() {
@@ -61,6 +62,15 @@
                 $('#ed_modeSelectGroup').append(element);
             }
 
+            for(let style in MarkerStyleEnum) {
+                let element = $('<button type="button" class="btn btn-secondary" id="ed_toggleStyle' + style +'">' + style + '</button>');
+                element.click({style: MarkerStyleEnum[style]}, function(e){
+                    LAM.editor.setStyle(e.data.style);
+                });
+
+                $('#ed_styleSelectGroup').append(element);
+            }
+
             LAM.map.on("click", function(e) {
                 let x = e.latlng.lat;
                 let y = e.latlng.lng;
@@ -71,6 +81,14 @@
                 }
 
                 console.log("[" + Math.round(x * 100) / 100 + ", " + Math.round(y * 100) / 100 + ']');
+            });
+
+            LAM.map.on('mouseup', function(e) {
+                LAM.editor.endDragElement(e);
+            });
+
+            LAM.map.on('mousemove', function(e) {
+                LAM.editor.onMapMouseMove(e);
             });
 
             $('#ed_exportButton').click(function(e){
@@ -112,9 +130,76 @@
                 LAM.editor.teleportZoomChanged($(this).val());
             });
 
+            $('#ed_squareWidth').change(function(e) {
+                LAM.editor.squareWidthChanged($(this).val());
+            });
+
+            $('#ed_squareHeight').change(function(e) {
+                LAM.editor.squareHeightChanged($(this).val());
+            });
+
+            $('#ed_circleRadius').change(function(e) {
+                LAM.editor.circleRadiusChanged($(this).val());
+            });
+
             // Set Default editor state
             this.resetEditForm();
             this.setMode(EditorModeEnum.Modify);
+            this.setStyle(MarkerStyleEnum.Point);
+        }
+
+        beginDragElement(e) {
+            if(e.target !== undefined && e.target.markerDataId !== undefined) {
+                console.log("DRAG_START");
+                LAM.map.dragging.disable();
+                this.markerClicked(e.target);
+                this.isDraggingMarker = this.markerDataBeingEdited !== undefined;
+            }
+        }
+
+        endDragElement(e){
+            LAM.map.dragging.enable();
+            this.isDraggingMarker = false;
+        }
+
+        onMapMouseMove(e) {
+            if(this.isDraggingMarker !== true){
+                return;
+            }
+
+            this.markerDataBeingEdited.x = e.latlng.lat;
+            this.markerDataBeingEdited.y = e.latlng.lng;
+
+            switch (this.markerDataBeingEdited.style) {
+                case MarkerStyleEnum.Circle:
+                {
+                    this.markerDataBeingEdited.activeMarker.setLatLng(e.latlng);
+                    break
+                }
+
+                case MarkerStyleEnum.Rectangle: {
+                    RepositionRectangleMarker(this.markerDataBeingEdited.activeMarker, this.markerDataBeingEdited);
+                    break;
+                }
+            }
+        }
+
+        squareWidthChanged(text) {
+            if(this.markerDataBeingEdited !== undefined) {
+                this.markerDataBeingEdited.size[0] = parseInt(text);
+            }
+        }
+
+        squareHeightChanged(text) {
+            if(this.markerDataBeingEdited !== undefined) {
+                this.markerDataBeingEdited.size[1] = parseInt(text);
+            }
+        }
+
+        circleRadiusChanged(text){
+            if(this.markerDataBeingEdited !== undefined) {
+                this.markerDataBeingEdited.radius = parseInt(text);
+            }
         }
 
         tooltipTextChanged(text) {
@@ -199,6 +284,42 @@
             console.log("EDITOR: Mode set to " + GetKeyByValue(EditorModeEnum, mode));
         }
 
+        setStyle(style) {
+            this.markerDataBeingEdited = undefined;
+
+            if(this.style !== undefined){
+                $('#ed_toggleStyle' + GetKeyByValue(MarkerStyleEnum, this.style)).removeClass('active');
+            }
+
+            this.style = style;
+            this.resetEditForm();
+
+            $('#ed_markerTypeToolbar').hide();
+            $('#ed_rectangleSettings').hide();
+            $('#ed_circleSettings').hide();
+            switch (style) {
+                case MarkerStyleEnum.Point:
+                {
+                    $('#ed_markerTypeToolbar').show();
+                    break
+                }
+
+                case MarkerStyleEnum.Rectangle: {
+                    $('#ed_rectangleSettings').show();
+                    break;
+                }
+
+                case MarkerStyleEnum.Circle:
+                {
+                    $('#ed_circleSettings').show();
+                    break;
+                }
+            }
+
+            $('#ed_toggleStyle' + GetKeyByValue(MarkerStyleEnum, this.style)).addClass('active');
+            console.log("EDITOR: Style set to " + GetKeyByValue(MarkerStyleEnum, style));
+        }
+
         placeMarker(x, y) {
             x = Math.round(x * 100) / 100;
             y = Math.round(y * 100) / 100;
@@ -231,6 +352,9 @@
             $('#ed_teleportTo').val("");
             $('#ed_teleportArea').val("");
             $('#ed_teleportZoom').val("");
+            $('#ed_squareWidth').val("");
+            $('#ed_squareHeight').val("");
+            $('#ed_circleRadius').val("");
         }
 
         markerClicked(marker) {
@@ -255,7 +379,28 @@
                 return;
             }
 
-            this.selectActiveMarkerType(GetKeyByValue(MarkerTypeEnum, markerData.type));
+            switch (markerData.style) {
+                case MarkerStyleEnum.Rectangle:
+                {
+                    this.setStyle(markerData.style);
+                    $('#ed_squareWidth').val(markerData.size[0]);
+                    $('#ed_squareHeight').val(markerData.size[1]);
+
+                    break
+                }
+
+                case MarkerStyleEnum.Circle:
+                {
+                    this.setStyle(markerData.style);
+                    $('#ed_circleRadius').val(markerData.radius);
+
+                    break
+                }
+
+                default: {
+                    this.selectActiveMarkerType(GetKeyByValue(MarkerTypeEnum, markerData.type));
+                }
+            }
 
             if(markerData.title !== undefined && markerData.title !== MarkerTypeDefaultTitle(markerData.type)) {
                 $('#ed_tooltipInput').val(markerData.title);

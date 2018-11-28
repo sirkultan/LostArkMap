@@ -24,7 +24,8 @@ let MapTypeEnum = Object.freeze({
 
 let MarkerStyleEnum = Object.freeze({
     "Point": 1,
-    "Rectangle": 2
+    "Rectangle": 2,
+    "Circle": 3
 });
 
 let MarkerTypeEnum = Object.freeze({
@@ -56,13 +57,6 @@ let SearchResultTypeEnum = Object.freeze({
     "Marker": "marker",
     "Guide": "guide"
 });
-
-/**
- * @return {string}
- */
-GetKeyByValue = function(object, value) {
-    return Object.keys(object).find(key => object[key] === value);
-};
 
 /**
  * @return {string}

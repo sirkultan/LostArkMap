@@ -110,7 +110,7 @@
                         let result = {
                             type: SearchResultTypeEnum.Area,
                             title: zoneName,
-                            teleportTo: this.getSearchTargetForBounds(area.maps[zoneName].bounds),
+                            teleportTo: GetBoundsCenter(area.maps[zoneName].bounds),
                             teleportArea: areaName,
                             teleportZoom: 1,
                             match: match
@@ -177,16 +177,7 @@
             return result;
         }
 
-        getSearchTargetForBounds(bounds) {
-            if(bounds === undefined){
-                return undefined;
-            }
 
-            let tl = bounds[0];
-            let br = bounds[1];
-
-            return [tl[0] + ((br[0] - tl[0]) / 2), tl[1] + ((br[1] - tl[1]) / 2)];
-        }
 
         searchInGuides(regex, target) {
             for(let i in LAM.guides) {
