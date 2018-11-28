@@ -70,7 +70,7 @@
                     return;
                 }
 
-                console.log("[" + Math.round(x) + ", " + Math.round(y) + ']');
+                console.log("[" + Math.round(x * 100) / 100 + ", " + Math.round(y * 100) / 100 + ']');
             });
 
             $('#ed_exportButton').click(function(e){
