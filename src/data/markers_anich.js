@@ -1155,6 +1155,14 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 164,
             "hintImage": "anich/TreasureMap1.jpg"
+        },
+        {
+            "x": -381.66,
+            "y": 114.45,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 165,
+            "hintImage": "anich/TreasureMap2.jpg",
+            "hintText": "map is rotated"
         }
     ];
 
