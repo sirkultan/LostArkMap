@@ -108,6 +108,10 @@
                 LAM.editor.teleportAreaChanged($(this).val());
             });
 
+            $('#ed_teleportZoom').change(function(e){
+                LAM.editor.teleportZoomChanged($(this).val());
+            });
+
             // Set Default editor state
             this.resetEditForm();
             this.setMode(EditorModeEnum.Modify);
@@ -146,6 +150,12 @@
         teleportAreaChanged(text) {
             if(this.markerDataBeingEdited !== undefined) {
                 this.markerDataBeingEdited.teleportArea = text;
+            }
+        }
+
+        teleportZoomChanged(text) {
+            if(this.markerDataBeingEdited !== undefined) {
+                this.markerDataBeingEdited.teleportZoom = parseInt(text);
             }
         }
 
@@ -220,6 +230,7 @@
             $('#ed_hintImageInput').val("");
             $('#ed_teleportTo').val("");
             $('#ed_teleportArea').val("");
+            $('#ed_teleportZoom').val("");
         }
 
         markerClicked(marker) {
@@ -268,6 +279,10 @@
 
             if(markerData.teleportArea !== undefined) {
                 $('#ed_teleportArea').val(markerData.teleportArea);
+            }
+
+            if(markerData.teleportZoom !== undefined) {
+                $('#ed_teleportZoom').val(markerData.teleportZoom);
             }
 
             this.markerDataBeingEdited = markerData;

@@ -179,6 +179,7 @@
             if (markerData.teleportTo !== undefined) {
                 marker.teleportData = markerData.teleportTo;
                 marker.teleportArea = markerData.teleportArea;
+                marker.teleportZoom = markerData.teleportZoom;
                 marker.on('click', function(e){
                     if(Constants.EditMode) {
                         console.warn("TeleportMarker disabled in EditMode");
@@ -189,7 +190,11 @@
                         LAM.activateArea(this.teleportArea);
                     }
 
-                    LAM.map.flyTo(this.teleportData);
+                    if(this.teleportZoom === undefined) {
+                        this.teleportZoom = LAM.getMaxAreaZoom(LAM.activeArea) - 1;
+                    }
+
+                    LAM.map.setView(this.teleportData, this.teleportZoom);
                 });
             }
         }
@@ -277,6 +282,10 @@
                     zoneMarkerClone.y = markerData.teleportTo[1];
                     zoneMarkerClone.teleportTo = [markerData.x, markerData.y];
                     zoneMarkerClone.isGenerated = true;
+
+                    if(zoneMarkerClone.teleportZoom !== undefined){
+                        delete zoneMarkerClone['teleportZoom'];
+                    }
 
                     if(markerData.teleportArea === undefined) {
                         this.createMarker(zoneMarkerClone);
@@ -392,6 +401,7 @@
                     case 'type':
                     case 'teleportTo':
                     case 'teleportArea':
+                    case 'teleportZoom':
                     case 'color':
                     case 'style':
                     case 'bounds': {

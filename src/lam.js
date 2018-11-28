@@ -337,6 +337,15 @@ let LAM = (function(){
             return areaData.markerLayer;
         }
 
+        getMaxAreaZoom(area) {
+            let areaData = this.areas[area];
+            if(areaData === undefined) {
+                return undefined;
+            }
+
+            return areaData.zoomLevel;
+        }
+
         rebuildStats() {
             if(this.suspendStatUpdate) {
                 return;
