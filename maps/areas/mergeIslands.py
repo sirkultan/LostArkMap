@@ -12,28 +12,17 @@ tileCount = 15
 tileCountWorld = 5
 imageSize = (tileSize * tileCount) * tileCountWorld
 images = []
+
+output = Image.new('RGB', (imageSize, imageSize))
+
 for x in range(tileCountWorld):
     for y in range(tileCountWorld):
         file = 'islands_' + str(x) + '_' + str(y) + '.png'
         if not os.path.isfile(file):
-                images.append('islands_empty.png')
-        else:
-                images.append(file)
+                file = 'islands_empty.png'
 
-output = Image.new('RGB', (imageSize, imageSize))
-
-x = 0
-y = 0
-for i in range(len(images)):
-    file = images[i]
-
-    img = Image.open(file)
-    output.paste(img, (x * tileSize * tileCount, y * tileSize * tileCount))
-
-    # move on to next tile
-    x = x + 1
-    if x == 5:
-        x = 0
-        y = y + 1
+        print(str(x) + ' x ' + str(y) + ' == ' + file)
+        img = Image.open(file)
+        output.paste(img, (x * tileSize * tileCount, y * tileSize * tileCount))
 
 output.save('islands_full.png')

@@ -3,7 +3,7 @@
     let area = LAM.createArea("Islands", {
         kr: "섬",
         path: "maps/areas/Islands",
-        zoomLevel: 6
+        zoomLevel: 7
     });
 
     // 0

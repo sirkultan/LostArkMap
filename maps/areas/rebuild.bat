@@ -8,3 +8,4 @@ python slice.py 4 shusire_full.png Shusire
 python slice.py 4 totoiku_full.png Totoiku
 python slice.py 4 yudia_full.png Yudia
 python slice.py 5 world_full.png World
+python slice.py 7 islands_full.png Islands

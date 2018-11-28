@@ -4,6 +4,8 @@ import shutil
 import image_slicer
 from PIL import Image
 
+Image.MAX_IMAGE_PIXELS = None
+
 if len(sys.argv) < 4:
     print("slice.py <zoom_level> <file> <target>")
     sys.exit()
