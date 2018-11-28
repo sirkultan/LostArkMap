@@ -1,0 +1,83 @@
+/*	--------------------------------------------------
+	:: Table Filter
+	-------------------------------------------------- */
+
+.table-filter tbody tr:hover {
+    cursor: pointer;
+    background-color: #eee;
+}
+.table-filter {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+.table-filter tbody tr:hover {
+    cursor: pointer;
+    background-color: #eee;
+}
+.table-filter tbody tr td {
+    padding: 10px;
+    vertical-align: middle;
+    border-top-color: #eee;
+}
+.table-filter tbody tr.selected td {
+    background-color: #eee;
+}
+.table-filter tr td:first-child {
+    width: 38px;
+}
+.table-filter tr td:nth-child(2) {
+    width: 35px;
+}
+
+.table-filter .search-icon {
+    width: 35px;
+}
+
+.table-filter .search-content-body {
+    display: block;
+}
+
+.table-filter .search-content .title {
+    color: #2BBCDE;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0;
+}
+
+.table-filter .search-content .summary {
+    font-size: 14px;
+}
+
+.table-filter .search-content .match {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.background-search-all {
+    background-color:#555555;
+}
+
+.background-search-area {
+    background-color:#34933a;
+}
+
+.table-filter .search-content .title span.area {
+    color: #34933a;
+}
+
+.background-search-marker {
+    background-color:#c58727;
+}
+
+.table-filter .search-content .title span.marker {
+    color: #c58727;
+}
+
+.background-search-guide {
+    background-color:#da5555;
+}
+
+.table-filter .search-content .title span.guide {
+    color: #da5555;
+}

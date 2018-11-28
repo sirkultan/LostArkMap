@@ -4,6 +4,7 @@ let LAM = (function(){
 
         constructor() {
             this.areas = {};
+            this.guides = [];
             this.areaMarkerData = {};
             this.markerIcons = {};
             this.dynamicLayers = {};
@@ -129,6 +130,8 @@ let LAM = (function(){
                 $('#la_editor').hide();
             }
 
+            LAM.search.initialize();
+
             $('#copyTextModal-copy').click(function(e){
                 $('#copyTextModal-text').select();
                 document.execCommand("copy");
@@ -154,37 +157,75 @@ let LAM = (function(){
                 return;
             }
 
-            if(content === ContentTypeEnum.AreaMap) {
+            switch (content) {
+                case ContentTypeEnum.AreaMap: {
+                    let area = $.urlParam('a');
+                    let x = $.urlParam('x');
+                    let y = $.urlParam('y');
+                    let zoom = $.urlParam('z');
+                    let markerId = $.urlParam('mid');
+                    if (area === undefined || x === undefined || y === undefined) {
+                        return;
+                    }
 
-                let area = $.urlParam('a');
-                let x = $.urlParam('x');
-                let y = $.urlParam('y');
-                let zoom = $.urlParam('z');
-                let markerId = $.urlParam('mid');
-                if (area === undefined || x === undefined || y === undefined) {
-                    return;
+                    this.activateArea(area);
+                    this.gotoMapArea([x, y], area, zoom);
+
+                    if(markerId === undefined) {
+                        this.activeMarkerLayer.createMarker({
+                            x: x,
+                            y: y,
+                            type: MarkerTypeEnum.TargetMark,
+                            title: area + ' ' + Math.round(x) + ' x ' + Math.round(y),
+                            isGenerated: true
+                        });
+                    }
+
+                    break
                 }
 
-                if (zoom === undefined) {
-                    zoom = 0;
+                case ContentTypeEnum.Search: {
+                    this.activateContent(content);
+
+                    let searchText = $.urlParam('t');
+                    if(searchText !== undefined){
+                        searchText = searchText.replace(/_/g, ' ');
+
+                        $('#searchField').val(searchText);
+                        this.search.execSearch(searchText);
+                    }
+
+                    break
                 }
 
-                this.activateArea(area);
-                this.map.setView([x, y], zoom);
-
-                if(markerId === undefined) {
-                    this.activeMarkerLayer.createMarker({
-                        x: x,
-                        y: y,
-                        type: MarkerTypeEnum.TargetMark,
-                        title: area + ' ' + Math.round(x) + ' x ' + Math.round(y),
-                        isGenerated: true
-                    });
+                default: {
+                    this.activateContent(content);
+                    break
                 }
-
-            } else {
-                this.activateContent(content);
             }
+        }
+
+        gotoMapArea(coordinates, customArea, customZoomLevel) {
+            if(coordinates === undefined){
+                return;
+            }
+
+            let area = customArea || this.activeArea;
+            let zoomLevel = customZoomLevel || this.map.getZoom();
+            let areaMaxZoomLevel = this.areas[area].zoomLevel;
+
+            // Ensure we have a valid zoom level
+            if(zoomLevel > areaMaxZoomLevel || zoomLevel === undefined){
+                zoomLevel = areaMaxZoomLevel;
+            }
+
+            // Ensure we don't link too far zoomed out
+            if(zoomLevel < areaMaxZoomLevel - 1){
+                zoomLevel = areaMaxZoomLevel - 1;
+            }
+
+            this.activateArea(area);
+            this.map.setView(coordinates, zoomLevel);
         }
 
         activateContent(type) {
@@ -268,6 +309,12 @@ let LAM = (function(){
                 '</div></div></div></div></div>');
 
             $('#content_guides_list').append(guideElement);
+
+            this.guides.push({
+                title: title,
+                url: url,
+                preview: preview
+            });
         }
 
         registerTreasureMap(markerData) {

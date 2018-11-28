@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="search.css" type="text/css"/>
 
     <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js"></script>
@@ -45,6 +46,7 @@
     <script src="src/editor.js"></script>
     <script src="src/dynamicLayer.js"></script>
     <script src="src/markerLayer.js"></script>
+    <script src="src/search.js"></script>
 
     <script src="src/data/core_data.js"></script>
 
@@ -88,7 +90,7 @@
         </form>
     </div>
 
-    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search" id="searchField">
     <a class="navbar-brand col-sm-0 col-md-0 mr-0 text-center" style="width: 50px" href="https://github.com/Craiel/LostArkMap" target="_blank"><img src="images/icons/mark-github.svg"></a>
     <a class="navbar-brand col-sm-0 col-md-0 mr-0 text-center" style="width: 50px" href="https://www.reddit.com/r/lostarkgame/" target="_blank"><img src="images/icons/reddit.svg"></a>
 </nav>
@@ -180,6 +182,12 @@
                         <a class="nav-link active" href="#" id="content_guides_toggle">
                             <span data-feather="file-text"></span>
                             Guides
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" id="content_search_toggle">
+                            <span data-feather="file-text"></span>
+                            Search
                         </a>
                     </li>
                 </ul>
@@ -308,6 +316,33 @@
                 <div class="container">
                     <div class="row" id="content_guides_list">
                     </div>
+                </div>
+            </div>
+
+            <div class="py-5 bg-light" id="content_search">
+                <h2 class="text-center" id="searchResultCount">9999 Results</h2>
+                <br>
+                <div class="w-100">
+                    <button type="button" class="btn btn-primary" id="searchCopyButton">Copy</button>
+
+                    <button type="button" class="float-right btn btn-success btn-filter background-search-guide" data-target="guide">Guides</button>
+                    <button type="button" class="float-right btn btn-success btn-filter background-search-marker" data-target="marker">Markers</button>
+                    <button type="button" class="float-right btn btn-success btn-filter background-search-area" data-target="area">Areas</button>
+                    <button type="button" class="float-right btn btn-success btn-filter background-search-all" data-target="all">All</button>
+                </div>
+                <div class="table-container">
+                    <table class="table table-filter">
+                        <tbody id="searchResults"></tbody>
+                    </table>
+                </div>
+                <div class="py-5 bg-light" id="searchExamples">
+                    <h3 class="text-center">Examples:</h3>
+                    <ul>
+                        <li class="col-xs-3 list-group-item"><button type="button" class="btn btn-primary searchExample" data-text="blade hill">Zone Name</button></li>
+                        <li class="col-xs-3 list-group-item"><button type="button" class="btn btn-primary searchExample" data-text="메마른">Zone Name (KR)</button></li>
+                        <li class="col-xs-3 list-group-item"><button type="button" class="btn btn-primary searchExample" data-text="t:FavorNPC">Marker Type</button></li>
+                        <li class="col-xs-3 list-group-item"><button type="button" class="btn btn-primary searchExample" data-text="access seed">Hint Text</button></li>
+                    </ul>
                 </div>
             </div>
 

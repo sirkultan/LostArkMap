@@ -9,6 +9,7 @@ let ContentTypeEnum = Object.freeze({
     "AreaMap": "content_area_map",
     "TreasureMap": "content_treasure_map",
     "Guides": "content_guides",
+    "Search": "content_search",
     "Statistics": "content_statistics"
 });
 
@@ -48,6 +49,12 @@ let MarkerTypeEnum = Object.freeze({
     "HiddenQuest": "hiddenquest.png",
     "Notice": "notice.png",
     "TargetMark": "targetmark.png"
+});
+
+let SearchResultTypeEnum = Object.freeze({
+    "Area": "area",
+    "Marker": "marker",
+    "Guide": "guide"
 });
 
 /**

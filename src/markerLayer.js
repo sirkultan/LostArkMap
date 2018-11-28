@@ -186,15 +186,7 @@
                         return;
                     }
 
-                    if(this.teleportArea !== undefined) {
-                        LAM.activateArea(this.teleportArea);
-                    }
-
-                    if(this.teleportZoom === undefined) {
-                        this.teleportZoom = LAM.getMaxAreaZoom(LAM.activeArea) - 1;
-                    }
-
-                    LAM.map.setView(this.teleportData, this.teleportZoom);
+                    LAM.gotoMapArea(this.teleportData, this.teleportArea, this.teleportZoom);
                 });
             }
         }
