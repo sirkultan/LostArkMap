@@ -762,6 +762,13 @@
             "type": MarkerTypeEnum.SecretPassage,
             "hintImage": "yudia/MoraiSecretHint4.jpg",
             "id": 100
+        },
+        {
+            "x": -225.97,
+            "y": 280.19,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 101,
+            "hintImage": "yudia/TreasureMap1.jpg"
         }
     ];
 
