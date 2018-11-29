@@ -257,6 +257,10 @@
         tooltipTextChanged(text) {
             if(this.markerDataBeingEdited !== undefined) {
                 this.markerDataBeingEdited.title = text;
+
+                if(this.markerDataBeingEdited.style === MarkerStyleEnum.Label && this.markerDataBeingEdited.activeMarker !== undefined) {
+                    RefreshMarkerLabel(this.markerDataBeingEdited.activeMarker, this.markerDataBeingEdited);
+                }
             }
         }
 
@@ -352,6 +356,7 @@
             $('#ed_circleSettings').hide();
             switch (style) {
                 case MarkerStyleEnum.Point:
+                case MarkerStyleEnum.Label:
                 {
                     $('#ed_markerTypeToolbarPOI').show();
                     $('#ed_markerTypeToolbarSpecial').show();

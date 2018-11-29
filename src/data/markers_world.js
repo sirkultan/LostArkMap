@@ -181,6 +181,19 @@
             "titleKR": "알라케르"
         },
         {
+            "x": -191.62517789130817,
+            "y": 343.2189722518653,
+            "type": MarkerTypeEnum.ZoningPVP,
+            "id": 20,
+            "teleportTo": [
+                -169.75,
+                345.01
+            ],
+            "teleportArea": "Islands",
+            "title": "To Slime Island",
+            "titleKR": "슬라임 아일랜드"
+        },
+        {
             "x": -185.43760006386086,
             "y": 357.7502735407573,
             "type": MarkerTypeEnum.ZoningIsland,
@@ -283,6 +296,19 @@
             "teleportArea": "Islands",
             "title": "To Starlight Lighthouse Island",
             "titleKR": "별빛 등대의 섬"
+        },
+        {
+            "x": -224.24989993613917,
+            "y": 369.749897422216,
+            "type": MarkerTypeEnum.ZoningPVP,
+            "id": 29,
+            "teleportTo": [
+                -215.23,
+                379.83
+            ],
+            "teleportArea": "Islands",
+            "title": "To Lush Reed Island",
+            "titleKR": "우거진 갈대의 섬"
         },
         {
             "x": -252.6251111820676,
@@ -636,6 +662,19 @@
             "titleKR": "세월의 섬"
         },
         {
+            "x": -171.1249777635865,
+            "y": 279.3750341925946,
+            "type": MarkerTypeEnum.ZoningPVP,
+            "id": 57,
+            "teleportTo": [
+                -132.77,
+                285.6
+            ],
+            "teleportArea": "Islands",
+            "title": "To Hallucination Island",
+            "titleKR": "환각의 섬"
+        },
+        {
             "x": -182.00017789130817,
             "y": 265.312807733352,
             "type": MarkerTypeEnum.ZoningIsland,
@@ -647,6 +686,19 @@
             "teleportArea": "Islands",
             "title": "to Meteora",
             "titleKR": "메테오라"
+        },
+        {
+            "x": -158.18730543138167,
+            "y": 238.68741451851335,
+            "type": MarkerTypeEnum.ZoningPVP,
+            "id": 59,
+            "teleportTo": [
+                -120,
+                237.61
+            ],
+            "teleportArea": "Islands",
+            "title": "To Medea",
+            "titleKR": "메데이아"
         },
         {
             "x": -106.43779463247917,
@@ -686,6 +738,19 @@
             "teleportArea": "Islands",
             "title": "To Thick Mist Ridge",
             "titleKR": "짙은 안개 능선"
+        },
+        {
+            "x": -225.625,
+            "y": 178.40660902224394,
+            "type": MarkerTypeEnum.ZoningPVP,
+            "id": 63,
+            "teleportTo": [
+                -215.76,
+                164.77
+            ],
+            "teleportArea": "Islands",
+            "title": "To Isla of Mist",
+            "titleKR": "안개의 섬"
         },
         {
             "x": -281.31261118206766,
@@ -891,6 +956,14 @@
             "titleKR": "희망의 섬"
         },
         {
+            "x": -265.6875,
+            "y": 163.7492819555121,
+            "type": MarkerTypeEnum.ZoningPVP,
+            "id": 89,
+            "title": "To Goblin Island",
+            "titleKR": "고블린 섬"
+        },
+        {
             "x": -283.9377557187555,
             "y": 168.62496580740535,
             "type": MarkerTypeEnum.ZoningIsland,
@@ -945,6 +1018,14 @@
             "id": 96,
             "title": "To Twilight Island",
             "titleKR": "황혼의 섬"
+        },
+        {
+            "x": -333.250044472827,
+            "y": 187.937397422216,
+            "type": MarkerTypeEnum.ZoningPVP,
+            "id": 97,
+            "title": "To Outlaw Island",
+            "titleKR": "무법자의 섬"
         },
         {
             "x": -316.93753335462026,
@@ -1187,6 +1268,22 @@
             "id": 127
         },
         {
+            "x": -182.22498109780423,
+            "y": 446.764142826151,
+            "type": MarkerTypeEnum.SeaAreaSandstorm,
+            "radius": 22,
+            "style": MarkerStyleEnum.Circle,
+            "id": 127
+        },
+        {
+            "x": -206.85232248085933,
+            "y": 391.2945058502109,
+            "type": MarkerTypeEnum.SeaAreaSandstorm,
+            "radius": 17,
+            "style": MarkerStyleEnum.Circle,
+            "id": 128
+        },
+        {
             "x": -206.85232248085933,
             "y": 391.2945058502109,
             "type": MarkerTypeEnum.SeaAreaSandstorm,
@@ -1267,92 +1364,146 @@
             "id": 137
         },
         {
-            "x": -191.62517789130817,
-            "y": 343.2189722518653,
-            "type": MarkerTypeEnum.ZoningPVP,
-            "id": 20,
-            "teleportTo": [
-                -169.75,
-                345.01
-            ],
-            "teleportArea": "Islands",
-            "title": "To Slime Island",
-            "titleKR": "슬라임 아일랜드"
-        },
-        {
-            "x": -224.24989993613917,
-            "y": 369.749897422216,
-            "type": MarkerTypeEnum.ZoningPVP,
-            "id": 29,
-            "teleportTo": [
-                -215.23,
-                379.83
-            ],
-            "teleportArea": "Islands",
-            "title": "To Lush Reed Island",
-            "titleKR": "우거진 갈대의 섬"
-        },
-        {
-            "x": -171.1249777635865,
-            "y": 279.3750341925946,
-            "type": MarkerTypeEnum.ZoningPVP,
-            "id": 57,
-            "teleportTo": [
-                -132.77,
-                285.6
-            ],
-            "teleportArea": "Islands",
-            "title": "To Hallucination Island",
-            "titleKR": "환각의 섬"
-        },
-        {
-            "x": -158.18730543138167,
-            "y": 238.68741451851335,
-            "type": MarkerTypeEnum.ZoningPVP,
-            "id": 59,
-            "teleportTo": [
-                -120,
-                237.61
-            ],
-            "teleportArea": "Islands",
-            "title": "To Medea",
-            "titleKR": "메데이아"
-        },
-        {
-            "x": -225.625,
-            "y": 178.40660902224394,
-            "type": MarkerTypeEnum.ZoningPVP,
-            "id": 63,
-            "teleportTo": [
-                -215.76,
-                164.77
-            ],
-            "teleportArea": "Islands",
-            "title": "To Isla of Mist",
-            "titleKR": "안개의 섬"
-        },
-        {
-            "x": -265.6875,
-            "y": 163.7492819555121,
-            "type": MarkerTypeEnum.ZoningPVP,
-            "id": 89,
-            "title": "To Goblin Island",
-            "titleKR": "고블린 섬"
-        },
-        {
-            "x": -333.250044472827,
-            "y": 187.937397422216,
-            "type": MarkerTypeEnum.ZoningPVP,
-            "id": 97,
-            "title": "To Outlaw Island",
-            "titleKR": "무법자의 섬"
-        },
-        {
             "x": -227.12503335462029,
             "y": 297.4999316148107,
             "type": MarkerTypeEnum.ZoningPVP,
             "id": 138,
             "title": "To Misguided Island"
+        },
+        {
+            "x": -262.24992868884095,
+            "y": 59.50314571870891,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 139,
+            "title": "Robende",
+            "titleKR": "로벤데"
+        },
+        {
+            "x": -352.8750415981761,
+            "y": 110.93982509643702,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 140,
+            "title": "Paprika",
+            "titleKR": "파푸니카"
+        },
+        {
+            "x": -357.6252614742498,
+            "y": 217.1247264592427,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 142,
+            "title": "Artemis",
+            "titleKR": "아르테미스"
+        },
+        {
+            "x": -355.6254040965679,
+            "y": 256.2495213036747,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 143,
+            "title": "Yudia",
+            "titleKR": "유니마"
+        },
+        {
+            "x": -368.5,
+            "y": 272.00136770378646,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 144,
+            "title": "Lutheran West",
+            "titleKR": "루테란 서부"
+        },
+        {
+            "x": -348.0003922113747,
+            "y": 294.8755470815146,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 145,
+            "title": "Lutheran East",
+            "titleKR": "루테란 동부"
+        },
+        {
+            "x": -404.2502139334771,
+            "y": 414.8771883260584,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 146,
+            "title": "Rimlake South",
+            "titleKR": "림레이크 남섬"
+        },
+        {
+            "x": -372.00005942596584,
+            "y": 466.00061546670395,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 147,
+            "title": "Rimlake North",
+            "titleKR": "림레이크 북섬"
+        },
+        {
+            "x": -253.84,
+            "y": 424.19,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 148,
+            "title": "Anich",
+            "titleKR": "애니츠",
+        },
+        {
+            "x": -184.9998217221024,
+            "y": 456.2496580740534,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 149,
+            "title": "Kurzan",
+            "titleKR": "쿠르잔"
+        },
+        {
+            "x": -188.2498573776819,
+            "y": 392.37575223708257,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 150,
+            "title": "Arthetaine",
+            "titleKR": "아르데타인"
+        },
+        {
+            "x": -101.50042786695423,
+            "y": 283.4994529184854,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 151,
+            "title": "Shusire",
+            "titleKR": "슈샤이어"
+        },
+        {
+            "x": -109.31,
+            "y": 30.01,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 152,
+            "title": "Peirun",
+            "titleKR": "페이른"
+        },
+        {
+            "x": -244.95,
+            "y": 207.51,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 153,
+            "title": "Bern South",
+            "titleKR": "베른 남부"
+        },
+        {
+            "x": -229.45,
+            "y": 260.35,
+            "type": MarkerTypeEnum.Note,
+            "style": MarkerStyleEnum.Label,
+            "id": 154,
+            "title": "Bern North",
+            "titleKR": "베른 북부"
         }
     ];
 

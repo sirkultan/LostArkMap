@@ -38,3 +38,12 @@ RepositionRectangleMarker = function(marker, markerData){
     let bounds = [[markerData.x - halfSize[0], markerData.y - halfSize[1]], [markerData.x + halfSize[0], markerData.y + halfSize[1]]];
     marker.setBounds(bounds);
 };
+
+RefreshMarkerLabel = function (marker, markerData) {
+    labelIcon = L.divIcon({
+        className: 'leaflet-label',
+        html:  '<span class="marker-label-' + GetKeyByValue(MarkerTypeEnum, markerData.type) + '"">' + markerData.title + '</span>'
+    });
+
+    marker.setIcon(labelIcon);
+};

@@ -129,21 +129,21 @@
                     let markerData = area.markerLayer.markers[i];
 
                     // Title
-                    let match = this.matchSearchAgainst(regex, markerData.title);
+                    let match = this.matchSearchAgainst(regex, markerData.title, markerData.titleKR);
                     if(match !== undefined){
                         target.push(this.buildMarkerSearchResult(markerData, match));
                         continue;
                     }
 
                     // Popup Text
-                    match = this.matchSearchAgainst(regex, markerData.popupText);
+                    match = this.matchSearchAgainst(regex, markerData.popupText, markerData.popupTextKR);
                     if(match !== undefined){
                         target.push(this.buildMarkerSearchResult(markerData, match));
                         continue;
                     }
 
                     // Hint Text
-                    match = this.matchSearchAgainst(regex, markerData.hintText);
+                    match = this.matchSearchAgainst(regex, markerData.hintText, markerData.hintTextKR);
                     if(match !== undefined){
                         target.push(this.buildMarkerSearchResult(markerData, match));
                         continue;
@@ -169,8 +169,16 @@
                 match: match
             };
 
+            // Order here matters
             if(markerData.isGenerated !== true) {
                 result.title = result.title + ' #' + markerData.id;
+            }
+
+            if(markerData.title !== undefined) {
+                console.log(markerData.title);
+                result.description = result.title;
+                result.title = markerData.title;
+                console.log(result);
             }
 
             if(markerData.popupText !== undefined) {
@@ -246,7 +254,6 @@
                 linkColumn.append(link);
             }
 
-            // TODO Icon
             if(entryData.icon !== undefined) {
                 let icon = $('<img src="images/icons/' + entryData.icon + '" class="search-icon">');
                 iconColumn.append(icon);

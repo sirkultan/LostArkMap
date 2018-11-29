@@ -25,7 +25,8 @@ let MapTypeEnum = Object.freeze({
 let MarkerStyleEnum = Object.freeze({
     "Point": 1,
     "Rectangle": 2,
-    "Circle": 3
+    "Circle": 3,
+    "Label": 4,
 });
 
 let MarkerTypeEnum = Object.freeze({
@@ -57,7 +58,8 @@ let MarkerTypeEnum = Object.freeze({
     "SeaAreaIce": "seaareaice.png",
     "SeaAreaSandstorm": "seaareasandstorm.png",
     "SeaAreaSiren": "seaareasiren.png",
-    "SeaAreaStorm": "seaareastorm.png"
+    "SeaAreaStorm": "seaareastorm.png",
+    "Note": "note.png"
 });
 
 let SearchResultTypeEnum = Object.freeze({
@@ -213,8 +215,13 @@ MarkerTypeDefaultTitle = function(markerType) {
         case MarkerTypeEnum.SeaAreaSiren: {
             return "Siren Area (세이렌 해역)";
         }
+
         case MarkerTypeEnum.SeaAreaStorm: {
             return "Stormy Area (폭풍우 해역)";
+        }
+
+        case MarkerTypeEnum.Note: {
+            return "Note";
         }
 
         default: {

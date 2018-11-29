@@ -135,7 +135,8 @@
         createLeafletMarker(markerData, style) {
             switch (style) {
 
-                case MarkerStyleEnum.Point: {
+                case MarkerStyleEnum.Point:
+                case MarkerStyleEnum.Label: {
                     let idPrefix = "";
 
                     if(markerData.isGenerated !== true) {
@@ -353,6 +354,10 @@
             let marker = this.createLeafletMarker(markerData, style);
             if(marker === undefined){
                 return;
+            }
+
+            if(markerData.style === MarkerStyleEnum.Label) {
+                RefreshMarkerLabel(marker, markerData);
             }
 
             markerData.activeMarker = marker;
