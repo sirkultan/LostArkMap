@@ -36,13 +36,6 @@
 
         initializeUI() {
             for(let marker in MarkerTypeEnum) {
-                switch (MarkerTypeEnum[marker]) {
-                    case MarkerTypeEnum.Internal:
-                    case MarkerTypeEnum.TargetMark: {
-                        continue;
-                    }
-                }
-
                 let buttonId = 'ed_markerTypeSelect' + marker;
                 let element = $('<button id="' + buttonId +'" type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="' + marker + '"><img src="images/icons/' + MarkerTypeEnum[marker] + '" style="width: 24px; height: 24px"/></button>');
                 element.click({type: marker}, function(e) {
@@ -50,7 +43,30 @@
                 });
                 element.tooltip();
 
-                $('#ed_markerTypeToolbar').append(element);
+                switch (MarkerTypeEnum[marker]) {
+                    case MarkerTypeEnum.Zoning:
+                    case MarkerTypeEnum.ZoningIsland:
+                    case MarkerTypeEnum.ZoningWorld:
+                    case MarkerTypeEnum.TreasureMap:
+                    case MarkerTypeEnum.IslandHeart:
+                    case MarkerTypeEnum.TargetMark:
+                    case MarkerTypeEnum.Internal:
+                    case MarkerTypeEnum.SeaAreaAquatic:
+                    case MarkerTypeEnum.SeaAreaDeath:
+                    case MarkerTypeEnum.SeaAreaIce:
+                    case MarkerTypeEnum.SeaAreaSandstorm:
+                    case MarkerTypeEnum.SeaAreaSiren:
+                    case MarkerTypeEnum.SeaAreaStorm:
+                    {
+                        $('#ed_markerTypeToolbarSpecial').append(element);
+                        break
+                    }
+
+                    default:
+                    {
+                        $('#ed_markerTypeToolbarPOI').append(element);
+                    }
+                }
             }
 
             for(let mode in EditorModeEnum) {
@@ -225,7 +241,15 @@
 
         circleRadiusChanged(text){
             if(this.markerDataBeingEdited !== undefined) {
-                this.markerDataBeingEdited.radius = parseInt(text);
+                let newValue = parseInt(text);
+                if(newValue === undefined || isNaN(newValue)) {
+                    return;
+                }
+
+                this.markerDataBeingEdited.radius = newValue;
+                if(this.markerDataBeingEdited.activeMarker !== undefined){
+                    this.markerDataBeingEdited.activeMarker.setRadius(newValue);
+                }
             }
         }
 
@@ -321,24 +345,31 @@
             this.style = style;
             this.resetEditForm();
 
-            $('#ed_markerTypeToolbar').hide();
+            $('#ed_markerTypeToolbarPOI').hide();
+            $('#ed_markerTypeToolbarSpecial').show();
             $('#ed_rectangleSettings').hide();
             $('#ed_circleSettings').hide();
             switch (style) {
                 case MarkerStyleEnum.Point:
                 {
-                    $('#ed_markerTypeToolbar').show();
+                    $('#ed_markerTypeToolbarPOI').show();
+                    $('#ed_markerTypeToolbarSpecial').show();
+                    this.selectActiveMarkerType(GetKeyByValue(MarkerTypeEnum, MarkerTypeEnum.Boss));
                     break
                 }
 
                 case MarkerStyleEnum.Rectangle: {
                     $('#ed_rectangleSettings').show();
+
+                    this.selectActiveMarkerType(GetKeyByValue(MarkerTypeEnum, MarkerTypeEnum.Internal));
                     break;
                 }
 
                 case MarkerStyleEnum.Circle:
                 {
                     $('#ed_circleSettings').show();
+
+                    this.selectActiveMarkerType(GetKeyByValue(MarkerTypeEnum, MarkerTypeEnum.Internal));
                     break;
                 }
             }
@@ -369,12 +400,11 @@
 
                     markerData.size = [width, height];
                     markerData.style = this.style;
-                    markerData.color = Constants.AchievementMarkerColor;
                     break
                 }
 
                 case MarkerStyleEnum.Circle: {
-                    let radius = parseInt($('#ed_circleRadius').val(""));
+                    let radius = parseInt($('#ed_circleRadius').val());
                     if(radius === undefined || isNaN(radius) || radius === 0){
                         console.error("Circle radius is invalid");
                         return;
@@ -456,11 +486,9 @@
 
                     break
                 }
-
-                default: {
-                    this.selectActiveMarkerType(GetKeyByValue(MarkerTypeEnum, markerData.type));
-                }
             }
+
+            this.selectActiveMarkerType(GetKeyByValue(MarkerTypeEnum, markerData.type));
 
             if(markerData.title !== undefined && markerData.title !== MarkerTypeDefaultTitle(markerData.type)) {
                 $('#ed_tooltipInput').val(markerData.title);

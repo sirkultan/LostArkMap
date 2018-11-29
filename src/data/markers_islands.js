@@ -401,7 +401,7 @@
             "y": 393.55,
             "type": MarkerTypeEnum.SecretPassage,
             "id": 44,
-            "hintText": "access to the 3 seeds at the right"
+            "hintText": "you have to play \"Song of Resonance\" in front of the Statue<br>\nProvides access to the 3 seeds at the right"
         },
         {
             "x": -104.85,

@@ -50,7 +50,13 @@ let MarkerTypeEnum = Object.freeze({
     "HiddenQuest": "hiddenquest.png",
     "Notice": "notice.png",
     "TargetMark": "targetmark.png",
-    "IslandHeart": "islandheart.png"
+    "IslandHeart": "islandheart.png",
+    "SeaAreaAquatic": "seaareaaquatic.png",
+    "SeaAreaDeath": "seaareadeath.png",
+    "SeaAreaIce": "seaareaice.png",
+    "SeaAreaSandstorm": "seaareasandstorm.png",
+    "SeaAreaSiren": "seaareasiren.png",
+    "SeaAreaStorm": "seaareastorm.png"
 });
 
 let SearchResultTypeEnum = Object.freeze({
@@ -58,6 +64,41 @@ let SearchResultTypeEnum = Object.freeze({
     "Marker": "marker",
     "Guide": "guide"
 });
+
+/**
+ * @return {string}
+ */
+MarkerDefaultColor = function(markerType) {
+    switch (markerType) {
+        case MarkerTypeEnum.Internal: {
+            return Constants.AchievementMarkerColor;
+        }
+
+        case MarkerTypeEnum.SeaAreaAquatic: {
+            return "#5ceb86";
+        }
+
+        case MarkerTypeEnum.SeaAreaDeath: {
+            return "#4d647d";
+        }
+
+        case MarkerTypeEnum.SeaAreaIce: {
+            return "#d9d9d9";
+        }
+
+        case MarkerTypeEnum.SeaAreaSandstorm: {
+            return "#d0b349";
+        }
+
+        case MarkerTypeEnum.SeaAreaSiren: {
+            return "#dca2da";
+        }
+
+        case MarkerTypeEnum.SeaAreaStorm: {
+            return "#0075ff";
+        }
+    }
+};
 
 /**
  * @return {string}
@@ -109,11 +150,11 @@ MarkerTypeDefaultTitle = function(markerType) {
         }
 
         case MarkerTypeEnum.ZoningIsland: {
-            return "Area change";
+            return "Area change (Island)";
         }
 
         case MarkerTypeEnum.ZoningWorld: {
-            return "Area change";
+            return "Area change (World)";
         }
 
         case MarkerTypeEnum.TreasureBox: {
@@ -146,6 +187,29 @@ MarkerTypeDefaultTitle = function(markerType) {
 
         case MarkerTypeEnum.IslandHeart: {
             return "Island Heart";
+        }
+
+        case MarkerTypeEnum.SeaAreaAquatic: {
+            return "Aquatic Area (수초 해역)";
+        }
+
+        case MarkerTypeEnum.SeaAreaDeath: {
+            return "Death Area (망자 해역)";
+        }
+
+        case MarkerTypeEnum.SeaAreaIce: {
+            return "Ice Area (한파 해역)";
+        }
+
+        case MarkerTypeEnum.SeaAreaSandstorm: {
+            return "Sandstorm Area (모래폭풍 해역)";
+        }
+
+        case MarkerTypeEnum.SeaAreaSiren: {
+            return "Siren Area (세이렌 해역)";
+        }
+        case MarkerTypeEnum.SeaAreaStorm: {
+            return "Stormy Area (폭풍우 해역)";
         }
 
         default: {

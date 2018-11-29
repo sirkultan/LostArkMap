@@ -1034,6 +1034,318 @@
             "id": 98,
             "title": "To Torrent Island",
             "titleKR": "격류의 섬"
+        },
+        {
+            "x": -234.35797983280966,
+            "y": 122.2109472749413,
+            "type": MarkerTypeEnum.SeaAreaDeath,
+            "radius": 12,
+            "style": MarkerStyleEnum.Circle,
+            "id": 99
+        },
+        {
+            "x": -238.48337204418436,
+            "y": 148.57151799999392,
+            "type": MarkerTypeEnum.SeaAreaDeath,
+            "radius": 15,
+            "style": MarkerStyleEnum.Circle,
+            "id": 100
+        },
+        {
+            "x": -246.85916835212697,
+            "y": 176.43126810277465,
+            "type": MarkerTypeEnum.SeaAreaDeath,
+            "radius": 14,
+            "style": MarkerStyleEnum.Circle,
+            "id": 101
+        },
+        {
+            "x": -184.48867312562282,
+            "y": 140.47575505940728,
+            "type": MarkerTypeEnum.SeaAreaDeath,
+            "radius": 14,
+            "style": MarkerStyleEnum.Circle,
+            "id": 102
+        },
+        {
+            "x": -216.9813753317313,
+            "y": 270.17962685823085,
+            "type": MarkerTypeEnum.SeaAreaDeath,
+            "radius": 15,
+            "style": MarkerStyleEnum.Circle,
+            "id": 103
+        },
+        {
+            "x": -125.61,
+            "y": 419.47,
+            "type": MarkerTypeEnum.SeaAreaDeath,
+            "radius": 10,
+            "style": MarkerStyleEnum.Circle,
+            "id": 104
+        },
+        {
+            "x": -388.9789982930967,
+            "y": 320.9257289024394,
+            "type": MarkerTypeEnum.SeaAreaDeath,
+            "radius": 7,
+            "style": MarkerStyleEnum.Circle,
+            "id": 105
+        },
+        {
+            "x": -413.6063396761518,
+            "y": 320.9257289024394,
+            "type": MarkerTypeEnum.SeaAreaDeath,
+            "radius": 10,
+            "style": MarkerStyleEnum.Circle,
+            "id": 106
+        },
+        {
+            "x": -399.35498476413005,
+            "y": 345.1624621757105,
+            "type": MarkerTypeEnum.SeaAreaDeath,
+            "radius": 20,
+            "style": MarkerStyleEnum.Circle,
+            "id": 107
+        },
+        {
+            "x": -329.72929542292604,
+            "y": 398.80633648796396,
+            "type": MarkerTypeEnum.SeaAreaStorm,
+            "radius": 18,
+            "style": MarkerStyleEnum.Circle,
+            "id": 108
+        },
+        {
+            "x": -402.36120072015956,
+            "y": 388.6868756882992,
+            "type": MarkerTypeEnum.SeaAreaStorm,
+            "radius": 19,
+            "style": MarkerStyleEnum.Circle,
+            "id": 109
+        },
+        {
+            "x": -225.92940589816587,
+            "y": 430.65231342911545,
+            "type": MarkerTypeEnum.SeaAreaStorm,
+            "radius": 13,
+            "style": MarkerStyleEnum.Circle,
+            "id": 110
+        },
+        {
+            "x": -163.97771469223403,
+            "y": 411.691252340416,
+            "type": MarkerTypeEnum.SeaAreaStorm,
+            "radius": 13,
+            "style": MarkerStyleEnum.Circle,
+            "id": 111
+        },
+        {
+            "x": -307.1034396890176,
+            "y": 215.57746751146513,
+            "type": MarkerTypeEnum.SeaAreaStorm,
+            "radius": 26,
+            "style": MarkerStyleEnum.Circle,
+            "id": 112
+        },
+        {
+            "x": -166.35020691647452,
+            "y": 183.07021868139677,
+            "type": MarkerTypeEnum.SeaAreaStorm,
+            "radius": 15,
+            "style": MarkerStyleEnum.Circle,
+            "id": 113
+        },
+        {
+            "x": -178.60137166540548,
+            "y": 214.4280539988764,
+            "type": MarkerTypeEnum.SeaAreaStorm,
+            "radius": 26,
+            "style": MarkerStyleEnum.Circle,
+            "id": 114
+        },
+        {
+            "x": -324.35250075875695,
+            "y": 132.9413207256053,
+            "type": MarkerTypeEnum.SeaAreaSiren,
+            "radius": 21,
+            "style": MarkerStyleEnum.Circle,
+            "id": 115
+        },
+        {
+            "x": -334.23927927047464,
+            "y": 278.3672660195868,
+            "type": MarkerTypeEnum.SeaAreaSiren,
+            "radius": 9,
+            "style": MarkerStyleEnum.Circle,
+            "id": 116
+        },
+        {
+            "x": -334.97851100017664,
+            "y": 250.00224380320856,
+            "type": MarkerTypeEnum.SeaAreaSiren,
+            "radius": 13,
+            "style": MarkerStyleEnum.Circle,
+            "id": 117
+        },
+        {
+            "x": -258.85033765359947,
+            "y": 282.7361048985281,
+            "type": MarkerTypeEnum.SeaAreaSiren,
+            "radius": 12,
+            "style": MarkerStyleEnum.Circle,
+            "id": 118
+        },
+        {
+            "x": -265.2259437984512,
+            "y": 310.3459917716874,
+            "type": MarkerTypeEnum.SeaAreaSiren,
+            "radius": 10,
+            "style": MarkerStyleEnum.Circle,
+            "id": 119
+        },
+        {
+            "x": -169.5481542865569,
+            "y": 279.5478249228704,
+            "type": MarkerTypeEnum.SeaAreaSiren,
+            "radius": 4,
+            "style": MarkerStyleEnum.Circle,
+            "id": 120
+        },
+        {
+            "x": -124.35215608815491,
+            "y": 175.84066585300468,
+            "type": MarkerTypeEnum.SeaAreaIce,
+            "radius": 26,
+            "style": MarkerStyleEnum.Circle,
+            "id": 121
+        },
+        {
+            "x": -113.92586411060034,
+            "y": 246.46361668830227,
+            "type": MarkerTypeEnum.SeaAreaIce,
+            "radius": 14,
+            "style": MarkerStyleEnum.Circle,
+            "id": 122
+        },
+        {
+            "x": -146.2390772221907,
+            "y": 279.0933694589603,
+            "type": MarkerTypeEnum.SeaAreaIce,
+            "radius": 6,
+            "style": MarkerStyleEnum.Circle,
+            "id": 123
+        },
+        {
+            "x": -139.85257206991596,
+            "y": 321.6542559529916,
+            "type": MarkerTypeEnum.SeaAreaIce,
+            "radius": 24,
+            "style": MarkerStyleEnum.Circle,
+            "id": 124
+        },
+        {
+            "x": -102.84905405273676,
+            "y": 362.0071675368399,
+            "type": MarkerTypeEnum.SeaAreaIce,
+            "radius": 44,
+            "style": MarkerStyleEnum.Circle,
+            "id": 125
+        },
+        {
+            "x": -205.4270704577074,
+            "y": 121.66636658552153,
+            "type": MarkerTypeEnum.SeaAreaSandstorm,
+            "radius": 11,
+            "style": MarkerStyleEnum.Circle,
+            "id": 126
+        },
+        {
+            "x": -182.22498109780423,
+            "y": 446.764142826151,
+            "type": MarkerTypeEnum.SeaAreaSandstorm,
+            "radius": 22,
+            "style": MarkerStyleEnum.Circle,
+            "id": 127
+        },
+        {
+            "x": -206.85232248085933,
+            "y": 391.2945058502109,
+            "type": MarkerTypeEnum.SeaAreaSandstorm,
+            "radius": 17,
+            "style": MarkerStyleEnum.Circle,
+            "id": 128
+        },
+        {
+            "x": -214.48892271467946,
+            "y": 161.65374951809122,
+            "type": MarkerTypeEnum.SeaAreaAquatic,
+            "radius": 8,
+            "style": MarkerStyleEnum.Circle,
+            "id": 129
+        },
+        {
+            "x": -275.9894397205825,
+            "y": 189.1518689253848,
+            "type": MarkerTypeEnum.SeaAreaAquatic,
+            "radius": 6,
+            "style": MarkerStyleEnum.Circle,
+            "id": 130
+        },
+        {
+            "x": -293.9911511883994,
+            "y": 158.4811574893639,
+            "type": MarkerTypeEnum.SeaAreaAquatic,
+            "radius": 8,
+            "style": MarkerStyleEnum.Circle,
+            "id": 131
+        },
+        {
+            "x": -285.24068766586566,
+            "y": 111.05347076403191,
+            "type": MarkerTypeEnum.SeaAreaAquatic,
+            "radius": 6,
+            "style": MarkerStyleEnum.Circle,
+            "id": 132
+        },
+        {
+            "x": -378.993153843449,
+            "y": 367.51695307293284,
+            "type": MarkerTypeEnum.SeaAreaAquatic,
+            "radius": 6,
+            "style": MarkerStyleEnum.Circle,
+            "id": 133
+        },
+        {
+            "x": -364.11673950546145,
+            "y": 371.0150382876318,
+            "type": MarkerTypeEnum.SeaAreaAquatic,
+            "radius": 6,
+            "style": MarkerStyleEnum.Circle,
+            "id": 134
+        },
+        {
+            "x": -303.3639048868897,
+            "y": 374.81857982783026,
+            "type": MarkerTypeEnum.SeaAreaAquatic,
+            "radius": 8,
+            "style": MarkerStyleEnum.Circle,
+            "id": 135
+        },
+        {
+            "x": -299.3010186181116,
+            "y": 347.77088522131896,
+            "type": MarkerTypeEnum.SeaAreaAquatic,
+            "radius": 12,
+            "style": MarkerStyleEnum.Circle,
+            "id": 136
+        },
+        {
+            "x": -250.74377795873227,
+            "y": 374.5084252475744,
+            "type": MarkerTypeEnum.SeaAreaAquatic,
+            "radius": 5,
+            "style": MarkerStyleEnum.Circle,
+            "id": 137
         }
     ];
 

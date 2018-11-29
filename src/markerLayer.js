@@ -160,7 +160,7 @@
                     }
 
                     let result = L.rectangle([[0,0],[10, 10]], {
-                        color: markerData.color
+                        color: MarkerDefaultColor(markerData.type)
                     });
 
                     RepositionRectangleMarker(result, markerData);
@@ -182,7 +182,7 @@
 
                     let result = L.circle([markerData.x, markerData.y], {
                         radius: markerData.radius,
-                        color: markerData.color
+                        color: MarkerDefaultColor(markerData.type)
                     });
 
                     if(Constants.EditMode && markerData.isGenerated !== true) {
@@ -364,14 +364,24 @@
             this.markers.push(markerData);
             this.markerLayer.addLayer(marker);
 
-            let typeLayer = this.markerTypeLayers[markerData.type];
-            if (typeLayer === undefined){
-                typeLayer = L.layerGroup();
-                this.layerControl.addOverlay(typeLayer, GetKeyByValue(MarkerTypeEnum, markerData.type));
-                this.markerTypeLayers[markerData.type] = typeLayer;
-            }
+            switch (markerData.type) {
+                case MarkerTypeEnum.Internal: {
+                    break;
+                }
 
-            typeLayer.addLayer(marker);
+                default:
+                {
+                    let typeLayer = this.markerTypeLayers[markerData.type];
+                    if (typeLayer === undefined){
+                        typeLayer = L.layerGroup();
+                        this.layerControl.addOverlay(typeLayer, MarkerTypeDefaultTitle(markerData.type));
+                        this.markerTypeLayers[markerData.type] = typeLayer;
+                    }
+
+                    typeLayer.addLayer(marker);
+                    break;
+                }
+            }
 
             if(Constants.EditMode === true && markerData.isGenerated === true) {
                 this.generatedMarkerLayer.addLayer(marker);

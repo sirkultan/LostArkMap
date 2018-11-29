@@ -423,7 +423,13 @@ let LAM = (function(){
                     case MarkerTypeEnum.Zoning:
                     case MarkerTypeEnum.ZoningIsland:
                     case MarkerTypeEnum.ZoningWorld:
-                    case MarkerTypeEnum.TargetMark: {
+                    case MarkerTypeEnum.TargetMark:
+                    case MarkerTypeEnum.SeaAreaAquatic:
+                    case MarkerTypeEnum.SeaAreaDeath:
+                    case MarkerTypeEnum.SeaAreaIce:
+                    case MarkerTypeEnum.SeaAreaSandstorm:
+                    case MarkerTypeEnum.SeaAreaSiren:
+                    case MarkerTypeEnum.SeaAreaStorm: {
                         continue;
                     }
                 }
