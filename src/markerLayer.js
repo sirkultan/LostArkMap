@@ -314,7 +314,7 @@
                                 break;
                             }
 
-                            case 'admission': {
+                            case 'entry': {
                                 title = 'Entry';
                                 break;
                             }

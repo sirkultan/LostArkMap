@@ -49,7 +49,7 @@
         "type": "MapTypeEnum.Island",
         "meta": {
             "ilvl": 250,
-            "admission": "Calendar Event"
+            "entry": "Calendar Event"
         }
     });
 
@@ -105,7 +105,7 @@
         "meta": {
             "heart": "두키왕 처치",
             "ilvl": 300,
-            "admission": "1시 10분/ 5시 10분/ 9시 10분/ 13시 10분/ 17시 10분/ 21시 10분"
+            "entry": "1:10 / 5:10 / 9:10 / 13:10 / 17:10 / 21:10"
         }
     });
 
@@ -247,7 +247,7 @@
         "meta": {
             "heart": "마법은 노래를 타고' 협동 퀘스트 (공명의 노래 4명 필요, 숲의 미뉴에트 획득)",
             "ilvl": 250,
-            "admission": "0시 40분/ 3시 40분/ 6시 40분/ 9시 40분/ 12시 40분/ 15시 40분/ 18시 40분/ 21시 40분"
+            "entry": "0:40 / 3:40 / 6:40 / 9:40 / 12:40 / 15:40 / 18:40 / 21:40"
         },
         "bounds": [
             [
@@ -469,7 +469,7 @@
         "meta": {
             "heart": "퀘스트 (천상의 하모니 획득)",
             "ilvl": 250,
-            "admission": "Calendar Event"
+            "entry": "Calendar Event"
         }
     });
 
@@ -529,7 +529,7 @@
         "type": "MapTypeEnum.Island",
         "meta": {
             "ilvl": 250,
-            "admission": "알려지지 않음"
+            "entry": "알려지지 않음"
         }
     });
 
@@ -538,7 +538,7 @@
         "type": "MapTypeEnum.Island",
         "meta": {
             "ilvl": 250,
-            "admission": "알려지지 않음"
+            "entry": "알려지지 않음"
         }
     });
 
@@ -593,7 +593,7 @@
         "meta": {
             "heart": "협동 퀘스트-볼라르의 비밀 상자에서 획득",
             "ilvl": 300,
-            "admission": "Calendar Event"
+            "entry": "Calendar Event"
         }
     });
 
@@ -660,7 +660,7 @@
         "meta": {
             "heart": "필드 보물상자 (퀘스트도 가능, 숲의 미뉴에트 필요)",
             "ilvl": 250,
-            "admission": "2시 20분/ 5시 20분/ 8시 20분/ 11시 20분/ 14시 20분/ 17시 20분/ 20시 20분/ 23시 20분"
+            "entry": "2:20 / 5:20 / 8:20 / 11:20 / 14:20 / 17:20 / 20:20 / 23:20"
         },
         "bounds": [
             [
@@ -926,7 +926,7 @@
         "meta": {
             "heart": "황금 붕어를 잡아라' 경쟁 퀘스트 보상 강태공의 주머니",
             "ilvl": 250,
-            "admission": "Calendar Event"
+            "entry": "Calendar Event"
         },
         "bounds": [
             [
@@ -993,7 +993,7 @@
         "meta": {
             "heart": "수렵-결정 20개로 교환 (수렵 5레벨 필요)",
             "ilvl": 250,
-            "admission": "3시 20분/ 7시 20분/ 11시 20분/ 15시 20분/ 19시 20분/ 23시 20분"
+            "entry": "3:20 / 7:20 / 11:20 / 15:20 / 19:20 / 23:20"
         },
         "bounds": [
             [
@@ -1108,7 +1108,7 @@
         "meta": {
             "heart": "보스 처치",
             "ilvl": 300,
-            "admission": "1시 50분/ 7시 50분/ 13시 50분/ 19시 50분"
+            "entry": "1:50 / 7:50 / 13:50 / 19:50"
         },
         "bounds": [
             [
@@ -1146,7 +1146,7 @@
         "meta": {
             "heart": "붉은 일렁임' 경쟁 퀘스트 보상 환각의 섬 전리품",
             "ilvl": 250,
-            "admission": "0시 20분/ 2시 20분/ 4시 20분/ 6시 20분/ 8시 20분/ 10시 20분/ 12시 20분/ 14시 20분/ 14시 20분/ 16시 20분/ 18시 20분/ 20시 20분/ 22시 20분"
+            "entry": "0:20 / 2:20 / 4:20 / 6:20 / 8:20 / 10:20 / 12:20 / 14:20 / 14:20 / 16:20 / 18:20 / 20:20 / 22:20"
         },
         "bounds": [
             [
@@ -1166,7 +1166,7 @@
         "meta": {
             "heart": "메데이아 쟁탈전' 경쟁 퀘스트 보상 메데이아의 선물",
             "ilvl": 320,
-            "admission": "Calendar Event"
+            "entry": "Calendar Event"
         },
         "bounds": [
             [
@@ -1186,7 +1186,7 @@
         "meta": {
             "heart": "찾아라 꿈빛 조각!' 경쟁 퀘스트 보상 몬테섬 참가상",
             "ilvl": 330,
-            "admission": "Calendar Event"
+            "entry": "Calendar Event"
         }
     });
 
@@ -1228,7 +1228,7 @@
         "type": "MapTypeEnum.Island",
         "meta": {
             "ilvl": 400,
-            "admission": "Calendar Event"
+            "entry": "Calendar Event"
         }
     });
 
@@ -1237,7 +1237,7 @@
         "type": "MapTypeEnum.Island",
         "meta": {
             "ilvl": 420,
-            "admission": "Calendar Event"
+            "entry": "Calendar Event"
         }
     });
 
