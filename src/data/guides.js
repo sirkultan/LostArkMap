@@ -22,6 +22,8 @@
 
     LAM.registerGuide("Skilltree Builder", "http://lostarktree.ru/skill/", 'SkilltreeBuilder.jpg');
 
+    LAM.registerGuide("Tripod Builder (French site but Skills are in English)", "http://www.lostark-actu.fr/tripod-builder/", "tripod-builder.jpg");
+
     LAM.registerGuide("Koleverii's Guide", "https://www.docdroid.net/WBeRmVP/koleveriis-lost-ark-english-guide.pdf#page=31", 'KoleveriisGuide.jpg');
 
     LAM.registerGuide("Runes 101", "https://docs.google.com/document/d/1wdlaRiURE3gcZtw6uSabDRASHRw9_m7y6fuJ-evZo_k/edit", 'Runes101.jpg');
