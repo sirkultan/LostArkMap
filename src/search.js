@@ -105,21 +105,40 @@
             for (let areaName in LAM.areas) {
                 let area = LAM.areas[areaName];
                 for(let zoneName in area.maps) {
-                    let match = this.matchSearchAgainst(regex, zoneName, area.maps[zoneName].kr);
+                    let zoneData = area.maps[zoneName];
+                    let match = this.matchSearchAgainst(regex, zoneName, zoneData.kr);
                     if(match !== undefined) {
-                        let result = {
-                            type: SearchResultTypeEnum.Area,
-                            title: zoneName,
-                            teleportTo: GetBoundsCenter(area.maps[zoneName].bounds),
-                            teleportArea: areaName,
-                            teleportZoom: 1,
-                            match: match
-                        };
+                        target.push(this.buildAreaResult(zoneName, areaName, zoneData, match));
+                        continue;
+                    }
 
-                        target.push(result);
+                    if(zoneData.meta !== undefined) {
+                        for(let metaKey in zoneData.meta) {
+                            let metaValue = zoneData.meta[metaKey];
+                            if(typeof metaValue === 'string') {
+                                match = this.matchSearchAgainst(regex, metaValue);
+                                if(match !== undefined){
+                                    target.push(this.buildAreaResult(zoneName, areaName, zoneData, metaKey + ': '+ match));
+                                    break;
+                                }
+                            }
+                        }
                     }
                 }
             }
+        }
+
+        buildAreaResult(name, areaName, zoneData, match){
+            let result = {
+                type: SearchResultTypeEnum.Area,
+                title: name,
+                teleportTo: GetBoundsCenter(zoneData.bounds),
+                teleportArea: areaName,
+                teleportZoom: 1,
+                match: match
+            };
+
+            return result;
         }
 
         searchInMarkerData(regex, target) {

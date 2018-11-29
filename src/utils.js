@@ -27,6 +27,28 @@ GetBoundsSize = function(bounds) {
 };
 
 /**
+ * @return {number[]}
+ */
+GetBounds = function(center, size) {
+    if(center[0] < 0) {
+        size[0] *= -1;
+    }
+
+    if(center[1] < 0) {
+        size[1] *= -1;
+    }
+
+    let tl = [center[0] - size[0], center[1] - size[1]];
+    let br = [center[0] + size[0], center[1] + size[1]];
+    for(let i = 0; i < 2; i++) {
+        tl[i] = Math.round(tl[i] * 100) / 100;
+        br[i] = Math.round(br[i] * 100) / 100;
+    }
+
+    return [tl, br];
+};
+
+/**
  * @return {string}
  */
 GetKeyByValue = function(object, value) {
