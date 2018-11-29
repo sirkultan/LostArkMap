@@ -10,7 +10,8 @@
         "kr": "세월의 섬",
         "type": "MapTypeEnum.Island",
         "meta": {
-            "heart": "보스 사브나크 처치",
+            "heart": "Boss kill: Sabnak",
+            "heartKR": "보스 사브나크 처치",
             "ilvl": 330
         },
         "bounds": [
@@ -29,7 +30,8 @@
         "kr": "회상의 섬",
         "type": "MapTypeEnum.Island",
         "meta": {
-            "heart": "나의 빛, 나의 진실한 벗' 모험 퀘스트",
+            "heart": "Adventure Quest: '나의 빛, 나의 진실한 벗'",
+            "heartKR": "나의 빛, 나의 진실한 벗' 모험 퀘스트",
             "ilvl": 290
         },
         "bounds": [
@@ -57,7 +59,8 @@
         "kr": "오르비스 섬",
         "type": "MapTypeEnum.Island",
         "meta": {
-            "heart": "보스 호박신 처치",
+            "heart": "Boss kill: Pumpkin",
+            "heartKR": "보스 호박신 처치",
             "ilvl": 435
         }
     });
@@ -321,7 +324,8 @@
         "kr": "비키니 아일랜드",
         "type": "MapTypeEnum.Island",
         "meta": {
-            "heart": "꿈이 가득한 섬으로' 모험 퀘스트",
+            "heart": "Adventure Quest: '꿈이 가득한 섬으로'",
+            "heartKR": "꿈이 가득한 섬으로' 모험 퀘스트",
             "ilvl": 250
         },
         "bounds": [
@@ -406,7 +410,8 @@
         "kr": "격류의 섬",
         "type": "MapTypeEnum.Island",
         "meta": {
-            "heart": "보스 아우리온 처치",
+            "heart": "Boss kill: Aurion",
+            "heartKR": "보스 아우리온 처치",
             "ilvl": 495
         }
     });
@@ -432,7 +437,8 @@
         "kr": "휴양지 그라비스",
         "type": "MapTypeEnum.Island",
         "meta": {
-            "heart": "궁극의 휴양' 모험 퀘스트",
+            "heart": "Adventure Quest: '궁극의 휴양'",
+            "heartKR": "궁극의 휴양' 모험 퀘스트",
             "ilvl": 250
         }
     });
@@ -485,7 +491,8 @@
         "kr": "희망의 섬",
         "type": "MapTypeEnum.Island",
         "meta": {
-            "heart": "희생된 이들을 기억하자' 모험 퀘스트",
+            "heart": "Adventure Quest: '희생된 이들을 기억하자'",
+            "heartKR": "희생된 이들을 기억하자' 모험 퀘스트",
             "ilvl": 340
         }
     });
@@ -754,7 +761,8 @@
         "kr": "에라스모의 섬",
         "type": "MapTypeEnum.Island",
         "meta": {
-            "heart": "보스 에라스모 처치 (공명의 노래 10명 필요)",
+            "heart": "Boss kill: Erasumo (Need 10 people playing 'Song of Resonance')",
+            "heartKR": "보스 에라스모 처치 (공명의 노래 10명 필요)",
             "ilvl": 420
         },
         "bounds": [
@@ -849,7 +857,8 @@
         "kr": "포르페",
         "type": "MapTypeEnum.Island",
         "meta": {
-            "heart": "보스 바투아크 처치",
+            "heart": "Boss kill: Batuak",
+            "heartKR": "보스 바투아크 처치",
             "ilvl": 300
         },
         "bounds": [
@@ -1049,7 +1058,8 @@
         "kr": "비밀기지 X-301",
         "type": "MapTypeEnum.Island",
         "meta": {
-            "heart": "던전 비밀기지 X-301 보스 처치",
+            "heart": "kill Boss in dungeon 'Secret Base X-301'",
+            "heartKR": "던전 비밀기지 X-301 보스 처치",
             "ilvl": 335
         },
         "bounds": [
@@ -1087,7 +1097,8 @@
         "kr": "알트아이젠",
         "type": "MapTypeEnum.Island",
         "meta": {
-            "heart": "보스 솔 그랑데 처치",
+            "heart": "Boss kill: Sol Grande",
+            "heartKR": "보스 솔 그랑데 처치",
             "ilvl": 345
         },
         "bounds": [
@@ -1106,7 +1117,8 @@
         "kr": "스피다 섬",
         "type": "MapTypeEnum.Island",
         "meta": {
-            "heart": "보스 처치",
+            "heart": "Boss kill: ???",
+            "heartKR": "보스 처치",
             "ilvl": 300,
             "entry": "1:50 / 7:50 / 13:50 / 19:50"
         },
@@ -1253,7 +1265,8 @@
         "kr": "얼음과 불의 섬",
         "type": "MapTypeEnum.Island",
         "meta": {
-            "heart": "보스 브리아레오스 처치",
+            "heart": "Boss kill: Briarose",
+            "heartKR": "보스 브리아레오스 처치",
             "ilvl": 405
         },
         "bounds": [
@@ -1272,7 +1285,8 @@
         "kr": "얼음 미로의 섬",
         "type": "MapTypeEnum.Island",
         "meta": {
-            "heart": "모험 퀘스트 '따뜻한 온정의 횃불' (흑등고래의 기름 필요)",
+            "heart": "Adventure Quest: '따뜻한 온정의 횃불' (Humpback Whale Oil needed)",
+            "heartKR": "모험 퀘스트 '따뜻한 온정의 횃불' (흑등고래의 기름 필요)",
             "ilvl": 280
         }
     });
