@@ -1,8 +1,8 @@
 (function(){
 
-    let area = LAM.createArea("Shusire", {
+    let area = LAM.createArea("Shushire", {
         kr: "슈샤이어",
-        path: "maps/areas/Shusire",
+        path: "maps/areas/Shushire",
         zoomLevel: 4
     });
 

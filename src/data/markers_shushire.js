@@ -1,12 +1,12 @@
 (function () {
 
-    LAM.areaMarkerData['Shusire'] = [
+    LAM.areaMarkerData['Shushire'] = [
         {
             "x": -252.98,
             "y": 340.87,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 0,
-            "hintImage": "shusire/TreasureMap1.jpg"
+            "hintImage": "shushire/TreasureMap1.jpg"
         },
         {
             "x": -269.56,
@@ -35,49 +35,49 @@
             "y": 135.39,
             "type": MarkerTypeEnum.Mokoko,
             "id": 3,
-            "hintImage": "shusire/RegensMokokoHint1.jpg"
+            "hintImage": "shushire/RegensMokokoHint1.jpg"
         },
         {
             "x": -271.44,
             "y": 161.13,
             "type": MarkerTypeEnum.Mokoko,
             "id": 4,
-            "hintImage": "shusire/RegensMokokoHint2.jpg"
+            "hintImage": "shushire/RegensMokokoHint2.jpg"
         },
         {
             "x": -259.81,
             "y": 180.75,
             "type": MarkerTypeEnum.Mokoko,
             "id": 5,
-            "hintImage": "shusire/RegensMokokoHint4.jpg"
+            "hintImage": "shushire/RegensMokokoHint4.jpg"
         },
         {
             "x": -251.81,
             "y": 189.5,
             "type": MarkerTypeEnum.Mokoko,
             "id": 6,
-            "hintImage": "shusire/RegensMokokoHint5.jpg"
+            "hintImage": "shushire/RegensMokokoHint5.jpg"
         },
         {
             "x": -238.19,
             "y": 148.26,
             "type": MarkerTypeEnum.Mokoko,
             "id": 7,
-            "hintImage": "shusire/RegensMokokoHint3.jpg"
+            "hintImage": "shushire/RegensMokokoHint3.jpg"
         },
         {
             "x": -211.94,
             "y": 170.13,
             "type": MarkerTypeEnum.Mokoko,
             "id": 8,
-            "hintImage": "shusire/RegensMokokoHint6.jpg"
+            "hintImage": "shushire/RegensMokokoHint6.jpg"
         },
         {
             "x": -211.31,
             "y": 171.63,
             "type": MarkerTypeEnum.Mokoko,
             "id": 9,
-            "hintImage": "shusire/RegensMokokoHint6.jpg"
+            "hintImage": "shushire/RegensMokokoHint6.jpg"
         },
         {
             "x": -236.19,
@@ -85,7 +85,7 @@
             "type": MarkerTypeEnum.Vista,
             "id": 10,
             "popupText": "종탑",
-            "hintImage": "shusire/RegensVistaHint1.jpg"
+            "hintImage": "shushire/RegensVistaHint1.jpg"
         },
         {
             "x": -268.06,
@@ -94,7 +94,7 @@
             "id": 11,
             "popupText": "모험의서 요리제작",
             "hintText": "거대한 얼음 조각 - 얼어붙은 바다의 요리사 헬레나에게 가져가면 갈은 얼음으로 만들 수 있다. 완성된 요리가 나올 확률이 낮으니 넉넉히 50개이상은 들고가자.<br>시리우스의 눈물 - 100만실링에 판매(장난하냐...)",
-            "hintImage": "shusire/RegensCookingIngredientHint1.jpg"
+            "hintImage": "shushire/RegensCookingIngredientHint1.jpg"
         },
         {
             "x": -279.94,
@@ -102,7 +102,7 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 12,
             "popupText": "슈샤이어의 소년 #2",
-            "hintImage": "shusire/RegensHiddenStoryHint1.jpg"
+            "hintImage": "shushire/RegensHiddenStoryHint1.jpg"
         },
         {
             "x": -239.56,
@@ -110,7 +110,7 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 13,
             "popupText": "슈샤이어의 소년 #1",
-            "hintImage": "shusire/RegensHiddenStoryHint2.jpg"
+            "hintImage": "shushire/RegensHiddenStoryHint2.jpg"
         },
         {
             "x": -245.94,
@@ -118,7 +118,7 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 14,
             "popupText": "욕쟁이 제빵사",
-            "hintImage": "shusire/RegensHiddenStoryHint3.jpg"
+            "hintImage": "shushire/RegensHiddenStoryHint3.jpg"
         },
         {
             "x": -478.16,
@@ -132,7 +132,7 @@
             "y": 33.82,
             "type": MarkerTypeEnum.HiddenQuest,
             "id": 17,
-            "hintImage": "shusire/LakeHiddenQuestHint1.jpg"
+            "hintImage": "shushire/LakeHiddenQuestHint1.jpg"
         },
         {
             "x": -474.28,
@@ -140,7 +140,7 @@
             "type": MarkerTypeEnum.Vista,
             "id": 18,
             "popupText": "얼음 호수에 잠긴 가디언의 흔적",
-            "hintImage": "shusire/LakeVistaHint1.jpg"
+            "hintImage": "shushire/LakeVistaHint1.jpg"
         },
         {
             "x": -453,
@@ -148,7 +148,7 @@
             "type": MarkerTypeEnum.Vista,
             "id": 19,
             "popupText": "벌목지 거점과 작은 폭포",
-            "hintImage": "shusire/LakeVistaHint3.jpg"
+            "hintImage": "shushire/LakeVistaHint3.jpg"
         },
         {
             "x": -461.53,
@@ -156,7 +156,7 @@
             "type": MarkerTypeEnum.Vista,
             "id": 20,
             "popupText": "타르실라의 얼음동굴",
-            "hintImage": "shusire/LakeVistaHint2.jpg"
+            "hintImage": "shushire/LakeVistaHint2.jpg"
         },
         {
             "x": -452.78,
@@ -171,7 +171,7 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 22,
             "popupText": "타르실라의 자장가#3",
-            "hintImage": "shusire/LakeHiddenStoryHint1.jpg"
+            "hintImage": "shushire/LakeHiddenStoryHint1.jpg"
         },
         {
             "x": -441.47,
@@ -179,7 +179,7 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 23,
             "popupText": "타르실라의 자장가#1",
-            "hintImage": "shusire/LakeHiddenStoryHint2.jpg"
+            "hintImage": "shushire/LakeHiddenStoryHint2.jpg"
         },
         {
             "x": -437.91,
@@ -187,7 +187,7 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 24,
             "popupText": "타르실라의 자장가#2",
-            "hintImage": "shusire/LakeHiddenStoryHint3.jpg"
+            "hintImage": "shushire/LakeHiddenStoryHint3.jpg"
         },
         {
             "x": -439.09,
@@ -196,7 +196,7 @@
             "id": 25,
             "hintText": "Play 'Minuet of the forest' (숲의 미뉴에트)",
             "popupText": "Minuet of the forest",
-            "hintImage": "shusire/LakePlayInstrumentHint1.jpg"
+            "hintImage": "shushire/LakePlayInstrumentHint1.jpg"
         },
         {
             "x": -447.16,
@@ -204,7 +204,7 @@
             "type": MarkerTypeEnum.Boss,
             "id": 26,
             "popupText": "찬서리 거미",
-            "hintImage": "shusire/LakeBossHint1.jpg"
+            "hintImage": "shushire/LakeBossHint1.jpg"
         },
         {
             "x": -437.34,
@@ -212,7 +212,7 @@
             "type": MarkerTypeEnum.Boss,
             "id": 27,
             "popupText": "늙은 서리 백곰",
-            "hintImage": "shusire/LakeBossHint2.jpg"
+            "hintImage": "shushire/LakeBossHint2.jpg"
         },
         {
             "x": -419.84,
@@ -220,7 +220,7 @@
             "type": MarkerTypeEnum.Boss,
             "id": 28,
             "popupText": "거대한 서리갈기 멧돼지",
-            "hintImage": "shusire/LakeBossHint3.jpg"
+            "hintImage": "shushire/LakeBossHint3.jpg"
         },
         {
             "x": -449.0625,
@@ -228,56 +228,56 @@
             "type": MarkerTypeEnum.CookingIngredient,
             "id": 29,
             "popupText": "얼음 거미 알",
-            "hintImage": "shusire/LakeCookingIngredientHint1.jpg"
+            "hintImage": "shushire/LakeCookingIngredientHint1.jpg"
         },
         {
             "x": -485.66,
             "y": 27.45,
             "type": MarkerTypeEnum.Mokoko,
             "id": 30,
-            "hintImage": "shusire/LakeMokokoHint1.jpg"
+            "hintImage": "shushire/LakeMokokoHint1.jpg"
         },
         {
             "x": -461.97,
             "y": 32.19,
             "type": MarkerTypeEnum.Mokoko,
             "id": 31,
-            "hintImage": "shusire/LakeMokokoHint2.jpg"
+            "hintImage": "shushire/LakeMokokoHint2.jpg"
         },
         {
             "x": -469.78,
             "y": 67.63,
             "type": MarkerTypeEnum.Mokoko,
             "id": 32,
-            "hintImage": "shusire/LakeMokokoHint3.jpg"
+            "hintImage": "shushire/LakeMokokoHint3.jpg"
         },
         {
             "x": -452.78,
             "y": 76.37,
             "type": MarkerTypeEnum.Mokoko,
             "id": 33,
-            "hintImage": "shusire/LakeMokokoHint4.jpg"
+            "hintImage": "shushire/LakeMokokoHint4.jpg"
         },
         {
             "x": -442.91,
             "y": 51.94,
             "type": MarkerTypeEnum.Mokoko,
             "id": 34,
-            "hintImage": "shusire/LakeMokokoHint5.jpg"
+            "hintImage": "shushire/LakeMokokoHint5.jpg"
         },
         {
             "x": -435.97,
             "y": 43.51,
             "type": MarkerTypeEnum.Mokoko,
             "id": 35,
-            "hintImage": "shusire/LakeMokokoHint6.jpg"
+            "hintImage": "shushire/LakeMokokoHint6.jpg"
         },
         {
             "x": -433.66,
             "y": 39.94,
             "type": MarkerTypeEnum.Mokoko,
             "id": 36,
-            "hintImage": "shusire/LakeMokokoHint7.jpg"
+            "hintImage": "shushire/LakeMokokoHint7.jpg"
         },
         {
             "x": -292.56,
@@ -318,7 +318,7 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 40,
             "popupText": "사냥꾼의 마지막 #1",
-            "hintImage": "shusire/PrisonHiddenStoryHint1.jpg"
+            "hintImage": "shushire/PrisonHiddenStoryHint1.jpg"
         },
         {
             "x": -264.94,
@@ -326,7 +326,7 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 41,
             "popupText": "사냥꾼의 마지막 #2",
-            "hintImage": "shusire/PrisonHiddenStoryHint2.jpg"
+            "hintImage": "shushire/PrisonHiddenStoryHint2.jpg"
         },
         {
             "x": -235.06,
@@ -334,14 +334,14 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 42,
             "popupText": "신앙의 끝",
-            "hintImage": "shusire/PrisonHiddenStoryHint3.jpg"
+            "hintImage": "shushire/PrisonHiddenStoryHint3.jpg"
         },
         {
             "x": -224.94,
             "y": 237.01,
             "type": MarkerTypeEnum.SecretPassage,
             "id": 43,
-            "hintImage": "shusire/PrisonSecretHint1.jpg"
+            "hintImage": "shushire/PrisonSecretHint1.jpg"
         },
         {
             "x": -257.125,
@@ -349,7 +349,7 @@
             "type": MarkerTypeEnum.Boss,
             "id": 44,
             "popupText": "단단한 얼음 바위 골렘",
-            "hintImage": "shusire/PrisonBossHint1.jpg"
+            "hintImage": "shushire/PrisonBossHint1.jpg"
         },
         {
             "x": -243.69,
@@ -357,7 +357,7 @@
             "type": MarkerTypeEnum.Boss,
             "id": 45,
             "popupText": "죽지 않는 역병망자",
-            "hintImage": "shusire/PrisonBossHint2.jpg"
+            "hintImage": "shushire/PrisonBossHint2.jpg"
         },
         {
             "x": -256.81,
@@ -371,63 +371,63 @@
             "y": 263.94,
             "type": MarkerTypeEnum.Mokoko,
             "id": 47,
-            "hintImage": "shusire/PrisonMokokoHint1.jpg"
+            "hintImage": "shushire/PrisonMokokoHint1.jpg"
         },
         {
             "x": -261.28,
             "y": 255.75,
             "type": MarkerTypeEnum.Mokoko,
             "id": 48,
-            "hintImage": "shusire/PrisonMokokoHint2.jpg"
+            "hintImage": "shushire/PrisonMokokoHint2.jpg"
         },
         {
             "x": -257.16,
             "y": 262.5,
             "type": MarkerTypeEnum.Mokoko,
             "id": 49,
-            "hintImage": "shusire/PrisonMokokoHint3.jpg"
+            "hintImage": "shushire/PrisonMokokoHint3.jpg"
         },
         {
             "x": -255.03,
             "y": 282.44,
             "type": MarkerTypeEnum.Mokoko,
             "id": 50,
-            "hintImage": "shusire/PrisonMokokoHint4.jpg"
+            "hintImage": "shushire/PrisonMokokoHint4.jpg"
         },
         {
             "x": -234.97,
             "y": 265.25,
             "type": MarkerTypeEnum.Mokoko,
             "id": 51,
-            "hintImage": "shusire/PrisonMokokoHint5.jpg"
+            "hintImage": "shushire/PrisonMokokoHint5.jpg"
         },
         {
             "x": -241.16,
             "y": 244.19,
             "type": MarkerTypeEnum.Mokoko,
             "id": 52,
-            "hintImage": "shusire/PrisonMokokoHint6.jpg"
+            "hintImage": "shushire/PrisonMokokoHint6.jpg"
         },
         {
             "x": -224.41,
             "y": 238.07,
             "type": MarkerTypeEnum.Mokoko,
             "id": 53,
-            "hintImage": "shusire/PrisonMokokoHint7.jpg"
+            "hintImage": "shushire/PrisonMokokoHint7.jpg"
         },
         {
             "x": -223.59,
             "y": 237.13,
             "type": MarkerTypeEnum.Mokoko,
             "id": 54,
-            "hintImage": "shusire/PrisonMokokoHint7.jpg"
+            "hintImage": "shushire/PrisonMokokoHint7.jpg"
         },
         {
             "x": -223.16,
             "y": 236.19,
             "type": MarkerTypeEnum.Mokoko,
             "id": 55,
-            "hintImage": "shusire/PrisonMokokoHint7.jpg"
+            "hintImage": "shushire/PrisonMokokoHint7.jpg"
         },
         {
             "x": -272.44,
@@ -443,7 +443,7 @@
             "type": MarkerTypeEnum.Boss,
             "id": 58,
             "popupText": "거대한 얼음 수정 골렘",
-            "hintImage": "shusire/SeaBossHint1.jpg"
+            "hintImage": "shushire/SeaBossHint1.jpg"
         },
         {
             "x": -272.56,
@@ -451,7 +451,7 @@
             "type": MarkerTypeEnum.Boss,
             "id": 59,
             "popupText": "서릿발 강도단 유기견",
-            "hintImage": "shusire/SeaBossHint2.jpg"
+            "hintImage": "shushire/SeaBossHint2.jpg"
         },
         {
             "x": -247.19,
@@ -459,7 +459,7 @@
             "type": MarkerTypeEnum.Boss,
             "id": 60,
             "popupText": "거대한 항구 톱니쥐",
-            "hintImage": "shusire/SeaBossHint3.jpg"
+            "hintImage": "shushire/SeaBossHint3.jpg"
         },
         {
             "x": -253.19,
@@ -467,7 +467,7 @@
             "type": MarkerTypeEnum.Vista,
             "id": 61,
             "popupText": "얼어붙은 분수대",
-            "hintImage": "shusire/SeaVistaHint1.jpg"
+            "hintImage": "shushire/SeaVistaHint1.jpg"
         },
         {
             "x": -269.22,
@@ -475,7 +475,7 @@
             "type": MarkerTypeEnum.CookingIngredient,
             "id": 62,
             "popupText": "오래된 통조림",
-            "hintImage": "shusire/SeaCookingIngredientHint1.jpg"
+            "hintImage": "shushire/SeaCookingIngredientHint1.jpg"
         },
         {
             "x": -270.22,
@@ -484,70 +484,70 @@
             "id": 63,
             "popupText": "Skill Point Potion Quest",
             "hintText": "Kill a rat here has a chance to drop  '낡은 목걸이' (\"Old Necklace\") which you can use to start the quest.",
-            "hintImage": "shusire/SeaHiddenQuest1.jpg"
+            "hintImage": "shushire/SeaHiddenQuest1.jpg"
         },
         {
             "x": -245.41,
             "y": 74.19,
             "type": MarkerTypeEnum.Mokoko,
             "id": 64,
-            "hintImage": "shusire/SeaMokokoHint1.jpg"
+            "hintImage": "shushire/SeaMokokoHint1.jpg"
         },
         {
             "x": -266.47,
             "y": 64.51,
             "type": MarkerTypeEnum.Mokoko,
             "id": 65,
-            "hintImage": "shusire/SeaMokokoHint2.jpg"
+            "hintImage": "shushire/SeaMokokoHint2.jpg"
         },
         {
             "x": -266.78,
             "y": 65.26,
             "type": MarkerTypeEnum.Mokoko,
             "id": 66,
-            "hintImage": "shusire/SeaMokokoHint2.jpg"
+            "hintImage": "shushire/SeaMokokoHint2.jpg"
         },
         {
             "x": -268.34,
             "y": 65.94,
             "type": MarkerTypeEnum.Mokoko,
             "id": 67,
-            "hintImage": "shusire/SeaMokokoHint3.jpg"
+            "hintImage": "shushire/SeaMokokoHint3.jpg"
         },
         {
             "x": -274.34,
             "y": 59.26,
             "type": MarkerTypeEnum.Mokoko,
             "id": 68,
-            "hintImage": "shusire/SeaMokokoHint4.jpg"
+            "hintImage": "shushire/SeaMokokoHint4.jpg"
         },
         {
             "x": -266.78,
             "y": 33.51,
             "type": MarkerTypeEnum.Mokoko,
             "id": 69,
-            "hintImage": "shusire/SeaMokokoHint5.jpg"
+            "hintImage": "shushire/SeaMokokoHint5.jpg"
         },
         {
             "x": -267.28,
             "y": 34.14,
             "type": MarkerTypeEnum.Mokoko,
             "id": 70,
-            "hintImage": "shusire/SeaMokokoHint5.jpg"
+            "hintImage": "shushire/SeaMokokoHint5.jpg"
         },
         {
             "x": -239.78,
             "y": 33.76,
             "type": MarkerTypeEnum.Mokoko,
             "id": 71,
-            "hintImage": "shusire/SeaMokokoHint6.jpg"
+            "hintImage": "shushire/SeaMokokoHint6.jpg"
         },
         {
             "x": -229.47,
             "y": 49.76,
             "type": MarkerTypeEnum.Mokoko,
             "id": 72,
-            "hintImage": "shusire/SeaMokokoHint7.jpg"
+            "hintImage": "shushire/SeaMokokoHint7.jpg"
         },
         {
             "x": -255.44,
@@ -572,7 +572,7 @@
             "y": 345.14,
             "type": MarkerTypeEnum.SecretPassage,
             "id": 77,
-            "hintImage": "shusire/ButterflySecretHint1.jpg"
+            "hintImage": "shushire/ButterflySecretHint1.jpg"
         },
         {
             "x": -293.84,
@@ -581,7 +581,7 @@
             "id": 78,
             "popupText": "Quest from item drop",
             "hintText": "Item dropping from Blood Scepter will give a hidden quest",
-            "hintImage": "shusire/ButterflyOtherStoryHint1.jpg"
+            "hintImage": "shushire/ButterflyOtherStoryHint1.jpg"
         },
         {
             "x": -294.66,
@@ -590,7 +590,7 @@
             "id": 79,
             "popupText": "Chaos Dungeon +1 Unlock",
             "hintText": "Completing the Blood Scepter drop quest here will unlock [Chaos Dungeon +1]",
-            "hintImage": "shusire/ButterflyHiddenQuestHint1.jpg"
+            "hintImage": "shushire/ButterflyHiddenQuestHint1.jpg"
         },
         {
             "x": -287.22,
@@ -605,7 +605,7 @@
             "type": MarkerTypeEnum.Boss,
             "id": 81,
             "popupText": "원혼서린 스펙터",
-            "hintImage": "shusire/ButterflyBossHint2.jpg"
+            "hintImage": "shushire/ButterflyBossHint2.jpg"
         },
         {
             "x": -258.66,
@@ -613,7 +613,7 @@
             "type": MarkerTypeEnum.Boss,
             "id": 82,
             "popupText": "아름다운 얼음나비",
-            "hintImage": "shusire/ButterflyBossHint3.jpg"
+            "hintImage": "shushire/ButterflyBossHint3.jpg"
         },
         {
             "x": -233.47,
@@ -621,7 +621,7 @@
             "type": MarkerTypeEnum.Boss,
             "id": 83,
             "popupText": "질병군단 정예 악마 사제",
-            "hintImage": "shusire/ButterflyBossHint4.jpg"
+            "hintImage": "shushire/ButterflyBossHint4.jpg"
         },
         {
             "x": -233.56,
@@ -629,7 +629,7 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 84,
             "popupText": "벗에게 보내는 편지 #1",
-            "hintImage": "shusire/ButterflyHidenStory2.jpg"
+            "hintImage": "shushire/ButterflyHidenStory2.jpg"
         },
         {
             "x": -279.56,
@@ -637,7 +637,7 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 85,
             "popupText": "사냥꾼의 마지막 #3",
-            "hintImage": "shusire/ButterflyHidenStory1.jpg"
+            "hintImage": "shushire/ButterflyHidenStory1.jpg"
         },
         {
             "x": -276.69,
@@ -645,7 +645,7 @@
             "type": MarkerTypeEnum.Vista,
             "id": 86,
             "popupText": "얼음 대폭포",
-            "hintImage": "shusire/ButterflyVistaHint1.jpg"
+            "hintImage": "shushire/ButterflyVistaHint1.jpg"
         },
         {
             "x": -253.56,
@@ -653,7 +653,7 @@
             "type": MarkerTypeEnum.Vista,
             "id": 87,
             "popupText": "절벽",
-            "hintImage": "shusire/ButterflyVistaHint2.jpg"
+            "hintImage": "shushire/ButterflyVistaHint2.jpg"
         },
         {
             "x": -264.69,
@@ -661,7 +661,7 @@
             "type": MarkerTypeEnum.WorldBoss,
             "id": 88,
             "popupText": "마네스",
-            "hintImage": "shusire/ButterflyWorldBossHint1.jpg"
+            "hintImage": "shushire/ButterflyWorldBossHint1.jpg"
         },
         {
             "x": -258.81,
@@ -669,49 +669,49 @@
             "type": MarkerTypeEnum.CookingIngredient,
             "id": 89,
             "popupText": "얼음 나비 유충",
-            "hintImage": "shusire/ButterflyCookingIngredientHint1.jpg"
+            "hintImage": "shushire/ButterflyCookingIngredientHint1.jpg"
         },
         {
             "x": -294.72,
             "y": 360.51,
             "type": MarkerTypeEnum.Mokoko,
             "id": 90,
-            "hintImage": "shusire/ButterflyMokokoHint1.jpg"
+            "hintImage": "shushire/ButterflyMokokoHint1.jpg"
         },
         {
             "x": -266.34,
             "y": 367.13,
             "type": MarkerTypeEnum.Mokoko,
             "id": 91,
-            "hintImage": "shusire/ButterflyMokokoHint2.jpg"
+            "hintImage": "shushire/ButterflyMokokoHint2.jpg"
         },
         {
             "x": -249.03,
             "y": 364.13,
             "type": MarkerTypeEnum.Mokoko,
             "id": 92,
-            "hintImage": "shusire/ButterflyMokokoHint3.jpg"
+            "hintImage": "shushire/ButterflyMokokoHint3.jpg"
         },
         {
             "x": -275.03,
             "y": 342.45,
             "type": MarkerTypeEnum.Mokoko,
             "id": 93,
-            "hintImage": "shusire/ButterflyMokokoHint4.jpg"
+            "hintImage": "shushire/ButterflyMokokoHint4.jpg"
         },
         {
             "x": -285.09,
             "y": 344.01,
             "type": MarkerTypeEnum.Mokoko,
             "id": 94,
-            "hintImage": "shusire/ButterflyMokokoHint5.jpg"
+            "hintImage": "shushire/ButterflyMokokoHint5.jpg"
         },
         {
             "x": -285.34,
             "y": 343.2,
             "type": MarkerTypeEnum.Mokoko,
             "id": 95,
-            "hintImage": "shusire/ButterflyMokokoHint5.jpg"
+            "hintImage": "shushire/ButterflyMokokoHint5.jpg"
         },
         {
             "x": -400.66,
@@ -778,77 +778,77 @@
             "y": 193.95,
             "type": MarkerTypeEnum.Mokoko,
             "id": 106,
-            "hintImage": "shusire/BladeMokokoHint1.jpg"
+            "hintImage": "shushire/BladeMokokoHint1.jpg"
         },
         {
             "x": -377.03,
             "y": 194.7,
             "type": MarkerTypeEnum.Mokoko,
             "id": 107,
-            "hintImage": "shusire/BladeMokokoHint1.jpg"
+            "hintImage": "shushire/BladeMokokoHint1.jpg"
         },
         {
             "x": -387.94,
             "y": 156.16,
             "type": MarkerTypeEnum.Mokoko,
             "id": 108,
-            "hintImage": "shusire/BladeMokokoHint2.jpg"
+            "hintImage": "shushire/BladeMokokoHint2.jpg"
         },
         {
             "x": -362.41,
             "y": 154.58,
             "type": MarkerTypeEnum.Mokoko,
             "id": 109,
-            "hintImage": "shusire/BladeMokokoHint3.jpg"
+            "hintImage": "shushire/BladeMokokoHint3.jpg"
         },
         {
             "x": -363.22,
             "y": 154.64,
             "type": MarkerTypeEnum.Mokoko,
             "id": 110,
-            "hintImage": "shusire/BladeMokokoHint3.jpg"
+            "hintImage": "shushire/BladeMokokoHint3.jpg"
         },
         {
             "x": -362.69,
             "y": 144.01,
             "type": MarkerTypeEnum.Mokoko,
             "id": 111,
-            "hintImage": "shusire/BladeMokokoHint4.jpg"
+            "hintImage": "shushire/BladeMokokoHint4.jpg"
         },
         {
             "x": -350.06,
             "y": 131.64,
             "type": MarkerTypeEnum.Mokoko,
             "id": 112,
-            "hintImage": "shusire/BladeMokokoHint5.jpg"
+            "hintImage": "shushire/BladeMokokoHint5.jpg"
         },
         {
             "x": -347.91,
             "y": 113.07,
             "type": MarkerTypeEnum.Mokoko,
             "id": 113,
-            "hintImage": "shusire/BladeMokokoHint6.jpg"
+            "hintImage": "shushire/BladeMokokoHint6.jpg"
         },
         {
             "x": -331.03,
             "y": 145.07,
             "type": MarkerTypeEnum.Mokoko,
             "id": 114,
-            "hintImage": "shusire/BladeMokokoHint7.jpg"
+            "hintImage": "shushire/BladeMokokoHint7.jpg"
         },
         {
             "x": -133,
             "y": 262.43,
             "type": MarkerTypeEnum.SecretPassage,
             "id": 115,
-            "hintImage": "shusire/CirclesideSecretHint1.jpg"
+            "hintImage": "shushire/CirclesideSecretHint1.jpg"
         },
         {
             "x": -122.49,
             "y": 253.93,
             "type": MarkerTypeEnum.SecretPassage,
             "id": 116,
-            "hintImage": "shusire/CirclesideSecretHint2.jpg",
+            "hintImage": "shushire/CirclesideSecretHint2.jpg",
             "hintText": "Break the ice pillars to gain access"
         },
         {
@@ -856,21 +856,21 @@
             "y": 263.61,
             "type": MarkerTypeEnum.TreasureBox,
             "id": 117,
-            "hintImage": "shusire/CirclesideTreasureHint1.jpg"
+            "hintImage": "shushire/CirclesideTreasureHint1.jpg"
         },
         {
             "x": -173.62,
             "y": 234.02,
             "type": MarkerTypeEnum.Mokoko,
             "id": 118,
-            "hintImage": "shusire/CirclesideMokokoHint1.jpg"
+            "hintImage": "shushire/CirclesideMokokoHint1.jpg"
         },
         {
             "x": -132.53,
             "y": 264.54,
             "type": MarkerTypeEnum.Mokoko,
             "id": 119,
-            "hintImage": "shusire/CirclesideMokokoHint2.jpg",
+            "hintImage": "shushire/CirclesideMokokoHint2.jpg",
             "popupText": "상자(일반)"
         },
         {
@@ -878,7 +878,7 @@
             "y": 249.16,
             "type": MarkerTypeEnum.Mokoko,
             "id": 120,
-            "hintImage": "shusire/CirclesideMokokoHint3.jpg"
+            "hintImage": "shushire/CirclesideMokokoHint3.jpg"
         },
         {
             "x": -150.53,
@@ -886,14 +886,14 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 122,
             "popupText": "벗에게 보내는 편지 #2",
-            "hintImage": "shusire/MirrorsHiddenStoryHint1.jpg"
+            "hintImage": "shushire/MirrorsHiddenStoryHint1.jpg"
         },
         {
             "x": -215.12,
             "y": 428.65,
             "type": MarkerTypeEnum.Vista,
             "id": 123,
-            "hintImage": "shusire/ShadowsVistaHint1.jpg",
+            "hintImage": "shushire/ShadowsVistaHint1.jpg",
             "popupText": "미궁"
         },
         {
@@ -901,7 +901,7 @@
             "y": 438.1,
             "type": MarkerTypeEnum.HiddenStory,
             "id": 124,
-            "hintImage": "shusire/ShadowsHiddenStoryHint1.jpg",
+            "hintImage": "shushire/ShadowsHiddenStoryHint1.jpg",
             "popupText": "벗에게 보내는 편지 #3"
         },
         {
@@ -916,35 +916,35 @@
             "y": 327.05,
             "type": MarkerTypeEnum.Mokoko,
             "id": 126,
-            "hintImage": "shusire/BaedanMokokoHint1.jpg"
+            "hintImage": "shushire/BaedanMokokoHint1.jpg"
         },
         {
             "x": -378.24,
             "y": 341.43,
             "type": MarkerTypeEnum.Mokoko,
             "id": 127,
-            "hintImage": "shusire/BaedanMokokoHint2.jpg"
+            "hintImage": "shushire/BaedanMokokoHint2.jpg"
         },
         {
             "x": -375.99,
             "y": 353.55,
             "type": MarkerTypeEnum.Mokoko,
             "id": 128,
-            "hintImage": "shusire/BaedanMokokoHint3.jpg"
+            "hintImage": "shushire/BaedanMokokoHint3.jpg"
         },
         {
             "x": -354.72,
             "y": 363.3,
             "type": MarkerTypeEnum.Mokoko,
             "id": 129,
-            "hintImage": "shusire/BaedanMokokoHint4.jpg"
+            "hintImage": "shushire/BaedanMokokoHint4.jpg"
         },
         {
             "x": -352.35,
             "y": 374.05,
             "type": MarkerTypeEnum.Mokoko,
             "id": 130,
-            "hintImage": "shusire/BaedanMokokoHint5.jpg"
+            "hintImage": "shushire/BaedanMokokoHint5.jpg"
         }
     ];
 

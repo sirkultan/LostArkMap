@@ -4,7 +4,7 @@ python slice.py 4 arthetaine_full.png Arthetaine
 python slice.py 4 bern_north_full.png BernNorth
 python slice.py 6 lutheran_east_full.png LutheranEast
 python slice.py 4 lutheran_west_full.png LutheranWest
-python slice.py 4 shusire_full.png Shusire
+python slice.py 4 shusire_full.png Shushire
 python slice.py 4 totoiku_full.png Totoiku
 python slice.py 4 yudia_full.png Yudia
 python slice.py 5 world_full.png World
