@@ -23,7 +23,7 @@ let LAM = (function(){
             if (this.copyLocationMode === true) {
                 console.log('[' + x + ', ' + y + ']');
                 L.DomUtil.removeClass(LAM.map._container,'crosshair-cursor-enabled');
-                this.showCopyLinkDialog(this.getMapLink(x, y));
+                this.showCopyLinkDialog(this.getMapLink(x, y), "Copy Location");
             }
         }
 

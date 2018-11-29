@@ -1129,6 +1129,54 @@
             "type": MarkerTypeEnum.Mokoko,
             "id": 158,
             "hintImage": "bern/GorgonMokokoHint7.jpg"
+        },
+        {
+            "x": -226.66,
+            "y": 470.13,
+            "type": MarkerTypeEnum.HiddenStory,
+            "id": 159,
+            "hintImage": "bern/ParnaHiddenStoryHint1.jpg",
+            "popupText": "모험가의 교훈 #1"
+        },
+        {
+            "x": -227.1,
+            "y": 466.13,
+            "type": MarkerTypeEnum.HiddenStory,
+            "id": 160,
+            "hintImage": "bern/ParnaHiddenStoryHint2.jpg",
+            "popupText": "모험가의 교훈 #2"
+        },
+        {
+            "x": -225.6,
+            "y": 462.51,
+            "type": MarkerTypeEnum.HiddenStory,
+            "id": 161,
+            "hintImage": "bern/ParnaHiddenStoryHint3.jpg",
+            "popupText": "모험가의 교훈 #3"
+        },
+        {
+            "x": -156.8,
+            "y": 435.64,
+            "type": MarkerTypeEnum.HiddenStory,
+            "id": 162,
+            "hintImage": "bern/ParnaHiddenStoryHint4.jpg",
+            "popupText": "버려진 아이 #1"
+        },
+        {
+            "x": -144.8,
+            "y": 440.58,
+            "type": MarkerTypeEnum.HiddenStory,
+            "id": 163,
+            "hintImage": "bern/ParnaHiddenStoryHint5.jpg",
+            "popupText": "버려진 아이 #2"
+        },
+        {
+            "x": -147.49,
+            "y": 468.56,
+            "type": MarkerTypeEnum.HiddenStory,
+            "id": 164,
+            "hintImage": "bern/ParnaHiddenStoryHint6.jpg",
+            "popupText": "버려진 아이 #2"
         }
     ];
 
