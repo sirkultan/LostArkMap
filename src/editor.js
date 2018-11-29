@@ -149,8 +149,19 @@
         }
 
         beginDragElement(e) {
+            if(this.mode !== EditorModeEnum.Move){
+                // No drag of elements if not in modify mode
+                return;
+            }
+
             if(e.target !== undefined && e.target.markerDataId !== undefined) {
-                console.log("DRAG_START");
+
+                let markerId = e.target.markerDataId;
+                let markerData = LAM.activeMarkerLayer.getMarkerData(markerId);
+                if(markerData === undefined){
+                    return;
+                }
+
                 LAM.map.dragging.disable();
                 this.markerClicked(e.target);
                 this.isDraggingMarker = this.markerDataBeingEdited !== undefined;
@@ -186,13 +197,29 @@
 
         squareWidthChanged(text) {
             if(this.markerDataBeingEdited !== undefined) {
-                this.markerDataBeingEdited.size[0] = parseInt(text);
+                let newValue = parseInt(text);
+                if(newValue === undefined || isNaN(newValue)) {
+                    return;
+                }
+
+                this.markerDataBeingEdited.size[1] = newValue;
+                if(this.markerDataBeingEdited.activeMarker !== undefined) {
+                    RepositionRectangleMarker(this.markerDataBeingEdited.activeMarker, this.markerDataBeingEdited);
+                }
             }
         }
 
         squareHeightChanged(text) {
             if(this.markerDataBeingEdited !== undefined) {
-                this.markerDataBeingEdited.size[1] = parseInt(text);
+                let newValue = parseInt(text);
+                if(newValue === undefined || isNaN(newValue)) {
+                    return;
+                }
+
+                this.markerDataBeingEdited.size[0] = newValue;
+                if(this.markerDataBeingEdited.activeMarker !== undefined) {
+                    RepositionRectangleMarker(this.markerDataBeingEdited.activeMarker, this.markerDataBeingEdited);
+                }
             }
         }
 
@@ -330,6 +357,38 @@
                 type: MarkerTypeEnum[this.activeMarkerType]
             }, this.markerDataBeingEdited);
 
+            switch (this.style) {
+                case MarkerStyleEnum.Rectangle: {
+
+                    let width = parseInt($('#ed_squareWidth').val());
+                    let height = parseInt($('#ed_squareHeight').val());
+                    if(width === undefined || isNaN(width) || width === 0 || height === undefined || isNaN(height) ||  height === 0){
+                        console.error("Rectangle size is invalid!");
+                        return;
+                    }
+
+                    markerData.size = [width, height];
+                    markerData.style = this.style;
+                    markerData.color = Constants.AchievementMarkerColor;
+                    break
+                }
+
+                case MarkerStyleEnum.Circle: {
+                    let radius = parseInt($('#ed_circleRadius').val(""));
+                    if(radius === undefined || isNaN(radius) || radius === 0){
+                        console.error("Circle radius is invalid");
+                        return;
+                    }
+
+                    markerData.radius = radius;
+                    markerData.style = this.style;
+                    break
+                }
+            }
+            if(this.style !== undefined && this.style !== MarkerStyleEnum.Point) {
+                markerData.style = this.style;
+            }
+
             LAM.activeMarkerLayer.createMarker(markerData);
         }
 
@@ -366,7 +425,8 @@
                     return;
                 }
 
-                case EditorModeEnum.Modify: {
+                case EditorModeEnum.Modify:
+                case EditorModeEnum.Move: {
                     break;
                 }
             }
@@ -383,8 +443,8 @@
                 case MarkerStyleEnum.Rectangle:
                 {
                     this.setStyle(markerData.style);
-                    $('#ed_squareWidth').val(markerData.size[0]);
-                    $('#ed_squareHeight').val(markerData.size[1]);
+                    $('#ed_squareWidth').val(markerData.size[1]);
+                    $('#ed_squareHeight').val(markerData.size[0]);
 
                     break
                 }

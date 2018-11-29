@@ -152,5 +152,6 @@ MarkerTypeDefaultTitle = function(markerType) {
 let EditorModeEnum = Object.freeze({
     "Add": 0,
     "Delete": 1,
-    "Modify": 2
+    "Modify": 2,
+    "Move": 3
 });

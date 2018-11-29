@@ -92,14 +92,12 @@
             }
 
             delete this.markerIdLookup[id];
-            console.log(this.markers.length);
             for(var i = this.markers.length - 1; i >= 0; i--) {
                 if(this.markers[i].id === id) {
                     this.markers.splice(i, 1);
                     break;
                 }
             }
-            console.log(this.markers.length);
 
             LAM.rebuildStats();
         }
