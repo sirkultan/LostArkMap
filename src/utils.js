@@ -49,6 +49,25 @@ GetBounds = function(center, size) {
 };
 
 /**
+ * @return {boolean}
+ */
+BoundsContain = function(bounds, point) {
+    if(bounds === undefined || point === undefined) {
+        return false;
+    }
+
+    if(point[0] > bounds[0][0] || point[0] < bounds[1][0]) {
+        return false;
+    }
+
+    if(point[1] < bounds[0][1] || point[1] > bounds[1][1]) {
+        return false;
+    }
+
+    return true;
+};
+
+/**
  * @return {string}
  */
 GetKeyByValue = function(object, value) {

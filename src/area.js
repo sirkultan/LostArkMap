@@ -60,19 +60,9 @@
             // AABB check against map bounds to find the right map (zone)
             for(let mapName in this.maps) {
                 let map = this.maps[mapName];
-                if(map.bounds === undefined) {
-                    continue;
+                if(BoundsContain(map.bounds, [x, y])){
+                    return mapName;
                 }
-
-                if(x > map.bounds[0][0] || x < map.bounds[1][0]) {
-                    continue;
-                }
-
-                if(y < map.bounds[0][1] || y > map.bounds[1][1]) {
-                    continue;
-                }
-
-                return mapName;
             }
 
             return undefined;

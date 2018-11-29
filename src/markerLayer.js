@@ -143,11 +143,13 @@
                         idPrefix = '#' + (markerData.id + 1) + ' ';
                     }
 
-                    return L.marker([markerData.x, markerData.y], {
+                    let result = L.marker([markerData.x, markerData.y], {
                         icon: LAM.getMarkerIcon(markerData.type),
                         draggable: Constants.EditMode && markerData.isGenerated !== true,
                         title:  idPrefix + markerData.title
                     });
+
+                    return result;
                 }
 
                 case MarkerStyleEnum.Rectangle: {
@@ -266,6 +268,17 @@
 
         showCopyMarkerPin(id) {
             LAM.showCopyLinkDialog(this.getMarkerPinLink(id), "Direct link for " + this.area + " Marker #" + id);
+        }
+
+        processMarkerSpecialTooltip(marker, markerData) {
+            switch (markerData.type) {
+                case MarkerTypeEnum.ZoningIslandFlux:
+                case MarkerTypeEnum.ZoningIsland:
+                case MarkerTypeEnum.ZoningPVP: {
+                    console.log('ISLAND_TOOLTIP' + markerData.area);
+                    break;
+                }
+            }
         }
 
         processMarkerSpecialContent(marker, markerData) {

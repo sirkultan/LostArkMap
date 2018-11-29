@@ -148,12 +148,19 @@ let LAM = (function(){
 
             this.suspendStatUpdate = false;
             this.rebuildStats();
+
+            $( "#loading-page" ).delay(200).fadeOut(200, function(){
+                $( "#main-page" ).fadeIn(200, function () {
+                    LAM.map.invalidateSize();
+                });
+            });
         }
 
         processUrlParameters() {
             let content = $.urlParam('c');
             if (content === undefined) {
                 this.activateArea('World');
+                this.gotoMapArea([-250, 250], undefined, 1);
                 return;
             }
 
@@ -220,7 +227,7 @@ let LAM = (function(){
             }
 
             // Ensure we don't link too far zoomed out
-            if(zoomLevel < areaMaxZoomLevel - 1){
+            if(customZoomLevel === undefined && zoomLevel < areaMaxZoomLevel - 1){
                 zoomLevel = areaMaxZoomLevel - 1;
             }
 

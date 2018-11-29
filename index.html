@@ -4,38 +4,39 @@
 
     <title>Lost Ark Map</title>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
-    <meta name="description" content="Interactive Map for Lost Ark">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta content="initial-scale=1.0, user-scalable=no" name="viewport"/>
+    <meta content="Interactive Map for Lost Ark" name="description">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" rel="stylesheet">
 
     <!-- Leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"/>
+    <link href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" rel="stylesheet"/>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" type="text/css"/>
-    <link rel="stylesheet" href="search.css" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="search.css" rel="stylesheet" type="text/css"/>
 
     <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js"></script>
 
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    <script crossorigin="anonymous" defer
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    <script crossorigin="anonymous"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
+            src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <!-- Leaflet -->
     <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <link href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
 
     <!-- feather -->
@@ -81,293 +82,338 @@
 
 <body onload="LAM.initialize()">
 
-<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-    <div class="navbar-brand col-sm-3 col-md-2 mr-0">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick" />
-            <input type="hidden" name="hosted_button_id" value="TECJZJDYVSQ7Q" />
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-            <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
-        </form>
-    </div>
-
-    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search" id="searchField">
-    <a class="navbar-brand col-sm-0 col-md-0 mr-0 text-center" style="width: 50px" href="https://github.com/Craiel/LostArkMap" target="_blank"><img src="images/icons/mark-github.svg"></a>
-    <a class="navbar-brand col-sm-0 col-md-0 mr-0 text-center" style="width: 50px" href="https://www.reddit.com/r/lostarkgame/" target="_blank"><img src="images/icons/reddit.svg"></a>
-</nav>
-
-<div class="modal fade" id="createLayerModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                <h4 class="modal-title w-100 font-weight-bold">Create Custom Layer</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body mx-3">
-                <div class="md-form mb-4">
-                    <input type="text" id="createLayerForm-name" class="form-control">
-                    <label data-error="wrong" data-success="right" for="createLayerForm-name">Name</label>
-                </div>
-            </div>
-
-            <div class="modal-body mx-3">
-                <div class="md-form mb-5">
-                    <div class="form-group">
-                        <label for="createLayerForm-targetArea">Target Area:</label>
-                        <select class="form-control" id="createLayerForm-targetArea">
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer d-flex justify-content-center">
-                <button class="btn btn-default" id="createLayerButton">Create</button>
-            </div>
-        </div>
-    </div>
+<div id="loading-page" class="bg-secondary loading-screen">
+    <h1 class="loading-text">Loading</h1>
+    <img src="images/loading.svg" class="loading-animation w-25"/>
 </div>
 
-<div class="modal fade" id="copyTextModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header text-center">
-                <h4 class="modal-title w-100 font-weight-bold" id="copyTextModalTitle">NOT_SET</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body mx-3">
-                <div class="md-form mb-2">
-                    <input type="text" id="copyTextModal-text" class="form-control">
-                    <button class="btn btn-default" id="copyTextModal-copy">Copy</button>
+<div id="main-page" style="display: none">
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <div class="navbar-brand col-sm-3 col-md-2 mr-0">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input name="cmd" type="hidden" value="_s-xclick"/>
+                <input name="hosted_button_id" type="hidden" value="TECJZJDYVSQ7Q"/>
+                <input alt="Donate with PayPal button" border="0" name="submit"
+                       src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" title="PayPal - The safer, easier way to pay online!"
+                       type="image"/>
+                <img alt="" border="0" height="1" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1"/>
+            </form>
+        </div>
+
+        <input aria-label="Search" class="form-control form-control-dark w-100" id="searchField" placeholder="Search"
+               type="text">
+        <a class="navbar-brand col-sm-0 col-md-0 mr-0 text-center" href="https://github.com/Craiel/LostArkMap"
+           style="width: 50px" target="_blank"><img src="images/icons/mark-github.svg"></a>
+        <a class="navbar-brand col-sm-0 col-md-0 mr-0 text-center" href="https://www.reddit.com/r/lostarkgame/"
+           style="width: 50px" target="_blank"><img src="images/icons/reddit.svg"></a>
+    </nav>
+
+    <div class="modal fade" id="createLayerModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Create Custom Layer</h4>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-4">
+                        <input class="form-control" id="createLayerForm-name" type="text">
+                        <label data-error="wrong" data-success="right" for="createLayerForm-name">Name</label>
+                    </div>
+                </div>
+
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <div class="form-group">
+                            <label for="createLayerForm-targetArea">Target Area:</label>
+                            <select class="form-control" id="createLayerForm-targetArea">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-default" id="createLayerButton">Create</button>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container-fluid">
-    <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-            <div class="sidebar-sticky">
-                <ul class="nav flex-column" id="mapNav">
-                </ul>
+    <div class="modal fade" id="copyTextModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold" id="copyTextModalTitle">NOT_SET</h4>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-2">
+                        <input class="form-control" id="copyTextModal-text" type="text">
+                        <button class="btn btn-default" id="copyTextModal-copy">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                    <span>Custom Layers</span>
-                    <a class="d-flex align-items-center text-muted" href="#" data-toggle="modal" data-target="#createLayerModal">
-                        <span data-feather="plus-circle"></span>
-                    </a>
-                </h6>
-                <ul class="nav flex-column mb-2" id="dynamicLayerNav">
-                </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column" id="mapNav">
+                    </ul>
 
-                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                    <span>Content</span>
-                </h6>
-                <ul class="nav flex-column mb-2">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#" id="content_treasure_map_toggle">
-                            <span data-feather="file-text"></span>
-                            Treasure Maps
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Custom Layers</span>
+                        <a class="d-flex align-items-center text-muted" data-target="#createLayerModal" data-toggle="modal"
+                           href="#">
+                            <span data-feather="plus-circle"></span>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#" id="content_guides_toggle">
-                            <span data-feather="file-text"></span>
-                            Guides
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#" id="content_search_toggle">
-                            <span data-feather="file-text"></span>
-                            Search
-                        </a>
-                    </li>
-                </ul>
-                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                    <span>Stats</span>
-                </h6>
-                <ul class="nav flex-column mb-2" id="stats">
-                </ul>
-            </div>
-        </nav>
+                    </h6>
+                    <ul class="nav flex-column mb-2" id="dynamicLayerNav">
+                    </ul>
 
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-
-            <div class="py-5 bg-light" id="content_area_map">
-                <div id="la_editor">
-                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                        <div id="ed_modeSelectGroup" class="btn-group mr-2" role="group"></div>
-                    </div>
-                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                        <div id="ed_styleSelectGroup" class="btn-group mr-2" role="group"></div>
-                    </div>
-                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="btn-group mr-2" role="group" id="ed_markerTypeToolbarPOI"></div>
-                        <div class="btn-group mr-2" role="group" id="ed_markerTypeToolbarSpecial"></div>
-                        <div class="btn-group mr-2" role="group" id="ed_rectangleSettings">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text">Width: </div>
-                                </div>
-                                <input type="text" class="form-control" placeholder="None" id="ed_squareWidth">
-                            </div>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text">Height: </div>
-                                </div>
-                                <input type="text" class="form-control" placeholder="None" id="ed_squareHeight">
-                            </div>
-                        </div>
-                        <div class="btn-group mr-2" role="group" id="ed_circleSettings">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text">Radius: </div>
-                                </div>
-                                <input type="text" class="form-control" placeholder="None" id="ed_circleRadius">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">Tooltip:</div>
-                            </div>
-                            <input type="text" class="form-control" placeholder="None" id="ed_tooltipInput">
-                        </div>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">Popup Title:</div>
-                            </div>
-                            <input type="text" class="form-control" placeholder="None" id="ed_popupTitleInput">
-                        </div>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">Hint image: </div>
-                            </div>
-                            <input type="text" class="form-control" placeholder="None" id="ed_hintImageInput">
-                        </div>
-                    </div>
-                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="input-group w-100">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">Hint text:</div>
-                            </div>
-                            <textarea class="form-control" placeholder="None" id="ed_hintTextInput"></textarea>
-                        </div>
-                    </div>
-                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">Teleport To:</div>
-                            </div>
-                            <input type="text" class="form-control" placeholder="None" aria-label="Tooltip Text" aria-describedby="btnGroupAddon" id="ed_teleportTo">
-                        </div>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">Teleport Area:</div>
-                            </div>
-                            <input type="text" class="form-control" placeholder="None" aria-label="Tooltip Text" aria-describedby="btnGroupAddon" id="ed_teleportArea">
-                        </div>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">Teleport Zoom:</div>
-                            </div>
-                            <input type="text" class="form-control" placeholder="None" aria-label="Tooltip Text" aria-describedby="btnGroupAddon" id="ed_teleportZoom">
-                        </div>
-                    </div>
-                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="btn-group mr-2" role="group" aria-label="First group">
-                            <button type="button" class="btn btn-secondary" id="ed_exportButton">Export</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="la_map" class="my-4 w-100 fill"></div>
-            </div>
-
-            <div class="album py-5 bg-light" id="content_treasure_map">
-                <section class="jumbotron text-center">
-                    <div class="container">
-                        <h1 class="jumbotron-heading">Identified</h1>
-                    </div>
-                </section>
-
-                <div class="container">
-                    <div class="row" id="content_treasure_map_list">
-                    </div>
-                </div>
-
-                <section class="jumbotron text-center">
-                    <div class="container">
-                        <h1 class="jumbotron-heading">Unidentified</h1>
-                    </div>
-                </section>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="card" style="margin: 8px">
-                            <img class="card-img-top" src="images/treasuremaps/unknown1.jpg" style="width: 180px; height: 228px;"/>
-                            #1 ???
-                        </div>
-                        <div class="card" style="margin: 8px">
-                            <img class="card-img-top" src="images/treasuremaps/unknown2.jpg" style="width: 180px; height: 228px;"/>
-                            #2 ???
-                        </div>
-                        <div class="card" style="margin: 8px">
-                            <img class="card-img-top" src="images/treasuremaps/unknown3.jpg" style="width: 180px; height: 228px;"/>
-                            #3 ???
-                        </div>
-                        <div class="card" style="margin: 8px">
-                            <img class="card-img-top" src="images/treasuremaps/unknown4.jpg" style="width: 180px; height: 228px;"/>
-                            #4 ???
-                        </div>
-                        <div class="card" style="margin: 8px">
-                            <img class="card-img-top" src="images/treasuremaps/unknown5.jpg" style="width: 180px; height: 228px;"/>
-                            #5 ???
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="album py-5 bg-light" id="content_guides">
-                <div class="container">
-                    <div class="row" id="content_guides_list">
-                    </div>
-                </div>
-            </div>
-
-            <div class="py-5 bg-light" id="content_search">
-                <h2 class="text-center" id="searchResultCount">9999 Results</h2>
-                <br>
-                <div class="w-100">
-                    <button type="button" class="btn btn-primary" id="searchCopyButton">Copy</button>
-
-                    <button type="button" class="float-right btn btn-success btn-filter background-search-guide" data-target="guide">Guides</button>
-                    <button type="button" class="float-right btn btn-success btn-filter background-search-marker" data-target="marker">Markers</button>
-                    <button type="button" class="float-right btn btn-success btn-filter background-search-area" data-target="area">Areas</button>
-                    <button type="button" class="float-right btn btn-success btn-filter background-search-all" data-target="all">All</button>
-                </div>
-                <div class="table-container">
-                    <table class="table table-filter">
-                        <tbody id="searchResults"></tbody>
-                    </table>
-                </div>
-                <div class="py-5 bg-light" id="searchExamples">
-                    <h3 class="text-center">Examples:</h3>
-                    <ul>
-                        <li class="col-xs-3 list-group-item"><button type="button" class="btn btn-primary searchExample" data-text="blade hill">Zone Name</button></li>
-                        <li class="col-xs-3 list-group-item"><button type="button" class="btn btn-primary searchExample" data-text="메마른">Zone Name (KR)</button></li>
-                        <li class="col-xs-3 list-group-item"><button type="button" class="btn btn-primary searchExample" data-text="t:FavorNPC">Marker Type</button></li>
-                        <li class="col-xs-3 list-group-item"><button type="button" class="btn btn-primary searchExample" data-text="access seed">Hint Text</button></li>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Content</span>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" id="content_treasure_map_toggle">
+                                <span data-feather="file-text"></span>
+                                Treasure Maps
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" id="content_guides_toggle">
+                                <span data-feather="file-text"></span>
+                                Guides
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" id="content_search_toggle">
+                                <span data-feather="file-text"></span>
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Stats</span>
+                    </h6>
+                    <ul class="nav flex-column mb-2" id="stats">
                     </ul>
                 </div>
-            </div>
+            </nav>
 
-            <div id="content_statistics"></div>
-        </main>
+            <main class="col-md-9 ml-sm-auto col-lg-10 px-4" role="main">
+
+                <div class="py-5 bg-light" id="content_area_map">
+                    <div id="la_editor">
+                        <div aria-label="Toolbar with button groups" class="btn-toolbar mb-3" role="toolbar">
+                            <div class="btn-group mr-2" id="ed_modeSelectGroup" role="group"></div>
+                        </div>
+                        <div aria-label="Toolbar with button groups" class="btn-toolbar mb-3" role="toolbar">
+                            <div class="btn-group mr-2" id="ed_styleSelectGroup" role="group"></div>
+                        </div>
+                        <div aria-label="Toolbar with button groups" class="btn-toolbar" role="toolbar">
+                            <div class="btn-group mr-2" id="ed_markerTypeToolbarPOI" role="group"></div>
+                            <div class="btn-group mr-2" id="ed_markerTypeToolbarSpecial" role="group"></div>
+                            <div class="btn-group mr-2" id="ed_rectangleSettings" role="group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Width:</div>
+                                    </div>
+                                    <input class="form-control" id="ed_squareWidth" placeholder="None" type="text">
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Height:</div>
+                                    </div>
+                                    <input class="form-control" id="ed_squareHeight" placeholder="None" type="text">
+                                </div>
+                            </div>
+                            <div class="btn-group mr-2" id="ed_circleSettings" role="group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">Radius:</div>
+                                    </div>
+                                    <input class="form-control" id="ed_circleRadius" placeholder="None" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div aria-label="Toolbar with button groups" class="btn-toolbar mb-3" role="toolbar">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Tooltip:</div>
+                                </div>
+                                <input class="form-control" id="ed_tooltipInput" placeholder="None" type="text">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Popup Title:</div>
+                                </div>
+                                <input class="form-control" id="ed_popupTitleInput" placeholder="None" type="text">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Hint image:</div>
+                                </div>
+                                <input class="form-control" id="ed_hintImageInput" placeholder="None" type="text">
+                            </div>
+                        </div>
+                        <div aria-label="Toolbar with button groups" class="btn-toolbar mb-3" role="toolbar">
+                            <div class="input-group w-100">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Hint text:</div>
+                                </div>
+                                <textarea class="form-control" id="ed_hintTextInput" placeholder="None"></textarea>
+                            </div>
+                        </div>
+                        <div aria-label="Toolbar with button groups" class="btn-toolbar mb-3" role="toolbar">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Teleport To:</div>
+                                </div>
+                                <input aria-describedby="btnGroupAddon" aria-label="Tooltip Text" class="form-control" id="ed_teleportTo"
+                                       placeholder="None" type="text">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Teleport Area:</div>
+                                </div>
+                                <input aria-describedby="btnGroupAddon" aria-label="Tooltip Text" class="form-control" id="ed_teleportArea"
+                                       placeholder="None" type="text">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">Teleport Zoom:</div>
+                                </div>
+                                <input aria-describedby="btnGroupAddon" aria-label="Tooltip Text" class="form-control" id="ed_teleportZoom"
+                                       placeholder="None" type="text">
+                            </div>
+                        </div>
+                        <div aria-label="Toolbar with button groups" class="btn-toolbar" role="toolbar">
+                            <div aria-label="First group" class="btn-group mr-2" role="group">
+                                <button class="btn btn-secondary" id="ed_exportButton" type="button">Export</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-4 w-100 fill" id="la_map"></div>
+                </div>
+
+                <div class="album py-5 bg-light" id="content_treasure_map">
+                    <section class="jumbotron text-center">
+                        <div class="container">
+                            <h1 class="jumbotron-heading">Identified</h1>
+                        </div>
+                    </section>
+
+                    <div class="container">
+                        <div class="row" id="content_treasure_map_list">
+                        </div>
+                    </div>
+
+                    <section class="jumbotron text-center">
+                        <div class="container">
+                            <h1 class="jumbotron-heading">Unidentified</h1>
+                        </div>
+                    </section>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="card" style="margin: 8px">
+                                <img class="card-img-top" src="images/treasuremaps/unknown1.jpg"
+                                     style="width: 180px; height: 228px;"/>
+                                #1 ???
+                            </div>
+                            <div class="card" style="margin: 8px">
+                                <img class="card-img-top" src="images/treasuremaps/unknown2.jpg"
+                                     style="width: 180px; height: 228px;"/>
+                                #2 ???
+                            </div>
+                            <div class="card" style="margin: 8px">
+                                <img class="card-img-top" src="images/treasuremaps/unknown3.jpg"
+                                     style="width: 180px; height: 228px;"/>
+                                #3 ???
+                            </div>
+                            <div class="card" style="margin: 8px">
+                                <img class="card-img-top" src="images/treasuremaps/unknown4.jpg"
+                                     style="width: 180px; height: 228px;"/>
+                                #4 ???
+                            </div>
+                            <div class="card" style="margin: 8px">
+                                <img class="card-img-top" src="images/treasuremaps/unknown5.jpg"
+                                     style="width: 180px; height: 228px;"/>
+                                #5 ???
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="album py-5 bg-light" id="content_guides">
+                    <div class="container">
+                        <div class="row" id="content_guides_list">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-5 bg-light" id="content_search">
+                    <h2 class="text-center" id="searchResultCount">9999 Results</h2>
+                    <br>
+                    <div class="w-100">
+                        <button class="btn btn-primary" id="searchCopyButton" type="button">Copy</button>
+
+                        <button class="float-right btn btn-success btn-filter background-search-guide" data-target="guide"
+                                type="button">Guides
+                        </button>
+                        <button class="float-right btn btn-success btn-filter background-search-marker" data-target="marker"
+                                type="button">Markers
+                        </button>
+                        <button class="float-right btn btn-success btn-filter background-search-area" data-target="area"
+                                type="button">Areas
+                        </button>
+                        <button class="float-right btn btn-success btn-filter background-search-all" data-target="all"
+                                type="button">All
+                        </button>
+                    </div>
+                    <div class="table-container">
+                        <table class="table table-filter">
+                            <tbody id="searchResults"></tbody>
+                        </table>
+                    </div>
+                    <div class="py-5 bg-light" id="searchExamples">
+                        <h3 class="text-center">Examples:</h3>
+                        <ul>
+                            <li class="col-xs-3 list-group-item">
+                                <button class="btn btn-primary searchExample" data-text="blade hill" type="button">Zone
+                                    Name
+                                </button>
+                            </li>
+                            <li class="col-xs-3 list-group-item">
+                                <button class="btn btn-primary searchExample" data-text="메마른" type="button">Zone Name
+                                    (KR)
+                                </button>
+                            </li>
+                            <li class="col-xs-3 list-group-item">
+                                <button class="btn btn-primary searchExample" data-text="t:FavorNPC" type="button">
+                                    Marker Type
+                                </button>
+                            </li>
+                            <li class="col-xs-3 list-group-item">
+                                <button class="btn btn-primary searchExample" data-text="access seed" type="button">Hint
+                                    Text
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="content_statistics"></div>
+            </main>
+        </div>
     </div>
 </div>
 
