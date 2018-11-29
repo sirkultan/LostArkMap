@@ -440,8 +440,10 @@
                     }
 
                     case 'hintText':
+                    case 'hintTextKR':
                     case 'hintImage':
-                    case 'popupText': {
+                    case 'popupText':
+                    case 'popupTextKR':{
                         if(markerCopy[key] === "") {
                             delete markerCopy[key];
                         }
@@ -449,8 +451,9 @@
                         break;
                     }
 
-                    case 'title': {
-                        if(markerCopy.title === "" || MarkerTypeDefaultTitle(markerData.type) === markerData.title) {
+                    case 'title':
+                    case 'titleKR': {
+                        if(markerCopy[key] === "" || MarkerTypeDefaultTitle(markerData.type) === markerData[key]) {
                             delete markerCopy[key];
                         }
 

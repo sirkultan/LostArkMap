@@ -49,7 +49,8 @@ let MarkerTypeEnum = Object.freeze({
     "TreasureMap": "treasuremap.svg",
     "HiddenQuest": "hiddenquest.png",
     "Notice": "notice.png",
-    "TargetMark": "targetmark.png"
+    "TargetMark": "targetmark.png",
+    "IslandHeart": "islandheart.png"
 });
 
 let SearchResultTypeEnum = Object.freeze({
@@ -141,6 +142,10 @@ MarkerTypeDefaultTitle = function(markerType) {
 
         case MarkerTypeEnum.Notice: {
             return "Notice";
+        }
+
+        case MarkerTypeEnum.IslandHeart: {
+            return "Island Heart";
         }
 
         default: {
