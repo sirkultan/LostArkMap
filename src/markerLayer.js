@@ -253,7 +253,9 @@
                 popupContent.append($('<p>' + markerData.hintText + '</p>'))
             }
 
-            marker.bindPopup(popupContent.html());
+            marker.bindPopup(popupContent.html(), {
+                minWidth: 300
+            });
         }
 
         getMarkerPinLink(id) {
