@@ -996,13 +996,6 @@
             "hintImage": "arthetaine/WindMokokoHint5.jpg"
         },
         {
-            "x": -400.44,
-            "y": 301.64,
-            "type": MarkerTypeEnum.Mokoko,
-            "id": 138,
-            "hintImage": "arthetaine/WindMokokoHint6.jpg"
-        },
-        {
             "x": -428.44,
             "y": 339.38,
             "type": MarkerTypeEnum.Mokoko,
