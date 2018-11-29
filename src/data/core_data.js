@@ -1,5 +1,5 @@
 let Constants = Object.freeze({
-    "EditMode": false,
+    "EditMode": true,
     "TileSize": 512,
     "ErrorImagePath": 'maps/areas/blank.png',
     'AchievementMarkerColor': '#ff9900'
@@ -44,6 +44,7 @@ let MarkerTypeEnum = Object.freeze({
     "Zoning": "zoning.png",
     "ZoningWorld": "zoningworld.png",
     "ZoningIsland": "zoningisland.png",
+    "ZoningPVP": "zoningpvp.png",
     "GroupQuest": "groupquest.png",
     "OtherStory": "otherstory.png",
     "TreasureMap": "treasuremap.svg",
@@ -151,6 +152,10 @@ MarkerTypeDefaultTitle = function(markerType) {
 
         case MarkerTypeEnum.ZoningIsland: {
             return "Area change (Island)";
+        }
+
+        case MarkerTypeEnum.ZoningPVP: {
+            return "Area change (PVP)";
         }
 
         case MarkerTypeEnum.ZoningWorld: {

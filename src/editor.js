@@ -45,6 +45,7 @@
 
                 switch (MarkerTypeEnum[marker]) {
                     case MarkerTypeEnum.Zoning:
+                    case MarkerTypeEnum.ZoningPVP:
                     case MarkerTypeEnum.ZoningIsland:
                     case MarkerTypeEnum.ZoningWorld:
                     case MarkerTypeEnum.TreasureMap:

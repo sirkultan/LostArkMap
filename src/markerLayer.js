@@ -276,6 +276,7 @@
                 }
 
                 case MarkerTypeEnum.Zoning:
+                case MarkerTypeEnum.ZoningPVP:
                 case MarkerTypeEnum.ZoningIsland:
                 case MarkerTypeEnum.ZoningWorld: {
                     if(markerData.isGenerated) {
