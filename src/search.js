@@ -162,12 +162,16 @@
         buildMarkerSearchResult(markerData, match) {
             let result = {
                 type: SearchResultTypeEnum.Marker,
-                title: markerData.area + ' ' + GetKeyByValue(MarkerTypeEnum, markerData.type) + ' #' + markerData.id,
+                title: markerData.area + ' ' + GetKeyByValue(MarkerTypeEnum, markerData.type),
                 teleportTo: [markerData.x, markerData.y],
                 teleportArea: markerData.area,
                 icon: markerData.type,
                 match: match
             };
+
+            if(markerData.isGenerated !== true) {
+                result.title = result.title + ' #' + markerData.id;
+            }
 
             if(markerData.popupText !== undefined) {
                 result.description = result.title;
