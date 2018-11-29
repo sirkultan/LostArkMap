@@ -275,7 +275,66 @@
                 case MarkerTypeEnum.ZoningIslandFlux:
                 case MarkerTypeEnum.ZoningIsland:
                 case MarkerTypeEnum.ZoningPVP: {
-                    console.log('ISLAND_TOOLTIP' + markerData.area);
+                    if(markerData.isGenerated === true || markerData.area !== "World" || markerData.teleportTo === undefined) {
+                        return;
+                    }
+
+                    let area = LAM.areas['Islands'];
+                    let zone = area.getZoneForPoint(markerData.teleportTo[0], markerData.teleportTo[1]);
+                    if(zone === undefined){
+                        return;
+                    }
+
+                    let zoneData = area.maps[zone];
+                    if(zoneData === undefined || zoneData.meta === undefined) {
+                        return;
+                    }
+                    let element = $('<div></div>');
+
+                    let title = $('<h5 class="island-tooltip-title">' + zone + '</h5>');
+                    element.append(title);
+
+                    if(zoneData.kr !== undefined){
+                        element.append($('<div>' + zoneData.kr + '</div>'));
+                    }
+
+                    let metaList = $('<table></table>');
+                    element.append(metaList);
+
+                    for(let meta in zoneData.meta){
+                        let title = undefined;
+                        switch (meta) {
+                            case 'ilvl': {
+                                title = 'Item Level';
+                                break;
+                            }
+
+                            case 'heart': {
+                                title = 'Island Heart';
+                                break;
+                            }
+
+                            case 'admission': {
+                                title = 'Entry';
+                                break;
+                            }
+
+                            default:{
+                                continue;
+                            }
+                        }
+
+                        metaList.append('<tr class="w-100 island-tooltip-meta">' +
+                            '<td class="island-tooltip-metatitle align-top">' + title + ':</td>' +
+                            '<td class="float-right island-tooltip-metavalue">' + zoneData.meta[meta] + '</td>' +
+                            '</tr>')
+                    }
+
+                    // TODO: build detailed island tooltip
+                    marker.bindTooltip(element.html(), {
+                        className: 'island-detail-tooltip'
+                    });
+
                     break;
                 }
             }
@@ -407,6 +466,7 @@
                 this.generatedMarkerLayer.addLayer(marker);
             }
 
+            this.processMarkerSpecialTooltip(marker, markerData);
             this.processMarkerSpecialContent(marker, markerData);
 
             LAM.rebuildStats();

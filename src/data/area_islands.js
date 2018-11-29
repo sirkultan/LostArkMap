@@ -1122,7 +1122,7 @@
         ]
     });
 
-    area.registerMap("to Meteora", {
+    area.registerMap("Meteora", {
         "kr": "메테오라",
         "type": "MapTypeEnum.Island",
         "meta": {

@@ -150,3 +150,30 @@ body {
 .marker-label-Note {
     color: #888888;
 }
+
+.island-detail-tooltip {
+    background: #555555;
+    pointer-events: none;
+    border: 6px solid transparent;
+    width: 300px;
+}
+
+.island-tooltip-title {
+    font-weight: bold;
+    color: #ff9900;
+}
+
+.island-tooltip-meta {
+}
+
+.island-tooltip-metatitle {
+    color: #CCCCCC;
+    font-size: medium;
+}
+
+.island-tooltip-metavalue {
+    color: #F0F011;
+    font-size: medium;
+    white-space: normal;
+    width: 180px;
+}

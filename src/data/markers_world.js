@@ -658,7 +658,7 @@
                 271.06
             ],
             "teleportArea": "Islands",
-            "title": "to Meteora",
+            "title": "To Meteora",
             "titleKR": "메테오라"
         },
         {
