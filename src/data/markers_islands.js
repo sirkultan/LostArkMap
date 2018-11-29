@@ -94,7 +94,7 @@
          1_3
             격류의 섬 - Torrent Island
             황혼의 섬 - Twilight Island
-            히프노스의 눈 - Hynpose Eye
+            히프노스의 눈 - Hypnose Eye
             환영나비 섬 - Welcome Butterfly Island
             휴양지 그라비스 - Gravis Resort
             나루니 섬 - Naruni Island
@@ -128,7 +128,7 @@
 
          0_2
             몽환의 섬 - Isle of Dreams
-            하모니 섬 - Harmoy Island
+            하모니 섬 - Harmony Island
      */
 
     LAM.areaMarkerData['Islands'] = [
@@ -779,7 +779,8 @@
             "x": -303.97,
             "y": 365.71,
             "type": MarkerTypeEnum.FavorNPC,
-            "id": 110
+            "id": 110,
+            "popupText": "Elder Toto (토토장로)"
         },
         {
             "x": -229.89,
@@ -815,7 +816,8 @@
             "x": -227.34,
             "y": 406.01,
             "type": MarkerTypeEnum.FavorNPC,
-            "id": 116
+            "id": 116,
+            "popupText": "Pupu (푸푸)"
         },
         {
             "x": -222.99,
@@ -923,7 +925,8 @@
             "x": -316.65,
             "y": 290.63,
             "type": MarkerTypeEnum.FavorNPC,
-            "id": 134
+            "id": 134,
+            "popupText": "Henry (헨리)"
         },
         {
             "x": -338.73,
@@ -1332,6 +1335,38 @@
             "y": 323.07,
             "type": MarkerTypeEnum.Mokoko,
             "id": 202
+        },
+        {
+            "x": -317.44,
+            "y": 290.25,
+            "type": MarkerTypeEnum.IslandHeart,
+            "id": 203,
+            "hintText": "Become 'Trustworthy' with Henry (헨리)",
+            "popupText": "Island Heart in Ribeheim"
+        },
+        {
+            "x": -227.3207795806996,
+            "y": 406.30467201464086,
+            "type": MarkerTypeEnum.IslandHeart,
+            "id": 204,
+            "popupText": "Island Heart in Panda Pupu Island",
+            "hintText": "Become 'Trustworthy' with Pupu (푸푸)"
+        },
+        {
+            "x": -303.6328261706546,
+            "y": 365.46094031551985,
+            "type": MarkerTypeEnum.IslandHeart,
+            "id": 205,
+            "hintText": "Become 'Trustworthy' with Elder Toto (토토장로)",
+            "popupText": "Island Heart in Toto Silver Island"
+        },
+        {
+            "x": -385.95,
+            "y": 399.07,
+            "type": MarkerTypeEnum.IslandHeart,
+            "id": 206,
+            "hintText": "Become 'Trustworthy' with Black Tooth (검은이빨)",
+            "popupText": "Island Heart in Black-Tooth Post"
         }
     ];
 

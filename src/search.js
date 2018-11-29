@@ -203,8 +203,6 @@
                 return;
             }
 
-            console.log("Search returned " + results.length + 1 + " Results");
-
             let entryParent = $('#searchResults');
             for(let i in results) {
                 let entryData = results[i];
