@@ -165,6 +165,9 @@ let LAM = (function(){
             $( "#loading-page" ).delay(200).fadeOut(200, function(){
                 $( "#main-page" ).fadeIn(200, function () {
                     LAM.map.invalidateSize();
+
+                    let loadTime = Math.round((Date.now() - LAM.settings.createTime) / 10) / 100;
+                    console.log('Load Complete in ' + loadTime + 's');
                 });
             });
 

@@ -10,6 +10,7 @@
             // Volatile settings, not saved
             this.showWhatsChangedDialog = false;
             this.awayTime = undefined;
+            this.createTime = Date.now();
         }
 
         initialize() {
