@@ -8,7 +8,7 @@
 
         constructor() {
             // Volatile settings, not saved
-            this.showWhatsChangedDialog = false;
+            this.loadedVersion = 0;
             this.awayTime = undefined;
             this.createTime = Date.now();
         }
@@ -21,19 +21,16 @@
 
         load() {
             let rawData = localStorage.getItem(Constants.SettingsKey);
-            if(rawData === undefined) {
+            if(rawData === undefined || rawData === null) {
                 return;
             }
 
             let data = JSON.parse(rawData);
-            if(data === undefined){
+            if(data === undefined || data === null) {
                 return;
             }
 
-            if(data.version === undefined || data.version < Constants.SettingsVersion) {
-                this.showWhatsChangedDialog = true;
-                console.log("Returning!");
-            }
+            this.loadedVersion = data.version;
 
             if(data.lastVisited !== undefined) {
                 this.awayTime = (Date.now() - data.lastVisited) / 1000;

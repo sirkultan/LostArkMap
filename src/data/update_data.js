@@ -1,13 +1,14 @@
 (function(){
 
-    LAM.updateData = [
-        {
-            v: 1.0,
-            c: [
-                'Changes 123',
-                'Changes 456',
+    LAM.updateData = {
+        1: {
+            n: "1.0",
+            e: [
+                'Added "What\'s New" Dialog',
+                'Added 5 new FAQ Entries',
+                'Added 3 Treasuremap\'s'
             ]
         }
-    ];
+    };
 
 }());

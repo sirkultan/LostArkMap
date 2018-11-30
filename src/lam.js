@@ -164,14 +164,58 @@ let LAM = (function(){
 
             $( "#loading-page" ).delay(200).fadeOut(200, function(){
                 $( "#main-page" ).fadeIn(200, function () {
-                    LAM.map.invalidateSize();
-
-                    let loadTime = Math.round((Date.now() - LAM.settings.createTime) / 10) / 100;
-                    console.log('Load Complete in ' + loadTime + 's');
+                    LAM.postLoad();
                 });
             });
 
             window.requestAnimationFrame(LAM.updateFrame);
+        }
+
+        postLoad(){
+            this.map.invalidateSize();
+
+            let loadTime = Math.round((Date.now() - LAM.settings.createTime) / 10) / 100;
+            console.log('Load Complete in ' + loadTime + 's');
+
+            if(this.settings.loadedVersion < Constants.SettingsVersion) {
+                this.showWhatChangedSince(this.settings.loadedVersion);
+            }
+        }
+
+        showWhatChangedSince(fromVersion){
+            if(this.updateData === undefined){
+                return;
+            }
+
+            let contentElement = $('#changeLogContent');
+
+            let hasContent = false;
+            for(let ver = fromVersion + 1; ver <= Constants.SettingsVersion; ver++) {
+                let versionData = this.updateData[ver];
+                if(versionData === undefined
+                    || versionData.e === undefined
+                    || versionData.e.length === 0) {
+                    continue;
+                }
+
+                let versionElement = $('<div></div>');
+                versionElement.append($('<h3>Version ' + versionData.n + '</h3>'));
+
+                let list = $('<ul></ul>');
+                versionElement.append(list);
+
+                for(let i in versionData.e) {
+                    list.append($('<li>' + versionData.e[i] + '</li>'));
+                }
+
+                contentElement.append(versionElement);
+
+                hasContent = true;
+            }
+
+            if(hasContent === true) {
+                $('#changelogModal').modal();
+            }
         }
 
         updateFrame(time) {
