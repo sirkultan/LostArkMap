@@ -8,9 +8,9 @@
 
     area.registerMap("Island of the Years", {
         "kr": "세월의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "Boss kill: Sabnak",
+            "heart": "Boss kill: Sabnak (사브나크)",
             "heartKR": "보스 사브나크 처치",
             "ilvl": 330
         },
@@ -28,9 +28,9 @@
 
     area.registerMap("Reminiscent Island", {
         "kr": "회상의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "Adventure Quest: '나의 빛, 나의 진실한 벗'",
+            "heart": "Adventure Quest: 'Light, my True Friend' (나의 빛, 나의 진실한 벗)",
             "heartKR": "나의 빛, 나의 진실한 벗' 모험 퀘스트",
             "ilvl": 290
         },
@@ -48,7 +48,7 @@
 
     area.registerMap("Misguided Island", {
         "kr": "그릇된 욕망의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250,
             "entry": "Calendar Event"
@@ -57,9 +57,9 @@
 
     area.registerMap("Orbis Island", {
         "kr": "오르비스 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "Boss kill: Pumpkin",
+            "heart": "Boss kill: Pumpkin (호박신)",
             "heartKR": "보스 호박신 처치",
             "ilvl": 435
         }
@@ -67,7 +67,7 @@
 
     area.registerMap("Everglade Nest", {
         "kr": "에버그레이스의 둥지",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 525
         },
@@ -85,9 +85,10 @@
 
     area.registerMap("Forgotten City", {
         "kr": "잊혀진 자들의 도시",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "낚시-망각의 열쇠로 보물상자 개봉",
+            "heart": "Fishing-망각의 Open Treasure Box with Key",
+            "heartKR": "낚시-망각의 열쇠로 보물상자 개봉",
             "ilvl": 250
         },
         "bounds": [
@@ -104,9 +105,10 @@
 
     area.registerMap("Duki Island", {
         "kr": "두키 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "두키왕 처치",
+            "heart": "Kill: Dukiwang (두키왕)",
+            "heartKR": "두키왕 처치",
             "ilvl": 300,
             "entry": "1:10 / 5:10 / 9:10 / 13:10 / 17:10 / 21:10"
         }
@@ -114,9 +116,10 @@
 
     area.registerMap("Island of Wisdom", {
         "kr": "지혜의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "거인의 심장 3개로 교환 (공명의 노래 필요)",
+            "heart": "Exchange three hearts with Giant (need Song of Resonance)",
+            "heartKR": "거인의 심장 3개로 교환 (공명의 노래 필요)",
             "ilvl": 250
         },
         "bounds": [
@@ -133,9 +136,10 @@
 
     area.registerMap("Pirate Town Atlas", {
         "kr": "해적마을 아틀라스",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "암상인-해적주화 15000개 교환",
+            "heart": "Exchange 15000 Pirate Coins with 암상인",
+            "heartKR": "암상인-해적주화 15000개 교환",
             "ilvl": 400
         },
         "bounds": [
@@ -152,9 +156,10 @@
 
     area.registerMap("Freedom Island", {
         "kr": "자유의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "로사-해적주화 16800개 교환",
+            "heart": "Exchange 16800 Pirate Coins with Rosa (로사)",
+            "heartKR": "로사-해적주화 16800개 교환",
             "ilvl": 250
         },
         "bounds": [
@@ -171,9 +176,10 @@
 
     area.registerMap("Black-Tooth Post", {
         "kr": "검은이빨의 주둔지",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "검은이빨 호감도 '신뢰'",
+            "heart:": "Become 'Trustworthy' with Black Tooth (검은이빨)",
+            "heartKR": "검은이빨 호감도 '신뢰'",
             "ilvl": 360
         },
         "bounds": [
@@ -190,9 +196,10 @@
 
     area.registerMap("Silent Island", {
         "kr": "고요의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "거기 누구요?' 모험 연계 퀘스트 진행",
+            "heart": "Linked Adventure Quest: 'Who is There?' (거기 누구요?)",
+            "heartKR": "거기 누구요?' 모험 연계 퀘스트 진행",
             "ilvl": 300
         },
         "bounds": [
@@ -209,7 +216,7 @@
 
     area.registerMap("Mercia", {
         "kr": "메르시아",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 350
         },
@@ -227,9 +234,10 @@
 
     area.registerMap("Totopia", {
         "kr": "토토피아",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "토토피아 실종사건' 모험 연계 퀘스트 진행 (미운 우리 피그렛 퀘스트 이후 에포나 의뢰 '토토피아 일일교사' 클리어로 평판 획득 필요)",
+            "heart": "Linked Adventure Quest: 'Totopia's Missing Case' (토토피아 실종사건).<br>Follow up quest from 'Totpia's Teacher for a Day' (토토피아 일일교사).<br>Requires reputation with 클리어로",
+            "heartKR": "토토피아 실종사건' 모험 연계 퀘스트 진행 (미운 우리 피그렛 퀘스트 이후 에포나 의뢰 '토토피아 일일교사' 클리어로 평판 획득 필요)",
             "ilvl": 250
         },
         "bounds": [
@@ -246,9 +254,10 @@
 
     area.registerMap("Sleeping Song Island", {
         "kr": "잠자는 노래의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "마법은 노래를 타고' 협동 퀘스트 (공명의 노래 4명 필요, 숲의 미뉴에트 획득)",
+            "heart": "Coop Quest: 'Magic of the Song' (마법은 노래를 타고)<br>Requires 4 Songs of Resonance and rewards with Minuet of the Forest.",
+            "heartKR": "마법은 노래를 타고' 협동 퀘스트 (공명의 노래 4명 필요, 숲의 미뉴에트 획득)",
             "ilvl": 250,
             "entry": "0:40 / 3:40 / 6:40 / 9:40 / 12:40 / 15:40 / 18:40 / 21:40"
         },
@@ -266,9 +275,10 @@
 
     area.registerMap("Pomona Island", {
         "kr": "포모나 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "사나이의 순정' or '사랑의 고민 상담' 모험 연계 퀘스트 진행 ",
+            "heart": "Adventure quest: '사나이의 순정' or  '사랑의 고민 상담'",
+            "heartKR": "사나이의 순정' or '사랑의 고민 상담' 모험 연계 퀘스트 진행 ",
             "ilvl": 250
         },
         "bounds": [
@@ -285,7 +295,7 @@
 
     area.registerMap("Boom Bling Island", {
         "kr": "붐블링 아일랜드",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 345
         },
@@ -303,9 +313,10 @@
 
     area.registerMap("Giant Mushroom Island", {
         "kr": "거대버섯 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "거대 버섯 벌목 (벌목꾼 스킬 필요)",
+            "heart": "Life skill: Logger, cut the Giant Mushroom",
+            "heartKR": "거대 버섯 벌목 (벌목꾼 스킬 필요)",
             "ilvl": 250
         },
         "bounds": [
@@ -322,7 +333,7 @@
 
     area.registerMap("Bikini Island", {
         "kr": "비키니 아일랜드",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "heart": "Adventure Quest: '꿈이 가득한 섬으로'",
             "heartKR": "꿈이 가득한 섬으로' 모험 퀘스트",
@@ -342,9 +353,10 @@
 
     area.registerMap("Ribeheim", {
         "kr": "리베하임",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "헨리 호감도 '신뢰'",
+            "heart": "Become 'Trustworthy' with Henry (헨리)",
+            "heartKR": "헨리 호감도 '신뢰'",
             "ilvl": 250
         },
         "bounds": [
@@ -361,9 +373,10 @@
 
     area.registerMap("Small Lucky Island", {
         "kr": "작은 행운의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "필드 보물상자",
+            "heart": "Treasure Chest in the Field",
+            "heartKR": "필드 보물상자",
             "ilvl": 250
         },
         "bounds": [
@@ -380,9 +393,10 @@
 
     area.registerMap("Distorted Dimension Island", {
         "kr": "왜곡된 차원의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "왜곡된 차원의 틈에서' 모험 연계 퀘스트 진행 (큐브 비전 필요)",
+            "heart": "Adventure Quest: 'In the Distorted Dimension' (왜곡된 차원의 틈에서)<br>Requires Cube Vision",
+            "heartKR": "왜곡된 차원의 틈에서' 모험 연계 퀘스트 진행 (큐브 비전 필요)",
             "ilvl": 0
         },
         "bounds": [
@@ -399,16 +413,17 @@
 
     area.registerMap("Outlaw Island", {
         "kr": "무법자의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "필드 보물상자",
+            "heart": "Treasure Chest in the Field",
+            "heartKR": "필드 보물상자",
             "ilvl": 250
         }
     });
 
     area.registerMap("Torrent Island", {
         "kr": "격류의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "heart": "Boss kill: Aurion",
             "heartKR": "보스 아우리온 처치",
@@ -418,16 +433,17 @@
 
     area.registerMap("Naruni Island", {
         "kr": "나루니 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "나루니 101마리 수집",
+            "heart": "Naruni 101 collection",
+            "heartKR": "나루니 101마리 수집",
             "ilvl": 330
         }
     });
 
     area.registerMap("Twilight Island", {
         "kr": "황혼의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
         }
@@ -435,7 +451,7 @@
 
     area.registerMap("Gravis Resort", {
         "kr": "휴양지 그라비스",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "heart": "Adventure Quest: '궁극의 휴양'",
             "heartKR": "궁극의 휴양' 모험 퀘스트",
@@ -445,16 +461,17 @@
 
     area.registerMap("Hypnose Eye", {
         "kr": "히프노스의 눈",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "칼바서스 호감도 '신뢰' ",
+            "heart": "Become 'Trustworthy' with Calvados (칼바서스)",
+            "heartKR": "칼바서스 호감도 '신뢰' ",
             "ilvl": 440
         }
     });
 
     area.registerMap("Welcome Butterfly Island", {
         "kr": "환영나비 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
         }
@@ -462,18 +479,20 @@
 
     area.registerMap("Isle of Dreams", {
         "kr": "몽환의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "퀘스트 (에포나 2단계 완료 보상)",
+            "heart": "Quest: Epona (에포나) Phase 2 reward",
+            "heartKR": "퀘스트 (에포나 2단계 완료 보상)",
             "ilvl": 250
         }
     });
 
     area.registerMap("Harmony Island", {
         "kr": "하모니 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "퀘스트 (천상의 하모니 획득)",
+            "heart": "Quest: Heavenly Harmony obtained (천상의 하모니)",
+            "heartKR": "퀘스트 (천상의 하모니 획득)",
             "ilvl": 250,
             "entry": "Calendar Event"
         }
@@ -481,7 +500,7 @@
 
     area.registerMap("Primeval Island", {
         "kr": "태초의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
         }
@@ -489,7 +508,7 @@
 
     area.registerMap("Island of Hope", {
         "kr": "희망의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "heart": "Adventure Quest: '희생된 이들을 기억하자'",
             "heartKR": "희생된 이들을 기억하자' 모험 퀘스트",
@@ -499,25 +518,27 @@
 
     area.registerMap("Goblin Island", {
         "kr": "고블린 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "고블린 판도라 (고블린 금화 3개로 교환)",
+            "heart": "Goblin Pandora: Exchange for 3 goblin gold coins",
+            "heartKR": "고블린 판도라 (고블린 금화 3개로 교환)",
             "ilvl": 400
         }
     });
 
     area.registerMap("Atropose", {
         "kr": "아트로포스",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "퀘스트-분수대에 동전 던지기",
+            "heart": "Quest: Throw a coin in the Fountain",
+            "heartKR": "퀘스트-분수대에 동전 던지기",
             "ilvl": 250
         }
     });
 
     area.registerMap("Blue Hole Island", {
         "kr": "블루홀 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
         }
@@ -525,7 +546,7 @@
 
     area.registerMap("Valpurgis", {
         "kr": "발푸르기스",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 445
         }
@@ -533,27 +554,28 @@
 
     area.registerMap("Metus Islands", {
         "kr": "메투스 제도",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250,
-            "entry": "알려지지 않음"
+            "entry": "Unknown"
         }
     });
 
     area.registerMap("Island of Rejoice", {
         "kr": "기약의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250,
-            "entry": "알려지지 않음"
+            "entry": "Unknown"
         }
     });
 
     area.registerMap("Isla of Mist", {
         "kr": "안개의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "필드에서 쪽지 6개 획득 후 퀘스트 완료",
+            "heart": "Quest: obtain 6 notes in the field (쪽지)",
+            "heartKR": "필드에서 쪽지 6개 획득 후 퀘스트 완료",
             "ilvl": 0
         },
         "bounds": [
@@ -570,7 +592,7 @@
 
     area.registerMap("Nichel Tarov's Thought", {
         "kr": "니헬타로프의 상념",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
         }
@@ -578,7 +600,7 @@
 
     area.registerMap("Thick Mist Ridge", {
         "kr": "짙은 안개 능선",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
         },
@@ -594,11 +616,12 @@
         ]
     });
 
-    area.registerMap("Bollard Island", {
+    area.registerMap("Bolard Island", {
         "kr": "볼라르 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "협동 퀘스트-볼라르의 비밀 상자에서 획득",
+            "heart": "Coop Quest: Obtained from Bolar's Secret Box",
+            "heartKR": "협동 퀘스트-볼라르의 비밀 상자에서 획득",
             "ilvl": 300,
             "entry": "Calendar Event"
         }
@@ -606,9 +629,10 @@
 
     area.registerMap("Club Avinue", {
         "kr": "클럽 아비뉴",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "칵테일 한 잔의 여유' 일일 퀘스트 후 '언브레이커블 비트' 퀘스트 진행",
+            "heart": "Quest: 'A Cocktail Glass' (칵테일 한 잔의 여유) after finishing the daily Quest 'Unbreakable bits' (언브레이커블 비트)",
+            "heartKR": "칵테일 한 잔의 여유' 일일 퀘스트 후 '언브레이커블 비트' 퀘스트 진행",
             "ilvl": 250
         },
         "bounds": [
@@ -625,9 +649,10 @@
 
     area.registerMap("Fortuna", {
         "kr": "포르투나",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "항아리 파괴",
+            "heart": "Break the Jar",
+            "heartKR": "항아리 파괴",
             "ilvl": 280
         },
         "bounds": [
@@ -644,9 +669,10 @@
 
     area.registerMap("Lonely Island Oper", {
         "kr": "외로운 섬 오페르",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "섬의 마음' 퀘스트",
+            "heart": "Quest: 'Heart of the Island' (섬의 마음)",
+            "heartKR": "섬의 마음' 퀘스트",
             "ilvl": 250
         },
         "bounds": [
@@ -663,9 +689,10 @@
 
     area.registerMap("Lush Reed Island", {
         "kr": "우거진 갈대의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "필드 보물상자 (퀘스트도 가능, 숲의 미뉴에트 필요)",
+            "heart": "Treasure Chest in the Field<br>Requires Minuet of the Forest",
+            "heartKR": "필드 보물상자 (퀘스트도 가능, 숲의 미뉴에트 필요)",
             "ilvl": 250,
             "entry": "2:20 / 5:20 / 8:20 / 11:20 / 14:20 / 17:20 / 20:20 / 23:20"
         },
@@ -683,9 +710,10 @@
 
     area.registerMap("Sunflower Island", {
         "kr": "해바라기의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "위대한 미술품 10개로 교환",
+            "heart": "Exchange for 10 Great works of Art (위대한 미술품)",
+            "heartKR": "위대한 미술품 10개로 교환",
             "ilvl": 250
         },
         "bounds": [
@@ -702,9 +730,10 @@
 
     area.registerMap("Starlight Lighthouse Island", {
         "kr": "별빛 등대의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "영혼을 인도하는 등대' 모험 연계 퀘스트 진행 (해적주화 50개 필요)",
+            "heart": "Adventure Quest: 'The Lighthouse that leads the Soul' (영혼을 인도하는 등대)<br>Requires 50 Pirate coins.",
+            "heartKR": "영혼을 인도하는 등대' 모험 연계 퀘스트 진행 (해적주화 50개 필요)",
             "ilvl": 250
         },
         "bounds": [
@@ -721,9 +750,10 @@
 
     area.registerMap("Panda Pupu Island", {
         "kr": "판다 푸푸 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "푸푸 호감도 '신뢰'",
+            "heart": "Become \'Trustworthy\' with Pupu (푸푸)",
+            "heartKR": "푸푸 호감도 '신뢰'",
             "ilvl": 250
         },
         "bounds": [
@@ -740,9 +770,10 @@
 
     area.registerMap("Ocean Paradise Payto", {
         "kr": "해상 낙원 페이토",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "페이토 '잊혀진 고대의 마석' 모험 연계 퀘스트 진행",
+            "heart": "Adventure Quest: 'Forgotten Ancient Stone' (잊혀진 고대의 마석)",
+            "heartKR": "페이토 '잊혀진 고대의 마석' 모험 연계 퀘스트 진행",
             "ilvl": 250
         },
         "bounds": [
@@ -759,9 +790,9 @@
 
     area.registerMap("Erasomoui Island", {
         "kr": "에라스모의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "Boss kill: Erasumo (Need 10 people playing 'Song of Resonance')",
+            "heart": "Boss kill: Erasumo<br>Need 10 people playing 'Song of Resonance'",
             "heartKR": "보스 에라스모 처치 (공명의 노래 10명 필요)",
             "ilvl": 420
         },
@@ -779,9 +810,10 @@
 
     area.registerMap("Lopang Island", {
         "kr": "로팡 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "에포나 의뢰 6번 클리어 후 퀘스트",
+            "heart": "Quest: Epona (에포나) Phase 6 Reward",
+            "heartKR": "에포나 의뢰 6번 클리어 후 퀘스트",
             "ilvl": 250
         },
         "bounds": [
@@ -798,7 +830,7 @@
 
     area.registerMap("Estella", {
         "kr": "에스텔라",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "heart": "필드 별똥별",
             "ilvl": 200
@@ -817,9 +849,10 @@
 
     area.registerMap("Toto Silver Island", {
         "kr": "토토실버 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "토토장로 호감도 '신뢰'",
+            "heart": "Become 'Trustworthy' with Elder Toto (토토장로)",
+            "heartKR": "토토장로 호감도 '신뢰'",
             "ilvl": 250
         },
         "bounds": [
@@ -836,9 +869,10 @@
 
     area.registerMap("Notos Island", {
         "kr": "노토스 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "고래를 품은 섬' 연계 퀘스트 (에포나 '고래' 의뢰들 클리어)",
+            "heart": "Linked Adventure Quest: 'Island with a Whale' (고래를 품은 섬)<br>Epona (에포나) 'Whale' (고래) Request.",
+            "heartKR": "고래를 품은 섬' 연계 퀘스트 (에포나 '고래' 의뢰들 클리어)",
             "ilvl": 250
         },
         "bounds": [
@@ -853,9 +887,9 @@
         ]
     });
 
-    area.registerMap("Porete", {
+    area.registerMap("Forpe", {
         "kr": "포르페",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "heart": "Boss kill: Batuak",
             "heartKR": "보스 바투아크 처치",
@@ -875,9 +909,10 @@
 
     area.registerMap("Turtle Island", {
         "kr": "거북 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "거북이와 소년' 모험 연계 퀘스트 진행 (보상으로 거북이 탈 것 구입 가능)",
+            "heart": "Adventure Quest: 'Turtle and the Boy' (거북이와 소년)<br>You can purchase a Turtle Mount as reward.",
+            "heartKR": "거북이와 소년' 모험 연계 퀘스트 진행 (보상으로 거북이 탈 것 구입 가능)",
             "ilvl": 250
         },
         "bounds": [
@@ -894,7 +929,7 @@
 
     area.registerMap("Death Valley", {
         "kr": "죽음의 협곡",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
         },
@@ -912,9 +947,10 @@
 
     area.registerMap("Fugitive Village", {
         "kr": "도망자들의 마을",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "퀘스트 (해적주화 250개 필요)",
+            "heart": "Quest: 250 Pirate coins required",
+            "heartKR": "퀘스트 (해적주화 250개 필요)",
             "ilvl": 280
         },
         "bounds": [
@@ -931,9 +967,10 @@
 
     area.registerMap("Opportunity Island", {
         "kr": "기회의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "황금 붕어를 잡아라' 경쟁 퀘스트 보상 강태공의 주머니",
+            "heart": "Competition Quest: Goldfish Catching (황금 붕어를 잡아라)",
+            "heartKR": "황금 붕어를 잡아라' 경쟁 퀘스트 보상 강태공의 주머니",
             "ilvl": 250,
             "entry": "Calendar Event"
         },
@@ -951,18 +988,20 @@
 
     area.registerMap("White Waves Island", {
         "kr": "하얀파도 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "엠마 호감도 '신뢰'",
+            "heart": "Become 'Trustworthy' with Emma (엠마)",
+            "heartKR": "엠마 호감도 '신뢰'",
             "ilvl": 250
         }
     });
 
     area.registerMap("Kaltes Herz", {
         "kr": "칼트헤르츠",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "노예해방 수행 (하루 5번, 회당 해적주화 50-300개 필요)",
+            "heart": "Daily: Free Slaves (5 times a day, rewards 50-300 coins per game)",
+            "heartKR": "노예해방 수행 (하루 5번, 회당 해적주화 50-300개 필요)",
             "ilvl": 250
         },
         "bounds": [
@@ -979,9 +1018,10 @@
 
     area.registerMap("Alaquer", {
         "kr": "알라케르",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "협동 퀘스트-빛나는 황금 깃털 사용",
+            "heart": "Coop Quest: Use Shiny Golden Feathers",
+            "heartKR": "협동 퀘스트-빛나는 황금 깃털 사용",
             "ilvl": 280
         },
         "bounds": [
@@ -998,9 +1038,10 @@
 
     area.registerMap("New Moon Island", {
         "kr": "신월의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "수렵-결정 20개로 교환 (수렵 5레벨 필요)",
+            "heart": "Life Skill: Hunting, Exchange 20 결정 (requires level 5)",
+            "heartKR": "수렵-결정 20개로 교환 (수렵 5레벨 필요)",
             "ilvl": 250,
             "entry": "3:20 / 7:20 / 11:20 / 15:20 / 19:20 / 23:20"
         },
@@ -1018,9 +1059,10 @@
 
     area.registerMap("Dreamy Seagull Island", {
         "kr": "꿈꾸는 갈매기 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "갈매기 섬으로' 모험 연계 퀘스트 (숲의 미뉴에트 필요)",
+            "heart": "Linked Adventure Quest: 'To Seagull Island' (갈매기 섬으로)<br>Requires Minuet of the Forest",
+            "heartKR": "갈매기 섬으로' 모험 연계 퀘스트 (숲의 미뉴에트 필요)",
             "ilvl": 250
         },
         "bounds": [
@@ -1037,9 +1079,10 @@
 
     area.registerMap("Slime Island", {
         "kr": "슬라임 아일랜드",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "골든벨 슬라임 처치",
+            "heart": "Kill Golden Bell Slime",
+            "heartKR": "골든벨 슬라임 처치",
             "ilvl": 350
         },
         "bounds": [
@@ -1056,7 +1099,7 @@
 
     area.registerMap("Secret Base X-301", {
         "kr": "비밀기지 X-301",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "heart": "kill Boss in dungeon 'Secret Base X-301'",
             "heartKR": "던전 비밀기지 X-301 보스 처치",
@@ -1076,9 +1119,10 @@
 
     area.registerMap("Golden Wave Island", {
         "kr": "황금물결 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "필드 난파물",
+            "heart": "Shipwreck in the Field",
+            "heartKR": "필드 난파물",
             "ilvl": 250
         },
         "bounds": [
@@ -1095,7 +1139,7 @@
 
     area.registerMap("Alteisen", {
         "kr": "알트아이젠",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "heart": "Boss kill: Sol Grande",
             "heartKR": "보스 솔 그랑데 처치",
@@ -1115,7 +1159,7 @@
 
     area.registerMap("Speeder Island", {
         "kr": "스피다 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "heart": "Boss kill: ???",
             "heartKR": "보스 처치",
@@ -1136,7 +1180,7 @@
 
     area.registerMap("Meteora", {
         "kr": "메테오라",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
         },
@@ -1154,9 +1198,10 @@
 
     area.registerMap("Hallucination Island", {
         "kr": "환각의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "붉은 일렁임' 경쟁 퀘스트 보상 환각의 섬 전리품",
+            "heart": "Competition Quest: 'Red Lantern' (붉은 일렁임)<br>Rewards Hallucination Island Loot",
+            "heartKR": "붉은 일렁임' 경쟁 퀘스트 보상 환각의 섬 전리품",
             "ilvl": 250,
             "entry": "0:20 / 2:20 / 4:20 / 6:20 / 8:20 / 10:20 / 12:20 / 14:20 / 14:20 / 16:20 / 18:20 / 20:20 / 22:20"
         },
@@ -1174,9 +1219,10 @@
 
     area.registerMap("Medea", {
         "kr": "메데이아",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "메데이아 쟁탈전' 경쟁 퀘스트 보상 메데이아의 선물",
+            "heart": "Competition Quest: 'Medea's Contest' (메데이아 쟁탈전)<br>Rewards Medea's Gift",
+            "heartKR": "메데이아 쟁탈전' 경쟁 퀘스트 보상 메데이아의 선물",
             "ilvl": 320,
             "entry": "Calendar Event"
         },
@@ -1194,9 +1240,10 @@
 
     area.registerMap("Monte Island", {
         "kr": "몬테 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "찾아라 꿈빛 조각!' 경쟁 퀘스트 보상 몬테섬 참가상",
+            "heart": "Competition Quest: 'Find a dream Piece' (찾아라 꿈빛 조각!)<br>Rewards Monte Island Participation award.",
+            "heartKR": "찾아라 꿈빛 조각!' 경쟁 퀘스트 보상 몬테섬 참가상",
             "ilvl": 330,
             "entry": "Calendar Event"
         }
@@ -1204,16 +1251,17 @@
 
     area.registerMap("Isle of Longing", {
         "kr": "갈망의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "부선장 처치 - 세티노의 비밀가방",
+            "heart": "Kill Vice Captain (부선장 처치)<br>Obtain Setino's Secret Bag (세티노의 비밀가방)",
+            "heartKR": "부선장 처치 - 세티노의 비밀가방",
             "ilvl": 365
         }
     });
 
     area.registerMap("Isle of Eternity", {
         "kr": "고립된 영원의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
         }
@@ -1221,7 +1269,7 @@
 
     area.registerMap("Carmine's Post", {
         "kr": "카마인의 주둔지",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 450
         }
@@ -1229,7 +1277,7 @@
 
     area.registerMap("Isle of Shadows", {
         "kr": "그림자의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 420
         }
@@ -1237,7 +1285,7 @@
 
     area.registerMap("Tranquil Island", {
         "kr": "고요한 안식의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 400,
             "entry": "Calendar Event"
@@ -1246,7 +1294,7 @@
 
     area.registerMap("Unknown Island", {
         "kr": "미지의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 420,
             "entry": "Calendar Event"
@@ -1255,7 +1303,7 @@
 
     area.registerMap("Lucky Island", {
         "kr": "지고의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
         }
@@ -1263,7 +1311,7 @@
 
     area.registerMap("Island of Fire and Ice", {
         "kr": "얼음과 불의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "heart": "Boss kill: Briarose",
             "heartKR": "보스 브리아레오스 처치",
@@ -1283,7 +1331,7 @@
 
     area.registerMap("Ice Maze Island", {
         "kr": "얼음 미로의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "heart": "Adventure Quest: '따뜻한 온정의 횃불' (Humpback Whale Oil needed)",
             "heartKR": "모험 퀘스트 '따뜻한 온정의 횃불' (흑등고래의 기름 필요)",
@@ -1293,7 +1341,7 @@
 
     area.registerMap("Cold Home", {
         "kr": "혹한의 안식처",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
         },
@@ -1311,9 +1359,10 @@
 
     area.registerMap("Argon", {
         "kr": "아르곤",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "얼음 석상 처치 (하루 인원 제한)",
+            "heart": "Kill Ice Stone Statue (얼음 석상)<br>Limited Number of People per day.",
+            "heartKR": "얼음 석상 처치 (하루 인원 제한)",
             "ilvl": 250
         },
         "bounds": [
@@ -1330,9 +1379,10 @@
 
     area.registerMap("Broken Glacier Island", {
         "kr": "부서진 빙하의 섬",
-        "type": "MapTypeEnum.Island",
+        "type": MapTypeEnum.Island,
         "meta": {
-            "heart": "슈테른 '그는 지켜보고 있다' 월드 퀘스트 후 페이토에서 선행 퀘스트 진행 (고요의 엘리지 획득)",
+            "heart": "Complete the Quest 'He is Watching' in Stern (그는 지켜보고 있다)<br>월드 퀘스트 후 페이토에서 선행 퀘스트 진행 (고요의 엘리지 획득)",
+            "heartKR": "슈테른 '그는 지켜보고 있다' 월드 퀘스트 후 페이토에서 선행 퀘스트 진행 (고요의 엘리지 획득)",
             "ilvl": 270
         },
         "bounds": [

@@ -32,6 +32,29 @@
                     this.markerLayer.createMarker(markerEntries[i]);
                 }
             }
+
+            for(let name in this.maps){
+                let mapData = this.maps[name];
+                switch (mapData.type) {
+                    case MapTypeEnum.Island: {
+                        if(mapData.meta !== undefined && mapData.meta.heart !== undefined && mapData.bounds !== undefined){
+                            let position = GetBoundsCenter(mapData.bounds);
+                            let markerData = {
+                                x: position[0],
+                                y: position[1] + 1,
+                                type: MarkerTypeEnum.IslandHeart,
+                                isGenerated: true,
+                                popupText: 'Heart of ' + name,
+                                hintText: mapData.meta.heart
+                            };
+
+                            this.markerLayer.createMarker(markerData);
+                        }
+
+                        break
+                    }
+                }
+            }
         }
 
         activate() {

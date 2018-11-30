@@ -818,7 +818,7 @@
             "y": 274.77,
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 71,
-            "title": "To Bollard Island",
+            "title": "To Bolard Island",
             "titleKR": "볼라르 섬"
         },
         {

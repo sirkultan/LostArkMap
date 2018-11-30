@@ -76,7 +76,7 @@
          2_2
             두키 섬 - Duki Island
             클럽 아비뉴 - Club Avinue
-            볼라르 섬 - Bollard Island
+            볼라르 섬 - Bolard Island
             짙은 안개 능선 - Thick Mist Ridge
 
             [PVP] 그릇된 욕망의 섬 - Misguided Island
@@ -1335,38 +1335,6 @@
             "y": 323.07,
             "type": MarkerTypeEnum.Mokoko,
             "id": 202
-        },
-        {
-            "x": -317.44,
-            "y": 290.25,
-            "type": MarkerTypeEnum.IslandHeart,
-            "id": 203,
-            "hintText": "Become 'Trustworthy' with Henry (헨리)",
-            "popupText": "Island Heart in Ribeheim"
-        },
-        {
-            "x": -227.3207795806996,
-            "y": 406.30467201464086,
-            "type": MarkerTypeEnum.IslandHeart,
-            "id": 204,
-            "popupText": "Island Heart in Panda Pupu Island",
-            "hintText": "Become 'Trustworthy' with Pupu (푸푸)"
-        },
-        {
-            "x": -303.6328261706546,
-            "y": 365.46094031551985,
-            "type": MarkerTypeEnum.IslandHeart,
-            "id": 205,
-            "hintText": "Become 'Trustworthy' with Elder Toto (토토장로)",
-            "popupText": "Island Heart in Toto Silver Island"
-        },
-        {
-            "x": -385.95,
-            "y": 399.07,
-            "type": MarkerTypeEnum.IslandHeart,
-            "id": 206,
-            "hintText": "Become 'Trustworthy' with Black Tooth (검은이빨)",
-            "popupText": "Island Heart in Black-Tooth Post"
         }
     ];
 
