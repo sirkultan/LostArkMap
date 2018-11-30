@@ -432,14 +432,6 @@
             "hintImage": "bern/BalancarVistaHint2.jpg"
         },
         {
-            "x": -281.31,
-            "y": 198.37,
-            "type": MarkerTypeEnum.HiddenStory,
-            "id": 58,
-            "popupText": "여왕님의 비밀#3(추정)",
-            "hintImage": "bern/BalancarHiddenStoryHint1.jpg"
-        },
-        {
             "x": -311.44,
             "y": 235.11,
             "type": MarkerTypeEnum.WorldBoss,
@@ -1177,6 +1169,14 @@
             "id": 164,
             "hintImage": "bern/ParnaHiddenStoryHint6.jpg",
             "popupText": "버려진 아이 #2"
+        },
+        {
+            "x": -330.04,
+            "y": 57.55,
+            "type": MarkerTypeEnum.HiddenStory,
+            "id": 165,
+            "hintImage": "bern/ElberiaHiddenStoryHint1.jpg",
+            "popupText": "여왕님의 비밀#3(추정)"
         }
     ];
 
