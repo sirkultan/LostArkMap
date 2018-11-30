@@ -49,6 +49,10 @@ let LAM = (function(){
                 return;
             }
 
+            // Clamp to 2 digits
+            x = Math.round(x * 100) / 100;
+            y = Math.round(y * 100) / 100;
+
             let area = customArea || this.activeArea;
             let zoomLevel = customZoomLevel || LAM.map.getZoom();
             let areaMaxZoomLevel = this.areas[area].zoomLevel;
@@ -63,7 +67,7 @@ let LAM = (function(){
                 zoomLevel = areaMaxZoomLevel - 1;
             }
 
-            return "?c=" + ContentTypeEnum.AreaMap + "&a=" + area + '&x=' + x + '&y=' + y + '&z=' + zoomLevel;
+            return "?c=" + ContentTypeEnum.AreaMap + "&a=" + area.replace('/\s/g', '_') + '&x=' + x + '&y=' + y + '&z=' + zoomLevel;
         }
 
         initialize() {
@@ -174,6 +178,8 @@ let LAM = (function(){
                     if (area === undefined || x === undefined || y === undefined) {
                         return;
                     }
+
+                    area = area.replace(/_/g, ' ');
 
                     this.activateArea(area);
                     this.gotoMapArea([x, y], area, zoom);
