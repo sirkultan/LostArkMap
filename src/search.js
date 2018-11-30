@@ -227,8 +227,8 @@
         }
 
         searchInGuides(regex, target) {
-            for(let i in LAM.guides) {
-                let guideData = LAM.guides[i];
+            for(let i in LAM.guide.entries) {
+                let guideData = LAM.guide.entries[i];
                 let match = this.matchSearchAgainst(regex, guideData.title);
                 if(match !== undefined) {
                     target.push({
@@ -241,8 +241,8 @@
         }
 
         searchInFAQ(regex, target) {
-            for(let i in LAM.faq) {
-                let faqData = LAM.faq[i];
+            for(let i in LAM.faq.entries) {
+                let faqData = LAM.faq.entries[i];
                 let match = this.matchSearchAgainst(regex, faqData.q, faqData.a);
                 if(match !== undefined){
                     target.push({

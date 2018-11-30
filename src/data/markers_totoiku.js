@@ -415,7 +415,14 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 55,
             "hintImage": "totoiku/TreasureMap1.jpg"
+        },
+        {
+            "x": -163.62,
+            "y": 198.01,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 56,
+            "hintImage": "totoiku/TreasureMap2.jpg"
         }
-    ];
+    ]
 
 }());
