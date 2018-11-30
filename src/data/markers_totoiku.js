@@ -408,6 +408,13 @@
             "popupText": "창조의 알 껍질",
             "hintText": "모코코마을 요리사NPC - 수피피<br>와삭와삭 껍질 튀김 식재료",
             "hintImage": "totoiku/TotoikusBodyFoodIngredientHint1.jpg"
+        },
+        {
+            "x": -354,
+            "y": 191.27,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 55,
+            "hintImage": "totoiku/TreasureMap1.jpg"
         }
     ];
 
