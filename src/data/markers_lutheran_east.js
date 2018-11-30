@@ -1459,6 +1459,20 @@
             "type": MarkerTypeEnum.SecretPassage,
             "hintImage": "lutheran/LastraSecretHint1.jpg",
             "id": 205
+        },
+        {
+            "x": -368.37,
+            "y": 413.48,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 206,
+            "hintImage": "lutheran/TreasureMap3.jpg"
+        },
+        {
+            "x": -340.08,
+            "y": 432.89,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 207,
+            "hintImage": "lutheran/TreasureMap4.jpg"
         }
     ];
 

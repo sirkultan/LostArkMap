@@ -220,6 +220,19 @@
             "titleKR": "황금물결 섬"
         },
         {
+            "x": -206.53126667731016,
+            "y": 310.875,
+            "type": MarkerTypeEnum.ZoningIslandFlux,
+            "id": 23,
+            "teleportTo": [
+                -189.28,
+                319.85
+            ],
+            "teleportArea": "Islands",
+            "title": "To New Moon Island",
+            "titleKR": "신월의 섬"
+        },
+        {
             "x": -208.93765565489466,
             "y": 324.3123632296214,
             "type": MarkerTypeEnum.ZoningIsland,
@@ -426,6 +439,19 @@
             "teleportArea": "Islands",
             "title": "To Giant Mushroom Island",
             "titleKR": "거대버섯 섬"
+        },
+        {
+            "x": -309.06360070246933,
+            "y": 372.5620213036747,
+            "type": MarkerTypeEnum.ZoningIslandFlux,
+            "id": 40,
+            "teleportTo": [
+                -338.13,
+                376.89
+            ],
+            "teleportArea": "Islands",
+            "title": "To Sleeping Song Island",
+            "titleKR": "잠자는 노래의 섬"
         },
         {
             "x": -315.24998888179323,
@@ -688,6 +714,19 @@
             "titleKR": "얼음과 불의 섬"
         },
         {
+            "x": -208.03,
+            "y": 232.28,
+            "type": MarkerTypeEnum.ZoningIslandFlux,
+            "id": 61,
+            "teleportTo": [
+                -193.7,
+                228.46
+            ],
+            "teleportArea": "Islands",
+            "title": "To Speeder Island",
+            "titleKR": "스피다 섬"
+        },
+        {
             "x": -224.04,
             "y": 226.78,
             "type": MarkerTypeEnum.ZoningIsland,
@@ -751,6 +790,22 @@
             "titleKR": "두키 섬"
         },
         {
+            "x": -249.99995552717297,
+            "y": 327.4999658074054,
+            "type": MarkerTypeEnum.ZoningIslandFlux,
+            "id": 68,
+            "title": "To Duki Island",
+            "titleKR": "두키 섬"
+        },
+        {
+            "x": -374.62492217255266,
+            "y": 340.250102577784,
+            "type": MarkerTypeEnum.ZoningIslandFlux,
+            "id": 69,
+            "title": "To Duki Island",
+            "titleKR": "두키 섬"
+        },
+        {
             "x": -385.31226651765803,
             "y": 337.062192266648,
             "type": MarkerTypeEnum.ZoningIsland,
@@ -759,12 +814,44 @@
             "titleKR": "오르비스 섬"
         },
         {
+            "x": -254.77,
+            "y": 274.77,
+            "type": MarkerTypeEnum.ZoningIslandFlux,
+            "id": 71,
+            "title": "To Bollard Island",
+            "titleKR": "볼라르 섬"
+        },
+        {
+            "x": -287.9998999361392,
+            "y": 248.0001709629733,
+            "type": MarkerTypeEnum.ZoningIslandFlux,
+            "id": 72,
+            "title": "To Duki Island",
+            "titleKR": "두키 섬"
+        },
+        {
             "x": -142.59398904144535,
             "y": 166.6876709629733,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 73,
             "title": "To Lucky Island",
             "titleKR": "지고의 섬"
+        },
+        {
+            "x": -162.78105543138167,
+            "y": 158.68763677037865,
+            "type": MarkerTypeEnum.ZoningIslandFlux,
+            "id": 74,
+            "title": "To Unknown Island",
+            "titleKR": "미지의 섬"
+        },
+        {
+            "x": -167.49982210869183,
+            "y": 175.37469226664803,
+            "type": MarkerTypeEnum.ZoningIslandFlux,
+            "id": 75,
+            "title": "To Tranquil Island",
+            "titleKR": "고요한 안식의 섬"
         },
         {
             "x": -179.59,
@@ -781,6 +868,14 @@
             "id": 77,
             "title": "To Carmine's Post",
             "titleKR": "카마인의 주둔지"
+        },
+        {
+            "x": -200.24993329075943,
+            "y": 182.812602577784,
+            "type": MarkerTypeEnum.ZoningIslandFlux,
+            "id": 78,
+            "title": "To Monte Island",
+            "titleKR": "몬테 섬"
         },
         {
             "x": -214.12514453668788,
@@ -805,6 +900,14 @@
             "id": 81,
             "title": "To Isle of Dreams",
             "titleKR": "몽환의 섬"
+        },
+        {
+            "x": -252.34375,
+            "y": 103.09364742221601,
+            "type": MarkerTypeEnum.ZoningIslandFlux,
+            "id": 82,
+            "title": "To Harmony Island",
+            "titleKR": "하모니 섬"
         },
         {
             "x": -237.93760006386088,
@@ -1406,107 +1509,11 @@
             "titleKR": "베른 북부"
         },
         {
-            "x": -206.53126667731016,
-            "y": 310.875,
-            "type": MarkerTypeEnum.ZoningIslandFlux,
-            "id": 23,
-            "teleportTo": [
-                -189.28,
-                319.85
-            ],
-            "teleportArea": "Islands",
-            "title": "To New Moon Island",
-            "titleKR": "신월의 섬"
-        },
-        {
-            "x": -309.06360070246933,
-            "y": 372.5620213036747,
-            "type": MarkerTypeEnum.ZoningIslandFlux,
-            "id": 40,
-            "teleportTo": [
-                -338.13,
-                376.89
-            ],
-            "teleportArea": "Islands",
-            "title": "To Sleeping Song Island",
-            "titleKR": "잠자는 노래의 섬"
-        },
-        {
-            "x": -208.03,
-            "y": 232.28,
-            "type": MarkerTypeEnum.ZoningIslandFlux,
-            "id": 61,
-            "teleportTo": [
-                -193.7,
-                228.46
-            ],
-            "teleportArea": "Islands",
-            "title": "To Speeder Island",
-            "titleKR": "스피다 섬"
-        },
-        {
-            "x": -249.99995552717297,
-            "y": 327.4999658074054,
-            "type": MarkerTypeEnum.ZoningIslandFlux,
-            "id": 68,
-            "title": "To Duki Island",
-            "titleKR": "두키 섬"
-        },
-        {
-            "x": -374.62492217255266,
-            "y": 340.250102577784,
-            "type": MarkerTypeEnum.ZoningIslandFlux,
-            "id": 69,
-            "title": "To Duki Island",
-            "titleKR": "두키 섬"
-        },
-        {
-            "x": -254.77,
-            "y": 274.77,
-            "type": MarkerTypeEnum.ZoningIslandFlux,
-            "id": 71,
-            "title": "To Bollard Island",
-            "titleKR": "볼라르 섬"
-        },
-        {
-            "x": -287.9998999361392,
-            "y": 248.0001709629733,
-            "type": MarkerTypeEnum.ZoningIslandFlux,
-            "id": 72,
-            "title": "To Duki Island",
-            "titleKR": "두키 섬"
-        },
-        {
-            "x": -162.78105543138167,
-            "y": 158.68763677037865,
-            "type": MarkerTypeEnum.ZoningIslandFlux,
-            "id": 74,
-            "title": "To Unknown Island",
-            "titleKR": "미지의 섬"
-        },
-        {
-            "x": -167.49982210869183,
-            "y": 175.37469226664803,
-            "type": MarkerTypeEnum.ZoningIslandFlux,
-            "id": 75,
-            "title": "To Tranquil Island",
-            "titleKR": "고요한 안식의 섬"
-        },
-        {
-            "x": -200.24993329075943,
-            "y": 182.812602577784,
-            "type": MarkerTypeEnum.ZoningIslandFlux,
-            "id": 78,
-            "title": "To Monte Island",
-            "titleKR": "몬테 섬"
-        },
-        {
-            "x": -252.34375,
-            "y": 103.09364742221601,
-            "type": MarkerTypeEnum.ZoningIslandFlux,
-            "id": 82,
-            "title": "To Harmony Island",
-            "titleKR": "하모니 섬"
+            "x": -394.34,
+            "y": 329.33,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 155,
+            "hintImage": "world/TreasureMap8.jpg"
         }
     ];
 

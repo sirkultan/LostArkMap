@@ -38,6 +38,8 @@
 
     LAM.registerGuide("World treasure lookup (KR)", "http://www.inven.co.kr/board/lostark/4821/4885", "worldtreasures.jpg");
 
-    LAM.registerGuide("Cash Shop Top-Up Guide", "https://docs.google.com/document/d/1w7jMDQM7rE_QuUHuPOk90ePDsD4I4vF0A086zrOgHq8/edit", "topup.jpg")
+    LAM.registerGuide("Cash Shop Top-Up Guide", "https://docs.google.com/document/d/1w7jMDQM7rE_QuUHuPOk90ePDsD4I4vF0A086zrOgHq8/edit", "topup.jpg");
+
+    LAM.registerGuide("Civos Eastern Island Heart Guide", "https://docs.google.com/document/d/1zVKeOxVr6tJRa_HEseNN3obBL_KQ83peDlfrCvTbpCk/preview#", "civo.jpg");
 
 }());
