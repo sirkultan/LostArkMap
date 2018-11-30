@@ -59,6 +59,7 @@
             this.searchInAreaData(regex, results);
             this.searchInMarkerData(regex, results);
             this.searchInGuides(regex, results);
+            this.searchInFAQ(regex, results);
 
             if(results.length > 0) {
                 this.buildResultEntries(results);
@@ -89,13 +90,13 @@
             $('#searchExamples').show();
         }
 
-        matchSearchAgainst(regex, normalText, krText) {
-            if(normalText !== undefined && regex.test(normalText)) {
-                return normalText;
+        matchSearchAgainst(regex, text, altText) {
+            if(text !== undefined && regex.test(text)) {
+                return text;
             }
 
-            if(krText !== undefined && regex.test(krText)) {
-                return krText;
+            if(altText !== undefined && regex.test(altText)) {
+                return altText;
             }
 
             return undefined;
@@ -183,7 +184,7 @@
                 title: markerData.area + ' ' + GetKeyByValue(MarkerTypeEnum, markerData.type),
                 teleportTo: [markerData.x, markerData.y],
                 teleportArea: markerData.area,
-                icon: markerData.type,
+                icon: 'images/icons/' + markerData.type,
                 match: match
             };
 
@@ -214,6 +215,21 @@
                         type: SearchResultTypeEnum.Guide,
                         title: guideData.title,
                         url: guideData.url
+                    });
+                }
+            }
+        }
+
+        searchInFAQ(regex, target) {
+            for(let i in LAM.faq) {
+                let faqData = LAM.faq[i];
+                let match = this.matchSearchAgainst(regex, faqData.q, faqData.a);
+                if(match !== undefined){
+                    target.push({
+                        type: SearchResultTypeEnum.FAQ,
+                        title: faqData.q,
+                        match: faqData.a,
+                        icon: faqData.img
                     });
                 }
             }
@@ -269,7 +285,7 @@
             }
 
             if(entryData.icon !== undefined) {
-                let icon = $('<img src="images/icons/' + entryData.icon + '" class="search-icon">');
+                let icon = $('<img src="' + entryData.icon + '" class="search-icon">');
                 iconColumn.append(icon);
             }
 

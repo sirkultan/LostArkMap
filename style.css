@@ -177,3 +177,8 @@ body {
     white-space: normal;
     width: 180px;
 }
+
+.faqImage {
+    max-width: 200px;
+    max-height: 200px;
+}

@@ -645,8 +645,8 @@
             "id": 90
         },
         {
-            "x": -169.19,
-            "y": 358.26,
+            "x": -164.5,
+            "y": 355,
             "type": MarkerTypeEnum.Zoning,
             "id": 92,
             "title": "Gorgon Nest Dungeon",

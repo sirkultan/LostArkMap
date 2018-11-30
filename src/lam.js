@@ -5,6 +5,7 @@ let LAM = (function(){
         constructor() {
             this.areas = {};
             this.guides = [];
+            this.faq = [];
             this.areaMarkerData = {};
             this.markerIcons = {};
             this.dynamicLayers = {};
@@ -148,10 +149,12 @@ let LAM = (function(){
                 LAM.copyLocationMode = true;
             }).addTo( this.map );
 
-            this.processUrlParameters();
-
             this.suspendStatUpdate = false;
             this.rebuildStats();
+            this.buildGuidesContent();
+            this.buildFAQContent();
+
+            this.processUrlParameters();
 
             $( "#loading-page" ).delay(200).fadeOut(200, function(){
                 $( "#main-page" ).fadeIn(200, function () {
@@ -310,26 +313,6 @@ let LAM = (function(){
             return result;
         }
 
-        registerGuide(title, url, preview) {
-            let guideElement = $('<div class="col-sm" >' +
-                '<div class="card mb-4 shadow-sm" style="width: 250px;">' +
-                '<img class="card-img-top" src="images/guides/'+ preview +'" style="width: 230px; height: 230px;" />' +
-                '<div class="card-body">' +
-                '<p class="card-text">' + title + '</p>' +
-                '<div class="d-flex justify-content-between align-items-center">' +
-                '<div class="btn-group">' +
-                '<a role="button" class="btn btn-sm btn-outline-secondary" href="' + url +'" target="_blank">Show</a>' +
-                '</div></div></div></div></div>');
-
-            $('#content_guides_list').append(guideElement);
-
-            this.guides.push({
-                title: title,
-                url: url,
-                preview: preview
-            });
-        }
-
         registerTreasureMap(markerData) {
             let zoomLevel = markerData.maxZoomLevel;
             if(zoomLevel === undefined) {
@@ -462,6 +445,74 @@ let LAM = (function(){
 
                 statsPanel.append(element);
             }
+        }
+
+        buildGuidesContent(){
+            if(this.guideData === undefined) {
+                return;
+            }
+
+            let guideContainer = $('#content_guides_list');
+            guideContainer.empty();
+
+            for(let i in this.guideData) {
+                let guideData = this.guideData[i];
+
+                let guideElement = $('<div class="col-sm" >' +
+                    '<div class="card mb-4 shadow-sm" style="width: 250px;">' +
+                    '<img class="card-img-top" src="images/guides/'+ guideData.preview +'" style="width: 230px; height: 230px;" />' +
+                    '<div class="card-body">' +
+                    '<p class="card-text">' + guideData.title + '</p>' +
+                    '<div class="d-flex justify-content-between align-items-center">' +
+                    '<div class="btn-group">' +
+                    '<a role="button" class="btn btn-sm btn-outline-secondary" href="' + guideData.url +'" target="_blank">Show</a>' +
+                    '</div></div></div></div></div>');
+
+                guideContainer.append(guideElement);
+
+                this.guides.push({
+                    title: guideData.title,
+                    url: guideData.url,
+                    preview: guideData.preview
+                });
+            }
+        }
+
+        buildFAQContent(){
+            if(this.faqData === undefined) {
+                return;
+            }
+
+            let faqContainer = $('#faqContent');
+            faqContainer.empty();
+
+            for(let i in this.faqData) {
+                let faqData = this.faqData[i];
+
+                let elementId = 'faq_' + i;
+                let faqElement = $('<div class="card"></div>');
+
+                let faqContent = $('<div class="card-header"></div>');
+                faqElement.append(faqContent);
+
+                let faqQuestion = $('<a class="card-link" data-toggle="collapse" href="#collapse' + elementId + '">' + faqData.q + '</a>');
+                faqContent.append(faqQuestion);
+
+                let faqAnswer = $('<div id="collapse' + elementId + '" class="collapse show" data-parent="#faqContent"></div>');
+                faqContent.append(faqAnswer);
+
+                if(faqData.img !== undefined) {
+                    faqAnswer.append($('<table><tr><td><img class="faqImage" src="' + faqData.img +'"</td><td class="card-body">'+faqData.a+'</td></tr></table>'))
+                } else {
+                    faqAnswer.append($('<div class="card-body">' + faqData.a + '</div>'));
+                }
+
+                faqContainer.append(faqElement);
+
+                this.faq.push(faqData);
+            }
+
+            $('.collapse').collapse();
         }
 
     }
