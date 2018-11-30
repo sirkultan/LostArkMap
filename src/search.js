@@ -9,12 +9,23 @@
             this.fuse = undefined;
             this.fuseOptions = {
                 shouldSort: true,
-                threshold: 0.6,
+                threshold: 0.2,
                 location: 0,
                 distance: 100,
                 maxPatternLength: 32,
                 minMatchCharLength: 1,
+                includeMatches: true,
                 keys: [
+                    'text',
+                    'textAlt',
+                    'title',
+                    'titleKR',
+                    'hintText',
+                    'hintTextKR',
+                    'popupText',
+                    'meta.heart',
+                    'meta.heartKR',
+                    'meta.entry',
                 ]
             }
         }
@@ -29,6 +40,104 @@
 
             // TODO: gather all entries that we want to be able to search
 
+            // Area
+            for (let areaName in LAM.areas) {
+                let area = LAM.areas[areaName];
+                for(let zoneName in area.maps) {
+                    let zoneData = area.maps[zoneName];
+                    let entry = {
+                        area: areaName,
+                        zone: zoneName,
+                        type: SearchResultTypeEnum.Area,
+
+                        // Fields to search in
+                        text: areaName + ' - ' + zoneName,
+                        textAlt: zoneData.kr,
+                        meta: {}
+                    };
+
+                    if(zoneData.meta !== undefined) {
+                        for(let metaKey in zoneData.meta) {
+                            let metaValue = zoneData.meta[metaKey];
+                            if(typeof metaValue === 'string') {
+                                entry.meta[metaKey] = metaValue;
+                            }
+                        }
+                    }
+
+                    entries.push(entry);
+                }
+            }
+
+            // Markers
+            for (let areaName in LAM.areas) {
+                let area = LAM.areas[areaName];
+                for(let i in area.markerLayer.markers) {
+                    let markerData = area.markerLayer.markers[i];
+
+                    switch (markerData.type) {
+                        case MarkerTypeEnum.ZoningWorld:
+                        case MarkerTypeEnum.Zoning:
+                        case MarkerTypeEnum.ZoningIsland:
+                        case MarkerTypeEnum.ZoningIslandFlux:
+                        case MarkerTypeEnum.ZoningIslandPVP:
+                        case MarkerTypeEnum.Internal:
+                        {
+                            continue;
+                        }
+                    }
+
+                    if(markerData.title === undefined
+                        && markerData.titleKR === undefined
+                        && markerData.popupText === undefined
+                        && markerData.popupTextKR === undefined
+                        && markerData.hintText === undefined
+                        && markerData.hintTextKR === undefined){
+                        continue;
+                    }
+
+                    entries.push({
+                        area: area,
+                        id: markerData.id,
+                        type: SearchResultTypeEnum.Marker,
+
+                        // Fields to search in
+                        title: markerData.title,
+                        titleKR: markerData.titleKR,
+                        popupText: markerData.popupText,
+                        popupTextKR: markerData.popupTextKR,
+                        hintText: markerData.hintText,
+                        hintTextKR: markerData.hintTextKR
+                    });
+                }
+            }
+
+            // FAQ
+            for(let i in LAM.faq.entries) {
+                let faqData = LAM.faq.entries[i];
+                entries.push({
+                    id: faqData.id,
+                    type: SearchResultTypeEnum.FAQ,
+
+                    // Fields to search in
+                    text: faqData.q,
+                    textAlt: faqData.a
+                })
+            }
+
+            // Guides
+            for(let i in LAM.guide.entries) {
+                let guideData = LAM.guide.entries[i];
+                entries.push({
+                    id: guideData.id,
+                    type: SearchResultTypeEnum.Guide,
+
+                    // Fields to search in
+                    title: guideData.title
+                });
+            }
+
+            console.log("Initializing search with " + entries.length + " Entries");
             this.fuse = new Fuse(entries, this.fuseOptions);
         }
 
@@ -50,6 +159,9 @@
 
         execSearch(text) {
             this.clearResults();
+
+            let fuseResults = this.fuse.search(text);
+            console.log(fuseResults);
 
             if(text === undefined || text === null || text === "") {
                 return;
