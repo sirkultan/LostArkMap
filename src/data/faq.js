@@ -34,6 +34,10 @@
         {
             q: "How to continue main quest after Shushire and on 4/7 progress?",
             a: "that content is not released yet"
+        },
+        {
+            q: "How do i leave Party?",
+            a: "type /파티탈퇴 or right click your name and select 1st option"
         }
     ];
 
