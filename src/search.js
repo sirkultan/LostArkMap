@@ -134,7 +134,6 @@
                 title: name,
                 teleportTo: GetBoundsCenter(zoneData.bounds),
                 teleportArea: areaName,
-                teleportZoom: 1,
                 match: match
             };
 
@@ -194,10 +193,8 @@
             }
 
             if(markerData.title !== undefined) {
-                console.log(markerData.title);
                 result.description = result.title;
                 result.title = markerData.title;
-                console.log(result);
             }
 
             if(markerData.popupText !== undefined) {
@@ -207,8 +204,6 @@
 
             return result;
         }
-
-
 
         searchInGuides(regex, target) {
             for(let i in LAM.guides) {
