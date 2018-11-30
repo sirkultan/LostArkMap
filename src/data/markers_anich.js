@@ -1163,6 +1163,14 @@
             "id": 165,
             "hintImage": "anich/TreasureMap2.jpg",
             "hintText": "map is rotated"
+        },
+        {
+            "x": -191.25,
+            "y": 123.82,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 166,
+            "hintImage": "anich/TreasureMap3.jpg",
+            "hintText": "requires Heavenly Harmony song"
         }
     ];
 

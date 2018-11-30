@@ -1,0 +1,34 @@
+{
+  "name": "lam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Craiel/LostArkMap.git"
+  },
+  "author": "Craiel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Craiel/LostArkMap/issues"
+  },
+  "homepage": "https://craiel.github.io/LostArkMap/index.html",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^4.0.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-obfuscate": "^0.2.9",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglify-es": "^1.0.4"
+  },
+  "dependencies": {}
+}

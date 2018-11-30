@@ -3,3 +3,6 @@ cache_data/
 cache_evaluate/
 .idea/
 venv/
+node_modules/
+
+package-lock.json
