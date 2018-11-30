@@ -6,10 +6,30 @@
             this.activeSearchEntries = {};
             this.activeSearchText = undefined;
             this.nextSearchResultId = 0;
+            this.fuse = undefined;
+            this.fuseOptions = {
+                shouldSort: true,
+                threshold: 0.6,
+                location: 0,
+                distance: 100,
+                maxPatternLength: 32,
+                minMatchCharLength: 1,
+                keys: [
+                ]
+            }
         }
 
         initialize() {
+            this.initializeFuse();
             this.initializeUI();
+        }
+
+        initializeFuse(){
+            let entries = [];
+
+            // TODO: gather all entries that we want to be able to search
+
+            this.fuse = new Fuse(entries, this.fuseOptions);
         }
 
         initializeUI() {

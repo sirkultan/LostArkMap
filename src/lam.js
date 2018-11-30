@@ -135,8 +135,6 @@ let LAM = (function(){
                 $('#la_editor').hide();
             }
 
-            LAM.search.initialize();
-
             $('#copyTextModal-copy').click(function(e){
                 $('#copyTextModal-text').select();
                 document.execCommand("copy");
@@ -153,6 +151,9 @@ let LAM = (function(){
             this.rebuildStats();
             this.buildGuidesContent();
             this.buildFAQContent();
+
+            // Search needs to initialize after all content is complete
+            LAM.search.initialize();
 
             this.processUrlParameters();
 
