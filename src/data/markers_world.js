@@ -183,7 +183,7 @@
         {
             "x": -191.62517789130817,
             "y": 343.2189722518653,
-            "type": MarkerTypeEnum.ZoningPVP,
+            "type": MarkerTypeEnum.ZoningIslandPVP,
             "id": 20,
             "teleportTo": [
                 -169.75,
@@ -300,7 +300,7 @@
         {
             "x": -224.24989993613917,
             "y": 369.749897422216,
-            "type": MarkerTypeEnum.ZoningPVP,
+            "type": MarkerTypeEnum.ZoningIslandPVP,
             "id": 29,
             "teleportTo": [
                 -215.23,
@@ -411,7 +411,7 @@
                 393.24
             ],
             "teleportArea": "Islands",
-            "title": "To Porete",
+            "title": "To Forpe",
             "titleKR": "포르페"
         },
         {
@@ -664,7 +664,7 @@
         {
             "x": -171.1249777635865,
             "y": 279.3750341925946,
-            "type": MarkerTypeEnum.ZoningPVP,
+            "type": MarkerTypeEnum.ZoningIslandPVP,
             "id": 57,
             "teleportTo": [
                 -132.77,
@@ -690,7 +690,7 @@
         {
             "x": -158.18730543138167,
             "y": 238.68741451851335,
-            "type": MarkerTypeEnum.ZoningPVP,
+            "type": MarkerTypeEnum.ZoningIslandPVP,
             "id": 59,
             "teleportTo": [
                 -120,
@@ -742,7 +742,7 @@
         {
             "x": -225.625,
             "y": 178.40660902224394,
-            "type": MarkerTypeEnum.ZoningPVP,
+            "type": MarkerTypeEnum.ZoningIslandPVP,
             "id": 63,
             "teleportTo": [
                 -215.76,
@@ -960,7 +960,7 @@
         {
             "x": -265.6875,
             "y": 163.7492819555121,
-            "type": MarkerTypeEnum.ZoningPVP,
+            "type": MarkerTypeEnum.ZoningIslandPVP,
             "id": 89,
             "title": "To Goblin Island",
             "titleKR": "고블린 섬"
@@ -1024,7 +1024,7 @@
         {
             "x": -333.250044472827,
             "y": 187.937397422216,
-            "type": MarkerTypeEnum.ZoningPVP,
+            "type": MarkerTypeEnum.ZoningIslandPVP,
             "id": 97,
             "title": "To Outlaw Island",
             "titleKR": "무법자의 섬"
@@ -1368,7 +1368,7 @@
         {
             "x": -227.12503335462029,
             "y": 297.4999316148107,
-            "type": MarkerTypeEnum.ZoningPVP,
+            "type": MarkerTypeEnum.ZoningIslandPVP,
             "id": 138,
             "title": "To Misguided Island",
             "titleKR": "그릇된 욕망의 섬"

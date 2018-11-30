@@ -143,10 +143,26 @@
                         idPrefix = '#' + (markerData.id + 1) + ' ';
                     }
 
+                    let title = undefined;
+                    switch (markerData.type) {
+                        case MarkerTypeEnum.ZoningIsland:
+                        case MarkerTypeEnum.ZoningIslandFlux:
+                        case MarkerTypeEnum.ZoningIslandPVP:
+                        {
+                            break;
+                        }
+
+                        default:
+                        {
+                            title = idPrefix + markerData.title;
+                            break;
+                        }
+                    }
+
                     let result = L.marker([markerData.x, markerData.y], {
                         icon: LAM.getMarkerIcon(markerData.type),
                         draggable: Constants.EditMode && markerData.isGenerated !== true,
-                        title:  idPrefix + markerData.title
+                        title: title
                     });
 
                     return result;
@@ -274,7 +290,7 @@
             switch (markerData.type) {
                 case MarkerTypeEnum.ZoningIslandFlux:
                 case MarkerTypeEnum.ZoningIsland:
-                case MarkerTypeEnum.ZoningPVP: {
+                case MarkerTypeEnum.ZoningIslandPVP: {
                     if(markerData.isGenerated === true || markerData.area !== "World" || markerData.teleportTo === undefined) {
                         return;
                     }
@@ -353,7 +369,7 @@
                 }
 
                 case MarkerTypeEnum.Zoning:
-                case MarkerTypeEnum.ZoningPVP:
+                case MarkerTypeEnum.ZoningIslandPVP:
                 case MarkerTypeEnum.ZoningIsland:
                 case MarkerTypeEnum.ZoningIslandFlux:
                 case MarkerTypeEnum.ZoningWorld: {

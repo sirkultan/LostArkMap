@@ -33,7 +33,7 @@
             해바라기 섬 - Sunflower Island
             별빛 등대의 섬 - Starlight Lighthouse Island
             판다 푸푸 섬 - Panda Pupu Island
-            포르페 - Porete
+            포르페 - Forpe
             거북 섬 - Turtle Island
             노토스 섬 - Notos Island
             토토실버 섬 - Toto Silver Island

@@ -434,7 +434,7 @@ let LAM = (function(){
                     case MarkerTypeEnum.Internal:
                     case MarkerTypeEnum.Notice:
                     case MarkerTypeEnum.Zoning:
-                    case MarkerTypeEnum.ZoningPVP:
+                    case MarkerTypeEnum.ZoningIslandPVP:
                     case MarkerTypeEnum.ZoningIsland:
                     case MarkerTypeEnum.ZoningIslandFlux:
                     case MarkerTypeEnum.ZoningWorld:
