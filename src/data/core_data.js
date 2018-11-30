@@ -1,11 +1,14 @@
-let Constants = Object.freeze({
+const Constants = Object.freeze({
     "EditMode": false,
     "TileSize": 512,
     "ErrorImagePath": 'maps/areas/blank.png',
-    'AchievementMarkerColor': '#ff9900'
+    'AchievementMarkerColor': '#ff9900',
+    'FPS': 30,
+    'SettingsVersion': 1,
+    'SettingsKey': 'LAM_SETTINGS'
 });
 
-let ContentTypeEnum = Object.freeze({
+const ContentTypeEnum = Object.freeze({
     "AreaMap": "content_area_map",
     "TreasureMap": "content_treasure_map",
     "Guides": "content_guides",
@@ -14,7 +17,7 @@ let ContentTypeEnum = Object.freeze({
     "Statistics": "content_statistics"
 });
 
-let MapTypeEnum = Object.freeze({
+const MapTypeEnum = Object.freeze({
     "Continent": 1,
     "City": 2,
     "World": 3,
@@ -23,14 +26,14 @@ let MapTypeEnum = Object.freeze({
     "Internal": 999
 });
 
-let MarkerStyleEnum = Object.freeze({
+const MarkerStyleEnum = Object.freeze({
     "Point": 1,
     "Rectangle": 2,
     "Circle": 3,
     "Label": 4,
 });
 
-let MarkerTypeEnum = Object.freeze({
+const MarkerTypeEnum = Object.freeze({
     "Internal": undefined,
     "Boss": "boss.png",
     "CookingIngredient": "cookingingredient.png",
@@ -64,11 +67,18 @@ let MarkerTypeEnum = Object.freeze({
     "Note": "note.png"
 });
 
-let SearchResultTypeEnum = Object.freeze({
+const SearchResultTypeEnum = Object.freeze({
     "Area": "area",
     "Marker": "marker",
     "Guide": "guide",
     "FAQ": "faq"
+});
+
+const EditorModeEnum = Object.freeze({
+    "Add": 0,
+    "Delete": 1,
+    "Modify": 2,
+    "Move": 3
 });
 
 /**
@@ -236,10 +246,3 @@ MarkerTypeDefaultTitle = function(markerType) {
         }
     }
 };
-
-let EditorModeEnum = Object.freeze({
-    "Add": 0,
-    "Delete": 1,
-    "Modify": 2,
-    "Move": 3
-});

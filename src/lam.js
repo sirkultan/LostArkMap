@@ -13,6 +13,12 @@ let LAM = (function(){
             this.activeContent = undefined;
             this.suspendStatUpdate = true;
             this.copyLocationMode = false;
+            this.intervals = [];
+            this.lastUpdateTime = 0;
+        }
+
+        createInterval(name, callback, delay) {
+            this.intervals[name] = {c: callback, d: delay, e: 0}
         }
 
         onMapClick(e) {
@@ -152,6 +158,7 @@ let LAM = (function(){
             LAM.search.initialize();
             LAM.guide.initialize();
             LAM.faq.initialize();
+            LAM.settings.initialize();
 
             this.processUrlParameters();
 
@@ -160,6 +167,29 @@ let LAM = (function(){
                     LAM.map.invalidateSize();
                 });
             });
+
+            window.requestAnimationFrame(LAM.updateFrame);
+        }
+
+        updateFrame(time) {
+            let delta = time - LAM.lastUpdateTime;
+            if (delta > 1000 / (Constants.FPS || 10)) {
+                LAM.update(delta);
+                LAM.lastUpdateTime = time;
+            }
+
+            window.requestAnimationFrame(LAM.updateFrame);
+        }
+
+        update(delta) {
+            for (let name in this.intervals) {
+                let data = this.intervals[name];
+                data.e += delta;
+                if (data.e > data.d) {
+                    data.c(this, data.e / 1000);
+                    data.e = 0;
+                }
+            }
         }
 
         processUrlParameters() {
