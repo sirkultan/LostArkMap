@@ -1288,6 +1288,13 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 158,
             "hintImage": "artemis/TreasureMap22.jpg"
+        },
+        {
+            "x": -58.625,
+            "y": 245.01,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 159,
+            "hintImage": "artemis/TreasureMap23.jpg"
         }
     ];
 
