@@ -1204,6 +1204,13 @@
             "y": 323.07,
             "type": MarkerTypeEnum.Mokoko,
             "id": 202
+        },
+        {
+            "x": -435.37,
+            "y": 379.31,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 203,
+            "hintImage": "islands/TreasureMap1.jpg"
         }
     ];
 

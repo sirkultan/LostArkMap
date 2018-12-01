@@ -1302,6 +1302,34 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 160,
             "hintImage": "artemis/TreasureMap24.jpg"
+        },
+        {
+            "x": -427.4,
+            "y": 245.84,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 161,
+            "hintImage": "artemis/TreasureMap25.jpg"
+        },
+        {
+            "x": -428.59,
+            "y": 267.27,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 162,
+            "hintImage": "artemis/TreasureMap26.jpg"
+        },
+        {
+            "x": -413.6,
+            "y": 249.4,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 163,
+            "hintImage": "artemis/TreasureMap27.jpg"
+        },
+        {
+            "x": -253.85,
+            "y": 292.65,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 164,
+            "hintImage": "artemis/TreasureMap28.jpg"
         }
     ];
 
