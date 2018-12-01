@@ -126,7 +126,10 @@
             "type": MarkerTypeEnum.Zoning,
             "id": 15,
             "title": "Baedan's Hideout Dungeon",
-            "teleportTo": [-395.97, 350.69]
+            "teleportTo": [
+                -395.97,
+                350.69
+            ]
         },
         {
             "x": -476.09,
@@ -946,6 +949,18 @@
             "type": MarkerTypeEnum.Mokoko,
             "id": 130,
             "hintImage": "shushire/BaedanMokokoHint5.jpg"
+        },
+        {
+            "x": -436.16,
+            "y": 61.91,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 131
+        },
+        {
+            "x": -437.35,
+            "y": 63.72,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 132
         }
     ];
 
