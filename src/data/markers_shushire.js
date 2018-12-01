@@ -125,7 +125,8 @@
             "y": 88.57,
             "type": MarkerTypeEnum.Zoning,
             "id": 15,
-            "title": "Baedan's Hideout Dungeon"
+            "title": "Baedan's Hideout Dungeon",
+            "teleportTo": [-395.97, 350.69]
         },
         {
             "x": -476.09,
