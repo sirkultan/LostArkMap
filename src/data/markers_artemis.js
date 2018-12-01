@@ -1301,7 +1301,8 @@
             "y": 246.76,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 160,
-            "hintImage": "artemis/TreasureMap24.jpg"
+            "hintImage": "artemis/TreasureMap24.jpg",
+            "hintText": "Requires Music of Starlight"
         },
         {
             "x": -427.4,

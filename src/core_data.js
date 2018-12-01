@@ -5,7 +5,8 @@ const Constants = Object.freeze({
     'AchievementMarkerColor': '#ff9900',
     'FPS': 30,
     'SettingsVersion': 1,
-    'SettingsKey': 'LAM_SETTINGS'
+    'SettingsKey': 'LAM_SETTINGS',
+    'MaxSearchResults': 50
 });
 
 const ContentTypeEnum = Object.freeze({

@@ -720,7 +720,6 @@
         {
             "x": -87.81,
             "y": 214.69,
-            "popupText": "NOTSET",
             "type": MarkerTypeEnum.HiddenStory,
             "hintImage": "lutheran/VilblinHiddenStoryHint4.jpg",
             "id": 95
@@ -813,7 +812,6 @@
         {
             "x": -110.81,
             "y": 385.74,
-            "popupText": "NOTSET",
             "type": MarkerTypeEnum.TreasureBox,
             "hintImage": "lutheran/PlainsTreasureHint1.jpg",
             "id": 108
@@ -918,7 +916,6 @@
         {
             "x": -109.76,
             "y": 109.78,
-            "popupText": "NOTSET",
             "type": MarkerTypeEnum.Mokoko,
             "hintImage": "lutheran/GrayHammerMokokoHint1.jpg",
             "id": 124
@@ -926,7 +923,6 @@
         {
             "x": -101.82,
             "y": 92.09,
-            "popupText": "NOTSET",
             "type": MarkerTypeEnum.Mokoko,
             "hintImage": "lutheran/GrayHammerMokokoHint2.jpg",
             "id": 125
@@ -934,7 +930,6 @@
         {
             "x": -94.51,
             "y": 101.16,
-            "popupText": "NOTSET",
             "type": MarkerTypeEnum.Mokoko,
             "hintImage": "lutheran/GrayHammerMokokoHint3.jpg",
             "id": 126
@@ -942,7 +937,6 @@
         {
             "x": -87.82,
             "y": 132.95,
-            "popupText": "NOTSET",
             "type": MarkerTypeEnum.Mokoko,
             "hintImage": "lutheran/GrayHammerMokokoHint4.jpg",
             "id": 127
@@ -950,7 +944,6 @@
         {
             "x": -90.07,
             "y": 136.1,
-            "popupText": "NOTSET",
             "type": MarkerTypeEnum.Mokoko,
             "hintImage": "lutheran/GrayHammerMokokoHint4.jpg",
             "id": 128
@@ -958,7 +951,6 @@
         {
             "x": -62.75,
             "y": 103.86,
-            "popupText": "NOTSET",
             "type": MarkerTypeEnum.Mokoko,
             "hintImage": "lutheran/GrayHammerMokokoHint5.jpg",
             "id": 129
@@ -966,7 +958,6 @@
         {
             "x": -71.77,
             "y": 80.36,
-            "popupText": "NOTSET",
             "type": MarkerTypeEnum.Mokoko,
             "hintImage": "lutheran/GrayHammerMokokoHint6.jpg",
             "id": 130
@@ -974,7 +965,6 @@
         {
             "x": -45.45,
             "y": 43.88,
-            "popupText": "NOTSET",
             "type": MarkerTypeEnum.Mokoko,
             "hintImage": "lutheran/GrayHammerMokokoHint7.jpg",
             "id": 131
@@ -982,7 +972,6 @@
         {
             "x": -22.75,
             "y": 56.06,
-            "popupText": "NOTSET",
             "type": MarkerTypeEnum.Mokoko,
             "hintImage": "lutheran/GrayHammerMokokoHint8.jpg",
             "id": 132
@@ -990,7 +979,6 @@
         {
             "x": -43.57,
             "y": 74.99,
-            "popupText": "NOTSET",
             "type": MarkerTypeEnum.Mokoko,
             "hintImage": "lutheran/GrayHammerMokokoHint9.jpg",
             "id": 133
@@ -998,7 +986,6 @@
         {
             "x": -44.14,
             "y": 87.48,
-            "popupText": "NOTSET",
             "type": MarkerTypeEnum.Mokoko,
             "hintImage": "lutheran/GrayHammerMokokoHint10.jpg",
             "id": 134
@@ -1006,7 +993,6 @@
         {
             "x": -12.38,
             "y": 89.73,
-            "popupText": "NOTSET",
             "type": MarkerTypeEnum.Mokoko,
             "hintImage": "lutheran/GrayHammerMokokoHint11.jpg",
             "id": 135

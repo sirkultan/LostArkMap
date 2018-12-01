@@ -3,7 +3,8 @@
     class LostArkGuide {
 
         constructor() {
-            this.entries = [];
+            this.entries = {};
+            this.nextEntryId = 0;
         }
 
         initialize() {
@@ -33,11 +34,8 @@
 
                 guideContainer.append(guideElement);
 
-                this.entries.push({
-                    title: guideData.title,
-                    url: guideData.url,
-                    preview: guideData.preview
-                });
+                guideData.id = this.nextEntryId++;
+                this.entries[guideData.id] = guideData;
             }
         }
     }

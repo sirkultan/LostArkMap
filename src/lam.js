@@ -145,6 +145,14 @@ let LAM = (function(){
                 $('#copyTextModal').modal('toggle');
             });
 
+            $('.hard-map-link').on('click', function () {
+                let area = $(this).data('area');
+                let position = [$(this).data('tx'), $(this).data('ty')];
+                let zoom = $(this).data('zoom');
+
+                LAM.gotoMapArea(position, area, zoom);
+            });
+
             L.easyButton('fa-crosshairs', function(btn, map){
                 //helloPopup.setLatLng(map.getCenter()).openOn(map);
                 L.DomUtil.addClass(map._container,'crosshair-cursor-enabled');
@@ -154,11 +162,12 @@ let LAM = (function(){
             this.suspendStatUpdate = false;
             this.rebuildStats();
 
-            // Search needs to initialize after all content is complete
-            LAM.search.initialize();
             LAM.guide.initialize();
             LAM.faq.initialize();
             LAM.settings.initialize();
+
+            // Search needs to initialize after all content is complete
+            LAM.search.initialize();
 
             this.processUrlParameters();
 

@@ -54,6 +54,10 @@
     font-weight: bold;
 }
 
+.table-filter .search-content .search-match-mark {
+    color: #008cda;
+}
+
 .background-search-all {
     background-color:#555555;
 }
@@ -84,4 +88,9 @@
 
 .table-filter .search-content .title span.guide {
     color: #da5555;
+}
+
+.searchResultLimitWarning {
+    color: #9a0000;
+    font-weight: bold;
 }

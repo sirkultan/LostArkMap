@@ -5,8 +5,11 @@
             n: "1.0",
             e: [
                 'Added "What\'s New" Dialog',
-                'Added 5 new FAQ Entries',
-                'Added 8 Treasuremap\'s and Identified some'
+                'Added 2 Mokoko Seeds',
+                "Added 9 Treasuremaps and Identified some",
+                'Added 5 FAQ Entries',
+                'Search Engine overhaul for more accurate results',
+                "Fixed some incorrect map markers"
             ]
         }
     };

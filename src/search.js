@@ -7,13 +7,17 @@
             this.activeSearchText = undefined;
             this.nextSearchResultId = 0;
             this.fuse = undefined;
+            this.entryCountTotal = 0;
+            this.entryCountByType = {};
             this.fuseOptions = {
                 shouldSort: true,
-                threshold: 0.2,
+                threshold: 0.1,
                 location: 0,
-                distance: 100,
-                maxPatternLength: 32,
+                distance: 10000,
+                maxPatternLength: 64,
                 minMatchCharLength: 1,
+                tokenize: true,
+                matchAllTokens: true,
                 includeMatches: true,
                 keys: [
                     'text',
@@ -23,7 +27,10 @@
                     'hintText',
                     'hintTextKR',
                     'popupText',
-                    'meta.heart',
+
+                    // Note: Disabled heart cause we make markers with special text on the island, removes double search result
+                    //'meta.heart',
+
                     'meta.heartKR',
                     'meta.entry',
                 ]
@@ -41,10 +48,17 @@
             // TODO: gather all entries that we want to be able to search
 
             // Area
+            this.entryCountByType[SearchResultTypeEnum.Area] = 0;
             for (let areaName in LAM.areas) {
                 let area = LAM.areas[areaName];
                 for(let zoneName in area.maps) {
                     let zoneData = area.maps[zoneName];
+                    switch (zoneData.type) {
+                        case MapTypeEnum.Internal: {
+                            continue;
+                        }
+                    }
+
                     let entry = {
                         area: areaName,
                         zone: zoneName,
@@ -65,11 +79,13 @@
                         }
                     }
 
+                    this.entryCountByType[SearchResultTypeEnum.Area]++;
                     entries.push(entry);
                 }
             }
 
             // Markers
+            this.entryCountByType[SearchResultTypeEnum.Marker] = 0;
             for (let areaName in LAM.areas) {
                 let area = LAM.areas[areaName];
                 for(let i in area.markerLayer.markers) {
@@ -97,8 +113,8 @@
                     }
 
                     entries.push({
-                        area: area,
                         id: markerData.id,
+                        area: areaName,
                         type: SearchResultTypeEnum.Marker,
 
                         // Fields to search in
@@ -109,12 +125,15 @@
                         hintText: markerData.hintText,
                         hintTextKR: markerData.hintTextKR
                     });
+
+                    this.entryCountByType[SearchResultTypeEnum.Marker]++;
                 }
             }
 
             // FAQ
-            for(let i in LAM.faq.entries) {
-                let faqData = LAM.faq.entries[i];
+            this.entryCountByType[SearchResultTypeEnum.FAQ] = 0;
+            for(let id in LAM.faq.entries) {
+                let faqData = LAM.faq.entries[id];
                 entries.push({
                     id: faqData.id,
                     type: SearchResultTypeEnum.FAQ,
@@ -122,12 +141,15 @@
                     // Fields to search in
                     text: faqData.q,
                     textAlt: faqData.a
-                })
+                });
+
+                this.entryCountByType[SearchResultTypeEnum.FAQ]++;
             }
 
             // Guides
-            for(let i in LAM.guide.entries) {
-                let guideData = LAM.guide.entries[i];
+            this.entryCountByType[SearchResultTypeEnum.Guide] = 0;
+            for(let id in LAM.guide.entries) {
+                let guideData = LAM.guide.entries[id];
                 entries.push({
                     id: guideData.id,
                     type: SearchResultTypeEnum.Guide,
@@ -135,9 +157,14 @@
                     // Fields to search in
                     title: guideData.title
                 });
+
+                this.entryCountByType[SearchResultTypeEnum.Guide]++;
             }
 
-            console.log("Initializing search with " + entries.length + " Entries");
+            this.entryCountTotal = entries.length;
+
+            $('#searchEntryCountInfo').text(this.entryCountTotal + ' Possible Results');
+
             this.fuse = new Fuse(entries, this.fuseOptions);
         }
 
@@ -160,46 +187,37 @@
         execSearch(text) {
             this.clearResults();
 
-            let fuseResults = this.fuse.search(text);
-            console.log(fuseResults);
-
             if(text === undefined || text === null || text === "") {
                 return;
             }
 
             this.activeSearchText = text;
 
-            let words = text.split(' ');
-            let regexStr = '';
-            for(let i in words) {
-                let word = words[i];
-                if(word === "" || word.length <= 2) {
-                    // Too short or invalid
-                    continue;
-                }
-
-                regexStr = regexStr + '(?=.*' + word + ')';
-            }
-
-            if(regexStr === ''){
+            let fuseResults = this.fuse.search(text);
+            if(fuseResults.length === 0) {
                 return;
             }
 
-            regexStr = regexStr + '.+';
-            let regex = new RegExp(regexStr, 'ig');
-            let results = [];
-            this.searchInAreaData(regex, results);
-            this.searchInMarkerData(regex, results);
-            this.searchInGuides(regex, results);
-            this.searchInFAQ(regex, results);
+            let resultParent = $('#searchResults');
 
-            if(results.length > 0) {
-                this.buildResultEntries(results);
-
-                this.updateResultCount(results.length);
-
-                $('#searchExamples').hide();
+            if(fuseResults.length > Constants.MaxSearchResults) {
+                $('#searchResultLimitWarning').show();
             }
+
+            this.updateResultCount(fuseResults.length);
+
+            for(let i in fuseResults) {
+                if(i >= Constants.MaxSearchResults) {
+                    break;
+                }
+
+                let element = this.buildResultEntryElement(fuseResults[i]);
+                if(element !== undefined){
+                    resultParent.append(element);
+                }
+            }
+
+            $('#searchExamples').hide();
         }
 
         updateResultCount(count) {
@@ -220,167 +238,7 @@
 
             $('#searchResults').empty();
             $('#searchExamples').show();
-        }
-
-        matchSearchAgainst(regex, text, altText) {
-            if(text !== undefined && regex.test(text)) {
-                return text;
-            }
-
-            if(altText !== undefined && regex.test(altText)) {
-                return altText;
-            }
-
-            return undefined;
-        }
-
-        searchInAreaData(regex, target) {
-            for (let areaName in LAM.areas) {
-                let area = LAM.areas[areaName];
-                for(let zoneName in area.maps) {
-                    let zoneData = area.maps[zoneName];
-                    let match = this.matchSearchAgainst(regex, zoneName, zoneData.kr);
-                    if(match !== undefined) {
-                        target.push(this.buildAreaResult(zoneName, areaName, zoneData, match));
-                        continue;
-                    }
-
-                    if(zoneData.meta !== undefined) {
-                        for(let metaKey in zoneData.meta) {
-                            let metaValue = zoneData.meta[metaKey];
-                            if(typeof metaValue === 'string') {
-                                match = this.matchSearchAgainst(regex, metaValue);
-                                if(match !== undefined){
-                                    target.push(this.buildAreaResult(zoneName, areaName, zoneData, metaKey + ': '+ match));
-                                    break;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        buildAreaResult(name, areaName, zoneData, match){
-            let result = {
-                type: SearchResultTypeEnum.Area,
-                title: name,
-                teleportTo: GetBoundsCenter(zoneData.bounds),
-                teleportArea: areaName,
-                match: match
-            };
-
-            return result;
-        }
-
-        searchInMarkerData(regex, target) {
-            for (let areaName in LAM.areas) {
-                let area = LAM.areas[areaName];
-                for(let i in area.markerLayer.markers) {
-                    let markerData = area.markerLayer.markers[i];
-
-                    // Title
-                    let match = this.matchSearchAgainst(regex, markerData.title, markerData.titleKR);
-                    if(match !== undefined){
-                        target.push(this.buildMarkerSearchResult(markerData, match));
-                        continue;
-                    }
-
-                    // Popup Text
-                    match = this.matchSearchAgainst(regex, markerData.popupText, markerData.popupTextKR);
-                    if(match !== undefined){
-                        target.push(this.buildMarkerSearchResult(markerData, match));
-                        continue;
-                    }
-
-                    // Hint Text
-                    match = this.matchSearchAgainst(regex, markerData.hintText, markerData.hintTextKR);
-                    if(match !== undefined){
-                        target.push(this.buildMarkerSearchResult(markerData, match));
-                        continue;
-                    }
-
-                    // Type
-                    match = this.matchSearchAgainst(regex, 't:' + GetKeyByValue(MarkerTypeEnum, markerData.type));
-                    if(match !== undefined){
-                        target.push(this.buildMarkerSearchResult(markerData, undefined));
-                        continue;
-                    }
-                }
-            }
-        }
-
-        buildMarkerSearchResult(markerData, match) {
-            let result = {
-                type: SearchResultTypeEnum.Marker,
-                title: markerData.area + ' ' + GetKeyByValue(MarkerTypeEnum, markerData.type),
-                teleportTo: [markerData.x, markerData.y],
-                teleportArea: markerData.area,
-                icon: 'images/icons/' + markerData.type,
-                match: match
-            };
-
-            // Order here matters
-            if(markerData.isGenerated !== true) {
-                result.title = result.title + ' #' + markerData.id;
-            }
-
-            if(markerData.title !== undefined) {
-                result.description = result.title;
-                result.title = markerData.title;
-            }
-
-            if(markerData.popupText !== undefined) {
-                result.description = result.title;
-                result.title = markerData.popupText;
-            }
-
-            return result;
-        }
-
-        searchInGuides(regex, target) {
-            for(let i in LAM.guide.entries) {
-                let guideData = LAM.guide.entries[i];
-                let match = this.matchSearchAgainst(regex, guideData.title);
-                if(match !== undefined) {
-                    target.push({
-                        type: SearchResultTypeEnum.Guide,
-                        title: guideData.title,
-                        url: guideData.url
-                    });
-                }
-            }
-        }
-
-        searchInFAQ(regex, target) {
-            for(let i in LAM.faq.entries) {
-                let faqData = LAM.faq.entries[i];
-                let match = this.matchSearchAgainst(regex, faqData.q, faqData.a);
-                if(match !== undefined){
-                    target.push({
-                        type: SearchResultTypeEnum.FAQ,
-                        title: faqData.q,
-                        match: faqData.a,
-                        icon: faqData.img
-                    });
-                }
-            }
-        }
-
-        buildResultEntries(results) {
-            if(results === undefined || results.length === 0) {
-                console.log("Search returned no Results");
-                return;
-            }
-
-            let entryParent = $('#searchResults');
-            for(let i in results) {
-                let entryData = results[i];
-                let entry = this.buildResultEntry(entryData);
-                if(entry !== undefined){
-                    entryParent.append(entry);
-                }
-            }
+            $('#searchResultLimitWarning').hide();
         }
 
         gotoSearchResult(id) {
@@ -389,15 +247,146 @@
                 return;
             }
 
-            if(entryData.teleportTo !== undefined) {
-                LAM.gotoMapArea(entryData.teleportTo, entryData.teleportArea, entryData.teleportZoom);
+            let data = this.getSearchResultSourceData(entryData.item);
+            if(data === undefined) {
+                return;
+            }
+
+            switch (entryData.item.type) {
+                case SearchResultTypeEnum.Area: {
+                    if(data.bounds === undefined) {
+                        return;
+                    }
+
+                    LAM.gotoMapArea(GetBoundsCenter(data.bounds), entryData.item.area);
+                    return;
+                }
+
+                case SearchResultTypeEnum.Marker:
+                {
+                    console.log(data);
+                    LAM.gotoMapArea([data.x, data.y], data.area);
+                    return;
+                }
             }
         }
 
-        buildResultEntry(entryData) {
-            entryData.id = this.nextSearchResultId++;
+        getSearchResultSourceData(entry) {
+            switch (entry.type) {
+                case SearchResultTypeEnum.Area: {
+                    return LAM.areas[entry.area].maps[entry.zone];
+                }
 
-            let row = $('<tr data-status="' + entryData.type + '"></tr>');
+                case SearchResultTypeEnum.FAQ: {
+                    return LAM.faq.entries[entry.id];
+                }
+
+                case SearchResultTypeEnum.Guide: {
+                    return LAM.guide.entries[entry.id];
+                }
+
+                case SearchResultTypeEnum.Marker: {
+                    return LAM.areas[entry.area].markerLayer.markerIdLookup[entry.id];
+                }
+            }
+        }
+
+        getSearchResultLink(entry, resultId) {
+            let data = this.getSearchResultSourceData(entry);
+            if(data === undefined) {
+                return undefined;
+            }
+
+            switch (entry.type) {
+                case SearchResultTypeEnum.Guide:
+                case SearchResultTypeEnum.FAQ: {
+                    if(data.url !== undefined) {
+                        return $('<a type="button" class="btn btn-primary searchResultLink" href="' + data.url + '" target="_blank">Open</a>');
+                    }
+
+                    return undefined;
+                }
+
+                case SearchResultTypeEnum.Marker:
+                case SearchResultTypeEnum.Area: {
+                    return $('<a type="button" class="btn btn-primary searchResultLink" id="showSearchResult_' + resultId + '" href="#">Show</a>');
+                }
+            }
+
+            return undefined;
+        }
+
+        getSearchResultIcon(entry) {
+            let data = this.getSearchResultSourceData(entry);
+            if(data === undefined) {
+                return undefined;
+            }
+
+            let image = undefined;
+            switch (entry.type) {
+                case SearchResultTypeEnum.Marker:
+                {
+                    image = 'images/icons/' + data.type;
+                    break;
+                }
+
+                case SearchResultTypeEnum.Guide: {
+                    image = 'images/guides/' + data.preview;
+                    break;
+                }
+
+                case SearchResultTypeEnum.FAQ: {
+                    image = data.img;
+                    break;
+                }
+            }
+
+            if(image !== undefined) {
+                return $('<img src="' + image + '" class="search-icon">');
+            }
+
+            return undefined;
+        }
+
+        getSearchResultTitle(entry) {
+            let data = this.getSearchResultSourceData(entry);
+            if(data === undefined) {
+                return undefined;
+            }
+
+            switch (entry.type) {
+                case SearchResultTypeEnum.Area: {
+                    return entry.zone;
+                }
+
+                case SearchResultTypeEnum.Marker: {
+                    if(data.popupText !== undefined){
+                        return data.popupText;
+                    }
+
+                    if(data.title !== undefined) {
+                        return data.title;
+                    }
+
+                    return MarkerTypeDefaultTitle(data.type);
+                }
+
+                case SearchResultTypeEnum.Guide: {
+                    return data.title;
+                }
+
+                case SearchResultTypeEnum.FAQ: {
+                    return data.q;
+                }
+            }
+
+            return 'NOT_SET';
+        }
+
+        buildResultEntryElement(result) {
+            result.resultId = this.nextSearchResultId++;
+
+            let row = $('<tr data-status="' + result.item.type + '"></tr>');
 
             let linkColumn = $('<td></td>');
             row.append(linkColumn);
@@ -408,34 +397,58 @@
             let contentColumn = $('<td class="w-100"></td>');
             row.append(contentColumn);
 
-            if(entryData.teleportTo !== undefined) {
-                let link = $('<a type="button" class="btn btn-primary searchResultLink" id="showSearchResult_' + entryData.id + '" href="#">Show</a>');
-                linkColumn.append(link);
-            } else if(entryData.url !== undefined) {
-                let link = $('<a type="button" class="btn btn-primary searchResultLink" href="' + entryData.url + '" target="_blank">Open</a>');
-                linkColumn.append(link);
-            }
-
-            if(entryData.icon !== undefined) {
-                let icon = $('<img src="' + entryData.icon + '" class="search-icon">');
-                iconColumn.append(icon);
-            }
-
             let contentBody = $('<div class="search-content-body"></div>');
-            contentBody.append($('<h4 class=title>' + entryData.title + '<span class="float-right search-type ' + entryData.type + '">(' + GetKeyByValue(SearchResultTypeEnum, entryData.type) + ')</span></h4>'));
-            if(entryData.match !== undefined && entryData.match !== entryData.title) {
-                contentBody.append($('<p class="match">(' + entryData.match + ')</p>'));
-            }
-
-            if(entryData.description !== undefined) {
-                contentBody.append($('<p class="summary">' + entryData.description + '</p>'));
-            }
-
             let content = $('<div class="search-content"></div>');
             content.append(contentBody);
             contentColumn.append(content);
 
-            this.activeSearchEntries[entryData.id] = entryData;
+            // Link
+            let link = this.getSearchResultLink(result.item, result.resultId);
+            if(link !== undefined){
+                linkColumn.append(link);
+            }
+
+            // Icon
+            let icon = this.getSearchResultIcon(result.item);
+            if(icon !== undefined) {
+                iconColumn.append(icon);
+            }
+
+            let title = this.getSearchResultTitle(result.item);
+            contentBody.append($('<h4 class=title>' + title + '<span class="float-right search-type ' + result.item.type + '">(' + GetKeyByValue(SearchResultTypeEnum, result.item.type) + ')</span></h4>'));
+
+            // Content
+            let matchList = $('<ul></ul>');
+            content.append(matchList);
+            for(let i in result.matches) {
+                let matchData = result.matches[i];
+                let value = matchData.value;
+                let markedValue = "";
+                let currentOffset = 0;
+                for(let ix in matchData.indices) {
+                    let indexData = matchData.indices[ix];
+                    if(indexData[1] - indexData[0] <= 2) {
+                        // Don't mark too small results
+                        continue;
+                    }
+
+                    let segment = value.substring(indexData[0], indexData[1] + 1);
+                    if(segment === undefined || segment === "") {
+                        continue;
+                    }
+
+                    markedValue += value.substring(currentOffset, indexData[0]);
+                    markedValue += '<span class="search-match-mark">' + segment + '</span>';
+                    currentOffset = indexData[1] + 1;
+                }
+                if(currentOffset < value.length) {
+                    markedValue += value.substring(currentOffset, value.length);
+                }
+
+                matchList.append($('<li class="match">' + markedValue + '</li>'));
+            }
+
+            this.activeSearchEntries[result.resultId] = result;
 
             return row;
         }
@@ -448,7 +461,7 @@
         });
 
         $('.btn-filter').on('click', function () {
-            var target = $(this).data('target');
+            let target = $(this).data('target');
             if (target !== 'all') {
                 $('.table tr').css('display', 'none');
                 $('.table tr[data-status="' + target + '"]').fadeIn('slow');
@@ -458,7 +471,7 @@
         });
 
         $('.searchExample').on('click', function () {
-            var target = $(this).data('text');
+            let target = $(this).data('text');
             $('#searchField').val(target);
             LAM.search.execSearch(target);
         })

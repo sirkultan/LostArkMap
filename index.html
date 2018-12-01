@@ -342,6 +342,9 @@
                         </div>
                     </section>
 
+                    <div class="text-center">Note: Treasure Maps can be re-rolled by sacrificing any other map at a specific NPC in <a class="hard-map-link" href="#" data-area="Bern North" data-tx="-489.88" data-ty="200.78" data-zoom="4">Bern</a>.<br>For example you can use a low level 90 map to re-roll a high level 270 one that you can not find or do not want to do.<br><span class="font-italic font-weight-light">#Daxious</span></div>
+                    <br>
+
                     <div class="container">
                         <div class="row" id="content_treasure_map_list">
                         </div>
@@ -397,26 +400,21 @@
                 </div>
 
                 <div class="py-5 bg-light" id="content_search">
-                    <h2 class="text-center" id="searchResultCount">9999 Results</h2>
+                    <h2 class="text-center" id="searchResultCount">9999 Result(s)</h2>
+                    <div id="searchResultLimitWarning" class="text-center searchResultLimitWarning">Showing only 50 first results</div>
+                    <br>
+                    <div class="w-100">
+                        <div class="float-right" id="searchEntryCountInfo">N/A Possible Results</div>
+                    </div>
                     <br>
                     <div class="w-100">
                         <button class="btn btn-primary" id="searchCopyButton" type="button">Copy</button>
 
-                        <button class="float-right btn btn-success btn-filter background-faq-guide" data-target="faq"
-                                type="button">FAQ
-                        </button>
-                        <button class="float-right btn btn-success btn-filter background-search-guide" data-target="guide"
-                                type="button">Guides
-                        </button>
-                        <button class="float-right btn btn-success btn-filter background-search-marker" data-target="marker"
-                                type="button">Markers
-                        </button>
-                        <button class="float-right btn btn-success btn-filter background-search-area" data-target="area"
-                                type="button">Areas
-                        </button>
-                        <button class="float-right btn btn-success btn-filter background-search-all" data-target="all"
-                                type="button">All
-                        </button>
+                        <button class="float-right btn btn-success btn-filter background-faq-guide" data-target="faq" type="button">FAQ</button>
+                        <button class="float-right btn btn-success btn-filter background-search-guide" data-target="guide" type="button">Guides</button>
+                        <button class="float-right btn btn-success btn-filter background-search-marker" data-target="marker" type="button">Markers</button>
+                        <button class="float-right btn btn-success btn-filter background-search-area" data-target="area" type="button">Areas</button>
+                        <button class="float-right btn btn-success btn-filter background-search-all" data-target="all" type="button">All</button>
                     </div>
                     <div class="table-container">
                         <table class="table table-filter">
