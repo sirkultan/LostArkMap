@@ -217,7 +217,7 @@ let LAM = (function(){
                     list.append($('<li>' + versionData.e[i] + '</li>'));
                 }
 
-                contentElement.append(versionElement);
+                contentElement.prepend(versionElement);
 
                 hasContent = true;
             }
