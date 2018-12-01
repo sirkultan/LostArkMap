@@ -1121,6 +1121,14 @@
             "hintText": "레이크바 요리사NPC - 헬렌<br>모험의 서 요리로 제작 가능",
             "hintImage": "lutheran/GrayHammerFoodIngredientHint1.jpg",
             "id": 149
+        },
+        {
+            "x": -486.25,
+            "y": 242.05,
+            "type": MarkerTypeEnum.TreasureMap,
+            "hintText": "Needs Music of Courage to activate (the story music)",
+            "hintImage": "lutheran/TreasureMap5.jpg",
+            "id": 150
         }
     ];
 
