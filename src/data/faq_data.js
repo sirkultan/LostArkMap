@@ -38,6 +38,10 @@
         {
             q: "How do i leave Party?",
             a: "type /파티탈퇴 or right click your name and select 1st option"
+        },
+        {
+            q: "How do I get past the storm barrier?",
+            a: "Need to have 15 island Hearts"
         }
     ];
 
