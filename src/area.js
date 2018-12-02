@@ -73,6 +73,10 @@
 
         registerMap(name, data) {
             this.maps[name] = data;
+
+            if(data.bounds === undefined) {
+                console.warn("Area has no Bounds set: " + name + " @ " + this.name);
+            }
         }
 
         getZoneForPoint(x, y) {

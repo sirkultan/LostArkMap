@@ -7,7 +7,8 @@
     });
 
     area.registerMap("_achievement", {
-        type: MapTypeEnum.Internal
+        type: MapTypeEnum.Internal,
+        bounds: null
     });
 
     area.registerMap("Leonhard", {

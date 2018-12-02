@@ -794,7 +794,7 @@
         {
             "x": -174.38,
             "y": 344.08,
-            "type": MarkerTypeEnum.ZoningIsland,
+            "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 67,
             "title": "To Duki Island",
             "titleKR": "두키 섬",

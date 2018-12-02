@@ -16,7 +16,7 @@ GetBoundsCenter = function(bounds) {
  * @return {number[]}
  */
 GetBoundsSize = function(bounds) {
-    if(bounds === undefined){
+    if(bounds === undefined || bounds === null){
         return undefined;
     }
 
@@ -52,7 +52,7 @@ GetBounds = function(center, size) {
  * @return {boolean}
  */
 BoundsContain = function(bounds, point) {
-    if(bounds === undefined || point === undefined) {
+    if(bounds === undefined || bounds === null || point === undefined) {
         return false;
     }
 
