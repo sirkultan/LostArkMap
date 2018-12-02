@@ -390,13 +390,6 @@
             "hintImage": "anich/SoundMokokoHint4.jpg"
         },
         {
-            "x": -279.59,
-            "y": 136.09,
-            "type": MarkerTypeEnum.Mokoko,
-            "id": 56,
-            "hintImage": "anich/SoundMokokoHint5.jpg"
-        },
-        {
             "x": -277.96,
             "y": 131.78,
             "type": MarkerTypeEnum.Mokoko,
