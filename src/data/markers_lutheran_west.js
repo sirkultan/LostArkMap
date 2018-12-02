@@ -1272,6 +1272,14 @@
             "y": 430.87,
             "type": MarkerTypeEnum.NPCRepair,
             "id": 175
+        },
+        {
+            "x": -402.75,
+            "y": 377.4,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 176,
+            "hintImage": "lutheran/TreasureMap7.jpg",
+            "rarity": RarityEnum.Rare
         }
     ];
 
