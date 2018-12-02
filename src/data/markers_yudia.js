@@ -770,7 +770,43 @@
             "id": 101,
             "hintImage": "yudia/TreasureMap1.jpg",
             "hintText": "requires Song of Temptation (rewarded by getting 80% completion in Yudia)",
-            'rarity': RarityEnum.Rare
+            "rarity": RarityEnum.Rare
+        },
+        {
+            "x": -427.36,
+            "y": 438.49,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 102
+        },
+        {
+            "x": -368.67,
+            "y": 463.77,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 103
+        },
+        {
+            "x": -325.16,
+            "y": 441.41,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 104
+        },
+        {
+            "x": -353.6,
+            "y": 421.79,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 105
+        },
+        {
+            "x": -169.91,
+            "y": 283.67,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 106
+        },
+        {
+            "x": -210.16,
+            "y": 155.4,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 107
         }
     ];
 

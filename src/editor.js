@@ -31,6 +31,10 @@
                 exportData = exportData.replace(new RegExp('style": ' + MarkerStyleEnum[markerStyle], 'g'), 'style": MarkerStyleEnum.' + markerStyle);
             }
 
+            for(let rarity in RarityEnum) {
+                exportData = exportData.replace(new RegExp('rarity": ' + RarityEnum[rarity], 'g'), 'rarity": RarityEnum.' + rarity);
+            }
+
             return exportData;
         }
 

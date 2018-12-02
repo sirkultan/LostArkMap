@@ -541,7 +541,7 @@
             "hintText": "Might need special action to activate",
             "hintImage": "lutheran/TreasureMap1.jpg",
             "id": 71,
-            'rarity': RarityEnum.Rare
+            "rarity": RarityEnum.Rare
         },
         {
             "x": -89,
@@ -1116,7 +1116,7 @@
             "hintText": "Needs Music of Courage to activate (the story music)",
             "hintImage": "lutheran/TreasureMap5.jpg",
             "id": 150,
-            'rarity': RarityEnum.Rare
+            "rarity": RarityEnum.Rare
         },
         {
             "x": -103.1,
@@ -1125,7 +1125,79 @@
             "id": 151,
             "hintImage": "lutheran/TreasureMap6.jpg",
             "hintText": "Map is rotated",
-            'rarity': RarityEnum.Legendary
+            "rarity": RarityEnum.Legendary
+        },
+        {
+            "x": -420.61,
+            "y": 422.46,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 152
+        },
+        {
+            "x": -382.85,
+            "y": 449.69,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 153
+        },
+        {
+            "x": -430.42,
+            "y": 273.43,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 154
+        },
+        {
+            "x": -390.6,
+            "y": 228.95,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 155
+        },
+        {
+            "x": -260.6,
+            "y": 257.14,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 156
+        },
+        {
+            "x": -218.97,
+            "y": 231.78,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 157
+        },
+        {
+            "x": -213.85,
+            "y": 294.74,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 158
+        },
+        {
+            "x": -85.03,
+            "y": 278.93,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 159
+        },
+        {
+            "x": -79.47,
+            "y": 199.1,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 160
+        },
+        {
+            "x": -35.79,
+            "y": 281.59,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 161
+        },
+        {
+            "x": -113.36,
+            "y": 423.5,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 162
+        },
+        {
+            "x": -63.04,
+            "y": 458.31,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 163
         }
     ];
 

@@ -662,7 +662,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "lutheran/TreasureMap2.jpg",
             "id": 91,
-            'rarity': RarityEnum.Rare
+            "rarity": RarityEnum.Rare
         },
         {
             "x": -276.93647197685044,
@@ -971,7 +971,8 @@
             "y": 437.0628761185413,
             "type": MarkerTypeEnum.ZoningWorld,
             "teleportTo": [
-                -340.36, 325.52
+                -340.36,
+                325.52
             ],
             "teleportArea": "World",
             "id": 134,
@@ -1466,7 +1467,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 206,
             "hintImage": "lutheran/TreasureMap3.jpg",
-            'rarity': RarityEnum.Epic
+            "rarity": RarityEnum.Epic
         },
         {
             "x": -340.08,
@@ -1474,7 +1475,163 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 207,
             "hintImage": "lutheran/TreasureMap4.jpg",
-            'rarity': RarityEnum.Epic
+            "rarity": RarityEnum.Epic
+        },
+        {
+            "x": -341.08,
+            "y": 21.76,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 208
+        },
+        {
+            "x": -357.21,
+            "y": 24.61,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 209
+        },
+        {
+            "x": -352.83,
+            "y": 36.88,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 210
+        },
+        {
+            "x": -350.92,
+            "y": 87.27,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 211
+        },
+        {
+            "x": -357.96,
+            "y": 105.8,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 212
+        },
+        {
+            "x": -358.04,
+            "y": 98.93,
+            "type": MarkerTypeEnum.FavorNPC,
+            "id": 213
+        },
+        {
+            "x": -343.31,
+            "y": 99.02,
+            "type": MarkerTypeEnum.FavorNPC,
+            "id": 214
+        },
+        {
+            "x": -348.43,
+            "y": 86.38,
+            "type": MarkerTypeEnum.FavorNPC,
+            "id": 215
+        },
+        {
+            "x": -340.21,
+            "y": 171.01,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 216
+        },
+        {
+            "x": -349.35,
+            "y": 154.42,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 217
+        },
+        {
+            "x": -357.26,
+            "y": 216.09,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 218
+        },
+        {
+            "x": -344.31,
+            "y": 238.62,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 219
+        },
+        {
+            "x": -330.98,
+            "y": 214.45,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 220
+        },
+        {
+            "x": -300.51,
+            "y": 228.15,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 221
+        },
+        {
+            "x": -285.74,
+            "y": 215.53,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 222
+        },
+        {
+            "x": -284.51,
+            "y": 282.21,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 223
+        },
+        {
+            "x": -262.32,
+            "y": 286.11,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 224
+        },
+        {
+            "x": -297.48,
+            "y": 357.92,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 225
+        },
+        {
+            "x": -297.52,
+            "y": 334.13,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 226
+        },
+        {
+            "x": -264.3,
+            "y": 349.72,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 227
+        },
+        {
+            "x": -290.66,
+            "y": 413.74,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 228
+        },
+        {
+            "x": -289.63,
+            "y": 405.68,
+            "type": MarkerTypeEnum.FavorNPC,
+            "id": 229
+        },
+        {
+            "x": -284.54,
+            "y": 407.24,
+            "type": MarkerTypeEnum.FavorNPC,
+            "id": 230
+        },
+        {
+            "x": -333.68,
+            "y": 438.91,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 231
+        },
+        {
+            "x": -345.03,
+            "y": 428.54,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 232
+        },
+        {
+            "x": -358.48,
+            "y": 407.77,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 233
         }
     ];
 

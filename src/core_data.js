@@ -66,7 +66,8 @@ const MarkerTypeEnum = Object.freeze({
     "SeaAreaSiren": "seaareasiren.png",
     "SeaAreaStorm": "seaareastorm.png",
     "Note": "note.png",
-    "NativeVillage": "nativevillage.png"
+    "NativeVillage": "nativevillage.png",
+    "Waypoint": "waypoint.png"
 });
 
 const SearchResultTypeEnum = Object.freeze({
@@ -280,6 +281,10 @@ MarkerTypeDefaultTitle = function(markerType) {
 
         case MarkerTypeEnum.NativeVillage: {
             return "Native Village";
+        }
+
+        case MarkerTypeEnum.Waypoint: {
+            return "Waypoint";
         }
 
         default: {
