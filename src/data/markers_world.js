@@ -771,7 +771,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 65,
             "title": "To Ice Maze Island",
-            "titleKR": "얼음 미로의 섬"
+            "titleKR": "얼음 미로의 섬",
+            "teleportTo": [
+                -51.2,
+                331.14
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -172.65628891372364,
@@ -779,7 +784,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 66,
             "title": "To White Waves Island",
-            "titleKR": "하얀파도 섬"
+            "titleKR": "하얀파도 섬",
+            "teleportTo": [
+                -146.88,
+                337.96
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -174.38,
@@ -787,7 +797,13 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 67,
             "title": "To Duki Island",
-            "titleKR": "두키 섬"
+            "titleKR": "두키 섬",
+            "teleportTo": [
+                -249.39,
+                330.75
+            ],
+            "teleportArea": "Islands",
+            "noReverseLink": true
         },
         {
             "x": -249.99995552717297,
@@ -795,7 +811,12 @@
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 68,
             "title": "To Duki Island",
-            "titleKR": "두키 섬"
+            "titleKR": "두키 섬",
+            "teleportTo": [
+                -249.39,
+                330.75
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -374.62492217255266,
@@ -803,7 +824,13 @@
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 69,
             "title": "To Duki Island",
-            "titleKR": "두키 섬"
+            "titleKR": "두키 섬",
+            "teleportTo": [
+                -249.39,
+                330.75
+            ],
+            "teleportArea": "Islands",
+            "noReverseLink": true
         },
         {
             "x": -385.31226651765803,
@@ -819,7 +846,12 @@
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 71,
             "title": "To Bolard Island",
-            "titleKR": "볼라르 섬"
+            "titleKR": "볼라르 섬",
+            "teleportTo": [
+                -262.93,
+                276.6
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -287.9998999361392,
@@ -827,7 +859,13 @@
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 72,
             "title": "To Duki Island",
-            "titleKR": "두키 섬"
+            "titleKR": "두키 섬",
+            "teleportTo": [
+                -249.39,
+                330.75
+            ],
+            "teleportArea": "Islands",
+            "noReverseLink": true
         },
         {
             "x": -142.59398904144535,
@@ -835,7 +873,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 73,
             "title": "To Lucky Island",
-            "titleKR": "지고의 섬"
+            "titleKR": "지고의 섬",
+            "teleportTo": [
+                -99.17,
+                160.53
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -162.78105543138167,
@@ -843,7 +886,12 @@
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 74,
             "title": "To Unknown Island",
-            "titleKR": "미지의 섬"
+            "titleKR": "미지의 섬",
+            "teleportTo": [
+                -126.47,
+                153.65
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -167.49982210869183,
@@ -851,7 +899,12 @@
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 75,
             "title": "To Tranquil Island",
-            "titleKR": "고요한 안식의 섬"
+            "titleKR": "고요한 안식의 섬",
+            "teleportTo": [
+                -133.26,
+                167.29
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -179.59,
@@ -859,7 +912,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 76,
             "title": "To Isle of Shadows",
-            "titleKR": "그림자의 섬"
+            "titleKR": "그림자의 섬",
+            "teleportTo": [
+                -146.92,
+                194.65
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -184.68765565489466,
@@ -867,7 +925,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 77,
             "title": "To Carmine's Post",
-            "titleKR": "카마인의 주둔지"
+            "titleKR": "카마인의 주둔지",
+            "teleportTo": [
+                -153.73,
+                133.16
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -200.24993329075943,
@@ -875,7 +938,12 @@
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 78,
             "title": "To Monte Island",
-            "titleKR": "몬테 섬"
+            "titleKR": "몬테 섬",
+            "teleportTo": [
+                -180.97,
+                180.92
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -214.12514453668788,
@@ -883,7 +951,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 79,
             "title": "To Isle of Longing",
-            "titleKR": "갈망의 섬"
+            "titleKR": "갈망의 섬",
+            "teleportTo": [
+                -201.4,
+                146.76
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -208.68777795516903,
@@ -891,7 +964,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 80,
             "title": "To Isle of Eternity",
-            "titleKR": "고립된 영원의 섬"
+            "titleKR": "고립된 영원의 섬",
+            "teleportTo": [
+                -194.62,
+                119.54
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -221.875,
@@ -899,7 +977,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 81,
             "title": "To Isle of Dreams",
-            "titleKR": "몽환의 섬"
+            "titleKR": "몽환의 섬",
+            "teleportTo": [
+                -208.41,
+                85.39
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -252.34375,
@@ -907,7 +990,12 @@
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 82,
             "title": "To Harmony Island",
-            "titleKR": "하모니 섬"
+            "titleKR": "하모니 섬",
+            "teleportTo": [
+                -256.25,
+                92.23
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -237.93760006386088,
@@ -915,7 +1003,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 83,
             "title": "To Valpurgis",
-            "titleKR": "발푸르기스"
+            "titleKR": "발푸르기스",
+            "teleportTo": [
+                -228.78,
+                105.86
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -231.31258894565406,
@@ -923,7 +1016,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 84,
             "title": "To Metus Islands",
-            "titleKR": "메투스 제도"
+            "titleKR": "메투스 제도",
+            "teleportTo": [
+                -221.96,
+                126.37
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -245.89,
@@ -931,7 +1029,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 85,
             "title": "To Island of Rejoice",
-            "titleKR": "기약의 섬"
+            "titleKR": "기약의 섬",
+            "teleportTo": [
+                -242.44,
+                140.03
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -249.5624499680696,
@@ -939,7 +1042,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 86,
             "title": "To Nichel Tarov's Thought",
-            "titleKR": "니헬타로프의 상념"
+            "titleKR": "니헬타로프의 상념",
+            "teleportTo": [
+                -242.48,
+                160.49
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -277.1877112459284,
@@ -947,7 +1055,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 87,
             "title": "To Primeval Island",
-            "titleKR": "태초의 섬"
+            "titleKR": "태초의 섬",
+            "teleportTo": [
+                -290.21,
+                112.7
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -270.3125555910338,
@@ -955,7 +1068,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 88,
             "title": "To Island of Hope",
-            "titleKR": "희망의 섬"
+            "titleKR": "희망의 섬",
+            "teleportTo": [
+                -276.61,
+                140.07
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -265.6875,
@@ -963,7 +1081,12 @@
             "type": MarkerTypeEnum.ZoningIslandPVP,
             "id": 89,
             "title": "To Goblin Island",
-            "titleKR": "고블린 섬"
+            "titleKR": "고블린 섬",
+            "teleportTo": [
+                -269.73,
+                160.53
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -283.9377557187555,
@@ -979,7 +1102,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 91,
             "title": "To Blue Hole Island",
-            "titleKR": "블루홀 섬"
+            "titleKR": "블루홀 섬",
+            "teleportTo": [
+                -283.38,
+                180.99
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -301.18714421738366,
@@ -987,7 +1115,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 92,
             "title": "To Naruni Island",
-            "titleKR": "나루니 섬"
+            "titleKR": "나루니 섬",
+            "teleportTo": [
+                -317.52,
+                180.99
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -296.8125222364135,
@@ -995,7 +1128,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 93,
             "title": "To Gravis Resort",
-            "titleKR": "휴양지 그라비스"
+            "titleKR": "휴양지 그라비스",
+            "teleportTo": [
+                -310.67,
+                153.64
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -300.18757782744734,
@@ -1003,7 +1141,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 94,
             "title": "To Welcome Butterfly Island",
-            "titleKR": "환영나비 섬"
+            "titleKR": "환영나비 섬",
+            "teleportTo": [
+                -317.56,
+                112.63
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -320.43751111820677,
@@ -1011,7 +1154,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 95,
             "title": "To Hypnose Eye",
-            "titleKR": "히프노스의 눈"
+            "titleKR": "히프노스의 눈",
+            "teleportTo": [
+                -351.66,
+                126.38
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -318.74996664537974,
@@ -1019,7 +1167,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 96,
             "title": "To Twilight Island",
-            "titleKR": "황혼의 섬"
+            "titleKR": "황혼의 섬",
+            "teleportTo": [
+                -351.72,
+                167.3
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -333.250044472827,
@@ -1027,7 +1180,12 @@
             "type": MarkerTypeEnum.ZoningIslandPVP,
             "id": 97,
             "title": "To Outlaw Island",
-            "titleKR": "무법자의 섬"
+            "titleKR": "무법자의 섬",
+            "teleportTo": [
+                -365.35,
+                180.96
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -316.93753335462026,
@@ -1035,7 +1193,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 98,
             "title": "To Torrent Island",
-            "titleKR": "격류의 섬"
+            "titleKR": "격류의 섬",
+            "teleportTo": [
+                -344.79,
+                194.63
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -234.35797983280966,
@@ -1371,7 +1534,12 @@
             "type": MarkerTypeEnum.ZoningIslandPVP,
             "id": 138,
             "title": "To Misguided Island",
-            "titleKR": "그릇된 욕망의 섬"
+            "titleKR": "그릇된 욕망의 섬",
+            "teleportTo": [
+                -215.11,
+                297.05
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -262.24992868884095,

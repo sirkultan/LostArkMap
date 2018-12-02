@@ -373,7 +373,7 @@
                 case MarkerTypeEnum.ZoningIsland:
                 case MarkerTypeEnum.ZoningIslandFlux:
                 case MarkerTypeEnum.ZoningWorld: {
-                    if(markerData.isGenerated) {
+                    if(markerData.isGenerated || markerData.noReverseLink === true) {
                         return;
                     }
 
@@ -545,7 +545,8 @@
                     case 'color':
                     case 'style':
                     case 'size':
-                    case 'radius': {
+                    case 'radius':
+                    case 'noReverseLink': {
                         break;
                     }
 
