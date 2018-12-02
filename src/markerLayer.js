@@ -546,6 +546,7 @@
                     case 'style':
                     case 'size':
                     case 'radius':
+                    case 'rarity':
                     case 'noReverseLink': {
                         break;
                     }

@@ -404,8 +404,13 @@ let LAM = (function(){
                 zoomLevel = this.areas[markerData.area].zoomLevel;
             }
 
+            let rarityKey = '';
+            if(markerData.rarity !== undefined){
+                rarityKey = GetKeyByValue(RarityEnum, markerData.rarity);
+            }
+
             let locationLink = "?c=" + ContentTypeEnum.AreaMap + "&a=" + markerData.area + '&x=' + markerData.x + '&y=' + markerData.y + '&z=' + zoomLevel;
-            let elementText = '<div class="card" style="margin: 8px">' +
+            let elementText = '<div class="card treasure-map-card" style="margin: 8px" data-status="' + rarityKey + '">' +
                 '<img class="card-img-top" src="images/marker_hints/'+ markerData.hintImage +'" style="width: 180px; height: 228px;"/>' +
                 '<div><p class="card-text">';
             if(markerData.zone !== undefined) {
@@ -531,6 +536,22 @@ let LAM = (function(){
         }
 
     }
+
+    $(document).ready(function() {
+
+        $('.btn-filter-maps').on('click', function () {
+            let target = $(this).data('target');
+            let cards = $('.treasure-map-card');
+
+            if (target !== 'all') {
+                cards.css('display', 'none');
+                cards.filter('[data-status="' + target + '"]').fadeIn('slow');
+            } else {
+                cards.css('display', 'none').fadeIn('slow');
+            }
+        });
+
+    });
 
     return new LostArkMap();
 

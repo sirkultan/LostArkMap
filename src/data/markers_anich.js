@@ -1146,7 +1146,8 @@
             "y": 115.23,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 164,
-            "hintImage": "anich/TreasureMap1.jpg"
+            "hintImage": "anich/TreasureMap1.jpg",
+            'rarity': RarityEnum.Epic
         },
         {
             "x": -381.66,
@@ -1154,7 +1155,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 165,
             "hintImage": "anich/TreasureMap2.jpg",
-            "hintText": "map is rotated"
+            "hintText": "map is rotated",
+            'rarity': RarityEnum.Legendary
         },
         {
             "x": -191.25,
@@ -1162,7 +1164,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 166,
             "hintImage": "anich/TreasureMap3.jpg",
-            "hintText": "requires Heavenly Harmony song"
+            "hintText": "requires Heavenly Harmony song",
+            'rarity': RarityEnum.Rare
         }
     ];
 

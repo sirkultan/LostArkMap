@@ -540,7 +540,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintText": "Might need special action to activate",
             "hintImage": "lutheran/TreasureMap1.jpg",
-            "id": 71
+            "id": 71,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -89,
@@ -1114,7 +1115,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintText": "Needs Music of Courage to activate (the story music)",
             "hintImage": "lutheran/TreasureMap5.jpg",
-            "id": 150
+            "id": 150,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -103.1,
@@ -1122,7 +1124,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 151,
             "hintImage": "lutheran/TreasureMap6.jpg",
-            "hintText": "Map is rotated"
+            "hintText": "Map is rotated",
+            'rarity': RarityEnum.Legendary
         }
     ];
 

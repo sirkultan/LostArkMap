@@ -83,6 +83,41 @@ const EditorModeEnum = Object.freeze({
     "Move": 3
 });
 
+const RarityEnum = Object.freeze({
+    Normal: 0,
+    Uncommon: 1,
+    Rare: 2,
+    Epic: 3,
+    Legendary: 4
+});
+
+/**
+ * @return {string}
+ */
+RarityColor = function(rarity) {
+    switch (rarity) {
+        case RarityEnum.Normal: {
+            return '#fdfdfd';
+        }
+
+        case RarityEnum.Uncommon: {
+            return '#87ee01';
+        }
+
+        case RarityEnum.Rare: {
+            return '#00aaf1';
+        }
+
+        case RarityEnum.Epic: {
+            return '#cb42f8';
+        }
+
+        case RarityEnum.Legendary: {
+            return '#f88a00';
+        }
+    }
+};
+
 /**
  * @return {string}
  */

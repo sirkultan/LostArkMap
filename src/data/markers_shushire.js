@@ -6,7 +6,8 @@
             "y": 340.87,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 0,
-            "hintImage": "shushire/TreasureMap1.jpg"
+            "hintImage": "shushire/TreasureMap1.jpg",
+            'rarity': RarityEnum.Legendary
         },
         {
             "x": -269.56,
@@ -968,7 +969,8 @@
             "y": 56.53,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 133,
-            "hintImage": "shushire/TreasureMap2.jpg"
+            "hintImage": "shushire/TreasureMap2.jpg",
+            'rarity': RarityEnum.Rare
         }
     ];
 

@@ -661,7 +661,8 @@
             "y": 224.94006444459967,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "lutheran/TreasureMap2.jpg",
-            "id": 91
+            "id": 91,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -276.93647197685044,
@@ -1464,14 +1465,16 @@
             "y": 413.48,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 206,
-            "hintImage": "lutheran/TreasureMap3.jpg"
+            "hintImage": "lutheran/TreasureMap3.jpg",
+            'rarity': RarityEnum.Epic
         },
         {
             "x": -340.08,
             "y": 432.89,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 207,
-            "hintImage": "lutheran/TreasureMap4.jpg"
+            "hintImage": "lutheran/TreasureMap4.jpg",
+            'rarity': RarityEnum.Epic
         }
     ];
 

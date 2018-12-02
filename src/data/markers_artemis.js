@@ -578,49 +578,56 @@
             "y": 289.21,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap6.jpg",
-            "id": 60
+            "id": 60,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -359.25,
             "y": 237.34,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap7.jpg",
-            "id": 61
+            "id": 61,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -389.87,
             "y": 262.97,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap8.jpg",
-            "id": 62
+            "id": 62,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -397.74,
             "y": 243.28,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap10.jpg",
-            "id": 63
+            "id": 63,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -415.06,
             "y": 261.58,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap12.jpg",
-            "id": 64
+            "id": 64,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -464.68,
             "y": 210.66,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap13.jpg",
-            "id": 65
+            "id": 65,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -444.45,
             "y": 247.27,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap15.jpg",
-            "id": 66
+            "id": 66,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -206.75,
@@ -748,42 +755,48 @@
             "y": 282.57,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap1.jpg",
-            "id": 83
+            "id": 83,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -266.12,
             "y": 269.38,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap2.jpg",
-            "id": 84
+            "id": 84,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -266.69,
             "y": 210.82,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap3.jpg",
-            "id": 85
+            "id": 85,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -238.12,
             "y": 191.92,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap9.jpg",
-            "id": 86
+            "id": 86,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -225.19,
             "y": 218.23,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap11.jpg",
-            "id": 87
+            "id": 87,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -221.37,
             "y": 199.9,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap14.jpg",
-            "id": 88
+            "id": 88,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -33.5,
@@ -993,21 +1006,24 @@
             "y": 285.38,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap4.jpg",
-            "id": 115
+            "id": 115,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -55.56,
             "y": 266.57,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap5.jpg",
-            "id": 116
+            "id": 116,
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -72.68,
             "y": 257.21,
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap16.jpg",
-            "id": 117
+            "id": 117,
+            'rarity': RarityEnum.Legendary
         },
         {
             "x": -460.5,
@@ -1252,49 +1268,56 @@
             "y": 223.83,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 153,
-            "hintImage": "artemis/TreasureMap17.jpg"
+            "hintImage": "artemis/TreasureMap17.jpg",
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -441.97,
             "y": 263.59,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 154,
-            "hintImage": "artemis/TreasureMap18.jpg"
+            "hintImage": "artemis/TreasureMap18.jpg",
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -380.29,
             "y": 243.04,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 155,
-            "hintImage": "artemis/TreasureMap19.jpg"
+            "hintImage": "artemis/TreasureMap19.jpg",
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -145.53,
             "y": 246.4,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 156,
-            "hintImage": "artemis/TreasureMap20.jpg"
+            "hintImage": "artemis/TreasureMap20.jpg",
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -270.72,
             "y": 252.83,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 157,
-            "hintImage": "artemis/TreasureMap21.jpg"
+            "hintImage": "artemis/TreasureMap21.jpg",
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -231.41,
             "y": 254.27,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 158,
-            "hintImage": "artemis/TreasureMap22.jpg"
+            "hintImage": "artemis/TreasureMap22.jpg",
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -58.625,
             "y": 245.01,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 159,
-            "hintImage": "artemis/TreasureMap23.jpg"
+            "hintImage": "artemis/TreasureMap23.jpg",
+            'rarity': RarityEnum.Legendary
         },
         {
             "x": -65.5,
@@ -1302,35 +1325,40 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 160,
             "hintImage": "artemis/TreasureMap24.jpg",
-            "hintText": "Requires Music of Starlight"
+            "hintText": "Requires Music of Starlight",
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -427.4,
             "y": 245.84,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 161,
-            "hintImage": "artemis/TreasureMap25.jpg"
+            "hintImage": "artemis/TreasureMap25.jpg",
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -428.59,
             "y": 267.27,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 162,
-            "hintImage": "artemis/TreasureMap26.jpg"
+            "hintImage": "artemis/TreasureMap26.jpg",
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -413.6,
             "y": 249.4,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 163,
-            "hintImage": "artemis/TreasureMap27.jpg"
+            "hintImage": "artemis/TreasureMap27.jpg",
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -253.85,
             "y": 292.65,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 164,
-            "hintImage": "artemis/TreasureMap28.jpg"
+            "hintImage": "artemis/TreasureMap28.jpg",
+            'rarity': RarityEnum.Rare
         }
     ];
 

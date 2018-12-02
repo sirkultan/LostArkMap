@@ -1200,7 +1200,8 @@
             "y": 462.05,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 168,
-            "hintImage": "arthetaine/TreasureMap1.jpg"
+            "hintImage": "arthetaine/TreasureMap1.jpg",
+            'rarity': RarityEnum.Rare
         }
     ];
 

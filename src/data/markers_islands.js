@@ -1210,7 +1210,8 @@
             "y": 379.31,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 203,
-            "hintImage": "islands/TreasureMap1.jpg"
+            "hintImage": "islands/TreasureMap1.jpg",
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -250.51,

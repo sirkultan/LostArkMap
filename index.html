@@ -336,25 +336,32 @@
                 </div>
 
                 <div class="album py-5 bg-light" id="content_treasure_map">
-                    <section class="jumbotron text-center">
-                        <div class="container">
-                            <h1 class="jumbotron-heading">Identified</h1>
-                        </div>
-                    </section>
 
+                    <div class="w-100 text-center">
+                        <button class="btn btn-secondary btn-filter-maps" data-target="all" type="button">All</button>
+                        <button class="btn btn-secondary btn-filter-maps background-rare-quality" data-target="Rare" type="button">Rare</button>
+                        <button class="btn btn-secondary btn-filter-maps background-epic-quality" data-target="Epic" type="button">Epic</button>
+                        <button class="btn btn-secondary btn-filter-maps background-legendary-quality" data-target="Legendary" type="button">Legendary</button>
+                    </div>
+
+                    <br>
                     <div class="text-center">Note: Treasure Maps can be re-rolled by sacrificing any other map at a specific NPC in <a class="hard-map-link" href="#" data-area="Bern North" data-tx="-489.88" data-ty="200.78" data-zoom="4">Bern</a>.<br>For example you can use a low level 90 map to re-roll a high level 270 one that you can not find or do not want to do.<br><span class="font-italic font-weight-light">#Daxious</span></div>
                     <br>
+
+                    <div class="w-100 text-center treasure-map-header-container">
+                        <div style="height: 25px"></div>
+                        <h1 class="treasure-map-header">Identified</h1>
+                    </div>
 
                     <div class="container">
                         <div class="row" id="content_treasure_map_list">
                         </div>
                     </div>
 
-                    <section class="jumbotron text-center">
-                        <div class="container">
-                            <h1 class="jumbotron-heading">Unidentified</h1>
-                        </div>
-                    </section>
+                    <div class="w-100 text-center treasure-map-header-container">
+                        <div style="height: 25px"></div>
+                        <h1 class="treasure-map-header">Unidentified</h1>
+                    </div>
 
                     <div class="container">
                         <div class="row">
@@ -425,11 +432,11 @@
                     <div class="w-100">
                         <button class="btn btn-primary" id="searchCopyButton" type="button">Copy</button>
 
-                        <button class="float-right btn btn-success btn-filter background-faq-guide" data-target="faq" type="button">FAQ</button>
-                        <button class="float-right btn btn-success btn-filter background-search-guide" data-target="guide" type="button">Guides</button>
-                        <button class="float-right btn btn-success btn-filter background-search-marker" data-target="marker" type="button">Markers</button>
-                        <button class="float-right btn btn-success btn-filter background-search-area" data-target="area" type="button">Areas</button>
-                        <button class="float-right btn btn-success btn-filter background-search-all" data-target="all" type="button">All</button>
+                        <button class="float-right btn btn-primary btn-filter-search background-faq-guide" data-target="faq" type="button">FAQ</button>
+                        <button class="float-right btn btn-primary btn-filter-search background-search-guide" data-target="guide" type="button">Guides</button>
+                        <button class="float-right btn btn-primary btn-filter-search background-search-marker" data-target="marker" type="button">Markers</button>
+                        <button class="float-right btn btn-primary btn-filter-search background-search-area" data-target="area" type="button">Areas</button>
+                        <button class="float-right btn btn-primary btn-filter-search background-search-all" data-target="all" type="button">All</button>
                     </div>
                     <div class="table-container">
                         <table class="table table-filter">

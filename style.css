@@ -182,3 +182,33 @@ body {
     max-width: 200px;
     max-height: 200px;
 }
+
+.background-normal-quality {
+    background-color: #fdfdfd;
+}
+
+.background-uncommon-quality {
+    background-color: #87ee01;
+}
+
+.background-rare-quality {
+    background-color: #00aaf1;
+}
+
+.background-epic-quality {
+    background-color: #cb42f8;
+}
+
+.background-legendary-quality {
+    background-color: #f88a00;
+}
+
+.treasure-map-header-container {
+    background-color: #EFEFEF;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    height: 100px;
+}
+
+.treasure-map-header {
+}

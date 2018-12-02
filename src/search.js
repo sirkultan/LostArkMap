@@ -460,13 +460,15 @@
             LAM.search.gotoSearchResult(idSegments[1]);
         });
 
-        $('.btn-filter').on('click', function () {
+        $('.btn-filter-search').on('click', function () {
             let target = $(this).data('target');
+            let results = $('.table tr');
+
             if (target !== 'all') {
-                $('.table tr').css('display', 'none');
-                $('.table tr[data-status="' + target + '"]').fadeIn('slow');
+                results.css('display', 'none');
+                results.filter('[data-status="' + target + '"]').fadeIn('slow');
             } else {
-                $('.table tr').css('display', 'none').fadeIn('slow');
+                results.css('display', 'none').fadeIn('slow');
             }
         });
 

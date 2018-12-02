@@ -414,14 +414,16 @@
             "y": 191.27,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 55,
-            "hintImage": "totoiku/TreasureMap1.jpg"
+            "hintImage": "totoiku/TreasureMap1.jpg",
+            'rarity': RarityEnum.Rare
         },
         {
             "x": -163.62,
             "y": 198.01,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 56,
-            "hintImage": "totoiku/TreasureMap2.jpg"
+            "hintImage": "totoiku/TreasureMap2.jpg",
+            'rarity': RarityEnum.Legendary
         }
         ,
         {
@@ -429,7 +431,8 @@
             "y": 326.3,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 57,
-            "hintImage": "totoiku/TreasureMap3.jpg"
+            "hintImage": "totoiku/TreasureMap3.jpg",
+            'rarity': RarityEnum.Epic
         }
     ]
 
