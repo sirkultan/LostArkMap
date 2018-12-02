@@ -1819,6 +1819,15 @@
             "y": 201.7,
             "type": MarkerTypeEnum.NativeVillage,
             "id": 173
+        },
+        {
+            "x": -232.5,
+            "y": 220.43,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 174,
+            "hintImage": "world/TreasureMap9.jpg",
+            'rarity': RarityEnum.Rare,
+            'tmArea': TreasureMapAreaFilter.World
         }
     ];
 

@@ -573,6 +573,15 @@
             "y": 183.87,
             "type": MarkerTypeEnum.Waypoint,
             "id": 80
+        },
+        {
+            "x": -311.18,
+            "y": 298.28,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 81,
+            "hintImage": "totoiku/TreasureMap4.jpg",
+            "rarity": RarityEnum.Rare,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         }
     ];
 
