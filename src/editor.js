@@ -82,6 +82,15 @@
                         break
                     }
 
+                    case MarkerTypeEnum.NPCFavor:
+                    case MarkerTypeEnum.NPCRepair:
+                    case MarkerTypeEnum.NPCStorage:
+                    case MarkerTypeEnum.Waypoint:
+                    case MarkerTypeEnum.Mail: {
+                        $('#ed_markerTypeToolbarDefault').append(element);
+                        break;
+                    }
+
                     default:
                     {
                         $('#ed_markerTypeToolbarPOI').append(element);
@@ -371,6 +380,7 @@
             this.style = style;
             this.resetEditForm();
 
+            $('#ed_markerTypeToolbarDefault').hide();
             $('#ed_markerTypeToolbarPOI').hide();
             $('#ed_markerTypeToolbarSpecial').show();
             $('#ed_rectangleSettings').hide();
@@ -379,6 +389,7 @@
                 case MarkerStyleEnum.Point:
                 case MarkerStyleEnum.Label:
                 {
+                    $('#ed_markerTypeToolbarDefault').show();
                     $('#ed_markerTypeToolbarPOI').show();
                     $('#ed_markerTypeToolbarSpecial').show();
                     this.selectActiveMarkerType(GetKeyByValue(MarkerTypeEnum, MarkerTypeEnum.Boss));

@@ -547,6 +547,8 @@
                     case 'size':
                     case 'radius':
                     case 'rarity':
+                    case 'tmLand':
+                    case 'tmArea':
                     case 'noReverseLink': {
                         break;
                     }

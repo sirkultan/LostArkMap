@@ -38,7 +38,6 @@ const MarkerTypeEnum = Object.freeze({
     "Internal": undefined,
     "Boss": "boss.png",
     "CookingIngredient": "cookingingredient.png",
-    "FavorNPC": "favornpc.png",
     "FoodIngredient": "foodingredient.png",
     "HiddenStory": "hiddenstory.png",
     "Mokoko": "mokoko.png",
@@ -67,7 +66,11 @@ const MarkerTypeEnum = Object.freeze({
     "SeaAreaStorm": "seaareastorm.png",
     "Note": "note.png",
     "NativeVillage": "nativevillage.png",
-    "Waypoint": "waypoint.png"
+    "Mail": "mail.png",
+    "Waypoint": "waypoint.png",
+    "NPCRepair": "npc_repair.png",
+    "NPCStorage": "npc_storage.png",
+    "NPCFavor": "npc_favor.png",
 });
 
 const SearchResultTypeEnum = Object.freeze({
@@ -198,8 +201,16 @@ MarkerTypeDefaultTitle = function(markerType) {
             return "World Boss";
         }
 
-        case MarkerTypeEnum.FavorNPC: {
+        case MarkerTypeEnum.NPCFavor: {
             return "Favor NPC";
+        }
+
+        case MarkerTypeEnum.NPCRepair: {
+            return "Repair";
+        }
+
+        case MarkerTypeEnum.NPCStorage: {
+            return "Storage";
         }
 
         case MarkerTypeEnum.CookingIngredient: {
@@ -296,6 +307,10 @@ MarkerTypeDefaultTitle = function(markerType) {
 
         case MarkerTypeEnum.Waypoint: {
             return "Waypoint";
+        }
+
+        case MarkerTypeEnum.Mail: {
+            return "Mail";
         }
 
         default: {

@@ -1512,19 +1512,19 @@
         {
             "x": -358.04,
             "y": 98.93,
-            "type": MarkerTypeEnum.FavorNPC,
+            "type": MarkerTypeEnum.NPCFavor,
             "id": 213
         },
         {
             "x": -343.31,
             "y": 99.02,
-            "type": MarkerTypeEnum.FavorNPC,
+            "type": MarkerTypeEnum.NPCFavor,
             "id": 214
         },
         {
             "x": -348.43,
             "y": 86.38,
-            "type": MarkerTypeEnum.FavorNPC,
+            "type": MarkerTypeEnum.NPCFavor,
             "id": 215
         },
         {
@@ -1608,13 +1608,13 @@
         {
             "x": -289.63,
             "y": 405.68,
-            "type": MarkerTypeEnum.FavorNPC,
+            "type": MarkerTypeEnum.NPCFavor,
             "id": 229
         },
         {
             "x": -284.54,
             "y": 407.24,
-            "type": MarkerTypeEnum.FavorNPC,
+            "type": MarkerTypeEnum.NPCFavor,
             "id": 230
         },
         {

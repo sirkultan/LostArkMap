@@ -349,9 +349,9 @@
             "x": -323.81,
             "y": 444.13,
             "popupText": "소금사막의 천둥",
-            "type": MarkerTypeEnum.FavorNPC,
+            "type": MarkerTypeEnum.NPCFavor,
             "hintText": "시간의 파편x3 (카드)<br>천둥 (카드)<br>기우제를 위한 재료(모험의 서) / 친절 증가 물약",
-            "hintImage": "yudia/SalandFavorNPCHint1.jpg",
+            "hintImage": "yudia/SalandNPCFavorHint1.jpg",
             "id": 44
         },
         {
@@ -510,9 +510,9 @@
             "x": -191,
             "y": 431.75,
             "popupText": "Morina (모리나)",
-            "type": MarkerTypeEnum.FavorNPC,
+            "type": MarkerTypeEnum.NPCFavor,
             "hintText": "고대의 금화x5 (5000실링)<br>루페온의 인장 100개 상자x5<br>생활 포인트 물약(+4)",
-            "hintImage": "yudia/OzhornFavorNPCHint1.jpg",
+            "hintImage": "yudia/OzhornNPCFavorHint1.jpg",
             "id": 65
         },
         {

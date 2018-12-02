@@ -52,7 +52,7 @@
         {
             "x": -80.09,
             "y": 374.09,
-            "type": MarkerTypeEnum.FavorNPC,
+            "type": MarkerTypeEnum.NPCFavor,
             "id": 8
         },
         {
@@ -515,7 +515,7 @@
         {
             "x": -295.97,
             "y": 371.25,
-            "type": MarkerTypeEnum.FavorNPC,
+            "type": MarkerTypeEnum.NPCFavor,
             "id": 86
         },
         {
@@ -647,7 +647,7 @@
         {
             "x": -303.97,
             "y": 365.71,
-            "type": MarkerTypeEnum.FavorNPC,
+            "type": MarkerTypeEnum.NPCFavor,
             "id": 110,
             "popupText": "Elder Toto (토토장로)"
         },
@@ -684,7 +684,7 @@
         {
             "x": -227.34,
             "y": 406.01,
-            "type": MarkerTypeEnum.FavorNPC,
+            "type": MarkerTypeEnum.NPCFavor,
             "id": 116,
             "popupText": "Pupu (푸푸)"
         },
@@ -793,7 +793,7 @@
         {
             "x": -316.65,
             "y": 290.63,
-            "type": MarkerTypeEnum.FavorNPC,
+            "type": MarkerTypeEnum.NPCFavor,
             "id": 134,
             "popupText": "Henry (헨리)"
         },
@@ -1317,7 +1317,7 @@
         {
             "x": -104.79,
             "y": 392.57,
-            "type": MarkerTypeEnum.FavorNPC,
+            "type": MarkerTypeEnum.NPCFavor,
             "id": 217
         }
     ];
