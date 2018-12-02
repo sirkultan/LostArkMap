@@ -55,6 +55,10 @@
         {
             q: "Where can i get rewards for Mokoko Seeds?",
             a: "Mokoko Village (모코코 마을) in the Totoiku (토토이크) Continent."
+        },
+        {
+            q: "How can i obtain Music of Starlight?",
+            a: "You have to farm Drifting Souls and buy it from Starlight Lighthouse Island"
         }
     ];
 

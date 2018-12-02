@@ -1211,6 +1211,113 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 203,
             "hintImage": "islands/TreasureMap1.jpg"
+        },
+        {
+            "x": -250.51,
+            "y": 330.42,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 204
+        },
+        {
+            "x": -248.23,
+            "y": 330.95,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 205
+        },
+        {
+            "x": -248.75,
+            "y": 332.56,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 206
+        },
+        {
+            "x": -106.79,
+            "y": 391.97,
+            "type": MarkerTypeEnum.Note,
+            "id": 207,
+            "hintText": "노예 매매범",
+            "popupText": "Slave Trader",
+            "hintImage": "islands/FugitiveSlaveHint2.jpg"
+        },
+        {
+            "x": -106.74,
+            "y": 391.79,
+            "type": MarkerTypeEnum.Note,
+            "id": 208,
+            "popupText": "Aristocrat",
+            "hintText": "귀족 사칭범",
+            "hintImage": "islands/FugitiveSlaveHint1.jpg"
+        },
+        {
+            "x": -106.97,
+            "y": 392.43,
+            "type": MarkerTypeEnum.Note,
+            "id": 209,
+            "hintText": "금고 털이범",
+            "popupText": "Safe Beater"
+        },
+        {
+            "x": -106.61,
+            "y": 392.31,
+            "type": MarkerTypeEnum.Note,
+            "id": 210,
+            "hintText": "노예 매매범",
+            "popupText": "Slave Trader"
+        },
+        {
+            "x": -106.27,
+            "y": 392.23,
+            "type": MarkerTypeEnum.Note,
+            "id": 211,
+            "hintText": "귀족 사칭범",
+            "popupText": "Aristocrat"
+        },
+        {
+            "x": -105.96,
+            "y": 393.73,
+            "type": MarkerTypeEnum.Note,
+            "id": 212,
+            "hintText": "금고 털이범",
+            "popupText": "Safe Beater",
+            "hintImage": "islands/FugitiveSlaveHint3.jpg"
+        },
+        {
+            "x": -106.33,
+            "y": 394.67,
+            "type": MarkerTypeEnum.Note,
+            "id": 213,
+            "hintText": "귀족 사칭범",
+            "popupText": "Aristocrat"
+        },
+        {
+            "x": -107.28,
+            "y": 394.14,
+            "type": MarkerTypeEnum.Note,
+            "id": 214,
+            "hintText": "금고 털이범",
+            "popupText": "Safe Beater"
+        },
+        {
+            "x": -105.6,
+            "y": 394.92,
+            "type": MarkerTypeEnum.Note,
+            "id": 215,
+            "hintText": "노예 매매범",
+            "popupText": "Slave Trader"
+        },
+        {
+            "x": -105.36,
+            "y": 394.79,
+            "type": MarkerTypeEnum.Note,
+            "id": 216,
+            "hintText": "금고 털이범",
+            "popupText": "Safe Beater"
+        },
+        {
+            "x": -104.79,
+            "y": 392.57,
+            "type": MarkerTypeEnum.FavorNPC,
+            "id": 217
         }
     ];
 
