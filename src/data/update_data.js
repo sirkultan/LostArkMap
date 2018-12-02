@@ -34,9 +34,15 @@
                 'Added 1 Treasure Map',
                 'Added 1 Guide',
                 'Added 1 FAQ Entry',
+                'Added 12 Favor NPC Markers (more info / names will come soon)',
+                'Added 12 Mail Markers',
+                'Added 58 Waypoint Markers',
+                'Added 28 Repair Markers',
+                'Added 13 Storage Markers',
                 'Fixed several incorrect zone markers',
                 'Fixed Cooking Ingredient Marker in Forest of Sound incorrectly showing as Vista (thx #Myndi)',
                 'Fixed Favor NPC Hints in Leonhard',
+                'Changed Icon for Favor NPC to be inline with the game representation',
                 'Removed incorrect Mokoko Seed in Forest of Sound (thx #Myndi)',
                 'Reduced the size of the Treasure Map List Header slightly'
             ]
