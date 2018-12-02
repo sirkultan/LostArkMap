@@ -1692,6 +1692,114 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 155,
             "hintImage": "world/TreasureMap8.jpg"
+        },
+        {
+            "x": -244.98,
+            "y": 423.26,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 156
+        },
+        {
+            "x": -252.67,
+            "y": 380.53,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 157
+        },
+        {
+            "x": -334.68,
+            "y": 406.15,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 158
+        },
+        {
+            "x": -233.49,
+            "y": 349.34,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 159
+        },
+        {
+            "x": -170.24,
+            "y": 449.44,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 160
+        },
+        {
+            "x": -106.67,
+            "y": 406.2,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 161
+        },
+        {
+            "x": -147.74,
+            "y": 310.9,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 162
+        },
+        {
+            "x": -212.62,
+            "y": 271.28,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 163
+        },
+        {
+            "x": -269,
+            "y": 299.39,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 164
+        },
+        {
+            "x": -221.87,
+            "y": 202.63,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 165
+        },
+        {
+            "x": -256.75,
+            "y": 223.43,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 166
+        },
+        {
+            "x": -353.94,
+            "y": 319.72,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 167
+        },
+        {
+            "x": -335.37,
+            "y": 288.55,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 168
+        },
+        {
+            "x": -384.62,
+            "y": 277.66,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 169
+        },
+        {
+            "x": -340.29,
+            "y": 208.97,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 170
+        },
+        {
+            "x": -326.37,
+            "y": 125.73,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 171
+        },
+        {
+            "x": -223.98,
+            "y": 91.78,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 172
+        },
+        {
+            "x": -128.17,
+            "y": 201.7,
+            "type": MarkerTypeEnum.NativeVillage,
+            "id": 173
         }
     ];
 

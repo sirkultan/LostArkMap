@@ -124,8 +124,7 @@
             "id": 15,
             "title": "To World",
             "teleportTo": [
-                -254,
-                381
+                -264.79, 383.97
             ],
             "teleportArea": "World"
         },

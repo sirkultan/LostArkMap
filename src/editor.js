@@ -528,6 +528,8 @@
             }
 
             this.markerDataBeingEdited = markerData;
+
+            console.log("Selected Marker " + markerData.id);
         }
 
     }
