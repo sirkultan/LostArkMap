@@ -42,6 +42,19 @@
         {
             q: "How do I get past the storm barrier?",
             a: "Need to have 15 island Hearts"
+        },
+        {
+            q: "How do you farm the black pearl looking item to exchange in starlight island?",
+            a: "Can be found by collecting floating Pirates (instead of normal floating humans but very rare) and in Wreckages.",
+        },
+        {
+            q: "How can i open this red Treasure Chest?",
+            a: "You can only open it if you have the pleasure boat island quest for it.",
+            img: "https://media.discordapp.net/attachments/453172243829096458/518438624207831040/LOSTARK_2018-12-01_15-49-14.png"
+        },
+        {
+            q: "Where can i get rewards for Mokoko Seeds?",
+            a: "Mokoko Village (모코코 마을) in the Totoiku (토토이크) Continent."
         }
     ];
 
