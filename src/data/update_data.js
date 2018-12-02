@@ -25,6 +25,12 @@
                 'Fixed Island Heart Description for Notos Island in World Map',
                 'Fixed spelling and names of several islands in world and island map'
             ]
+        },
+        3: {
+            n: "1.2",
+            e: [
+                'Added 1 Guide'
+            ]
         }
     };
 

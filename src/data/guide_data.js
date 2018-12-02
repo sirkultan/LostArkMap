@@ -77,7 +77,7 @@
             preview: 'DarkalordUnofficialGuide.jpg'
         },
         {
-            title: "Interactive Island Map",
+            title: "Interactive Island Map (KR)",
             url: "https://loahae.com/wmap/",
             preview: "islandmap.jpg"
         },
@@ -105,6 +105,11 @@
             title: "Civos Eastern Island Heart Guide",
             url: "https://docs.google.com/document/d/1zVKeOxVr6tJRa_HEseNN3obBL_KQ83peDlfrCvTbpCk/preview#",
             preview: "civo.jpg"
+        },
+        {
+            title: "Event Calendar (KR)",
+            url: "https://loahae.com/calendar/",
+            preview: "calendar.jpg"
         }
     ];
 
