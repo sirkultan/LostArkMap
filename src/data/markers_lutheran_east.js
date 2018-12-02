@@ -662,7 +662,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "lutheran/TreasureMap2.jpg",
             "id": 91,
-            "rarity": RarityEnum.Rare
+            "rarity": RarityEnum.Rare,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         },
         {
             "x": -276.93647197685044,
@@ -1475,7 +1476,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 207,
             "hintImage": "lutheran/TreasureMap4.jpg",
-            "rarity": RarityEnum.Epic
+            "rarity": RarityEnum.Epic,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         },
         {
             "x": -341.08,

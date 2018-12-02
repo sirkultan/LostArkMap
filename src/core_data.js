@@ -92,6 +92,17 @@ const RarityEnum = Object.freeze({
     Legendary: 4
 });
 
+const TreasureMapAreaFilter = Object.freeze({
+    Continent: 'continent',
+    World: 'world'
+});
+
+const TreasureMapLandFilterEnum = Object.freeze({
+    Sparse: 'sparse',
+    Normal: 'medium',
+    Abundant: 'abundant'
+});
+
 /**
  * @return {string}
  */

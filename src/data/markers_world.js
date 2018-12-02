@@ -7,7 +7,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "world/TreasureMap1.jpg",
             "id": 1,
-            'rarity': RarityEnum.Rare
+            'rarity': RarityEnum.Rare,
+            'tmArea': TreasureMapAreaFilter.World
         },
         {
             "x": -191.1258757234237,
@@ -15,7 +16,9 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "world/TreasureMap2.jpg",
             "id": 2,
-            'rarity': RarityEnum.Epic
+            'rarity': RarityEnum.Epic,
+            'tmArea': TreasureMapAreaFilter.World,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         },
         {
             "x": -398.5590542187024,
@@ -23,7 +26,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "world/TreasureMap3.jpg",
             "id": 3,
-            'rarity': RarityEnum.Epic
+            'rarity': RarityEnum.Epic,
+            'tmArea': TreasureMapAreaFilter.World
         },
         {
             "x": -231.75045689917758,
@@ -31,7 +35,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "world/TreasureMap4.jpg",
             "id": 4,
-            'rarity': RarityEnum.Rare
+            'rarity': RarityEnum.Rare,
+            'tmArea': TreasureMapAreaFilter.World
         },
         {
             "x": -142.85,
@@ -39,7 +44,9 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 7,
             "hintImage": "world/TreasureMap5.jpg",
-            'rarity': RarityEnum.Epic
+            'rarity': RarityEnum.Epic,
+            'tmArea': TreasureMapAreaFilter.World,
+            "tmLand": TreasureMapLandFilterEnum.Sparse
         },
         {
             "x": -179.4883307055446,
@@ -47,7 +54,9 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 8,
             "hintImage": "world/TreasureMap6.jpg",
-            'rarity': RarityEnum.Rare
+            'rarity': RarityEnum.Rare,
+            'tmArea': TreasureMapAreaFilter.World,
+            "tmLand": TreasureMapLandFilterEnum.Sparse
         },
         {
             "x": -260.78,
@@ -55,7 +64,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 9,
             "hintImage": "world/TreasureMap7.jpg",
-            'rarity': RarityEnum.Legendary
+            'rarity': RarityEnum.Legendary,
+            'tmArea': TreasureMapAreaFilter.World
         },
         {
             "x": -180.1562777955169,
@@ -1699,7 +1709,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 155,
             "hintImage": "world/TreasureMap8.jpg",
-            'rarity': RarityEnum.Epic
+            'rarity': RarityEnum.Epic,
+            'tmArea': TreasureMapAreaFilter.World
         },
         {
             "x": -244.98,

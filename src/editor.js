@@ -22,17 +22,31 @@
 
             let exportData = JSON.stringify(LAM.activeMarkerLayer.exportAllMarkerData(), null, 4);
 
+            let enumReplacements = {
+                'style': ['MarkerStyleEnum', MarkerStyleEnum],
+                'rarity': ['RarityEnum', RarityEnum],
+                'tmArea': ['TreasureMapAreaFilter', TreasureMapAreaFilter],
+                'tmLand': ['TreasureMapLandFilterEnum', TreasureMapLandFilterEnum]
+            };
+
             // Have to fix the syntax of marker type enum
             for(let markerType in MarkerTypeEnum) {
                 exportData = exportData.replace(new RegExp('"' + MarkerTypeEnum[markerType]+'"', 'g'), 'MarkerTypeEnum.' + markerType);
             }
 
-            for(let markerStyle in MarkerStyleEnum) {
-                exportData = exportData.replace(new RegExp('style": ' + MarkerStyleEnum[markerStyle], 'g'), 'style": MarkerStyleEnum.' + markerStyle);
-            }
+            for(let enumTitle in enumReplacements) {
+                let enumObjectName = enumReplacements[enumTitle][0];
+                let enumObject = enumReplacements[enumTitle][1];
 
-            for(let rarity in RarityEnum) {
-                exportData = exportData.replace(new RegExp('rarity": ' + RarityEnum[rarity], 'g'), 'rarity": RarityEnum.' + rarity);
+                for(let enumKey in enumObject){
+                    let enumValue = enumObject[enumKey];
+                    let regex = new RegExp(enumTitle + '": ' + enumValue, 'g');
+                    let replacement = enumTitle + '": ' + enumObjectName + '.' + enumKey;
+
+                    console.log(regex);
+                    console.log(replacement);
+                    exportData = exportData.replace(regex, replacement);
+                }
             }
 
             return exportData;

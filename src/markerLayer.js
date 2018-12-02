@@ -364,7 +364,7 @@
             switch (markerData.type) {
 
                 case MarkerTypeEnum.TreasureMap: {
-                    LAM.registerTreasureMap(markerData);
+                    LAM.treasureMapList.registerTreasureMap(markerData);
                     return;
                 }
 

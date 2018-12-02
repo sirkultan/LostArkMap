@@ -7,7 +7,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "bern/TreasureMap1.jpg",
             "id": 0,
-            'rarity': RarityEnum.Rare
+            'rarity': RarityEnum.Rare,
+            "tmLand": TreasureMapLandFilterEnum.Sparse
         },
         {
             "x": -189.75,
@@ -16,7 +17,8 @@
             "hintText": "spot is not fixed, have to go to the area of the map and walk around, map description will dynamically change (ex: 20m south)",
             "hintImage": "bern/TreasureMap2.jpg",
             "id": 1,
-            'rarity': RarityEnum.Epic
+            'rarity': RarityEnum.Epic,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         },
         {
             "x": -346.42,
@@ -24,7 +26,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 2,
             "hintImage": "bern/TreasureMap3.jpg",
-            'rarity': RarityEnum.Epic
+            'rarity': RarityEnum.Epic,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         },
         {
             "x": -462.375,

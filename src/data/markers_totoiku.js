@@ -415,7 +415,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 55,
             "hintImage": "totoiku/TreasureMap1.jpg",
-            'rarity': RarityEnum.Rare
+            'rarity': RarityEnum.Rare,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         },
         {
             "x": -163.62,
@@ -423,7 +424,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 56,
             "hintImage": "totoiku/TreasureMap2.jpg",
-            'rarity': RarityEnum.Legendary
+            'rarity': RarityEnum.Legendary,
+            "tmLand": TreasureMapLandFilterEnum.Sparse
         }
         ,
         {
@@ -432,7 +434,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 57,
             "hintImage": "totoiku/TreasureMap3.jpg",
-            'rarity': RarityEnum.Epic
+            'rarity': RarityEnum.Epic,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         }
     ]
 

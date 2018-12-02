@@ -30,7 +30,7 @@
             n: "1.2",
             e: [
                 'Added 18 Native Village locations to the World Map',
-                'Added Filter by Rarity to Treasure Map List',
+                'Added Filter by Rarity, Area and Land mass to Treasure Map List<br>Some of these are subjective and i will adjust the data moving forward based on feedback.',
                 'Added 1 Treasure Map',
                 'Added 1 Guide',
                 'Added 1 FAQ Entry',

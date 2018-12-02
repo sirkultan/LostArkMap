@@ -7,7 +7,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 0,
             "hintImage": "shushire/TreasureMap1.jpg",
-            'rarity': RarityEnum.Legendary
+            'rarity': RarityEnum.Legendary,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         },
         {
             "x": -269.56,
@@ -970,7 +971,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 133,
             "hintImage": "shushire/TreasureMap2.jpg",
-            'rarity': RarityEnum.Rare
+            'rarity': RarityEnum.Rare,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         }
     ];
 

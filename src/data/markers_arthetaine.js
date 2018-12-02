@@ -1201,7 +1201,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 168,
             "hintImage": "arthetaine/TreasureMap1.jpg",
-            'rarity': RarityEnum.Rare
+            'rarity': RarityEnum.Rare,
+            "tmLand": TreasureMapLandFilterEnum.Sparse
         }
     ];
 

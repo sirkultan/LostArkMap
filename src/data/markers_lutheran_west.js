@@ -1116,7 +1116,8 @@
             "hintText": "Needs Music of Courage to activate (the story music)",
             "hintImage": "lutheran/TreasureMap5.jpg",
             "id": 150,
-            "rarity": RarityEnum.Rare
+            "rarity": RarityEnum.Rare,
+            "tmLand": TreasureMapLandFilterEnum.Sparse
         },
         {
             "x": -103.1,
@@ -1125,7 +1126,8 @@
             "id": 151,
             "hintImage": "lutheran/TreasureMap6.jpg",
             "hintText": "Map is rotated",
-            "rarity": RarityEnum.Legendary
+            "rarity": RarityEnum.Legendary,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         },
         {
             "x": -420.61,

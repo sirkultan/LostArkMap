@@ -1142,7 +1142,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 164,
             "hintImage": "anich/TreasureMap1.jpg",
-            "rarity": RarityEnum.Epic
+            "rarity": RarityEnum.Epic,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         },
         {
             "x": -381.66,
@@ -1151,7 +1152,8 @@
             "id": 165,
             "hintImage": "anich/TreasureMap2.jpg",
             "hintText": "map is rotated",
-            "rarity": RarityEnum.Legendary
+            "rarity": RarityEnum.Legendary,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         },
         {
             "x": -191.25,

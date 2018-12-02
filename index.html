@@ -55,6 +55,7 @@
     <script src="src/search.js"></script>
     <script src="src/guide.js"></script>
     <script src="src/faq.js"></script>
+    <script src="src/treasureMapList.js"></script>
     <script src="src/settings.js"></script>
 
     <script src="src/core_data.js"></script>
@@ -338,10 +339,25 @@
                 <div class="album py-5 bg-light" id="content_treasure_map">
 
                     <div class="w-100 text-center">
-                        <button class="btn btn-secondary btn-filter-maps" data-target="all" type="button">All</button>
-                        <button class="btn btn-secondary btn-filter-maps background-rare-quality" data-target="Rare" type="button">Rare</button>
-                        <button class="btn btn-secondary btn-filter-maps background-epic-quality" data-target="Epic" type="button">Epic</button>
-                        <button class="btn btn-secondary btn-filter-maps background-legendary-quality" data-target="Legendary" type="button">Legendary</button>
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-secondary btn-filter-map-rarity" data-target="any" type="button">Any</button>
+                            <button class="btn btn-secondary btn-filter-map-rarity background-rare-quality" data-target="Rare" type="button">Rare</button>
+                            <button class="btn btn-secondary btn-filter-map-rarity background-epic-quality" data-target="Epic" type="button">Epic</button>
+                            <button class="btn btn-secondary btn-filter-map-rarity background-legendary-quality" data-target="Legendary" type="button">Legendary</button>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-secondary btn-filter-map-land" data-target="any" type="button">Any</button>
+                            <button class="btn btn-secondary btn-filter-map-land" data-target="continent" type="button">Continent</button>
+                            <button class="btn btn-secondary btn-filter-map-land" data-target="world" type="button">World</button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-secondary btn-filter-map-area" data-target="any" type="button">Any</button>
+                            <button class="btn btn-secondary btn-filter-map-area" data-target="sparse" type="button">Sparse Land</button>
+                            <button class="btn btn-secondary btn-filter-map-area" data-target="medium" type="button">Normal Land</button>
+                            <button class="btn btn-secondary btn-filter-map-area" data-target="abundant" type="button">Abundant Land</button>
+                        </div>
                     </div>
 
                     <br>
