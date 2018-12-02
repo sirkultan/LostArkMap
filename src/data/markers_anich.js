@@ -330,13 +330,6 @@
             "y": 159.3,
             "type": MarkerTypeEnum.Zoning,
             "id": 48,
-            "title": "Barrier of Red Dungeon"
-        },
-        {
-            "x": -291.92,
-            "y": 159.3,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 48,
             "title": "Barrier of Red Dungeon",
             "teleportTo": [
                 -309,

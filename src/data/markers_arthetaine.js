@@ -2,12 +2,6 @@
 
     LAM.areaMarkerData['Arthetaine'] = [
         {
-            "x": -495.74,
-            "y": 59.03,
-            "type": MarkerTypeEnum.Zoning,
-            "id": 0
-        },
-        {
             "x": -479.3,
             "y": 30.79,
             "type": MarkerTypeEnum.Vista,

@@ -30,7 +30,8 @@
             n: "1.2",
             e: [
                 'Added 1 Guide',
-                'Added 1 FAQ Entry'
+                'Added 1 FAQ Entry',
+                'Fixed several incorrect zone markers'
             ]
         }
     };
