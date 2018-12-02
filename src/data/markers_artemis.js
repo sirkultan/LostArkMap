@@ -595,7 +595,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap8.jpg",
             "id": 62,
-            "tmLand": TreasureMapLandFilterEnum.Abundant
+            "tmLand": TreasureMapLandFilterEnum.Abundant,
             "rarity": RarityEnum.Rare
         },
         {
@@ -612,7 +612,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap12.jpg",
             "id": 64,
-            "tmLand": TreasureMapLandFilterEnum.Abundant
+            "tmLand": TreasureMapLandFilterEnum.Abundant,
             "rarity": RarityEnum.Rare
         },
         {
@@ -629,7 +629,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap15.jpg",
             "id": 66,
-            "tmLand": TreasureMapLandFilterEnum.Abundant
+            "tmLand": TreasureMapLandFilterEnum.Abundant,
             "rarity": RarityEnum.Rare
         },
         {
@@ -767,7 +767,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap2.jpg",
             "id": 84,
-            "tmLand": TreasureMapLandFilterEnum.Abundant
+            "tmLand": TreasureMapLandFilterEnum.Abundant,
             "rarity": RarityEnum.Rare
         },
         {
@@ -776,7 +776,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap3.jpg",
             "id": 85,
-            "tmLand": TreasureMapLandFilterEnum.Sparse
+            "tmLand": TreasureMapLandFilterEnum.Sparse,
             "rarity": RarityEnum.Rare
         },
         {
@@ -785,7 +785,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap9.jpg",
             "id": 86,
-            "tmLand": TreasureMapLandFilterEnum.Abundant
+            "tmLand": TreasureMapLandFilterEnum.Abundant,
             "rarity": RarityEnum.Rare
         },
         {
@@ -794,7 +794,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap11.jpg",
             "id": 87,
-            "tmLand": TreasureMapLandFilterEnum.Abundant
+            "tmLand": TreasureMapLandFilterEnum.Abundant,
             "rarity": RarityEnum.Rare
         },
         {
@@ -803,7 +803,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap14.jpg",
             "id": 88,
-            "tmLand": TreasureMapLandFilterEnum.Sparse
+            "tmLand": TreasureMapLandFilterEnum.Sparse,
             "rarity": RarityEnum.Rare
         },
         {
@@ -1031,7 +1031,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "hintImage": "artemis/TreasureMap16.jpg",
             "id": 117,
-            "tmLand": TreasureMapLandFilterEnum.Abundant
+            "tmLand": TreasureMapLandFilterEnum.Abundant,
             "rarity": RarityEnum.Legendary
         },
         {
@@ -1294,7 +1294,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 155,
             "hintImage": "artemis/TreasureMap19.jpg",
-            "tmLand": TreasureMapLandFilterEnum.Abundant
+            "tmLand": TreasureMapLandFilterEnum.Abundant,
             "rarity": RarityEnum.Rare
         },
         {
@@ -1311,7 +1311,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 157,
             "hintImage": "artemis/TreasureMap21.jpg",
-            "tmLand": TreasureMapLandFilterEnum.Abundant
+            "tmLand": TreasureMapLandFilterEnum.Abundant,
             "rarity": RarityEnum.Rare
         },
         {
@@ -1320,7 +1320,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 158,
             "hintImage": "artemis/TreasureMap22.jpg",
-            "tmLand": TreasureMapLandFilterEnum.Abundant
+            "tmLand": TreasureMapLandFilterEnum.Abundant,
             "rarity": RarityEnum.Rare
         },
         {
@@ -1338,7 +1338,7 @@
             "id": 160,
             "hintImage": "artemis/TreasureMap24.jpg",
             "hintText": "Requires Music of Starlight",
-            "tmLand": TreasureMapLandFilterEnum.Abundant
+            "tmLand": TreasureMapLandFilterEnum.Abundant,
             "rarity": RarityEnum.Rare
         },
         {
@@ -1347,7 +1347,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 161,
             "hintImage": "artemis/TreasureMap25.jpg",
-            "tmLand": TreasureMapLandFilterEnum.Abundant
+            "tmLand": TreasureMapLandFilterEnum.Abundant,
             "rarity": RarityEnum.Rare
         },
         {
@@ -1356,7 +1356,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 162,
             "hintImage": "artemis/TreasureMap26.jpg",
-            "tmLand": TreasureMapLandFilterEnum.Abundant
+            "tmLand": TreasureMapLandFilterEnum.Abundant,
             "rarity": RarityEnum.Rare
         },
         {
@@ -1365,7 +1365,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 163,
             "hintImage": "artemis/TreasureMap27.jpg",
-            "tmLand": TreasureMapLandFilterEnum.Abundant
+            "tmLand": TreasureMapLandFilterEnum.Abundant,
             "rarity": RarityEnum.Rare
         },
         {
@@ -1374,7 +1374,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 164,
             "hintImage": "artemis/TreasureMap28.jpg",
-            "tmLand": TreasureMapLandFilterEnum.Sparse
+            "tmLand": TreasureMapLandFilterEnum.Sparse,
             "rarity": RarityEnum.Rare
         },
         {

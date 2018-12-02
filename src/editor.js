@@ -40,7 +40,7 @@
 
                 for(let enumKey in enumObject){
                     let enumValue = enumObject[enumKey];
-                    let regex = new RegExp(enumTitle + '": ' + enumValue, 'g');
+                    let regex = new RegExp(enumTitle + '": ' + enumValue, 'gi');
                     let replacement = enumTitle + '": ' + enumObjectName + '.' + enumKey;
 
                     console.log(regex);

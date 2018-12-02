@@ -808,6 +808,36 @@
             "y": 155.4,
             "type": MarkerTypeEnum.Waypoint,
             "id": 107
+        },
+        {
+            "x": -410.72,
+            "y": 440.93,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 108
+        },
+        {
+            "x": -323.64,
+            "y": 448.24,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 109
+        },
+        {
+            "x": -327.4,
+            "y": 440.68,
+            "type": MarkerTypeEnum.Mail,
+            "id": 110
+        },
+        {
+            "x": -330.21,
+            "y": 441.81,
+            "type": MarkerTypeEnum.NPCStorage,
+            "id": 111
+        },
+        {
+            "x": -178.33,
+            "y": 294.75,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 112
         }
     ];
 
