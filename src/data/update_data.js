@@ -30,6 +30,7 @@
             n: "1.2",
             e: [
                 'Added 18 Native Village locations to the World Map',
+                'Added 1 Treasure Map',
                 'Added 1 Guide',
                 'Added 1 FAQ Entry',
                 'Fixed several incorrect zone markers'

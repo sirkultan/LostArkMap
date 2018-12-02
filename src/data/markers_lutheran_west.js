@@ -1115,6 +1115,14 @@
             "hintText": "Needs Music of Courage to activate (the story music)",
             "hintImage": "lutheran/TreasureMap5.jpg",
             "id": 150
+        },
+        {
+            "x": -103.1,
+            "y": 222.3,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 151,
+            "hintImage": "lutheran/TreasureMap6.jpg",
+            "hintText": "Map is rotated"
         }
     ];
 
