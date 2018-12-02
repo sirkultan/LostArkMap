@@ -183,7 +183,17 @@
         "meta": {
             "ilvl": 250,
             "entry": "Calendar Event"
-        }
+        },
+        "bounds": [
+            [
+                -205.18,
+                286.86
+            ],
+            [
+                -225.18,
+                306.86
+            ]
+        ]
     });
 
     area.registerMap("Orbis Island", {
@@ -193,7 +203,17 @@
             "heart": "Boss kill: Pumpkin (호박신)",
             "heartKR": "보스 호박신 처치",
             "ilvl": 435
-        }
+        },
+        "bounds": [
+            [
+                -430.4,
+                327.94
+            ],
+            [
+                -450.4,
+                347.94
+            ]
+        ]
     });
 
     area.registerMap("Everglade Nest", {
@@ -242,7 +262,17 @@
             "heartKR": "두키왕 처치",
             "ilvl": 300,
             "entry": "1:10 / 5:10 / 9:10 / 13:10 / 17:10 / 21:10"
-        }
+        },
+        "bounds": [
+            [
+                -239.59,
+                320.74
+            ],
+            [
+                -259.59,
+                340.74
+            ]
+        ]
     });
 
     area.registerMap("Island of Wisdom", {
@@ -549,7 +579,17 @@
             "heart": "Treasure Chest in the Field",
             "heartKR": "필드 보물상자",
             "ilvl": 250
-        }
+        },
+        "bounds": [
+            [
+                -355.54,
+                170.86
+            ],
+            [
+                -375.54,
+                190.86
+            ]
+        ]
     });
 
     area.registerMap("Torrent Island", {
@@ -559,7 +599,17 @@
             "heart": "Boss kill: Aurion",
             "heartKR": "보스 아우리온 처치",
             "ilvl": 495
-        }
+        },
+        "bounds": [
+            [
+                -334.95,
+                184.52
+            ],
+            [
+                -354.95,
+                204.52
+            ]
+        ]
     });
 
     area.registerMap("Naruni Island", {
@@ -569,7 +619,17 @@
             "heart": "Naruni 101 collection",
             "heartKR": "나루니 101마리 수집",
             "ilvl": 330
-        }
+        },
+        "bounds": [
+            [
+                -307.64,
+                170.87
+            ],
+            [
+                -327.64,
+                190.87
+            ]
+        ]
     });
 
     area.registerMap("Twilight Island", {
@@ -577,7 +637,17 @@
         "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
-        }
+        },
+        "bounds": [
+            [
+                -341.89,
+                157.12
+            ],
+            [
+                -361.89,
+                177.12
+            ]
+        ]
     });
 
     area.registerMap("Gravis Resort", {
@@ -587,7 +657,17 @@
             "heart": "Adventure Quest: '궁극의 휴양'",
             "heartKR": "궁극의 휴양' 모험 퀘스트",
             "ilvl": 250
-        }
+        },
+        "bounds": [
+            [
+                -300.83,
+                143.55
+            ],
+            [
+                -320.83,
+                163.55
+            ]
+        ]
     });
 
     area.registerMap("Hypnose Eye", {
@@ -597,7 +677,17 @@
             "heart": "Become 'Trustworthy' with Calvados (칼바서스)",
             "heartKR": "칼바서스 호감도 '신뢰' ",
             "ilvl": 440
-        }
+        },
+        "bounds": [
+            [
+                -341.76,
+                116.21
+            ],
+            [
+                -361.76,
+                136.21
+            ]
+        ]
     });
 
     area.registerMap("Welcome Butterfly Island", {
@@ -605,7 +695,17 @@
         "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
-        }
+        },
+        "bounds": [
+            [
+                -307.74,
+                102.54
+            ],
+            [
+                -327.74,
+                122.54
+            ]
+        ]
     });
 
     area.registerMap("Isle of Dreams", {
@@ -615,7 +715,17 @@
             "heart": "Quest: Epona (에포나) Phase 2 reward",
             "heartKR": "퀘스트 (에포나 2단계 완료 보상)",
             "ilvl": 250
-        }
+        },
+        "bounds": [
+            [
+                -198.52,
+                75.25
+            ],
+            [
+                -218.52,
+                95.25
+            ]
+        ]
     });
 
     area.registerMap("Harmony Island", {
@@ -626,7 +736,17 @@
             "heartKR": "퀘스트 (천상의 하모니 획득)",
             "ilvl": 250,
             "entry": "Calendar Event"
-        }
+        },
+        "bounds": [
+            [
+                -246.35,
+                82.08
+            ],
+            [
+                -266.35,
+                102.08
+            ]
+        ]
     });
 
     area.registerMap("Primeval Island", {
@@ -634,7 +754,17 @@
         "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
-        }
+        },
+        "bounds": [
+            [
+                -280.33,
+                102.59
+            ],
+            [
+                -300.33,
+                122.59
+            ]
+        ]
     });
 
     area.registerMap("Island of Hope", {
@@ -644,7 +774,17 @@
             "heart": "Adventure Quest: '희생된 이들을 기억하자'",
             "heartKR": "희생된 이들을 기억하자' 모험 퀘스트",
             "ilvl": 340
-        }
+        },
+        "bounds": [
+            [
+                -266.67,
+                129.94
+            ],
+            [
+                -286.67,
+                149.94
+            ]
+        ]
     });
 
     area.registerMap("Goblin Island", {
@@ -654,7 +794,17 @@
             "heart": "Goblin Pandora: Exchange for 3 goblin gold coins",
             "heartKR": "고블린 판도라 (고블린 금화 3개로 교환)",
             "ilvl": 400
-        }
+        },
+        "bounds": [
+            [
+                -259.82,
+                150.37
+            ],
+            [
+                -279.82,
+                170.37
+            ]
+        ]
     });
 
     area.registerMap("Atropose", {
@@ -664,7 +814,17 @@
             "heart": "Quest: Throw a coin in the Fountain",
             "heartKR": "퀘스트-분수대에 동전 던지기",
             "ilvl": 250
-        }
+        },
+        "bounds": [
+            [
+                -287.02,
+                157.3
+            ],
+            [
+                -307.02,
+                177.3
+            ]
+        ]
     });
 
     area.registerMap("Blue Hole Island", {
@@ -672,7 +832,17 @@
         "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
-        }
+        },
+        "bounds": [
+            [
+                -273.51,
+                170.92
+            ],
+            [
+                -293.51,
+                190.92
+            ]
+        ]
     });
 
     area.registerMap("Valpurgis", {
@@ -680,7 +850,17 @@
         "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 445
-        }
+        },
+        "bounds": [
+            [
+                -218.87,
+                95.72
+            ],
+            [
+                -238.87,
+                115.72
+            ]
+        ]
     });
 
     area.registerMap("Metus Islands", {
@@ -689,7 +869,17 @@
         "meta": {
             "ilvl": 250,
             "entry": "Unknown"
-        }
+        },
+        "bounds": [
+            [
+                -212.16,
+                116.2
+            ],
+            [
+                -232.16,
+                136.2
+            ]
+        ]
     });
 
     area.registerMap("Island of Rejoice", {
@@ -698,10 +888,20 @@
         "meta": {
             "ilvl": 250,
             "entry": "Unknown"
-        }
+        },
+        "bounds": [
+            [
+                -232.57,
+                129.9
+            ],
+            [
+                -252.57,
+                149.9
+            ]
+        ]
     });
 
-    area.registerMap("Isla of Mist", {
+    area.registerMap("Isle of Mist", {
         "kr": "안개의 섬",
         "type": MapTypeEnum.Island,
         "meta": {
@@ -726,7 +926,17 @@
         "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
-        }
+        },
+        "bounds": [
+            [
+                -232.63,
+                150.37
+            ],
+            [
+                -252.63,
+                170.37
+            ]
+        ]
     });
 
     area.registerMap("Thick Mist Ridge", {
@@ -755,7 +965,17 @@
             "heartKR": "협동 퀘스트-볼라르의 비밀 상자에서 획득",
             "ilvl": 300,
             "entry": "Calendar Event"
-        }
+        },
+        "bounds": [
+            [
+                -252.97,
+                266.45
+            ],
+            [
+                -272.97,
+                286.45
+            ]
+        ]
     });
 
     area.registerMap("Club Avinue", {
@@ -1124,7 +1344,17 @@
             "heart": "Become 'Trustworthy' with Emma (엠마)",
             "heartKR": "엠마 호감도 '신뢰'",
             "ilvl": 250
-        }
+        },
+        "bounds": [
+            [
+                -137.02,
+                327.84
+            ],
+            [
+                -157.02,
+                347.84
+            ]
+        ]
     });
 
     area.registerMap("Kaltes Herz", {
@@ -1377,7 +1607,17 @@
             "heartKR": "찾아라 꿈빛 조각!' 경쟁 퀘스트 보상 몬테섬 참가상",
             "ilvl": 330,
             "entry": "Calendar Event"
-        }
+        },
+        "bounds": [
+            [
+                -171.13,
+                170.83
+            ],
+            [
+                -191.13,
+                190.83
+            ]
+        ]
     });
 
     area.registerMap("Isle of Longing", {
@@ -1387,7 +1627,17 @@
             "heart": "Kill Vice Captain (부선장 처치)<br>Obtain Setino's Secret Bag (세티노의 비밀가방)",
             "heartKR": "부선장 처치 - 세티노의 비밀가방",
             "ilvl": 365
-        }
+        },
+        "bounds": [
+            [
+                -191.55,
+                136.85
+            ],
+            [
+                -211.55,
+                156.85
+            ]
+        ]
     });
 
     area.registerMap("Isle of Eternity", {
@@ -1395,7 +1645,17 @@
         "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
-        }
+        },
+        "bounds": [
+            [
+                -184.75,
+                109.4
+            ],
+            [
+                -204.75,
+                129.4
+            ]
+        ]
     });
 
     area.registerMap("Carmine's Post", {
@@ -1403,7 +1663,17 @@
         "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 450
-        }
+        },
+        "bounds": [
+            [
+                -143.97,
+                122.88
+            ],
+            [
+                -163.97,
+                142.88
+            ]
+        ]
     });
 
     area.registerMap("Isle of Shadows", {
@@ -1411,7 +1681,17 @@
         "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 420
-        }
+        },
+        "bounds": [
+            [
+                -136.97,
+                184.49
+            ],
+            [
+                -156.97,
+                204.49
+            ]
+        ]
     });
 
     area.registerMap("Tranquil Island", {
@@ -1420,7 +1700,17 @@
         "meta": {
             "ilvl": 400,
             "entry": "Calendar Event"
-        }
+        },
+        "bounds": [
+            [
+                -123.43,
+                157.03
+            ],
+            [
+                -143.43,
+                177.03
+            ]
+        ]
     });
 
     area.registerMap("Unknown Island", {
@@ -1429,7 +1719,17 @@
         "meta": {
             "ilvl": 420,
             "entry": "Calendar Event"
-        }
+        },
+        "bounds": [
+            [
+                -116.48,
+                143.38
+            ],
+            [
+                -136.48,
+                163.38
+            ]
+        ]
     });
 
     area.registerMap("Lucky Island", {
@@ -1437,7 +1737,17 @@
         "type": MapTypeEnum.Island,
         "meta": {
             "ilvl": 250
-        }
+        },
+        "bounds": [
+            [
+                -89.35,
+                150.29
+            ],
+            [
+                -109.35,
+                170.29
+            ]
+        ]
     });
 
     area.registerMap("Island of Fire and Ice", {
@@ -1467,7 +1777,17 @@
             "heart": "Adventure Quest: '따뜻한 온정의 횃불' (Humpback Whale Oil needed)",
             "heartKR": "모험 퀘스트 '따뜻한 온정의 횃불' (흑등고래의 기름 필요)",
             "ilvl": 280
-        }
+        },
+        "bounds": [
+            [
+                -41.41,
+                321.13
+            ],
+            [
+                -61.41,
+                341.13
+            ]
+        ]
     });
 
     area.registerMap("Cold Home", {

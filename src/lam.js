@@ -55,8 +55,8 @@ let LAM = (function(){
             }
 
             // Clamp to 2 digits
-            x = Math.round(x * 100) / 100;
-            y = Math.round(y * 100) / 100;
+            x = ToMapPrecision(x);
+            y = ToMapPrecision(y);
 
             let area = customArea || this.activeArea;
             let zoomLevel = customZoomLevel || LAM.map.getZoom();
@@ -277,7 +277,7 @@ let LAM = (function(){
                             x: x,
                             y: y,
                             type: MarkerTypeEnum.TargetMark,
-                            title: area + ' ' + Math.round(x) + ' x ' + Math.round(y),
+                            title: area + ' ' + ToMapPrecision(x) + ' x ' + ToMapPrecision(y),
                             isGenerated: true
                         });
                     }

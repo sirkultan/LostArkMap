@@ -15,6 +15,8 @@
         2: {
             n: "1.1",
             e: [
+                'Added 32 Placeholder island images and updated all island links with proper information<br><span class="island-tooltip-title">I am still in need of High Quality Map Images for Islands and zones, please contact me through Github or #Szera in Discord if you can provide any.</span>',
+                'Added 17 Island Heart descriptions with translations',
                 'Added small grid lines back to world map to indicate areas',
                 'Added 4 Treasure maps',
                 'Added 3 FAQ Entry',

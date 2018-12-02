@@ -98,7 +98,9 @@
                     return;
                 }
 
-                console.log("[" + Math.round(x * 100) / 100 + ", " + Math.round(y * 100) / 100 + ']');
+                let defaultBounds = GetBounds([x, y], [10, 10]);
+                console.log("[" + ToMapPrecision(x) + ", " + ToMapPrecision(y) + ']');
+                console.log(defaultBounds);
             });
 
             LAM.map.on('mouseup', function(e) {
@@ -386,8 +388,8 @@
         }
 
         placeMarker(x, y) {
-            x = Math.round(x * 100) / 100;
-            y = Math.round(y * 100) / 100;
+            x = ToMapPrecision(x);
+            y = ToMapPrecision(y);
 
             let markerData = $.extend(true, {
                 x: x,

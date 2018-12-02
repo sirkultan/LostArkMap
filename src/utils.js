@@ -27,7 +27,7 @@ GetBoundsSize = function(bounds) {
 };
 
 /**
- * @return {number[]}
+ * @return {number[][]}
  */
 GetBounds = function(center, size) {
     if(center[0] < 0) {
@@ -40,12 +40,7 @@ GetBounds = function(center, size) {
 
     let tl = [center[0] - size[0], center[1] - size[1]];
     let br = [center[0] + size[0], center[1] + size[1]];
-    for(let i = 0; i < 2; i++) {
-        tl[i] = Math.round(tl[i] * 100) / 100;
-        br[i] = Math.round(br[i] * 100) / 100;
-    }
-
-    return [tl, br];
+    return ToMapPrecisionBounds([tl, br]);
 };
 
 /**
@@ -87,4 +82,21 @@ RefreshMarkerLabel = function (marker, markerData) {
     });
 
     marker.setIcon(labelIcon);
+};
+
+/**
+ * @return {number}
+ */
+ToMapPrecision = function(value) {
+    return Math.round(value * 100) / 100;
+};
+
+/**
+ * @return {number[][]}
+ */
+ToMapPrecisionBounds = function (bounds) {
+    return [
+        [ToMapPrecision(bounds[0][0]), ToMapPrecision(bounds[0][1])],
+        [ToMapPrecision(bounds[1][0]), ToMapPrecision(bounds[1][1])]
+    ];
 };

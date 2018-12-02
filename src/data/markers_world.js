@@ -749,7 +749,7 @@
                 164.77
             ],
             "teleportArea": "Islands",
-            "title": "To Isla of Mist",
+            "title": "To Isle of Mist",
             "titleKR": "안개의 섬"
         },
         {
@@ -838,7 +838,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 70,
             "title": "To Orbis Island",
-            "titleKR": "오르비스 섬"
+            "titleKR": "오르비스 섬",
+            "teleportTo": [
+                -440.47,
+                337.98
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -254.77,
@@ -1094,7 +1099,12 @@
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 90,
             "title": "To Atropose",
-            "titleKR": "아트로포스"
+            "titleKR": "아트로포스",
+            "teleportTo": [
+                -297.04,
+                167.24
+            ],
+            "teleportArea": "Islands"
         },
         {
             "x": -277.18763341848114,
