@@ -124,7 +124,8 @@
             "id": 15,
             "title": "To World",
             "teleportTo": [
-                -264.79, 383.97
+                -264.79,
+                383.97
             ],
             "teleportArea": "World"
         },
@@ -354,10 +355,11 @@
         {
             "x": -294.22,
             "y": 102.49,
-            "type": MarkerTypeEnum.Vista,
+            "type": MarkerTypeEnum.CookingIngredient,
             "id": 51,
             "popupText": "적가문 계승 단약",
-            "hintImage": "anich/SoundVistaHint3.jpg"
+            "hintImage": "anich/SoundCookingIngredientHint1.jpg",
+            "title": "Vista"
         },
         {
             "x": -312.6,
@@ -1147,7 +1149,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 164,
             "hintImage": "anich/TreasureMap1.jpg",
-            'rarity': RarityEnum.Epic
+            "rarity": RarityEnum.Epic
         },
         {
             "x": -381.66,
@@ -1156,7 +1158,7 @@
             "id": 165,
             "hintImage": "anich/TreasureMap2.jpg",
             "hintText": "map is rotated",
-            'rarity': RarityEnum.Legendary
+            "rarity": RarityEnum.Legendary
         },
         {
             "x": -191.25,
@@ -1165,7 +1167,7 @@
             "id": 166,
             "hintImage": "anich/TreasureMap3.jpg",
             "hintText": "requires Heavenly Harmony song",
-            'rarity': RarityEnum.Rare
+            "rarity": RarityEnum.Rare
         }
     ];
 

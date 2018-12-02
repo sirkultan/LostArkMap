@@ -35,6 +35,7 @@
                 'Added 1 Guide',
                 'Added 1 FAQ Entry',
                 'Fixed several incorrect zone markers',
+                'Fixed Cooking Ingredient Marker in Forest of Sound incorrectly showing as Vista (thx #Myndi)',
                 'Reduced the size of the Treasure Map List Header slightly'
             ]
         }
