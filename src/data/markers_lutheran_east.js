@@ -1634,6 +1634,150 @@
             "y": 407.77,
             "type": MarkerTypeEnum.Waypoint,
             "id": 233
+        },
+        {
+            "x": -336.75,
+            "y": 12.04,
+            "type": MarkerTypeEnum.NPCFavor,
+            "id": 234
+        },
+        {
+            "x": -360.4,
+            "y": 26.58,
+            "type": MarkerTypeEnum.NPCFavor,
+            "id": 235
+        },
+        {
+            "x": -360.32,
+            "y": 27.62,
+            "type": MarkerTypeEnum.NPCFavor,
+            "id": 236
+        },
+        {
+            "x": -345.82,
+            "y": 17.24,
+            "type": MarkerTypeEnum.Mail,
+            "id": 237
+        },
+        {
+            "x": -331.38,
+            "y": 26.45,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 238
+        },
+        {
+            "x": -333.23,
+            "y": 29.1,
+            "type": MarkerTypeEnum.NPCStorage,
+            "id": 239
+        },
+        {
+            "x": -344.48,
+            "y": 32.88,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 240
+        },
+        {
+            "x": -351.07,
+            "y": 37.6,
+            "type": MarkerTypeEnum.Mail,
+            "id": 241
+        },
+        {
+            "x": -352.51,
+            "y": 38.72,
+            "type": MarkerTypeEnum.NPCStorage,
+            "id": 242
+        },
+        {
+            "x": -357.01,
+            "y": 41.88,
+            "type": MarkerTypeEnum.Mail,
+            "id": 243
+        },
+        {
+            "x": -358.17,
+            "y": 41,
+            "type": MarkerTypeEnum.NPCStorage,
+            "id": 244
+        },
+        {
+            "x": -343.76,
+            "y": 99.43,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 245
+        },
+        {
+            "x": -349.47,
+            "y": 160.26,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 246
+        },
+        {
+            "x": -338.72,
+            "y": 239.51,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 247
+        },
+        {
+            "x": -296.35,
+            "y": 227.94,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 248
+        },
+        {
+            "x": -297.38,
+            "y": 227.6,
+            "type": MarkerTypeEnum.Mail,
+            "id": 249
+        },
+        {
+            "x": -284.25,
+            "y": 283.34,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 250
+        },
+        {
+            "x": -298.99,
+            "y": 361.71,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 251
+        },
+        {
+            "x": -299.16,
+            "y": 359.22,
+            "type": MarkerTypeEnum.NPCStorage,
+            "id": 252
+        },
+        {
+            "x": -267.69,
+            "y": 352.4,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 253
+        },
+        {
+            "x": -297.4,
+            "y": 419.2,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 254
+        },
+        {
+            "x": -295.24,
+            "y": 415.45,
+            "type": MarkerTypeEnum.NPCStorage,
+            "id": 255
+        },
+        {
+            "x": -288.47,
+            "y": 414.31,
+            "type": MarkerTypeEnum.Mail,
+            "id": 256
+        },
+        {
+            "x": -359.02,
+            "y": 406.37,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 257
         }
     ];
 

@@ -415,7 +415,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 55,
             "hintImage": "totoiku/TreasureMap1.jpg",
-            'rarity': RarityEnum.Rare,
+            "rarity": RarityEnum.Rare,
             "tmLand": TreasureMapLandFilterEnum.Abundant
         },
         {
@@ -424,19 +424,156 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 56,
             "hintImage": "totoiku/TreasureMap2.jpg",
-            'rarity': RarityEnum.Legendary,
+            "rarity": RarityEnum.Legendary,
             "tmLand": TreasureMapLandFilterEnum.Sparse
-        }
-        ,
+        },
         {
             "x": -475.6,
             "y": 326.3,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 57,
             "hintImage": "totoiku/TreasureMap3.jpg",
-            'rarity': RarityEnum.Epic,
+            "rarity": RarityEnum.Epic,
             "tmLand": TreasureMapLandFilterEnum.Abundant
+        },
+        {
+            "x": -481.02,
+            "y": 317.1,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 58
+        },
+        {
+            "x": -482.65,
+            "y": 313.23,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 59
+        },
+        {
+            "x": -482.46,
+            "y": 311.85,
+            "type": MarkerTypeEnum.NPCStorage,
+            "id": 60
+        },
+        {
+            "x": -450.08,
+            "y": 328.15,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 61
+        },
+        {
+            "x": -403.95,
+            "y": 300.79,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 62
+        },
+        {
+            "x": -461.96,
+            "y": 200,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 63
+        },
+        {
+            "x": -464.89,
+            "y": 195.76,
+            "type": MarkerTypeEnum.Mail,
+            "id": 64
+        },
+        {
+            "x": -451.14,
+            "y": 172.52,
+            "type": MarkerTypeEnum.NPCFavor,
+            "id": 65
+        },
+        {
+            "x": -441.58,
+            "y": 190.76,
+            "type": MarkerTypeEnum.NPCStorage,
+            "id": 66
+        },
+        {
+            "x": -434.33,
+            "y": 197.13,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 67
+        },
+        {
+            "x": -404.64,
+            "y": 165.51,
+            "type": MarkerTypeEnum.NPCFavor,
+            "id": 68
+        },
+        {
+            "x": -406.77,
+            "y": 164.32,
+            "type": MarkerTypeEnum.NPCFavor,
+            "id": 69
+        },
+        {
+            "x": -334.01,
+            "y": 320.54,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 70
+        },
+        {
+            "x": -334.08,
+            "y": 318.36,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 71
+        },
+        {
+            "x": -293.13,
+            "y": 320.79,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 72
+        },
+        {
+            "x": -354.08,
+            "y": 169.94,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 73
+        },
+        {
+            "x": -322.2,
+            "y": 196.11,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 74
+        },
+        {
+            "x": -323.45,
+            "y": 197.86,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 75
+        },
+        {
+            "x": -280.57,
+            "y": 205.54,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 76
+        },
+        {
+            "x": -242,
+            "y": 181.12,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 77
+        },
+        {
+            "x": -244.75,
+            "y": 180.93,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 78
+        },
+        {
+            "x": -199.5,
+            "y": 190.93,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 79
+        },
+        {
+            "x": -148.31,
+            "y": 183.87,
+            "type": MarkerTypeEnum.Waypoint,
+            "id": 80
         }
-    ]
+    ];
 
 }());
