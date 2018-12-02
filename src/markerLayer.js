@@ -11,6 +11,7 @@
             this.markerIdLookup = {};
             this.markerLayer = undefined;
             this.markerTypeLayers = {};
+            this.markerTypeLayerState = {};
             this.mapLayer = undefined;
             this.layerControl = undefined;
             this.nextMarkerId = 0;
@@ -31,6 +32,7 @@
             this.mapLayer.getTileUrl = LAM.getMapTileUrl(this.imagePath);
 
             this.markerLayer = L.layerGroup();
+
             this.generatedMarkerLayer = L.layerGroup();
 
             let baseLayers = {
@@ -432,6 +434,16 @@
             }
         }
 
+        enableMarkerLayer(type) {
+            if(this.markerTypeLayerState[type] === false) {
+                delete this.markerTypeLayerState[type];
+            }
+        }
+
+        disableMarkerLayer(type) {
+            this.markerTypeLayerState[type] = false;
+        }
+
         createMarker(markerData) {
             this.prepareMarkerData(markerData);
 
@@ -473,8 +485,20 @@
                     let typeLayer = this.markerTypeLayers[markerData.type];
                     if (typeLayer === undefined){
                         typeLayer = L.layerGroup();
-                        this.layerControl.addOverlay(typeLayer, MarkerTypeDefaultTitle(markerData.type));
-                        this.markerTypeLayers[markerData.type] = typeLayer;
+                        typeLayer.markerType = markerData.type;
+                        typeLayer.markerLayer = this;
+
+                        typeLayer.on('add', function(e) {
+                            e.target.markerLayer.enableMarkerLayer(e.target.markerType);
+                        });
+
+                        typeLayer.on('remove', function(e) {
+                            e.target.markerLayer.disableMarkerLayer(e.target.markerType);
+                        });
+
+                        let layerTitle = '<img class="layerSelectIcon" src="images/icons/' + typeLayer.markerType + '"/>' + MarkerTypeDefaultTitle(typeLayer.markerType);
+                        this.layerControl.addOverlay(typeLayer, layerTitle);
+                        this.markerTypeLayers[typeLayer.markerType] = typeLayer;
                     }
 
                     typeLayer.addLayer(marker);

@@ -1827,7 +1827,8 @@
             "id": 174,
             "hintImage": "world/TreasureMap9.jpg",
             'rarity': RarityEnum.Rare,
-            'tmArea': TreasureMapAreaFilter.World
+            'tmArea': TreasureMapAreaFilter.World,
+            'tmLand': TreasureMapLandFilterEnum.Abundant
         }
     ];
 

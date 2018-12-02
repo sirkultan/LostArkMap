@@ -212,3 +212,14 @@ body {
 
 .treasure-map-header {
 }
+
+.layerSelectIcon {
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+}
+
+.changeLogContent {
+    max-height: 800px;
+    overflow-y: scroll;
+}
