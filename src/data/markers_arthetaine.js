@@ -1200,6 +1200,13 @@
             "y": 64.1,
             "type": MarkerTypeEnum.Mokoko,
             "id": 167
+        },
+        {
+            "x": -223.47,
+            "y": 462.05,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 168,
+            "hintImage": "arthetaine/TreasureMap1.jpg"
         }
     ];
 

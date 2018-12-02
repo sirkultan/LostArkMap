@@ -961,6 +961,13 @@
             "y": 63.72,
             "type": MarkerTypeEnum.Mokoko,
             "id": 132
+        },
+        {
+            "x": -492.11,
+            "y": 56.53,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 133,
+            "hintImage": "shushire/TreasureMap2.jpg"
         }
     ];
 

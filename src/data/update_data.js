@@ -16,7 +16,7 @@
             n: "1.1",
             e: [
                 'Added small grid lines back to world map to indicate areas',
-                'Added 2 Treasure maps',
+                'Added 4 Treasure maps',
                 'Added 3 FAQ Entry',
                 'Fixed Island Heart Description for Notos Island in World Map',
                 'Fixed spelling and names of several islands in world and island map'
