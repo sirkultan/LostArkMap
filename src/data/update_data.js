@@ -29,7 +29,8 @@
         3: {
             n: "1.2",
             e: [
-                'Added 1 Guide'
+                'Added 1 Guide',
+                'Added 1 FAQ Entry'
             ]
         }
     };

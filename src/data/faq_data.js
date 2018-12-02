@@ -59,6 +59,10 @@
         {
             q: "How can i obtain Music of Starlight?",
             a: "You have to farm Drifting Souls and buy it from Starlight Lighthouse Island"
+        },
+        {
+            q: 'Where do you get the purple scrolls to upgrade ship to 2?',
+            a: 'Estoc plans are sold around Lutheran harbor, Fujin at Anich, Barkstorm at Arthetaine, Pneuma at Totoik and Brahms at Bern'
         }
     ];
 
