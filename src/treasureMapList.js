@@ -81,10 +81,6 @@
         }
 
         applyFilter(){
-            // TODO
-            console.log('Filter Treasure maps: ');
-            console.log(this.filter);
-
             let cards = $('.treasure-map-card');
             cards.css('display', 'none');
 

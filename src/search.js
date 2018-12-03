@@ -264,7 +264,6 @@
 
                 case SearchResultTypeEnum.Marker:
                 {
-                    console.log(data);
                     LAM.gotoMapArea([data.x, data.y], data.area);
                     return;
                 }
