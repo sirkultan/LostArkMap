@@ -54,7 +54,7 @@
             e: [
                 'Statistics have moved into a separate Content Section',
                 'Added Server + Local Time to the Navigation bar',
-                'Added 1 Treasure Map',
+                'Added 2 Treasure Maps',
             ]
         }
     };

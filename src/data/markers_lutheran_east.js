@@ -1787,6 +1787,15 @@
             "hintImage": "lutheran/TreasureMap8.jpg",
             "hintText": "Requires Song of Courage<br>Map is rotated",
             "rarity": RarityEnum.Legendary
+        },
+        {
+            "x": -354.12,
+            "y": 398.59,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 259,
+            "hintImage": "lutheran/TreasureMap9.jpg",
+            "rarity": RarityEnum.Epic,
+            "tmLand": TreasureMapLandFilterEnum.Sparse
         }
     ];
 
