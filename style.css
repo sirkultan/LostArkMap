@@ -238,3 +238,7 @@ body {
 .timeDisplayTitle {
     font-size: medium;
 }
+
+.eventCountdown {
+    color: #FF0000;
+}

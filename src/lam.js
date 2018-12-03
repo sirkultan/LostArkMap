@@ -341,6 +341,10 @@ let LAM = (function(){
             $('#' + type).show();
 
             $('#' + type + '_toggle').addClass('active');
+
+            if(this.activeContent === ContentTypeEnum.AreaMap) {
+                this.map.invalidateSize();
+            }
         }
 
         registerArea(name, entry) {

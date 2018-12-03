@@ -545,6 +545,7 @@
             "popupText": "공명의 노래",
             "type": MarkerTypeEnum.PlayInstrument,
             "hintImage": "artemis/LoghillsPlayMusicHint1.jpg",
+            "hintText": "초반 시작구간에서는 없고, 해당 지역 시나리오 퀘스트를 깨면 그때부터 조작가능해요.",
             "id": 56
         },
         {
@@ -1466,6 +1467,14 @@
             "y": 265.86,
             "type": MarkerTypeEnum.NPCStorage,
             "id": 179
+        },
+        {
+            "x": -380.6,
+            "y": 264.6,
+            "popupText": "우두머리 크리클로우 #2",
+            "type": MarkerTypeEnum.Boss,
+            "hintImage": "artemis/LoghillsBossHint4.jpg",
+            "id": 180
         }
     ];
 

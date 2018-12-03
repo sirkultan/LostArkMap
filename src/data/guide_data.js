@@ -110,6 +110,11 @@
             title: "Event Calendar (KR)",
             url: "https://loahae.com/calendar/",
             preview: "calendar.jpg"
+        },
+        {
+            title: "Card Info (KR)",
+            url: "http://lostark.inven.co.kr/dataninfo/card/",
+            preview: "cardinfo.jpg"
         }
     ];
 

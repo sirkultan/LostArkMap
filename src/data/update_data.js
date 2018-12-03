@@ -54,7 +54,12 @@
             e: [
                 'Statistics have moved into a separate Content Section',
                 'Added Server + Local Time to the Navigation bar',
-                'Added 2 Treasure Maps',
+                'Added 3 Treasure Maps',
+                'Added 1 Guide',
+                'Added 1 FAQ Entry',
+                'Added KR Hint text to Loghills music marker',
+                'Added Missing Boss marker for 우두머리 크리클로우 in Loghills',
+                'Fixed map size rendering incorrect when opening the site in non-map content'
             ]
         }
     };

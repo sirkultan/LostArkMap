@@ -63,6 +63,10 @@
         {
             q: 'Where do you get the purple scrolls to upgrade ship to 2?',
             a: 'Estoc plans are sold around Lutheran harbor, Fujin at Anich, Barkstorm at Arthetaine, Pneuma at Totoik and Brahms at Bern'
+        },
+        {
+            q: 'What are the card counters / elements?',
+            a: 'Fire -> Earth -> Lightning -> Water -> Fire<br>Darkness is able to respond against all attributes and Light is the counter for darkness.'
         }
     ];
 
