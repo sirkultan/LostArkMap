@@ -48,6 +48,12 @@
                 'Removed incorrect Mokoko Seed in Forest of Sound (thx #Myndi)',
                 'Reduced the size of the Treasure Map List Header slightly'
             ]
+        },
+        4: {
+            n: "1.3",
+            e: [
+
+            ]
         }
     };
 
