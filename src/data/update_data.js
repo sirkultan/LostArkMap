@@ -52,6 +52,8 @@
         4: {
             n: "1.3",
             e: [
+                'Statistics have moved into a separate Content Section',
+                'Added Server + Local Time to the Navigation bar',
                 'Added 1 Treasure Map',
             ]
         }

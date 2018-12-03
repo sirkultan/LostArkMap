@@ -30,6 +30,12 @@ body {
     vertical-align: text-bottom;
 }
 
+.featherDefault {
+    width: 75%;
+    height: 75%;
+    vertical-align: text-bottom;
+}
+
 /*
  * Sidebar
  */
@@ -227,4 +233,8 @@ body {
 .statisticsIcon {
     width: 32px;
     height: 32px;
+}
+
+.timeDisplayTitle {
+    font-size: medium;
 }
