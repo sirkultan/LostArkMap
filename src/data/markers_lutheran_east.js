@@ -1785,7 +1785,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 258,
             "hintImage": "lutheran/TreasureMap8.jpg",
-            "hintText": "Map is rotated",
+            "hintText": "Requires Song of Courage<br>Map is rotated",
             "rarity": RarityEnum.Legendary
         }
     ];

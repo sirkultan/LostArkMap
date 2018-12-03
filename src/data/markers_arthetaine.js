@@ -1203,6 +1203,15 @@
             "hintImage": "arthetaine/TreasureMap1.jpg",
             'rarity': RarityEnum.Rare,
             "tmLand": TreasureMapLandFilterEnum.Sparse
+        },
+        {
+            "x": -189.25,
+            "y": 341.6,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 168,
+            "hintImage": "arthetaine/TreasureMap2.jpg",
+            'rarity': RarityEnum.Rare,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         }
     ];
 
