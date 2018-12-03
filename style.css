@@ -223,3 +223,8 @@ body {
     max-height: 800px;
     overflow-y: scroll;
 }
+
+.statisticsIcon {
+    width: 32px;
+    height: 32px;
+}

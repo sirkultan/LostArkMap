@@ -101,7 +101,7 @@
                 }
             }
 
-            LAM.rebuildStats();
+            LAM.statistics.rebuildStats();
         }
 
         prepareMarkerData(markerData) {
@@ -513,7 +513,7 @@
             this.processMarkerSpecialTooltip(marker, markerData);
             this.processMarkerSpecialContent(marker, markerData);
 
-            LAM.rebuildStats();
+            LAM.statistics.rebuildStats();
             return markerData.id;
         }
 

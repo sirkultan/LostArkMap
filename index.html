@@ -61,6 +61,7 @@
     <script src="src/faq.js"></script>
     <script src="src/treasureMapList.js"></script>
     <script src="src/settings.js"></script>
+    <script src="src/statistics.js"></script>
 
     <script src="src/core_data.js"></script>
 
@@ -234,11 +235,12 @@
                                 FAQ
                             </a>
                         </li>
-                    </ul>
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span>Stats</span>
-                    </h6>
-                    <ul class="nav flex-column mb-2" id="stats">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" id="content_statistics_toggle">
+                                <span data-feather="file-text"></span>
+                                Statistics
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -497,7 +499,13 @@
                     <div class="accordion" id="faqContent"></div>
                 </div>
 
-                <div id="content_statistics"></div>
+                <div id="content_statistics" class="py-5 bg-light">
+                    <h2 class="text-center">Statistics</h2>
+                    <br>
+                    <div class="row" id="statisticsCardPanel">
+
+                    </div>
+                </div>
             </main>
         </div>
     </div>

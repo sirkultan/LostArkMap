@@ -11,7 +11,6 @@ let LAM = (function(){
             this.activeDynamicLayer = undefined;
             this.activeMarkerLayer = undefined;
             this.activeContent = undefined;
-            this.suspendStatUpdate = true;
             this.copyLocationMode = false;
             this.intervals = [];
             this.lastUpdateTime = 0;
@@ -102,8 +101,6 @@ let LAM = (function(){
 
             feather.replace();
 
-            this.rebuildStats();
-
             $.urlParam = function(name){
                 var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
                 if (results === null) {
@@ -161,12 +158,10 @@ let LAM = (function(){
 
             moment.tz.add([Constants.SeoulMomentTZ])
 
-            this.suspendStatUpdate = false;
-            this.rebuildStats();
-
             LAM.guide.initialize();
             LAM.faq.initialize();
             LAM.settings.initialize();
+            LAM.statistics.initialize();
 
             // Search needs to initialize after all content is complete
             LAM.search.initialize();
@@ -437,73 +432,6 @@ let LAM = (function(){
             }
 
             return areaData.markerLayer;
-        }
-
-        getMaxAreaZoom(area) {
-            let areaData = this.areas[area];
-            if(areaData === undefined) {
-                return undefined;
-            }
-
-            return areaData.zoomLevel;
-        }
-
-        rebuildStats() {
-            if(this.suspendStatUpdate) {
-                return;
-            }
-
-            let statsPanel = $('#stats');
-            statsPanel.empty();
-
-            let markerStats = {};
-            for (let name in this.areas) {
-                let area = this.areas[name];
-                for (let i in area.markerLayer.markers) {
-                    let markerData = area.markerLayer.markers[i];
-                    if (markerStats[markerData.type] === undefined) {
-                        markerStats[markerData.type] = 0;
-                    }
-
-                    markerStats[markerData.type]++;
-                }
-            }
-
-            for (let typeName in MarkerTypeEnum) {
-                let markerImage = MarkerTypeEnum[typeName];
-                switch (markerImage) {
-                    // Ignore some markers
-                    case MarkerTypeEnum.Internal:
-                    case MarkerTypeEnum.Notice:
-                    case MarkerTypeEnum.Zoning:
-                    case MarkerTypeEnum.ZoningIslandPVP:
-                    case MarkerTypeEnum.ZoningIsland:
-                    case MarkerTypeEnum.ZoningIslandFlux:
-                    case MarkerTypeEnum.ZoningWorld:
-                    case MarkerTypeEnum.TargetMark:
-                    case MarkerTypeEnum.SeaAreaAquatic:
-                    case MarkerTypeEnum.SeaAreaDeath:
-                    case MarkerTypeEnum.SeaAreaIce:
-                    case MarkerTypeEnum.SeaAreaSandstorm:
-                    case MarkerTypeEnum.SeaAreaSiren:
-                    case MarkerTypeEnum.SeaAreaStorm: {
-                        continue;
-                    }
-                }
-                let markerTitle = MarkerTypeDefaultTitle(markerImage);
-                let markerCount = markerStats[markerImage];
-                if(markerCount === undefined) {
-                    markerCount = 0;
-                }
-
-                let element = $('<li class="nav-item"></li>');
-                this.activateLink = $('<a class="nav-link" href="#"></a>');
-                this.activateLink.html('<span><img class="feather" src="images/icons/' + markerImage + '"/></span>' + markerCount + " " + markerTitle);
-
-                element.append(this.activateLink);
-
-                statsPanel.append(element);
-            }
         }
 
     }
