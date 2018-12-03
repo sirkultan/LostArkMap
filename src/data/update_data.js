@@ -32,7 +32,7 @@
                 'Added 18 Native Village locations to the World Map',
                 'Added Filter by Rarity, Area and Land mass to Treasure Map List<br>Some of these are subjective and i will adjust the data moving forward based on feedback.',
                 'Added Icons to Map Layer Selection',
-                'Added 7 Treasure Maps',
+                'Added 8 Treasure Maps',
                 'Added 1 Guide',
                 'Added 1 FAQ Entry',
                 'Added 12 Favor NPC Markers (more info / names will come soon)',
