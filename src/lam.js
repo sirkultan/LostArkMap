@@ -159,6 +159,8 @@ let LAM = (function(){
                 LAM.copyLocationMode = true;
             }).addTo( this.map );
 
+            moment.tz.add([Constants.SeoulMomentTZ])
+
             this.suspendStatUpdate = false;
             this.rebuildStats();
 
@@ -397,8 +399,6 @@ let LAM = (function(){
 
             return result;
         }
-
-
 
         getMapTileUrl(path) {
             return function(o) {

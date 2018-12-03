@@ -255,26 +255,26 @@
                 return;
             }
 
-            let popupContent = $('<div></div>');
+            let popupContent = '<div>';
 
             let pinId = 'markerPin_' + markerData.area + '_' + markerData.id;
-            let copyLocationButton = $('<a href="#" class="markerPinLink" id="' + pinId + '"><img src="images/icons/map-pin.svg"/></a>');
-
-            popupContent.append(copyLocationButton);
+            popupContent = popupContent + '<a href="#" class="markerPinLink" id="' + pinId + '"><img src="images/icons/map-pin.svg"/></a>';
 
             if(markerData.popupText !== undefined){
-                popupContent.append($('<h4>' + markerData.popupText + '</h4>'))
+                popupContent = popupContent + '<h4>' + markerData.popupText + '</h4>';
             }
 
             if(markerData.hintImage !== undefined){
-                popupContent.append($('<img src="images/marker_hints/' + markerData.hintImage + '"/>'))
+                popupContent = popupContent + '<img src="images/marker_hints/' + markerData.hintImage + '"/>';
             }
 
             if(markerData.hintText !== undefined){
-                popupContent.append($('<p>' + markerData.hintText + '</p>'))
+                popupContent = popupContent + '<p>' + markerData.hintText + '</p>';
             }
 
-            marker.bindPopup(popupContent.html(), {
+            popupContent = popupContent + '</div>';
+
+            marker.bindPopup(popupContent, {
                 minWidth: 300
             });
         }

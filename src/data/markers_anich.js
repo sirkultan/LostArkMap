@@ -1163,6 +1163,15 @@
             "hintImage": "anich/TreasureMap3.jpg",
             "hintText": "requires Heavenly Harmony song",
             "rarity": RarityEnum.Rare
+        },
+        {
+            "x": -315.5,
+            "y": 120.3,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 167,
+            "hintImage": "anich/TreasureMap4.jpg",
+            "rarity": RarityEnum.Rare,
+            "tmLand": TreasureMapLandFilterEnum.Sparse
         }
     ];
 
