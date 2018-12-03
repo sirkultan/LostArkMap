@@ -160,7 +160,7 @@ let LAM = (function(){
 
             LAM.guide.initialize();
             LAM.faq.initialize();
-            LAM.calendar.initialize();
+            LAM.events.initialize();
             LAM.settings.initialize();
             LAM.statistics.initialize();
 

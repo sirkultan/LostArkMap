@@ -1,10 +1,10 @@
 (function(){
 
     const TimerCallback = function(source, delta) {
-        LAM.calendar.update(delta);
+        LAM.events.update(delta);
     };
 
-    class LostArkCalendar {
+    class LostArkEvents {
 
         constructor() {
             this.entries = {};
@@ -14,13 +14,7 @@
         initialize() {
             this.initializeUI();
 
-            LAM.createInterval('calendar', TimerCallback, 500);
-
-            /*this.createEvent({
-                type: CalendarEventEnum.Test,
-                title: 'This is a Test Event',
-                time: 240000
-            })*/
+            LAM.createInterval('events', TimerCallback, 500);
 
             this.refreshEvents();
         }
@@ -39,7 +33,7 @@
 
                 for(let i in islandData.meta.entryTimes) {
                     this.createEvent({
-                        type: CalendarEventEnum.IslandEntry,
+                        type: EventsEventEnum.IslandEntry,
                         title: island + ' Entry',
                         time: islandData.meta.entryTimes[i],
                         recurring: true
@@ -73,7 +67,7 @@
             eventData.time -= delta;
 
             let countdownTime = moment().startOf('day').add(eventData.time, 's');
-            this.updateTime('cal-event-' + eventData.id, countdownTime, true);
+            this.updateTime('gev-' + eventData.id, countdownTime);
         }
 
         createEvent(eventData) {
@@ -90,28 +84,28 @@
 
             let localTime = moment().add(eventData.time, 's');
 
-            let a = '<div class="col-xl-3 col-lg-6 col-12" id="cal-event-' + eventData.id + '"><div class="card"><div class="card-content"><div class="card-body"><div class="media d-flex">';
-            let icon = '<div class="align-self-center"><img class="calendarIcon" src="images/icons/' + eventData.type + '"/></div>';
+            let a = '<div class="col-xl-3 col-lg-6 col-12" id="gev-' + eventData.id + '"><div class="card"><div class="card-content"><div class="card-body"><div class="media d-flex">';
+            let icon = '<div class="align-self-center"><img class="eventsIcon" src="images/icons/' + eventData.type + '"/></div>';
             let text = '<div class="media-body text-right"><h3>';
             text = text +
-                '<a><span class="badge eventCountdown" id="cal-event-' + eventData.id + '-hours">99</span></a> :' +
-                '<a><span class="badge eventCountdown" id="cal-event-' + eventData.id + '-min">99</span></a> :' +
-                '<a><span class="badge eventCountdown" id="cal-event-' + eventData.id + '-sec">99</span></a>' +
+                '<a><span class="badge eventCountdown" id="gev-' + eventData.id + '-hours">99</span></a> :' +
+                '<a><span class="badge eventCountdown" id="gev-' + eventData.id + '-min">99</span></a> :' +
+                '<a><span class="badge eventCountdown" id="gev-' + eventData.id + '-sec">99</span></a>' +
                 '</h3><span>' + eventData.title + '</span><span><br>' + localTime.format('HH:mm:ss') + '</span></div>';
             let b = '</div></div></div></div></div>';
 
-            $('#calendarContent').append($(a + icon + text + b));
+            $('#eventsContent').append($(a + icon + text + b));
 
             this.entries[eventData.id] = eventData;
         }
 
-        updateTime(elementId, time, isCountdown){
+        updateTime(elementId, time){
             $('#' + elementId + '-hours').text(time.format('HH'));
             $('#' + elementId + '-min').text(time.format('mm'));
             $('#' + elementId + '-sec').text(time.format('ss'));
         }
     }
 
-    LAM.calendar = new LostArkCalendar();
+    LAM.events = new LostArkEvents();
 
 })();

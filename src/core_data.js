@@ -16,7 +16,7 @@ const ContentTypeEnum = Object.freeze({
     "TreasureMap": "content_treasure_map",
     "Guides": "content_guides",
     "Search": "content_search",
-    "Calendar": "content_calendar",
+    "Events": "content_events",
     "FAQ": "content_faq",
     "Statistics": "content_statistics"
 });
@@ -109,8 +109,8 @@ const TreasureMapLandFilterEnum = Object.freeze({
     Abundant: 'abundant'
 });
 
-const CalendarEventEnum = Object.freeze({
-    IslandEntry: 'calendar_island_entry.png'
+const EventsEventEnum = Object.freeze({
+    IslandEntry: 'events_island_entry.png'
 });
 
 /**
