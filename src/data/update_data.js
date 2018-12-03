@@ -52,7 +52,7 @@
         4: {
             n: "1.3",
             e: [
-
+                'Added 1 Treasure Map',
             ]
         }
     };

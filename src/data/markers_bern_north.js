@@ -1184,6 +1184,15 @@
             "id": 165,
             "hintImage": "bern/ElberiaHiddenStoryHint1.jpg",
             "popupText": "여왕님의 비밀#3(추정)"
+        },
+        {
+            "x": -217.76,
+            "y": 419,
+            "type": MarkerTypeEnum.TreasureMap,
+            "hintImage": "bern/TreasureMap4.jpg",
+            "id": 166,
+            'rarity': RarityEnum.Legendary,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         }
     ];
 
