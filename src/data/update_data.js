@@ -59,7 +59,9 @@
                 'Added 1 FAQ Entry',
                 'Added KR Hint text to Loghills music marker',
                 'Added Missing Boss marker for 우두머리 크리클로우 in Loghills',
-                'Fixed map size rendering incorrect when opening the site in non-map content'
+                'Fixed map size rendering incorrect when opening the site in non-map content',
+                'Fixed Copy Map Position getting stuck causing every click to open the copy dialog',
+                'Fixed Copy Map Position for maps with spaces in them'
             ]
         }
     };
