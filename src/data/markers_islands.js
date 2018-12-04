@@ -1319,6 +1319,15 @@
             "y": 392.57,
             "type": MarkerTypeEnum.NPCFavor,
             "id": 217
+        },
+        {
+            "x": -258.9,
+            "y": 372.3,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 218,
+            "hintImage": "islands/TreasureMap2.jpg",
+            'rarity': RarityEnum.Epic,
+            'tmLand': TreasureMapLandFilterEnum.Sparse
         }
     ];
 
