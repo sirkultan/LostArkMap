@@ -1475,6 +1475,15 @@
             "type": MarkerTypeEnum.Boss,
             "hintImage": "artemis/LoghillsBossHint4.jpg",
             "id": 180
+        },
+        {
+            "x": -270.7,
+            "y": 207.2,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 181,
+            "hintImage": "artemis/TreasureMap29.jpg",
+            "tmLand": TreasureMapLandFilterEnum.Sparse,
+            "rarity": RarityEnum.Rare
         }
     ];
 
