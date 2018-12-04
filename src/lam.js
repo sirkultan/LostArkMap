@@ -25,6 +25,8 @@ let LAM = (function(){
             let y = e.latlng.lng;
 
             if (this.copyLocationMode === true) {
+                this.copyLocationMode = false;
+
                 console.log('[' + x + ', ' + y + ']');
                 L.DomUtil.removeClass(LAM.map._container,'crosshair-cursor-enabled');
                 this.showCopyLinkDialog(this.getMapLink(x, y), "Copy Location");
@@ -71,7 +73,7 @@ let LAM = (function(){
                 zoomLevel = areaMaxZoomLevel - 1;
             }
 
-            return "?c=" + ContentTypeEnum.AreaMap + "&a=" + area.replace('/\s/g', '_') + '&x=' + x + '&y=' + y + '&z=' + zoomLevel;
+            return "?c=" + ContentTypeEnum.AreaMap + "&a=" + area.replace(' ', '_') + '&x=' + x + '&y=' + y + '&z=' + zoomLevel;
         }
 
         initialize() {
