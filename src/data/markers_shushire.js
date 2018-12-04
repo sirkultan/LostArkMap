@@ -982,6 +982,15 @@
             "hintImage": "shushire/TreasureMap3.jpg",
             'rarity': RarityEnum.Rare,
             "tmLand": TreasureMapLandFilterEnum.Abundant
+        },
+        {
+            "x": -363,
+            "y": 149,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 135,
+            "hintImage": "shushire/TreasureMap4.jpg",
+            'rarity': RarityEnum.Epic,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         }
     ];
 

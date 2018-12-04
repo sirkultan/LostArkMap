@@ -54,7 +54,7 @@
             e: [
                 'Statistics have moved into a separate Content Section',
                 'Added Server + Local Time to the Navigation bar',
-                'Added 7 Treasure Maps',
+                'Added 8 Treasure Maps',
                 'Added 1 Guide',
                 'Added 1 FAQ Entry',
                 'Added KR Hint text to Loghills music marker',
