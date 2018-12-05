@@ -107,6 +107,11 @@
             preview: "civo.jpg"
         },
         {
+            title: "Civos Song Guide",
+            url: "https://docs.google.com/document/d/17E5qsEF8v_-3ztUOBTOw2hSncXIfLqjhdy9fFwI4gb0/edit",
+            preview: "civo2.jpg"
+        },
+        {
             title: "Event Calendar (KR)",
             url: "https://loahae.com/calendar/",
             preview: "calendar.jpg"

@@ -3,7 +3,8 @@
     let area = LAM.createArea("Bern North", {
         kr: "베른 북부",
         path: "maps/areas/BernNorth",
-        zoomLevel: 4
+        zoomLevel: 4,
+        bounds: [[0,0], [-515, 515]]
     });
 
     area.registerMap("Rania Village", {

@@ -42,7 +42,7 @@
                     }
                 }
 
-                let a = '<div class="col-xl-3 col-lg-6 col-12"><div class="card"><div class="card-content"><div class="card-body"><div class="media d-flex">';
+                let a = '<div class="col-sm-4"><div class="card"><div class="card-content"><div class="card-body"><div class="media d-flex">';
                 let icon = '<div class="align-self-center"><img class="statisticsIcon" src="images/icons/' + markerImage + '"/></div>';
                 let text = '<div class="media-body text-right"><h3 id="stat-value-' + typeName + '">0</h3><span>' + MarkerTypeDefaultTitle(markerImage) + '</span></div>';
                 let b = '</div></div></div></div></div>';

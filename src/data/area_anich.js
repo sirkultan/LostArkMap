@@ -3,7 +3,8 @@
     let area = LAM.createArea("Anich", {
         kr: "애니츠",
         path: "maps/areas/Anich",
-        zoomLevel: 5
+        zoomLevel: 5,
+        bounds: [[0,0], [-515, 330]]
     });
 
     area.registerMap("Port City Changchun", {

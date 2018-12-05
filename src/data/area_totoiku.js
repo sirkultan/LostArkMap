@@ -3,7 +3,8 @@
     let area = LAM.createArea("Totoiku", {
         kr: "토토이크",
         path: "maps/areas/Totoiku",
-        zoomLevel: 4
+        zoomLevel: 4,
+        bounds: [[0,0], [-515, 390]]
     });
 
     area.registerMap("Mokoko Village", {

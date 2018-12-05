@@ -110,7 +110,14 @@ const TreasureMapLandFilterEnum = Object.freeze({
 });
 
 const EventsEventEnum = Object.freeze({
+    Internal: 'events_internal.png',
     IslandEntry: 'events_island_entry.png'
+});
+
+const MapClickMode = Object.freeze({
+    Default: 1,
+    ZoomTo: 2,
+    CopyPosition: 3
 });
 
 /**

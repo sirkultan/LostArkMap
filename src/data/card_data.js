@@ -3089,31 +3089,4 @@
         }
     ];
 
-    let cmp = function(a, b){
-        if(a.img > b.img) {
-            return 1;
-        }
-
-        if(a.img < b.img) {
-            return -1;
-        }
-
-        return 0;
-    };
-
-    let index = 0;
-    for(let i in LAM.cardData.sort(cmp)) {
-        let data = LAM.cardData[i];
-
-        if(data.img.startsWith('card_uncommon')) {
-            let fn = index + '.jpg';
-            if(index < 10) {
-                fn = '0' + fn;
-            }
-
-            data.img = fn;
-            index++;
-        }
-    }
-
 }());

@@ -3,7 +3,8 @@
     let area = LAM.createArea("Shushire", {
         kr: "슈샤이어",
         path: "maps/areas/Shushire",
-        zoomLevel: 4
+        zoomLevel: 4,
+        bounds: [[0,0], [-530, 530]]
     });
 
     area.registerMap("Regens Village", {

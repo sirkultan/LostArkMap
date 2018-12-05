@@ -235,10 +235,19 @@ body {
     height: 32px;
 }
 
+.eventsIcon {
+    width: 64px;
+    height: 64px;
+}
+
 .timeDisplayTitle {
     font-size: medium;
 }
 
 .eventCountdown {
     color: #FF0000;
+}
+
+.eventCategory {
+    margin: 10px;
 }

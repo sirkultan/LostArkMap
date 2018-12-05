@@ -11,25 +11,45 @@ let LAM = (function(){
             this.activeDynamicLayer = undefined;
             this.activeMarkerLayer = undefined;
             this.activeContent = undefined;
-            this.copyLocationMode = false;
-            this.intervals = [];
+            this.mapClickMode = undefined;
+            this.intervals = {};
             this.lastUpdateTime = 0;
         }
 
-        createInterval(name, callback, delay) {
-            this.intervals[name] = {c: callback, d: delay, e: 0}
+        createInterval(name, callback, delay, data) {
+            this.intervals[name] = {c: callback, d: delay, e: 0, data: data}
+        }
+
+        removeInterval(name) {
+            delete this.intervals[name];
         }
 
         onMapClick(e) {
             let x = e.latlng.lat;
             let y = e.latlng.lng;
 
-            if (this.copyLocationMode === true) {
-                this.copyLocationMode = false;
+            console.log('[' + x + ', ' + y + ']');
 
-                console.log('[' + x + ', ' + y + ']');
-                L.DomUtil.removeClass(LAM.map._container,'crosshair-cursor-enabled');
-                this.showCopyLinkDialog(this.getMapLink(x, y), "Copy Location");
+            switch (this.mapClickMode) {
+                case MapClickMode.Default: {
+                    break;
+                }
+
+                case MapClickMode.ZoomTo: {
+                    this.mapClickMode = MapClickMode.Default;
+
+                    L.DomUtil.removeClass(LAM.map._container,'crosshair-cursor-enabled');
+                    this.map.flyTo([x, y], this.areas[this.activeArea].zoomLevel - 1);
+                    break;
+                }
+
+                case MapClickMode.CopyPosition: {
+                    this.mapClickMode = MapClickMode.Default;
+
+                    L.DomUtil.removeClass(LAM.map._container,'crosshair-cursor-enabled');
+                    this.showCopyLinkDialog(this.getMapLink(x, y), "Copy Location");
+                    break
+                }
             }
         }
 
@@ -77,6 +97,8 @@ let LAM = (function(){
         }
 
         initialize() {
+
+            this.mapClickMode = MapClickMode.Default;
 
             this.map = L.map('la_map', {
                 crs: L.CRS.Simple,
@@ -152,10 +174,18 @@ let LAM = (function(){
                 LAM.gotoMapArea(position, area, zoom);
             });
 
+            L.easyButton('fa-home', function(btn, map){
+                LAM.centerCurrentAreaView();
+            }).addTo( this.map );
+
             L.easyButton('fa-crosshairs', function(btn, map){
-                //helloPopup.setLatLng(map.getCenter()).openOn(map);
                 L.DomUtil.addClass(map._container,'crosshair-cursor-enabled');
-                LAM.copyLocationMode = true;
+                LAM.mapClickMode = MapClickMode.ZoomTo;
+            }).addTo( this.map );
+
+            L.easyButton('fa-copy', function(btn, map){
+                L.DomUtil.addClass(map._container,'crosshair-cursor-enabled');
+                LAM.mapClickMode = MapClickMode.CopyPosition;
             }).addTo( this.map );
 
             moment.tz.add([Constants.SeoulMomentTZ])
@@ -239,11 +269,11 @@ let LAM = (function(){
 
         update(delta) {
             for (let name in this.intervals) {
-                let data = this.intervals[name];
-                data.e += delta;
-                if (data.e > data.d) {
-                    data.c(this, data.e / 1000);
-                    data.e = 0;
+                let interval = this.intervals[name];
+                interval.e += delta;
+                if (interval.e > interval.d) {
+                    interval.c(this, interval.e / 1000, interval.data);
+                    interval.e = 0;
                 }
             }
         }
@@ -252,7 +282,7 @@ let LAM = (function(){
             let content = $.urlParam('c');
             if (content === undefined) {
                 this.activateArea('World');
-                this.gotoMapArea([-250, 250], undefined, 1);
+                this.map.setView(this.areas[this.activeArea].getCenterCoordinates(), 1);
                 return;
             }
 
@@ -325,8 +355,25 @@ let LAM = (function(){
                 zoomLevel = areaMaxZoomLevel - 1;
             }
 
+            let isDelayed = this.activeArea !== area;
             this.activateArea(area);
-            this.map.setView(coordinates, zoomLevel);
+            this.gotoMapPosition(coordinates, zoomLevel, isDelayed);
+        }
+
+        gotoMapPosition(coordinates, zoomLevel, delayed) {
+            if(delayed === true) {
+                this.createInterval('GotoMapArea', function (e, delta, data) {
+                    LAM.removeInterval('GotoMapArea');
+                    LAM.map.flyTo(data.coordinates, data.zoomLevel, {
+                        duration: 0.5
+                    });
+                }, 500, {
+                    coordinates: coordinates,
+                    zoomLevel: zoomLevel
+                });
+            } else {
+                this.map.setView(coordinates, zoomLevel);
+            }
         }
 
         activateContent(type) {
@@ -366,6 +413,14 @@ let LAM = (function(){
 
             this.areas[name].activate();
             this.activeArea = name;
+        }
+
+        centerCurrentAreaView(delayed){
+            if(this.activeArea === undefined) {
+                return;
+            }
+
+            this.gotoMapPosition(this.areas[this.activeArea].getCenterCoordinates(), 1, delayed);
         }
 
         registerDynamicLayer(entry) {

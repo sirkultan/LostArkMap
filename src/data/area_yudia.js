@@ -3,7 +3,8 @@
     let area = LAM.createArea("Yudia", {
         kr: "유디아",
         path: "maps/areas/Yudia",
-        zoomLevel: 4
+        zoomLevel: 4,
+        bounds: [[0,0], [-500, 500]]
     });
 
     area.registerMap("Saland Hills", {

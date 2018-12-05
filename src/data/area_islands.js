@@ -3,7 +3,8 @@
     let area = LAM.createArea("Islands", {
         kr: "섬",
         path: "maps/areas/Islands",
-        zoomLevel: 7
+        zoomLevel: 7,
+        bounds: [[0,0], [-515, 515]]
     });
 
     /*

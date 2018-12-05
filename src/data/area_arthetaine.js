@@ -3,7 +3,8 @@
     let area = LAM.createArea("Arthetaine", {
         kr: "아르데타인",
         path: "maps/areas/Arthetaine",
-        zoomLevel: 4
+        zoomLevel: 4,
+        bounds: [[0,0], [-515, 515]]
     });
 
     area.registerMap("Stern", {

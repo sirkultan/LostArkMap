@@ -3,7 +3,8 @@
     let area = LAM.createArea("Artemis", {
         kr: "아르테미스",
         path: "maps/areas/Artemis",
-        zoomLevel: 4
+        zoomLevel: 4,
+        bounds: [[0,0], [-515, 515]]
     });
 
     area.registerMap("_achievement", {

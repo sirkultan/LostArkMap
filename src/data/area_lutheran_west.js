@@ -3,7 +3,8 @@
     let area = LAM.createArea("Lutheran West", {
         kr: "루테란 서부",
         path: "maps/areas/LutheranWest",
-        zoomLevel: 4
+        zoomLevel: 4,
+        bounds: [[0,0], [-500, 500]]
     });
 
     area.registerMap("Zagoras Mountain", {

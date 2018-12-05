@@ -67,6 +67,14 @@
         {
             q: 'What are the card counters / elements?',
             a: 'Fire -> Earth -> Lightning -> Water -> Fire<br>Darkness is able to respond against all attributes and Light is the counter for darkness.'
+        },
+        {
+            q: 'Where i can i find the "roar" emote?',
+            a: 'Freedom Island'
+        },
+        {
+            q: 'How can i find Song (xyz)?',
+            a: 'See Civo\'s Song Guide in the Guides section.'
         }
     ];
 

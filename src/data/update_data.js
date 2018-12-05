@@ -54,14 +54,19 @@
             e: [
                 'Statistics have moved into a separate Content Section',
                 'Added Server + Local Time to the Navigation bar',
+                'Added Events Content Section, currently features upcoming island spawns',
                 'Added 8 Treasure Maps',
-                'Added 1 Guide',
-                'Added 1 FAQ Entry',
+                'Added 2 Guides',
+                'Added 3 FAQ Entries',
                 'Added KR Hint text to Loghills music marker',
                 'Added Missing Boss marker for 우두머리 크리클로우 in Loghills',
+                'Added Home and Zoom To Button to the map controls',
+                'Changed the Icon for the Copy Map Position button',
                 'Fixed map size rendering incorrect when opening the site in non-map content',
                 'Fixed Copy Map Position getting stuck causing every click to open the copy dialog',
-                'Fixed Copy Map Position for maps with spaces in them'
+                'Fixed Copy Map Position for maps with spaces in them',
+                'Fixed map position issues when using zoning markers in island / world map',
+                'Using the map navigation link now resets the current map pan / zoom'
             ]
         }
     };

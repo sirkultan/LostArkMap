@@ -7,6 +7,7 @@
     class LostArkEvents {
 
         constructor() {
+            this.categories = {};
             this.entries = {};
             this.nextEntryId = 0;
         }
@@ -23,6 +24,13 @@
         }
 
         refreshEvents() {
+            /*let currentKRTimeInSec = (moment().tz(Constants.SeoulMomentTZName) - moment().tz(Constants.SeoulMomentTZName).startOf('day')) / 1000;
+            this.createEvent({
+                type: EventsEventEnum.Internal,
+                description: 'Test Event',
+                time: currentKRTimeInSec + 220
+            });*/
+
             // Island Entry Events:
             for(let island in LAM.areas['Islands'].maps) {
                 let islandData = LAM.areas['Islands'].maps[island];
@@ -33,8 +41,10 @@
 
                 for(let i in islandData.meta.entryTimes) {
                     this.createEvent({
+                        category: island,
                         type: EventsEventEnum.IslandEntry,
-                        title: island + ' Entry',
+                        description: island + ' Entry',
+                        showDescription: false,
                         time: islandData.meta.entryTimes[i],
                         recurring: true
                     });
@@ -57,6 +67,18 @@
         removeEvent(id) {
             let eventData = this.entries[id];
 
+            $.notify("Event: " + eventData.description,
+                {
+                    style: 'bootstrap',
+                    position:'bottom-right',
+                    autoHideDelay: 10000,
+                    className:'info'
+                });
+
+            $('#gev-' + eventData.id).fadeOut(200, function() {
+                $(this).remove();
+            });
+
             delete(this.entries[id]);
         }
 
@@ -65,6 +87,10 @@
 
             // TODO
             eventData.time -= delta;
+            if(eventData.time <= 0) {
+                this.removeEvent(id);
+                return;
+            }
 
             let countdownTime = moment().startOf('day').add(eventData.time, 's');
             this.updateTime('gev-' + eventData.id, countdownTime);
@@ -84,17 +110,45 @@
 
             let localTime = moment().add(eventData.time, 's');
 
-            let a = '<div class="col-xl-3 col-lg-6 col-12" id="gev-' + eventData.id + '"><div class="card"><div class="card-content"><div class="card-body"><div class="media d-flex">';
+            let a = '<div class="col-sm-4" id="gev-' + eventData.id + '"><div class="card"><div class="card-content"><div class="card-body"><div class="media d-flex">';
             let icon = '<div class="align-self-center"><img class="eventsIcon" src="images/icons/' + eventData.type + '"/></div>';
             let text = '<div class="media-body text-right"><h3>';
             text = text +
                 '<a><span class="badge eventCountdown" id="gev-' + eventData.id + '-hours">99</span></a> :' +
                 '<a><span class="badge eventCountdown" id="gev-' + eventData.id + '-min">99</span></a> :' +
-                '<a><span class="badge eventCountdown" id="gev-' + eventData.id + '-sec">99</span></a>' +
-                '</h3><span>' + eventData.title + '</span><span><br>' + localTime.format('HH:mm:ss') + '</span></div>';
+                '<a><span class="badge eventCountdown" id="gev-' + eventData.id + '-sec">99</span></a></h3>';
+            if(eventData.description !== undefined && eventData.showDescription !== false) {
+                text = text + '<div>' + eventData.description + '</div>';
+            }
+
+            text = text + '<span>' + localTime.format('HH:mm:ss') + '</span></div>';
             let b = '</div></div></div></div></div>';
 
-            $('#eventsContent').append($(a + icon + text + b));
+            let finalElement = $(a + icon + text + b);
+            let categoryId;
+            let categoryTitle;
+            if(eventData.category === undefined) {
+                categoryId = '----';
+                categoryTitle = 'Misc';
+            } else {
+                categoryId = eventData.category.toLocaleLowerCase().replace(' ', '_');
+                categoryTitle = eventData.category;
+            }
+
+            let categoryParent = this.categories[categoryId];
+            if(categoryParent === undefined){
+                let categoryContent = $('<div class="row" id="gev-category-' + categoryId + '"></div>');
+                categoryContent.append(finalElement);
+
+                categoryParent = $('<div><h5 class="eventCategory">' + categoryTitle + '</h5></div>');
+                categoryParent.append(categoryContent);
+
+                $('#eventsContent').append(categoryParent);
+
+                this.categories[categoryId] = categoryParent;
+            } else {
+                $('#gev-category-' + categoryId).append(finalElement);
+            }
 
             this.entries[eventData.id] = eventData;
         }

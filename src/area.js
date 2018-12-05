@@ -4,9 +4,13 @@
 
         constructor(name, data) {
             this.name = name;
-            this.nameKr = data['kr'];
-            this.imagePath = data['path'];
-            this.zoomLevel = data['zoomLevel'];
+            this.nameKr = data.kr;
+            this.imagePath = data.path;
+            this.zoomLevel = data.zoomLevel;
+            this.bounds = data.bounds;
+            if(this.bounds === undefined){
+                console.error("Area has no bounds set: " + this.name);
+            }
 
             this.maps = {};
             this.markerLayer = undefined;
@@ -55,6 +59,10 @@
                     }
                 }
             }
+        }
+
+        getCenterCoordinates() {
+            return GetBoundsCenter(this.bounds);
         }
 
         activate() {
@@ -112,6 +120,7 @@
 
             this.activateLink.click({id: this.name}, function(e) {
                 LAM.activateArea(e.data.id);
+                LAM.centerCurrentAreaView();
             });
 
             element.append(this.activateLink);
