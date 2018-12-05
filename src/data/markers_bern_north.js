@@ -334,21 +334,22 @@
             "x": -363.66,
             "y": 320.75,
             "type": MarkerTypeEnum.Mokoko,
-            "id": 43
+            "id": 43,
+            "hintText": "Can be acquired after Playing Song of Resonance<br>2 Seeds at this location"
         },
         {
             "x": -338.53,
             "y": 300.38,
             "type": MarkerTypeEnum.Mokoko,
             "id": 44,
-            "hintImage": "bern/RaniaMokokoHint1.jpg"
+            "hintImage": "bern/RaniaMokokoHint1.jpg",
         },
         {
             "x": -335.28,
             "y": 293.82,
             "type": MarkerTypeEnum.Mokoko,
             "id": 45,
-            "hintImage": "bern/RaniaMokokoHint2.jpg"
+            "hintImage": "bern/RaniaMokokoHint2.jpg",
         },
         {
             "x": -334.72,
@@ -1211,6 +1212,19 @@
             "id": 168,
             'rarity': RarityEnum.Rare,
             "tmLand": TreasureMapLandFilterEnum.Abundant
+        },
+        {
+            "x": -362.66,
+            "y": 321.75,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 169,
+            "hintText": "Can be acquired after Playing Song of Resonance<br>2 Seeds at this location"
+        },
+        {
+            "x": -458.4,
+            "y": 317.75,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 170
         }
     ];
 

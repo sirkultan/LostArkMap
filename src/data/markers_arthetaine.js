@@ -1212,6 +1212,12 @@
             "hintImage": "arthetaine/TreasureMap2.jpg",
             'rarity': RarityEnum.Rare,
             "tmLand": TreasureMapLandFilterEnum.Abundant
+        },
+        {
+            "x": -292.43,
+            "y": 241.81,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 169,
         }
     ];
 
