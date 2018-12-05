@@ -26,6 +26,7 @@
                 zoomLevel = this.areas[markerData.area].zoomLevel;
             }
 
+            let mapId = this.nextEntryId++;
             let filterData = '';
 
             // Rarity filter
@@ -54,7 +55,6 @@
             filterData = filterData + 'data-tmland="' + filterValue + '" ';
 
             // Create the element
-            let locationLink = "?c=" + ContentTypeEnum.AreaMap + "&a=" + markerData.area + '&x=' + markerData.x + '&y=' + markerData.y + '&z=' + zoomLevel;
             let elementText = '<div class="card treasure-map-card" style="margin: 8px" ' + filterData + '>' +
                 '<img class="card-img-top" src="images/marker_hints/'+ markerData.hintImage +'" style="width: 180px; height: 228px;"/>' +
                 '<div><p class="card-text">';
@@ -68,10 +68,11 @@
                 elementText = elementText + '<p class="small" style="width: 180px;">' + markerData.hintText + '</p>';
             }
 
-            elementText = elementText + '<a role="button" class="btn btn-sm btn-outline-secondary" href="' + locationLink + '">Show</a>' +
-                '</div></div>';
+            elementText = elementText + '<a role="button" class="btn btn-sm btn-outline-secondary treasure-map-link" href="#" data-target="' + mapId +'">Show</a></div></div>';
 
             $('#content_treasure_map_list').append($(elementText));
+
+            this.entries[mapId] = markerData;
         }
 
         setFilter(key, value) {
@@ -97,6 +98,15 @@
 
             cards.fadeIn('slow');
         }
+
+        showTreasureMap(id) {
+            if(id === undefined) {
+                return;
+            }
+
+            let markerData = this.entries[id];
+            LAM.gotoMapArea([markerData.x, markerData.y], markerData.area);
+        }
     }
 
     $(document).ready(function() {
@@ -104,6 +114,12 @@
         InitFilterBtn('btn-filter-map-', 'rarity', function(id, val) { LAM.treasureMapList.setFilter(id, val); });
         InitFilterBtn('btn-filter-map-', 'land', function(id, val) { LAM.treasureMapList.setFilter(id, val); });
         InitFilterBtn('btn-filter-map-', 'area', function(id, val) { LAM.treasureMapList.setFilter(id, val); });
+
+        $('body').on('click', 'a.treasure-map-link', function() {
+            let target = $(this).data('target');
+
+            LAM.treasureMapList.showTreasureMap(target);
+        });
 
         $('#treasureMapFilter').collapse('hide');
 

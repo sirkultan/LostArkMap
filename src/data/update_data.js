@@ -75,7 +75,8 @@
             n:  "1.4",
             e: [
                 'Added Map for Obis Island (thx #Elona)',
-                'Added 2 Mokoko Seeds'
+                'Added 2 Mokoko Seeds',
+                'Changed "Show" command for treasure map list to not re-open the site but instead move to the right area and marker immediately'
             ]
         }
     };
