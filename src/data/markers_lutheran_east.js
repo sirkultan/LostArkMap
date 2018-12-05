@@ -1805,6 +1805,15 @@
             "hintImage": "lutheran/TreasureMap10.jpg",
             "rarity": RarityEnum.Rare,
             "tmLand": TreasureMapLandFilterEnum.Abundant
+        },
+        {
+            "x": -285.15,
+            "y": 204.84,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 261,
+            "hintImage": "lutheran/TreasureMap11.jpg",
+            "rarity": RarityEnum.Rare,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         }
     ];
 
