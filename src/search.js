@@ -33,6 +33,8 @@
 
                     'meta.heartKR',
                     'meta.entry',
+                    'meta.card-line',
+                    'meta.card-obtain',
                 ]
             }
         }
@@ -130,6 +132,25 @@
                 }
             }
 
+            // Cards
+            this.entryCountByType[SearchResultTypeEnum.Card] = 0;
+            for(let id in LAM.cards.entries) {
+                let cardData = LAM.cards.entries[id];
+                entries.push({
+                    id: cardData.id,
+                    type: SearchResultTypeEnum.Card,
+
+                    title: cardData.name,
+                    titleKR: cardData.nameKR,
+                    meta: {
+                        'card-line': LAM.cards.getLineName(cardData.line),
+                        'card-obtain': cardData.obtain === undefined ? undefined : cardData.obtain.join('\n')
+                    }
+                });
+
+                this.entryCountByType[SearchResultTypeEnum.Card]++;
+            }
+
             // FAQ
             this.entryCountByType[SearchResultTypeEnum.FAQ] = 0;
             for(let id in LAM.faq.entries) {
@@ -139,7 +160,7 @@
                     type: SearchResultTypeEnum.FAQ,
 
                     // Fields to search in
-                    text: faqData.q,
+                    text: faqData.n,
                     textAlt: faqData.a
                 });
 
@@ -276,6 +297,10 @@
                     return LAM.areas[entry.area].maps[entry.zone];
                 }
 
+                case SearchResultTypeEnum.Card: {
+                    return LAM.cards.entries[entry.id];
+                }
+
                 case SearchResultTypeEnum.FAQ: {
                     return LAM.faq.entries[entry.id];
                 }
@@ -307,7 +332,8 @@
                 }
 
                 case SearchResultTypeEnum.Marker:
-                case SearchResultTypeEnum.Area: {
+                case SearchResultTypeEnum.Area:
+                case SearchResultTypeEnum.Card: {
                     return $('<a type="button" class="btn btn-primary searchResultLink" id="showSearchResult_' + resultId + '" href="#">Show</a>');
                 }
             }
@@ -336,6 +362,11 @@
 
                 case SearchResultTypeEnum.FAQ: {
                     image = data.img;
+                    break;
+                }
+
+                case SearchResultTypeEnum.Card: {
+                    image = 'images/cards/' + LAM.cards.getImagePathForRarity(data.rarity) + '/' + data.img;
                     break;
                 }
             }
@@ -376,6 +407,10 @@
 
                 case SearchResultTypeEnum.FAQ: {
                     return data.q;
+                }
+
+                case SearchResultTypeEnum.Card: {
+                    return data.name;
                 }
             }
 

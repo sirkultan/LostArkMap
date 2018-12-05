@@ -74,6 +74,10 @@
     background-color:#c58727;
 }
 
+.background-search-cards {
+    background-color: blueviolet;
+}
+
 .table-filter .search-content .title span.marker {
     color: #c58727;
 }

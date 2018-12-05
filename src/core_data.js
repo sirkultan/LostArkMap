@@ -81,7 +81,8 @@ const SearchResultTypeEnum = Object.freeze({
     "Area": "area",
     "Marker": "marker",
     "Guide": "guide",
-    "FAQ": "faq"
+    "FAQ": "faq",
+    "Card": "card"
 });
 
 const EditorModeEnum = Object.freeze({
