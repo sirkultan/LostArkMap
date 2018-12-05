@@ -69,6 +69,10 @@
                 'Fixed map position issues when using zoning markers in island / world map',
                 'Using the map navigation link now resets the current map pan / zoom'
             ]
+        },
+        5: {
+            n:  "1.4",
+            e: []
         }
     };
 
