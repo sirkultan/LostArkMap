@@ -32,6 +32,7 @@
                 'Added 18 Native Village locations to the World Map',
                 'Added Filter by Rarity, Area and Land mass to Treasure Map List<br>Some of these are subjective and i will adjust the data moving forward based on feedback.',
                 'Added Icons to Map Layer Selection',
+                'Added Detailed Map for Ice Maze',
                 'Added 9 Treasure Maps',
                 'Added 1 Guide',
                 'Added 1 FAQ Entry',
