@@ -1336,6 +1336,22 @@
             "id": 219,
             "hintImage": "islands/TreasureMap3.jpg",
             'rarity': RarityEnum.Rare
+        },
+        {
+            "x": -441.62,
+            "y": 339.3,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 220,
+            "hintImage": "islands/OrbisMokokoHint1.jpg",
+            "hintText": "need to play music"
+        },
+        {
+            "x": -441.67,
+            "y": 339.36,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 221,
+            "hintImage": "islands/OrbisMokokoHint1.jpg",
+            "hintText": "need to play music"
         }
     ];
 

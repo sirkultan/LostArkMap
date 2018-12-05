@@ -73,7 +73,10 @@
         },
         5: {
             n:  "1.4",
-            e: []
+            e: [
+                'Added Map for Obis Island (thx #Elona)',
+                'Added 2 Mokoko Seeds'
+            ]
         }
     };
 
