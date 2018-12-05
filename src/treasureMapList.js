@@ -18,7 +18,6 @@
         }
 
         initializeUI() {
-
         }
 
         registerTreasureMap(markerData) {
@@ -102,32 +101,11 @@
 
     $(document).ready(function() {
 
-        $('.btn-filter-map-rarity').on('click', function () {
-            let target = $(this).data('target');
-            if(target === 'any'){
-                target = undefined;
-            }
+        InitFilterBtn('btn-filter-map-', 'rarity', function(id, val) { LAM.treasureMapList.setFilter(id, val); });
+        InitFilterBtn('btn-filter-map-', 'land', function(id, val) { LAM.treasureMapList.setFilter(id, val); });
+        InitFilterBtn('btn-filter-map-', 'area', function(id, val) { LAM.treasureMapList.setFilter(id, val); });
 
-            LAM.treasureMapList.setFilter('rarity', target);
-        });
-
-        $('.btn-filter-map-land').on('click', function () {
-            let target = $(this).data('target');
-            if(target === 'any'){
-                target = undefined;
-            }
-
-            LAM.treasureMapList.setFilter('land', target);
-        });
-
-        $('.btn-filter-map-area').on('click', function () {
-            let target = $(this).data('target');
-            if(target === 'any'){
-                target = undefined;
-            }
-
-            LAM.treasureMapList.setFilter('area', target);
-        });
+        $('#treasureMapFilter').collapse('hide');
 
     });
 

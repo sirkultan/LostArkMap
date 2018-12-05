@@ -190,6 +190,8 @@ let LAM = (function(){
 
             moment.tz.add([Constants.SeoulMomentTZ])
 
+            LAM.treasureMapList.initialize();
+            LAM.cards.initialize();
             LAM.guide.initialize();
             LAM.faq.initialize();
             LAM.events.initialize();

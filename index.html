@@ -61,6 +61,7 @@
     <script src="src/markerLayer.js"></script>
     <script src="src/search.js"></script>
     <script src="src/guide.js"></script>
+    <script src="src/cards.js"></script>
     <script src="src/faq.js"></script>
     <script src="src/treasureMapList.js"></script>
     <script src="src/settings.js"></script>
@@ -249,6 +250,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link active" href="#" id="content_cards_toggle">
+                                <span data-feather="file-text"></span>
+                                Cards
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link active" href="#" id="content_guides_toggle">
                                 <span data-feather="file-text"></span>
                                 Guides
@@ -382,26 +389,41 @@
 
                 <div class="album py-5 bg-light" id="content_treasure_map">
 
-                    <div class="w-100 text-center">
-                        <div class="btn-group" role="group">
-                            <button class="btn btn-secondary btn-filter-map-rarity" data-target="any" type="button">Any</button>
-                            <button class="btn btn-secondary btn-filter-map-rarity background-rare-quality" data-target="Rare" type="button">Rare</button>
-                            <button class="btn btn-secondary btn-filter-map-rarity background-epic-quality" data-target="Epic" type="button">Epic</button>
-                            <button class="btn btn-secondary btn-filter-map-rarity background-legendary-quality" data-target="Legendary" type="button">Legendary</button>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="btn-group" role="group">
-                            <button class="btn btn-secondary btn-filter-map-land" data-target="any" type="button">Any</button>
-                            <button class="btn btn-secondary btn-filter-map-land" data-target="continent" type="button">Continent</button>
-                            <button class="btn btn-secondary btn-filter-map-land" data-target="world" type="button">World</button>
-                        </div>
-                        <div class="btn-group" role="group">
-                            <button class="btn btn-secondary btn-filter-map-area" data-target="any" type="button">Any</button>
-                            <button class="btn btn-secondary btn-filter-map-area" data-target="sparse" type="button">Sparse Land</button>
-                            <button class="btn btn-secondary btn-filter-map-area" data-target="medium" type="button">Normal Land</button>
-                            <button class="btn btn-secondary btn-filter-map-area" data-target="abundant" type="button">Abundant Land</button>
-                        </div>
+                    <div class="collapse" id="treasureMapFilter">
+                        <table class="table filterTable">
+                            <tr>
+                                <td class="filterHeader"><h5 class="align-self-center">Filter by Rarity</h5></td>
+                                <td class="btn-group d-flex" role="group">
+                                    <button class="btn btn-secondary w-100 btn-filter-map-rarity" data-target="any" type="button">Any</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-map-rarity background-rarity-2" data-target="Rare" type="button">Rare</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-map-rarity background-rarity-3" data-target="Epic" type="button">Epic</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-map-rarity background-rarity-4" data-target="Legendary" type="button">Legendary</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><h5 class="align-self-center">Filter by Land</h5></td>
+                                <td class="btn-group d-flex" role="group">
+                                    <button class="btn btn-secondary w-100 btn-filter-map-area" data-target="any" type="button">Any</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-map-area" data-target="sparse" type="button">Sparse</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-map-area" data-target="medium" type="button">Normal</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-map-area" data-target="abundant" type="button">Abundant</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><h5 class="align-self-center">Filter by Type</h5></td>
+                                <td class="btn-group d-flex" role="group">
+                                    <button class="btn btn-secondary w-100 btn-filter-map-land" data-target="any" type="button">Any</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-map-land" data-target="continent" type="button">Continent</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-map-land" data-target="world" type="button">World</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#treasureMapFilter" aria-expanded="false" aria-controls="treasureMapFilter">
+                            Filter Maps
+                        </button>
                     </div>
 
                     <br>
@@ -480,6 +502,73 @@
                                      style="width: 180px; height: 228px;"/>
                                 #11 ???
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="album py-5 bg-light" id="content_cards">
+
+                    <div class="collapse" id="cardsFilter">
+                        <table class="table filterTable">
+                            <tr>
+                                <td class="filterHeader"><h5 class="align-self-center">Filter by Rarity</h5></td>
+                                <td class="btn-group d-flex" role="group">
+                                    <button class="btn btn-secondary w-100 btn-filter-card-rarity" data-target="any" type="button">Any</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-rarity background-rarity-0" data-target="0" type="button">Common</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-rarity background-rarity-1" data-target="1" type="button">Uncommon</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-rarity background-rarity-2" data-target="2" type="button">Rare</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-rarity background-rarity-3" data-target="3" type="button">Epic</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-rarity background-rarity-4" data-target="4" type="button">Legendary</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><h5 class="align-self-center">Filter by Element</h5></td>
+                                <td class="btn-group d-flex" role="group">
+                                    <button class="btn btn-secondary w-100 btn-filter-card-element" data-target="any" type="button">Any</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-element" data-target="1" type="button">Fire</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-element" data-target="2" type="button">Earth</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-element" data-target="3" type="button">Lightning</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-element" data-target="4" type="button">Water</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-element" data-target="5" type="button">Dark</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-element" data-target="6" type="button">Light</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><h5 class="align-self-center">Filter by Cost</h5></td>
+                                <td class="btn-group d-flex" role="group">
+                                    <button class="btn btn-secondary w-100 btn-filter-card-cost" data-target="any" type="button">Any</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-cost" data-target="ltavg" type="button">&lt; 4</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-cost" data-target="gtavg" type="button">&gt; 4</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><h5 class="align-self-center">Filter by Offense</h5></td>
+                                <td class="btn-group d-flex" role="group">
+                                    <button class="btn btn-secondary w-100 btn-filter-card-offense" data-target="any" type="button">Any</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-offense" data-target="gtoff1" type="button">&gt; 3</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-offense" data-target="gtoff2" type="button">&gt; 6</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><h5 class="align-self-center">Filter by Health</h5></td>
+                                <td class="btn-group d-flex" role="group">
+                                    <button class="btn btn-secondary w-100 btn-filter-card-health" data-target="any" type="button">Any</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-health" data-target="gthp1" type="button">&gt;= 20</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-health" data-target="gthp2" type="button">&gt;= 30</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-card-health" data-target="gthp3" type="button">&gt;= 40</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="center">
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#cardsFilter" aria-expanded="false" aria-controls=cardsFilter">
+                            Filter Cards
+                        </button>
+                    </div>
+                    <br>
+                    <div class="container">
+                        <div class="row" id="content_cards_list">
                         </div>
                     </div>
                 </div>

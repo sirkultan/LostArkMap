@@ -15,6 +15,7 @@ const ContentTypeEnum = Object.freeze({
     "AreaMap": "content_area_map",
     "TreasureMap": "content_treasure_map",
     "Guides": "content_guides",
+    "Cards": "content_cards",
     "Search": "content_search",
     "Events": "content_events",
     "FAQ": "content_faq",

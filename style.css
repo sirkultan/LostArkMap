@@ -189,24 +189,44 @@ body {
     max-height: 200px;
 }
 
-.background-normal-quality {
-    background-color: #fdfdfd;
+.background-rarity-0 {
+     background-color: #888888;
+ }
+
+.background-rarity-1 {
+    background-color: #87cc01;
 }
 
-.background-uncommon-quality {
-    background-color: #87ee01;
-}
-
-.background-rare-quality {
+.background-rarity-2 {
     background-color: #00aaf1;
 }
 
-.background-epic-quality {
+.background-rarity-3 {
     background-color: #cb42f8;
 }
 
-.background-legendary-quality {
+.background-rarity-4 {
     background-color: #f88a00;
+}
+
+.border-rarity-0 {
+    border-color: #fdfdfd;
+}
+
+.border-rarity-1 {
+    border-color: #87ee01;
+}
+
+.border-rarity-2 {
+    border-color: #00aaf1;
+}
+
+.border-rarity-3 {
+    border-color: #cb42f8;
+}
+
+.border-rarity-4 {
+    border-color: #f88a00;
 }
 
 .treasure-map-header-container {
@@ -250,4 +270,30 @@ body {
 
 .eventCategory {
     margin: 10px;
+}
+
+.cardImage {
+
+}
+
+.cardStatLabel {
+
+}
+
+.cardStatValue {
+    font-weight: bold;
+}
+
+.filterTable tr td{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.filterHeader {
+    width: 180px
+}
+
+.filterBtnActive {
+    border-width: 2px;
+    border-color: black;
 }

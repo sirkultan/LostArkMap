@@ -1,7 +1,7 @@
 /**
  * @return {number[]}
  */
-GetBoundsCenter = function(bounds) {
+const GetBoundsCenter = function(bounds) {
     if(bounds === undefined){
         return undefined;
     }
@@ -15,7 +15,7 @@ GetBoundsCenter = function(bounds) {
 /**
  * @return {number[]}
  */
-GetBoundsSize = function(bounds) {
+const GetBoundsSize = function(bounds) {
     if(bounds === undefined || bounds === null){
         return undefined;
     }
@@ -29,7 +29,7 @@ GetBoundsSize = function(bounds) {
 /**
  * @return {number[][]}
  */
-GetBounds = function(center, size) {
+const GetBounds = function(center, size) {
     if(center[0] < 0) {
         size[0] *= -1;
     }
@@ -46,7 +46,7 @@ GetBounds = function(center, size) {
 /**
  * @return {boolean}
  */
-BoundsContain = function(bounds, point) {
+const BoundsContain = function(bounds, point) {
     if(bounds === undefined || bounds === null || point === undefined) {
         return false;
     }
@@ -65,17 +65,17 @@ BoundsContain = function(bounds, point) {
 /**
  * @return {string}
  */
-GetKeyByValue = function(object, value) {
+const GetKeyByValue = function(object, value) {
     return Object.keys(object).find(key => object[key] === value);
 };
 
-RepositionRectangleMarker = function(marker, markerData){
+const RepositionRectangleMarker = function(marker, markerData){
     let halfSize = [markerData.size[0] / 2, markerData.size[1] / 2];
     let bounds = [[markerData.x - halfSize[0], markerData.y - halfSize[1]], [markerData.x + halfSize[0], markerData.y + halfSize[1]]];
     marker.setBounds(bounds);
 };
 
-RefreshMarkerLabel = function (marker, markerData) {
+const RefreshMarkerLabel = function (marker, markerData) {
     labelIcon = L.divIcon({
         className: 'leaflet-label',
         html:  '<span class="marker-label-' + GetKeyByValue(MarkerTypeEnum, markerData.type) + '"">' + markerData.title + '</span>'
@@ -87,16 +87,38 @@ RefreshMarkerLabel = function (marker, markerData) {
 /**
  * @return {number}
  */
-ToMapPrecision = function(value) {
+const ToMapPrecision = function(value) {
     return Math.round(value * 100) / 100;
 };
 
 /**
  * @return {number[][]}
  */
-ToMapPrecisionBounds = function (bounds) {
+const ToMapPrecisionBounds = function (bounds) {
     return [
         [ToMapPrecision(bounds[0][0]), ToMapPrecision(bounds[0][1])],
         [ToMapPrecision(bounds[1][0]), ToMapPrecision(bounds[1][1])]
     ];
+};
+
+const InitFilterBtn = function(className, id, callback) {
+    let buttons = $('.' + className + id);
+    buttons.on('click', function () {
+        $('.' + className + id).removeClass('filterBtnActive');
+        $(this).addClass('filterBtnActive');
+
+        let target = $(this).data('target');
+        if(target === 'any'){
+            target = undefined;
+        }
+
+        callback(id, target);
+    });
+
+    buttons.each(function(){
+        let button = $(this);
+        if(button.data('target') === 'any') {
+            button.addClass('filterBtnActive');
+        }
+    });
 };

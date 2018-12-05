@@ -20,6 +20,13 @@
             let cardPanel = $('#statisticsCardPanel');
             cardPanel.empty();
 
+            this.addStatPanel({
+                id: 'cards',
+                icon: 'stat-cards.svg',
+                value: LAM.cards.count,
+                title: 'Cards'
+            });
+
             for (let typeName in MarkerTypeEnum) {
                 let markerImage = MarkerTypeEnum[typeName];
                 switch (markerImage) {
@@ -42,14 +49,27 @@
                     }
                 }
 
-                let a = '<div class="col-sm-4"><div class="card"><div class="card-content"><div class="card-body"><div class="media d-flex">';
-                let icon = '<div class="align-self-center"><img class="statisticsIcon" src="images/icons/' + markerImage + '"/></div>';
-                let text = '<div class="media-body text-right"><h3 id="stat-value-' + typeName + '">0</h3><span>' + MarkerTypeDefaultTitle(markerImage) + '</span></div>';
-                let b = '</div></div></div></div></div>';
-
-                this.entries[typeName] = $(a + icon + text + b);
-                cardPanel.append(this.entries[typeName]);
+                this.addStatPanel({
+                    id: typeName,
+                    icon: markerImage,
+                    value: 0,
+                    title: MarkerTypeDefaultTitle(markerImage)
+                });
             }
+        }
+
+        addStatPanel(data) {
+            if(data.id === undefined) {
+                data.id = this.nextEntryId++;
+            }
+
+            let a = '<div class="col-sm-4"><div class="card"><div class="card-content"><div class="card-body"><div class="media d-flex">';
+            let icon = '<div class="align-self-center"><img class="statisticsIcon" src="images/icons/' + data.icon + '"/></div>';
+            let text = '<div class="media-body text-right"><h3 id="stat-value-' + data.id + '">' + data.value + '</h3><span>' + data.title + '</span></div>';
+            let b = '</div></div></div></div></div>';
+
+            this.entries[data.id] = data;
+            $('#statisticsCardPanel').append($(a + icon + text + b));
         }
 
         rebuildStats() {
