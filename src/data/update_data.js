@@ -75,7 +75,7 @@
             n:  "1.4",
             e: [
                 'Added Map for Orbis Island (thx #Elona)',
-                'Added 2 Mokoko Seeds',
+                'Added 8 Mokoko Seeds',
                 'Added 2 Treasure Maps',
                 'Search now includes Cards',
                 'Changed "Show" command for treasure map list to not re-open the site but instead move to the right area and marker immediately'

@@ -4,5 +4,6 @@ cache_evaluate/
 .idea/
 venv/
 node_modules/
+wip/
 
 package-lock.json

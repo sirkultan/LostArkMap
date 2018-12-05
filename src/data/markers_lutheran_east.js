@@ -1814,6 +1814,20 @@
             "hintImage": "lutheran/TreasureMap11.jpg",
             "rarity": RarityEnum.Rare,
             "tmLand": TreasureMapLandFilterEnum.Abundant
+        },
+        {
+            "x": -282.43,
+            "y": 354.74,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 262,
+            "hintText": "Behind the Minuet of Forest Barrier<br>2 seeds at this location"
+        },
+        {
+            "x": -282.25,
+            "y": 355.38,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 263,
+            "hintText": "Behind the Minuet of Forest Barrier<br>2 seeds at this location"
         }
     ];
 

@@ -1280,6 +1280,32 @@
             "id": 176,
             "hintImage": "lutheran/TreasureMap7.jpg",
             "rarity": RarityEnum.Rare
+        },
+        {
+            "x": -454.5,
+            "y": 225.5,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 177
+        },
+        {
+            "x": -453.25,
+            "y": 227.4,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 178
+        },
+        {
+            "x": -288.875,
+            "y": 233.88,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 179,
+            "hintText": "Have to play the music at this location to get it<br>There are 2 seeds at this location."
+        },
+        {
+            "x": -288.475,
+            "y": 233.28,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 180,
+            "hintText": "Have to play the music at this location to get it<br>There are 2 seeds at this location."
         }
     ];
 
