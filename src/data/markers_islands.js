@@ -1328,6 +1328,14 @@
             "hintImage": "islands/TreasureMap2.jpg",
             'rarity': RarityEnum.Epic,
             'tmLand': TreasureMapLandFilterEnum.Sparse
+        },
+        {
+            "x": -105,
+            "y": 391,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 219,
+            "hintImage": "islands/TreasureMap3.jpg",
+            'rarity': RarityEnum.Rare
         }
     ];
 

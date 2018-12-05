@@ -53,6 +53,7 @@
                 let icon = '<div class="align-self-center"><img class="cardIcon" src="' + img + '"/></div>';
 
                 let text = '<div class="media-body"><h4 class="text-center">' + cardData.name + '</h4>';
+                text = text + '<div class="text-center">' + this.getLineName(cardData.line) + '</div>';
                 text = text + '<table class="table">';
                 text = text + '<tr><td class="cardStatLabel">Cost</td><td class="cardStatValue">' + cardData.cost + '</td></tr>';
                 text = text + '<tr><td class="cardStatLabel">Offense</td><td class="cardStatValue">' + cardData.offense + '</td></tr>';
@@ -64,25 +65,26 @@
                 cardContainer.append($(a + icon + text + b));
                 this.count++;
             }
+        }
 
-            /*for(let i in LAM.guideData) {
-                let guideData = LAM.guideData[i];
+        getLineName(line) {
+            switch (line) {
+                case 1: return 'Human';
+                case 2: return 'Devil';
+                case 3: return 'Matter';
+                case 4: return 'Undead';
+                case 5: return 'Plant';
+                case 6: return 'Insect';
+                case 7: return 'Jinn';
+                case 8: return 'Beast';
+                case 9: return '기계';
+                case 11: return '고대';
 
-                let guideElement = $('<div class="col-sm" >' +
-                    '<div class="card mb-4 shadow-sm" style="width: 250px;">' +
-                    '<img class="card-img-top" src="images/guides/'+ guideData.preview +'" style="width: 230px; height: 230px;" />' +
-                    '<div class="card-body">' +
-                    '<p class="card-text">' + guideData.title + '</p>' +
-                    '<div class="d-flex justify-content-between align-items-center">' +
-                    '<div class="btn-group">' +
-                    '<a role="button" class="btn btn-sm btn-outline-secondary" href="' + guideData.url +'" target="_blank">Show</a>' +
-                    '</div></div></div></div></div>');
-
-                guideContainer.append(guideElement);
-
-                guideData.id = this.nextEntryId++;
-                this.entries[guideData.id] = guideData;
-            }*/
+                default: {
+                    console.log('Unknown Card Line: ' + line);
+                    break;
+                }
+            }
         }
 
         getImagePathForRarity(rarity){

@@ -1172,6 +1172,24 @@
             "hintImage": "anich/TreasureMap4.jpg",
             "rarity": RarityEnum.Rare,
             "tmLand": TreasureMapLandFilterEnum.Sparse
+        },
+        {
+            "x": -292.4,
+            "y": 150.7,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 168,
+            "hintImage": "anich/TreasureMap5.jpg",
+            "rarity": RarityEnum.Rare,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
+        },
+        {
+            "x": -366.2,
+            "y": 111.7,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 169,
+            "hintImage": "anich/TreasureMap6.jpg",
+            "hintText": "Requires 4th Song from the bottom of the list",
+            "rarity": RarityEnum.Rare
         }
     ];
 

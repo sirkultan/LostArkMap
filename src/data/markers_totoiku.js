@@ -582,6 +582,23 @@
             "hintImage": "totoiku/TreasureMap4.jpg",
             "rarity": RarityEnum.Rare,
             "tmLand": TreasureMapLandFilterEnum.Abundant
+        },
+        {
+            "x": -443.2,
+            "y": 330.2,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 82,
+            "hintImage": "totoiku/TreasureMap5.jpg",
+            "rarity": RarityEnum.Rare
+        },
+        {
+            "x": -338.2,
+            "y": 167.6,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 83,
+            "hintImage": "totoiku/TreasureMap6.jpg",
+            "rarity": RarityEnum.Rare,
+            "tmLand": TreasureMapLandFilterEnum.Sparse
         }
     ];
 

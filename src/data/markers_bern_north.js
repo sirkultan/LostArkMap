@@ -1202,6 +1202,15 @@
             "id": 167,
             'rarity': RarityEnum.Rare,
             "tmLand": TreasureMapLandFilterEnum.Abundant
+        },
+        {
+            "x": -206.4,
+            "y": 463.2,
+            "type": MarkerTypeEnum.TreasureMap,
+            "hintImage": "bern/TreasureMap6.jpg",
+            "id": 168,
+            'rarity': RarityEnum.Rare,
+            "tmLand": TreasureMapLandFilterEnum.Abundant
         }
     ];
 
