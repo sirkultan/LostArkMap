@@ -75,7 +75,7 @@
             n:  "1.4",
             e: [
                 'Added Detail Maps for 25 Island maps in the west',
-                'Added 11 Mokoko Seeds',
+                'Added 103 Mokoko Seeds',
                 'Added 2 Treasure Maps',
                 'Search now includes Cards',
                 'Changed "Show" command for treasure map list to not re-open the site but instead move to the right area and marker immediately'

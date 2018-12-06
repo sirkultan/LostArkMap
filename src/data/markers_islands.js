@@ -655,7 +655,8 @@
             "x": -229.89,
             "y": 405.62,
             "type": MarkerTypeEnum.Mokoko,
-            "id": 111
+            "id": 111,
+            "hintText": "Use Song of Resonance<br>2 Seeds at this location"
         },
         {
             "x": -229.55,
@@ -1211,7 +1212,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 203,
             "hintImage": "islands/TreasureMap1.jpg",
-            'rarity': RarityEnum.Rare
+            "rarity": RarityEnum.Rare
         },
         {
             "x": -250.51,
@@ -1326,8 +1327,8 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 218,
             "hintImage": "islands/TreasureMap2.jpg",
-            'rarity': RarityEnum.Epic,
-            'tmLand': TreasureMapLandFilterEnum.Sparse
+            "rarity": RarityEnum.Epic,
+            "tmLand": TreasureMapLandFilterEnum.Sparse
         },
         {
             "x": -105,
@@ -1335,7 +1336,7 @@
             "type": MarkerTypeEnum.TreasureMap,
             "id": 219,
             "hintImage": "islands/TreasureMap3.jpg",
-            'rarity': RarityEnum.Rare
+            "rarity": RarityEnum.Rare
         },
         {
             "x": -441.62,
@@ -1352,6 +1353,697 @@
             "id": 221,
             "hintImage": "islands/OrbisMokokoHint1.jpg",
             "hintText": "need to play music"
+        },
+        {
+            "x": -49.14,
+            "y": 331.36,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 222
+        },
+        {
+            "x": -48.71,
+            "y": 333.7,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 223
+        },
+        {
+            "x": -50.08,
+            "y": 333.22,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 224
+        },
+        {
+            "x": -52.08,
+            "y": 328.88,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 225
+        },
+        {
+            "x": -53,
+            "y": 334.43,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 226
+        },
+        {
+            "x": -168.49,
+            "y": 342.58,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 227
+        },
+        {
+            "x": -168.63,
+            "y": 342.43,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 228
+        },
+        {
+            "x": -190.66,
+            "y": 317.6,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 229
+        },
+        {
+            "x": -195.01,
+            "y": 406.92,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 230
+        },
+        {
+            "x": -229.9453125,
+            "y": 405.758,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 231,
+            "hintText": "Use Song of Resonance<br>2 Seeds at this location"
+        },
+        {
+            "x": -230.49,
+            "y": 346.21,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 232
+        },
+        {
+            "x": -230.31,
+            "y": 346.44,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 233
+        },
+        {
+            "x": -346.11,
+            "y": 407.89,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 234
+        },
+        {
+            "x": -466.48,
+            "y": 299.76,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 235
+        },
+        {
+            "x": -466.54,
+            "y": 299.65,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 236
+        },
+        {
+            "x": -466.58,
+            "y": 299.53,
+            "type": MarkerTypeEnum.PlayInstrument,
+            "id": 237,
+            "hintText": "Play Song of Resonance to access the 2 seeds"
+        },
+        {
+            "x": -213.7,
+            "y": 167.44,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 238
+        },
+        {
+            "x": -216.48,
+            "y": 166.09,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 239
+        },
+        {
+            "x": -216.98,
+            "y": 168.19,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 240
+        },
+        {
+            "x": -215.24,
+            "y": 167.83,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 241
+        },
+        {
+            "x": -213.27,
+            "y": 168.17,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 242
+        },
+        {
+            "x": -213.27,
+            "y": 168.45,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 243
+        },
+        {
+            "x": -213.57,
+            "y": 168.25,
+            "type": MarkerTypeEnum.PlayInstrument,
+            "id": 244,
+            "popupText": "Minuet in the forest",
+            "hintText": "Play Minuet in the forest to gain access to the 2 seeds"
+        },
+        {
+            "x": -135.2,
+            "y": 167.38,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 245
+        },
+        {
+            "x": -133.73,
+            "y": 168.26,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 246
+        },
+        {
+            "x": -133.89,
+            "y": 168.18,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 247
+        },
+        {
+            "x": -133.85,
+            "y": 168.41,
+            "type": MarkerTypeEnum.PlayInstrument,
+            "id": 248,
+            "popupText": "Minuet of the Forest",
+            "hintText": "Play Minuet of the Forest here to access the 2 seeds"
+        },
+        {
+            "x": -180.01,
+            "y": 183.6,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 249
+        },
+        {
+            "x": -181.57,
+            "y": 178.04,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 250
+        },
+        {
+            "x": -177.94,
+            "y": 180.9,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 251
+        },
+        {
+            "x": -177.8,
+            "y": 180.98,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 252
+        },
+        {
+            "x": -177.95,
+            "y": 181.04,
+            "type": MarkerTypeEnum.PlayInstrument,
+            "id": 253,
+            "popupText": "Song of Resonance",
+            "hintText": "Play song of resonance in front of the Statue to gain access to the 2 seeds"
+        },
+        {
+            "x": -125.46,
+            "y": 152.77,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 254
+        },
+        {
+            "x": -126.25,
+            "y": 152.84,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 255
+        },
+        {
+            "x": -126.99,
+            "y": 153.78,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 256
+        },
+        {
+            "x": -153,
+            "y": 131.31,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 257
+        },
+        {
+            "x": -152.29,
+            "y": 132.56,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 258
+        },
+        {
+            "x": -154.96,
+            "y": 133.23,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 259
+        },
+        {
+            "x": -201.8,
+            "y": 148.26,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 260
+        },
+        {
+            "x": -202.13,
+            "y": 145.26,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 261
+        },
+        {
+            "x": -202.18,
+            "y": 145.4,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 262
+        },
+        {
+            "x": -195.79,
+            "y": 119.79,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 263
+        },
+        {
+            "x": -194.74,
+            "y": 117.91,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 264
+        },
+        {
+            "x": -194.52,
+            "y": 118.84,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 265
+        },
+        {
+            "x": -194.33,
+            "y": 118.84,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 266
+        },
+        {
+            "x": -194.69,
+            "y": 119.06,
+            "type": MarkerTypeEnum.PlayInstrument,
+            "id": 267,
+            "popupText": "Song of Resonance",
+            "hintText": "Play Song of Resonance in front of the Statue to gain access to the 2 seeds"
+        },
+        {
+            "x": -146.96,
+            "y": 192.91,
+            "type": MarkerTypeEnum.PlayInstrument,
+            "id": 268,
+            "popupText": "Minuet of The Forest",
+            "hintText": "currently not known what can be done here"
+        },
+        {
+            "x": -208.93,
+            "y": 82.77,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 269
+        },
+        {
+            "x": -205.38,
+            "y": 85.52,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 270
+        },
+        {
+            "x": -205.32,
+            "y": 85.38,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 271
+        },
+        {
+            "x": -205.19,
+            "y": 85.48,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 272
+        },
+        {
+            "x": -205.26,
+            "y": 85.63,
+            "type": MarkerTypeEnum.PlayInstrument,
+            "id": 273,
+            "popupText": "Song of Resonance",
+            "hintText": "Play Song of Resonance in front of the Statue to gain access to 2 Seeds, the third is just after the Statue"
+        },
+        {
+            "x": -242.3,
+            "y": 160.91,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 274
+        },
+        {
+            "x": -242.76,
+            "y": 162.19,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 275
+        },
+        {
+            "x": -243.61,
+            "y": 160.56,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 276
+        },
+        {
+            "x": -241.64,
+            "y": 161.89,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 277
+        },
+        {
+            "x": -227.96,
+            "y": 105.41,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 278
+        },
+        {
+            "x": -228.45,
+            "y": 106.3,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 279
+        },
+        {
+            "x": -227.38,
+            "y": 107.36,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 280
+        },
+        {
+            "x": -269.58,
+            "y": 158.3,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 281
+        },
+        {
+            "x": -271.54,
+            "y": 159.04,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 282
+        },
+        {
+            "x": -270.66,
+            "y": 160.68,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 283
+        },
+        {
+            "x": -269.68,
+            "y": 161.12,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 284
+        },
+        {
+            "x": -266.82,
+            "y": 160.31,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 285
+        },
+        {
+            "x": -269.85,
+            "y": 158.3,
+            "type": MarkerTypeEnum.NPCFavor,
+            "id": 286
+        },
+        {
+            "x": -281.72,
+            "y": 182.13,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 287
+        },
+        {
+            "x": -283.08,
+            "y": 183.04,
+            "type": MarkerTypeEnum.SecretPassage,
+            "id": 288,
+            "hintText": "There is a secret Interaction here to access the path to the seed"
+        },
+        {
+            "x": -298.48,
+            "y": 167.14,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 289
+        },
+        {
+            "x": -295.11,
+            "y": 166.66,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 290
+        },
+        {
+            "x": -299.1,
+            "y": 168.36,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 291
+        },
+        {
+            "x": -298.88,
+            "y": 168.56,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 292
+        },
+        {
+            "x": -298.75,
+            "y": 167.83,
+            "type": MarkerTypeEnum.SecretPassage,
+            "id": 293
+        },
+        {
+            "x": -297.54,
+            "y": 167.67,
+            "type": MarkerTypeEnum.Mail,
+            "id": 294
+        },
+        {
+            "x": -295.87,
+            "y": 166.6,
+            "type": MarkerTypeEnum.NPCRepair,
+            "id": 295
+        },
+        {
+            "x": -295.99,
+            "y": 167.27,
+            "type": MarkerTypeEnum.NPCStorage,
+            "id": 296
+        },
+        {
+            "x": -296.49,
+            "y": 166.13,
+            "type": MarkerTypeEnum.NPCStorage,
+            "id": 297
+        },
+        {
+            "x": -297,
+            "y": 167.12,
+            "type": MarkerTypeEnum.NPCStorage,
+            "id": 298
+        },
+        {
+            "x": -277.33,
+            "y": 140.72,
+            "type": MarkerTypeEnum.NPCFavor,
+            "id": 299
+        },
+        {
+            "x": -275.2,
+            "y": 139.23,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 300
+        },
+        {
+            "x": -275.43,
+            "y": 137.94,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 301
+        },
+        {
+            "x": -275.26,
+            "y": 137.95,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 302
+        },
+        {
+            "x": -276.6,
+            "y": 136.71,
+            "type": MarkerTypeEnum.PlayInstrument,
+            "id": 303,
+            "popupText": "Song of Resonance",
+            "hintText": "Play Song of Resonance here to get access to the 2 seeds"
+        },
+        {
+            "x": -316.25,
+            "y": 180.71,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 304
+        },
+        {
+            "x": -318.57,
+            "y": 181.34,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 305
+        },
+        {
+            "x": -318.84,
+            "y": 180.42,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 306
+        },
+        {
+            "x": -318.8,
+            "y": 180.56,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 307
+        },
+        {
+            "x": -317.35,
+            "y": 181.84,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 308
+        },
+        {
+            "x": -366.46,
+            "y": 180.74,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 309
+        },
+        {
+            "x": -316.45,
+            "y": 113.59,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 310
+        },
+        {
+            "x": -317.84,
+            "y": 115.75,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 311
+        },
+        {
+            "x": -317.55,
+            "y": 110.28,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 312
+        },
+        {
+            "x": -317.85,
+            "y": 110.72,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 313
+        },
+        {
+            "x": -316.98,
+            "y": 110.66,
+            "type": MarkerTypeEnum.SecretPassage,
+            "id": 314
+        },
+        {
+            "x": -353.04,
+            "y": 169.21,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 315
+        },
+        {
+            "x": -351.8,
+            "y": 168.09,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 316
+        },
+        {
+            "x": -351.65,
+            "y": 168.16,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 317
+        },
+        {
+            "x": -351.82,
+            "y": 168.22,
+            "type": MarkerTypeEnum.PlayInstrument,
+            "id": 318,
+            "popupText": "Song of Resonance",
+            "hintText": "Play Song of Resonance here to gain access to the 2 seeds"
+        },
+        {
+            "x": -312.54,
+            "y": 151.89,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 319
+        },
+        {
+            "x": -311.55,
+            "y": 154.15,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 320
+        },
+        {
+            "x": -311.45,
+            "y": 152.46,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 321
+        },
+        {
+            "x": -311.33,
+            "y": 152.38,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 322
+        },
+        {
+            "x": -349.86,
+            "y": 124.27,
+            "type": MarkerTypeEnum.NPCFavor,
+            "id": 323
+        },
+        {
+            "x": -350.18,
+            "y": 127.81,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 324
+        },
+        {
+            "x": -352.13,
+            "y": 128.63,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 325
+        },
+        {
+            "x": -353.78,
+            "y": 125.42,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 326
+        },
+        {
+            "x": -351.84,
+            "y": 124.55,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 327
+        },
+        {
+            "x": -351.76,
+            "y": 124.41,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 328
+        },
+        {
+            "x": -260.79,
+            "y": 276.5,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 329
+        },
+        {
+            "x": -263.99,
+            "y": 277.85,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 330
+        },
+        {
+            "x": -264.36,
+            "y": 277.69,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 331
+        },
+        {
+            "x": -213.89,
+            "y": 296.37,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 332
+        },
+        {
+            "x": -216.07,
+            "y": 297.73,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 333
         }
     ];
 
