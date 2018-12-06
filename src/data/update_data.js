@@ -81,6 +81,12 @@
                 'Search now includes Cards',
                 'Changed "Show" command for treasure map list to not re-open the site but instead move to the right area and marker immediately'
             ]
+        },
+        6: {
+            n: "1.5",
+            e: [
+
+            ]
         }
     };
 
