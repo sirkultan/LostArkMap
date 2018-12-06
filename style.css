@@ -255,6 +255,10 @@ body {
     height: 32px;
 }
 
+.statisticsSection {
+    margin: 8px;
+}
+
 .eventsIcon {
     width: 64px;
     height: 64px;
