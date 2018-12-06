@@ -1799,7 +1799,7 @@
         },
         {
             "x": -289.4,
-            "y": 207.0,
+            "y": 207,
             "type": MarkerTypeEnum.TreasureMap,
             "id": 260,
             "hintImage": "lutheran/TreasureMap10.jpg",
@@ -1828,6 +1828,31 @@
             "type": MarkerTypeEnum.Mokoko,
             "id": 263,
             "hintText": "Behind the Minuet of Forest Barrier<br>2 seeds at this location"
+        },
+        {
+            "x": -360.15,
+            "y": 477.47,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 264
+        },
+        {
+            "x": -361.46,
+            "y": 476.97,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 265
+        },
+        {
+            "x": -361.59,
+            "y": 478.15,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 266
+        },
+        {
+            "x": -359.52,
+            "y": 480.15,
+            "type": MarkerTypeEnum.SecretPassage,
+            "id": 267,
+            "hintText": "Special opening condition, a certain monster must be taken to this spot for the passage to open. (More info needed...)"
         }
     ];
 

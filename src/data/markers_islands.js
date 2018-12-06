@@ -2044,6 +2044,14 @@
             "y": 297.73,
             "type": MarkerTypeEnum.Mokoko,
             "id": 333
+        },
+        {
+            "x": -359.2,
+            "y": 375.36,
+            "type": MarkerTypeEnum.TreasureMap,
+            "id": 334,
+            "hintImage": "islands/TreasureMap4.jpg",
+            "rarity": RarityEnum.Epic
         }
     ];
 
