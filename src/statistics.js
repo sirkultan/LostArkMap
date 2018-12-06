@@ -62,6 +62,14 @@
                 section: 'content'
             });
 
+            this.addStatPanel({
+                id: 'crew',
+                icon: 'stat-crew.svg',
+                value: LAM.crew.count,
+                title: 'Crew',
+                section: 'content'
+            });
+
             let markerStats = {};
             let markerAreaStats = {};
             for (let name in LAM.areas) {

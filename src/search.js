@@ -23,9 +23,7 @@
                     'text',
                     'textAlt',
                     'title',
-                    'titleKR',
                     'hintText',
-                    'hintTextKR',
                     'popupText',
 
                     // Note: Disabled heart cause we make markers with special text on the island, removes double search result
@@ -35,6 +33,7 @@
                     'meta.entry',
                     'meta.card-line',
                     'meta.card-obtain',
+                    'meta.crew-obtain',
                 ]
             }
         }
@@ -106,11 +105,8 @@
                     }
 
                     if(markerData.title === undefined
-                        && markerData.titleKR === undefined
                         && markerData.popupText === undefined
-                        && markerData.popupTextKR === undefined
-                        && markerData.hintText === undefined
-                        && markerData.hintTextKR === undefined){
+                        && markerData.hintText === undefined){
                         continue;
                     }
 
@@ -121,11 +117,8 @@
 
                         // Fields to search in
                         title: markerData.title,
-                        titleKR: markerData.titleKR,
                         popupText: markerData.popupText,
-                        popupTextKR: markerData.popupTextKR,
                         hintText: markerData.hintText,
-                        hintTextKR: markerData.hintTextKR
                     });
 
                     this.entryCountByType[SearchResultTypeEnum.Marker]++;
@@ -141,10 +134,26 @@
                     type: SearchResultTypeEnum.Card,
 
                     title: cardData.name,
-                    titleKR: cardData.nameKR,
                     meta: {
                         'card-line': LAM.cards.getLineName(cardData.line),
                         'card-obtain': cardData.obtain === undefined ? undefined : cardData.obtain.join('\n')
+                    }
+                });
+
+                this.entryCountByType[SearchResultTypeEnum.Card]++;
+            }
+
+            // Crew
+            this.entryCountByType[SearchResultTypeEnum.Crew] = 0;
+            for(let id in LAM.crew.entries) {
+                let crewData = LAM.crew.entries[id];
+                entries.push({
+                    id: crewData.id,
+                    type: SearchResultTypeEnum.Crew,
+
+                    title: crewData.name,
+                    meta: {
+                        'crew-obtain': crewData.obtain === undefined ? undefined : crewData.obtain.join('\n')
                     }
                 });
 
@@ -301,6 +310,10 @@
                     return LAM.cards.entries[entry.id];
                 }
 
+                case SearchResultTypeEnum.Crew: {
+                    return LAM.crew.entries[entry.id];
+                }
+
                 case SearchResultTypeEnum.FAQ: {
                     return LAM.faq.entries[entry.id];
                 }
@@ -366,7 +379,12 @@
                 }
 
                 case SearchResultTypeEnum.Card: {
-                    image = 'images/cards/' + LAM.cards.getImagePathForRarity(data.rarity) + '/' + data.img;
+                    image = 'images/cards/' + RarityImage(data.rarity) + '/' + data.img;
+                    break;
+                }
+
+                case SearchResultTypeEnum.Crew: {
+                    image = 'images/crew/' + data.img;
                     break;
                 }
             }
@@ -410,6 +428,10 @@
                 }
 
                 case SearchResultTypeEnum.Card: {
+                    return data.name;
+                }
+
+                case SearchResultTypeEnum.Crew: {
                     return data.name;
                 }
             }

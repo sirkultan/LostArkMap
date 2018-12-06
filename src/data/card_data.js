@@ -1,5 +1,9 @@
 (function() {
 
+    // Sources
+    // http://lostark.inven.co.kr/dataninfo/card/
+    // https://docs.google.com/spreadsheets/d/14vMaZnRMX3TsPQMSNb43KjmOBmNOwD7MR7Y9l8u3Llo/htmlview#
+
     LAM.cardData = [
         {
             "skills": [

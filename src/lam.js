@@ -96,8 +96,7 @@ let LAM = (function(){
             return "?c=" + ContentTypeEnum.AreaMap + "&a=" + area.replace(' ', '_') + '&x=' + x + '&y=' + y + '&z=' + zoomLevel;
         }
 
-        initialize() {
-
+        initializeMap() {
             this.mapClickMode = MapClickMode.Default;
 
             this.map = L.map('la_map', {
@@ -110,30 +109,6 @@ let LAM = (function(){
                 LAM.onMapClick(e);
             });
 
-            // Initialize all areas before loading the markers
-            for (let name in this.areas) {
-                this.areas[name].initialize();
-            }
-
-            for (let name in this.areas) {
-                this.areas[name].loadMarkers();
-
-                if(this.activeArea === undefined) {
-                    this.activateArea(name);
-                }
-            }
-
-            feather.replace();
-
-            $.urlParam = function(name){
-                var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-                if (results === null) {
-                    return undefined;
-                }
-
-                return decodeURI(results[1]) || 0;
-            };
-
             $('#createLayerButton').on('click', function (e) {
                 let name = $('#createLayerForm-name').val();
                 if(name === undefined || name === null || name === "") {
@@ -141,29 +116,6 @@ let LAM = (function(){
                 }
 
                 LAM.createDynamicLayer(name, {});
-            });
-
-            for(let content in ContentTypeEnum) {
-                $('#' + ContentTypeEnum[content]).hide();
-
-                let contentToggle = $('#' + ContentTypeEnum[content] + '_toggle');
-                contentToggle.click({id: ContentTypeEnum[content]}, function(e) {
-                    LAM.activateContent(e.data.id);
-                });
-
-                contentToggle.removeClass('active');
-            }
-
-            if(Constants.EditMode) {
-                LAM.editor.initialize();
-            } else {
-                $('#la_editor').hide();
-            }
-
-            $('#copyTextModal-copy').click(function(e){
-                $('#copyTextModal-text').select();
-                document.execCommand("copy");
-                $('#copyTextModal').modal('toggle');
             });
 
             $('.hard-map-link').on('click', function () {
@@ -187,19 +139,82 @@ let LAM = (function(){
                 L.DomUtil.addClass(map._container,'crosshair-cursor-enabled');
                 LAM.mapClickMode = MapClickMode.CopyPosition;
             }).addTo( this.map );
+        }
 
-            moment.tz.add([Constants.SeoulMomentTZ])
+        initializeUI() {
+            for(let content in ContentTypeEnum) {
+                $('#' + ContentTypeEnum[content]).hide();
+
+                let contentToggle = $('#' + ContentTypeEnum[content] + '_toggle');
+                contentToggle.click({id: ContentTypeEnum[content]}, function(e) {
+                    LAM.activateContent(e.data.id);
+                });
+
+                contentToggle.removeClass('active');
+            }
+
+            if(Constants.EditMode) {
+                LAM.editor.initialize();
+            } else {
+                $('#la_editor').hide();
+            }
+
+            $('#copyTextModal-copy').click(function(e){
+                $('#copyTextModal-text').select();
+                document.execCommand("copy");
+                $('#copyTextModal').modal('toggle');
+            });
+        }
+
+        initializeSystems() {
+
+            moment.tz.add([Constants.SeoulMomentTZ]);
+
+            LAM.settings.initialize();
+
+            // Initialize all areas before loading the markers
+            for (let name in this.areas) {
+                this.areas[name].initialize();
+            }
+
+            for (let name in this.areas) {
+                this.areas[name].loadMarkers();
+
+                if(this.activeArea === undefined) {
+                    this.activateArea(name);
+                }
+            }
 
             LAM.treasureMapList.initialize();
             LAM.cards.initialize();
+            LAM.crew.initialize();
             LAM.guide.initialize();
             LAM.faq.initialize();
             LAM.events.initialize();
-            LAM.settings.initialize();
             LAM.statistics.initialize();
+            LAM.changeLog.initialize();
 
             // Search needs to initialize after all content is complete
             LAM.search.initialize();
+
+            feather.replace();
+        }
+
+        initialize() {
+
+            this.initializeMap();
+            this.initializeUI();
+
+            $.urlParam = function(name){
+                var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+                if (results === null) {
+                    return undefined;
+                }
+
+                return decodeURI(results[1]) || 0;
+            };
+
+            this.initializeSystems();
 
             this.processUrlParameters();
 
@@ -219,43 +234,7 @@ let LAM = (function(){
             console.log('Load Complete in ' + loadTime + 's');
 
             if(this.settings.loadedVersion < Constants.SettingsVersion) {
-                this.showWhatChangedSince(this.settings.loadedVersion);
-            }
-        }
-
-        showWhatChangedSince(fromVersion){
-            if(this.updateData === undefined){
-                return;
-            }
-
-            let contentElement = $('#changeLogContent');
-
-            let hasContent = false;
-            for(let ver = fromVersion + 1; ver <= Constants.SettingsVersion; ver++) {
-                let versionData = this.updateData[ver];
-                if(versionData === undefined
-                    || versionData.e === undefined
-                    || versionData.e.length === 0) {
-                    continue;
-                }
-
-                let versionElement = $('<div></div>');
-                versionElement.append($('<h3>Version ' + versionData.n + '</h3>'));
-
-                let list = $('<ul></ul>');
-                versionElement.append(list);
-
-                for(let i in versionData.e) {
-                    list.append($('<li>' + versionData.e[i] + '</li>'));
-                }
-
-                contentElement.prepend(versionElement);
-
-                hasContent = true;
-            }
-
-            if(hasContent === true) {
-                $('#changelogModal').modal();
+                LAM.changeLog.showWhatChangedSince(this.settings.loadedVersion);
             }
         }
 

@@ -8,7 +8,8 @@ const Constants = Object.freeze({
     'SettingsKey': 'LAM_SETTINGS',
     'MaxSearchResults': 50,
     'SeoulMomentTZName': 'Asia/Seoul',
-    'SeoulMomentTZ': "Asia/Seoul|LMT KST JST KST KDT KDT|-8r.Q -8u -90 -90 -9u -a0|0123141414141414135353|-2um8r.Q 97XV.Q 1m1zu kKo0 2I0u OL0 1FB0 Rb0 1qN0 TX0 1tB0 TX0 1tB0 TX0 1tB0 TX0 2ap0 12FBu 11A0 1o00 11A0|23e6"
+    'SeoulMomentTZ': "Asia/Seoul|LMT KST JST KST KDT KDT|-8r.Q -8u -90 -90 -9u -a0|0123141414141414135353|-2um8r.Q 97XV.Q 1m1zu kKo0 2I0u OL0 1FB0 Rb0 1qN0 TX0 1tB0 TX0 1tB0 TX0 1tB0 TX0 2ap0 12FBu 11A0 1o00 11A0|23e6",
+    'LocalizedTextClass': 'loc-txt'
 });
 
 const ContentTypeEnum = Object.freeze({
@@ -16,10 +17,12 @@ const ContentTypeEnum = Object.freeze({
     "TreasureMap": "content_treasure_map",
     "Guides": "content_guides",
     "Cards": "content_cards",
+    "Crew": "content_crew",
     "Search": "content_search",
     "Events": "content_events",
     "FAQ": "content_faq",
-    "Statistics": "content_statistics"
+    "Statistics": "content_statistics",
+    "Changelog": "content_changelog"
 });
 
 const MapTypeEnum = Object.freeze({
@@ -82,7 +85,8 @@ const SearchResultTypeEnum = Object.freeze({
     "Marker": "marker",
     "Guide": "guide",
     "FAQ": "faq",
-    "Card": "card"
+    "Card": "card",
+    "Crew": "crew"
 });
 
 const EditorModeEnum = Object.freeze({
@@ -121,6 +125,28 @@ const MapClickMode = Object.freeze({
     ZoomTo: 2,
     CopyPosition: 3
 });
+
+const LocalizationLanguage = Object.freeze({
+    English: 'en',
+    Korean: 'kr'
+});
+
+/**
+ * @return {string}
+ */
+RarityImage = function(rarity){
+    switch (rarity) {
+        case RarityEnum.Normal: return 'common';
+        case RarityEnum.Uncommon: return 'uncommon';
+        case RarityEnum.Rare: return 'rare';
+        case RarityEnum.Epic: return 'epic';
+        case RarityEnum.Legendary: return 'legendary';
+
+        default: {
+            console.error("Invalid Rarity: " + rarity);
+        }
+    }
+};
 
 /**
  * @return {string}

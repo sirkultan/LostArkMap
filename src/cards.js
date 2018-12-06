@@ -49,7 +49,7 @@
 
                 let a = '<div class="col-sm-6" id="card-' + cardData.id + '"><div class="card border-rarity-' + cardData.rarity + '"><div class="card-content"><div class="card-body"><div class="media d-flex">';
 
-                let img = 'images/cards/' + this.getImagePathForRarity(cardData.rarity) + '/' + cardData.img;
+                let img = 'images/cards/' + RarityImage(cardData.rarity) + '/' + cardData.img;
                 let icon = '<div class="align-self-center"><img class="cardIcon" src="' + img + '"/></div>';
 
                 let text = '<div class="media-body"><h4 class="text-center">' + cardData.name + '</h4>';
@@ -83,20 +83,6 @@
                 default: {
                     console.log('Unknown Card Line: ' + line);
                     break;
-                }
-            }
-        }
-
-        getImagePathForRarity(rarity){
-            switch (rarity) {
-                case RarityEnum.Normal: return 'common';
-                case RarityEnum.Uncommon: return 'uncommon';
-                case RarityEnum.Rare: return 'rare';
-                case RarityEnum.Epic: return 'epic';
-                case RarityEnum.Legendary: return 'legendary';
-
-                default: {
-                    console.error("Invalid Card Rarity: " + rarity);
                 }
             }
         }

@@ -116,7 +116,7 @@
             // Create the navigation link
             let element = $('<li class="nav-item"></li>');
             this.activateLink = $('<a class="nav-link" href="#"></a>');
-            this.activateLink.html('<span data-feather="map"></span>' + this.name);
+            this.activateLink.html('<span data-feather="map"></span>' + LAM.loc.getLocalizedTextElement(this.name));
 
             this.activateLink.click({id: this.name}, function(e) {
                 LAM.activateArea(e.data.id);

@@ -3,6 +3,7 @@
     LAM.updateData = {
         1: {
             n: "1.0",
+            d: "2018-11-30",
             e: [
                 'Added "What\'s New" Dialog',
                 'Added 2 Mokoko Seeds',
@@ -14,6 +15,7 @@
         },
         2: {
             n: "1.1",
+            d: "2018-12-01",
             e: [
                 'Added 32 Placeholder island images and updated all island links with proper information<br><span class="island-tooltip-title">I am still in need of High Quality Map Images for Islands and zones, please contact me through Github or #Szera in Discord if you can provide any.</span>',
                 'Added 17 Island Heart descriptions with translations',
@@ -28,6 +30,7 @@
         },
         3: {
             n: "1.2",
+            d: "2018-12-02",
             e: [
                 'Added 18 Native Village locations to the World Map',
                 'Added Filter by Rarity, Area and Land mass to Treasure Map List<br>Some of these are subjective and i will adjust the data moving forward based on feedback.',
@@ -52,6 +55,7 @@
         },
         4: {
             n: "1.3",
+            d: "2018-12-04",
             e: [
                 'Statistics have moved into a separate Content Section',
                 'Added Server + Local Time to the Navigation bar',
@@ -73,6 +77,7 @@
         },
         5: {
             n:  "1.4",
+            d: "2018-12-05",
             e: [
                 'Added Detail Maps for 25 Island maps in the west',
                 'Added 106 Mokoko Seeds',
@@ -84,8 +89,11 @@
         },
         6: {
             n: "1.5",
+            d: "TBD",
             e: [
-
+                'Added Changelog Content section',
+                'Added Localization (ongoing process)',
+                'Added 117 Crew Entries with more Info to come later'
             ]
         }
     };

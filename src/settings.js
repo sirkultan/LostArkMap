@@ -35,12 +35,17 @@
             if(data.lastVisited !== undefined) {
                 this.awayTime = (Date.now() - data.lastVisited) / 1000;
             }
+
+            if(data.lang !== undefined) {
+                LAM.loc.setLanguage(data.lang, true);
+            }
         }
 
         save() {
             let data = {
                 version: Constants.SettingsVersion,
-                lastVisited: Date.now()
+                lastVisited: Date.now(),
+                lang: LAM.loc.lang
             };
 
             localStorage.setItem(Constants.SettingsKey,JSON.stringify(data));

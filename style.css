@@ -301,3 +301,12 @@ body {
     border-width: 2px;
     border-color: black;
 }
+
+.lang-select {
+    margin: 10px;
+}
+
+.lang-select img {
+    width: 32px;
+    height: 32px;
+}

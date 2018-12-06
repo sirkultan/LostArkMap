@@ -11,6 +11,7 @@
     <!-- Bootstrap -->
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.3/css/bootstrap-select.min.css" rel="stylesheet">
 
     <!-- Leaflet -->
     <link href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" rel="stylesheet"/>
@@ -22,12 +23,16 @@
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <link href="search.css" rel="stylesheet" type="text/css"/>
 
+    <!-- Bootstrap -->
     <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js"></script>
 
     <script crossorigin="anonymous" defer
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/i18n/defaults-*.min.js"></script>
 
     <!-- JQuery -->
     <script crossorigin="anonymous"
@@ -53,8 +58,14 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.23/moment-timezone.min.js"></script>
 
     <!-- build:js -->
+
+    <!-- Core - Order Matters -->
+    <script src="src/core_data.js"></script>
     <script src="src/utils.js"></script>
     <script src="src/lam.js"></script>
+    <script src="src/loc.js"></script>
+
+    <!-- Systems -->
     <script src="src/area.js"></script>
     <script src="src/editor.js"></script>
     <script src="src/dynamicLayer.js"></script>
@@ -62,13 +73,16 @@
     <script src="src/search.js"></script>
     <script src="src/guide.js"></script>
     <script src="src/cards.js"></script>
+    <script src="src/crew.js"></script>
     <script src="src/faq.js"></script>
     <script src="src/treasureMapList.js"></script>
     <script src="src/settings.js"></script>
     <script src="src/statistics.js"></script>
     <script src="src/events.js"></script>
+    <script src="src/changelog.js"></script>
 
-    <script src="src/core_data.js"></script>
+    <!-- Data -->
+    <script src="src/data/loc_kr.js"></script>
 
     <script defer src="src/data/area_world.js"></script>
     <script defer src="src/data/area_artemis.js"></script>
@@ -94,7 +108,11 @@
     <script defer src="src/data/markers_yudia.js"></script>
     <script defer src="src/data/markers_islands.js"></script>
 
+    <script defer src="src/data/card_skills.js"></script>
     <script defer src="src/data/card_data.js"></script>
+
+    <script defer src="src/data/crew_skills.js"></script>
+    <script defer src="src/data/crew_data.js"></script>
 
     <script defer src="src/data/guide_data.js"></script>
     <script defer src="src/data/faq_data.js"></script>
@@ -230,6 +248,13 @@
                         </div>
                     </div>
 
+                    <div class="w-100 text-center">
+                        <select class="selectpicker lang-select w-75" id="langSelect">
+                            <option data-content="<img src='images/icons/flag-un.svg'/> English">en</option>
+                            <option data-content="<img src='images/icons/flag-korea.svg'/> 한국어">kr</option>
+                        </select>
+                    </div>
+
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                         <span>Maps</span>
                     </h6>
@@ -264,6 +289,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link active" href="#" id="content_crew_toggle">
+                                <span data-feather="file-text"></span>
+                                Crew
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link active" href="#" id="content_guides_toggle">
                                 <span data-feather="file-text"></span>
                                 Guides
@@ -291,6 +322,12 @@
                             <a class="nav-link active" href="#" id="content_statistics_toggle">
                                 <span data-feather="file-text"></span>
                                 Statistics
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" id="content_changelog_toggle">
+                                <span data-feather="file-text"></span>
+                                Changelog
                             </a>
                         </li>
                     </ul>
@@ -591,6 +628,36 @@
                     </div>
                 </div>
 
+                <div class="album py-5 bg-light" id="content_crew">
+
+                    <div class="collapse" id="crewFilter">
+                        <table class="table filterTable">
+                            <tr>
+                                <td class="filterHeader"><h5 class="align-self-center">Filter by Rarity</h5></td>
+                                <td class="btn-group d-flex" role="group">
+                                    <button class="btn btn-secondary w-100 btn-filter-crew-rarity" data-target="any" type="button">Any</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-crew-rarity background-rarity-0" data-target="0" type="button">Common</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-crew-rarity background-rarity-1" data-target="1" type="button">Uncommon</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-crew-rarity background-rarity-2" data-target="2" type="button">Rare</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-crew-rarity background-rarity-3" data-target="3" type="button">Epic</button>
+                                    <button class="btn btn-secondary w-100 btn-filter-crew-rarity background-rarity-4" data-target="4" type="button">Legendary</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="center">
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#crewFilter" aria-expanded="false" aria-controls=crewFilter">
+                            Filter Crew
+                        </button>
+                    </div>
+                    <br>
+                    <div class="container">
+                        <div class="row" id="content_crew_list">
+                        </div>
+                    </div>
+                </div>
+
                 <div class="album py-5 bg-light" id="content_guides">
                     <div class="container">
                         <div class="row" id="content_guides_list">
@@ -612,6 +679,7 @@
                         <button class="float-right btn btn-primary btn-filter-search background-faq-guide" data-target="faq" type="button">FAQ</button>
                         <button class="float-right btn btn-primary btn-filter-search background-search-guide" data-target="guide" type="button">Guides</button>
                         <button class="float-right btn btn-primary btn-filter-search background-search-marker" data-target="marker" type="button">Markers</button>
+                        <button class="float-right btn btn-primary btn-filter-search background-search-crew" data-target="crew" type="button">Crew</button>
                         <button class="float-right btn btn-primary btn-filter-search background-search-cards" data-target="card" type="button">Cards</button>
                         <button class="float-right btn btn-primary btn-filter-search background-search-area" data-target="area" type="button">Areas</button>
                         <button class="float-right btn btn-primary btn-filter-search background-search-all" data-target="all" type="button">All</button>
@@ -656,6 +724,9 @@
                 </div>
 
                 <div id="content_statistics" class="py-5 bg-light">
+                </div>
+
+                <div id="content_changelog" class="py-5 bg-light">
                 </div>
             </main>
         </div>

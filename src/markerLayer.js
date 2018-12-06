@@ -156,7 +156,7 @@
 
                         default:
                         {
-                            title = idPrefix + markerData.title;
+                            title = LAM.loc.getLocalizedTextElement(idPrefix + markerData.title);
                             break;
                         }
                     }
@@ -261,7 +261,7 @@
             popupContent = popupContent + '<a href="#" class="markerPinLink" id="' + pinId + '"><img src="images/icons/map-pin.svg"/></a>';
 
             if(markerData.popupText !== undefined){
-                popupContent = popupContent + '<h4>' + markerData.popupText + '</h4>';
+                popupContent = popupContent + '<h4 class="' + Constants.LocalizedTextClass + '">' + _L(markerData.popupText) + '</h4>';
             }
 
             if(markerData.hintImage !== undefined){
@@ -269,7 +269,7 @@
             }
 
             if(markerData.hintText !== undefined){
-                popupContent = popupContent + '<p>' + markerData.hintText + '</p>';
+                popupContent = popupContent + '<p class="' + Constants.LocalizedTextClass + '">' + _L(markerData.hintText) + '</p>';
             }
 
             popupContent = popupContent + '</div>';
@@ -309,12 +309,8 @@
                     }
                     let element = $('<div></div>');
 
-                    let title = $('<h5 class="island-tooltip-title">' + zone + '</h5>');
+                    let title = $('<h5 class="island-tooltip-title ' + Constants.LocalizedTextClass + '">' + _L(zone) + '</h5>');
                     element.append(title);
-
-                    if(zoneData.kr !== undefined){
-                        element.append($('<div>' + zoneData.kr + '</div>'));
-                    }
 
                     let metaList = $('<table></table>');
                     element.append(metaList);
@@ -347,8 +343,8 @@
                         }
 
                         metaList.append('<tr class="w-100 island-tooltip-meta">' +
-                            '<td class="island-tooltip-metatitle align-top">' + title + ':</td>' +
-                            '<td class="float-right island-tooltip-metavalue">' + zoneData.meta[meta] + '</td>' +
+                            '<td class="island-tooltip-metatitle align-top ' + Constants.LocalizedTextClass + '">' + _L(title) + ':</td>' +
+                            '<td class="float-right island-tooltip-metavalue ' + Constants.LocalizedTextClass + '">' + _L(zoneData.meta[meta]) + '</td>' +
                             '</tr>')
                     }
 
@@ -394,12 +390,12 @@
 
                     switch (zoneType) {
                         case MapTypeEnum.Dungeon: {
-                            zoneMarkerClone.title = markerData.zone + " Dungeon";
+                            zoneMarkerClone.title = _L(markerData.zone) + _L(" Dungeon");
                             break;
                         }
 
                         default: {
-                            zoneMarkerClone.title = "To " + markerData.zone;
+                            zoneMarkerClone.title = _L("To ") + _L(markerData.zone);
                             break;
                         }
                     }
@@ -445,6 +441,7 @@
         }
 
         createMarker(markerData) {
+
             this.prepareMarkerData(markerData);
 
             if(markerData.isGenerated !== true) {
@@ -578,10 +575,8 @@
                     }
 
                     case 'hintText':
-                    case 'hintTextKR':
                     case 'hintImage':
-                    case 'popupText':
-                    case 'popupTextKR':{
+                    case 'popupText':{
                         if(markerCopy[key] === "") {
                             delete markerCopy[key];
                         }
@@ -589,8 +584,7 @@
                         break;
                     }
 
-                    case 'title':
-                    case 'titleKR': {
+                    case 'title': {
                         if(markerCopy[key] === "" || MarkerTypeDefaultTitle(markerData.type) === markerData[key]) {
                             delete markerCopy[key];
                         }
