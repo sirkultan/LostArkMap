@@ -77,7 +77,7 @@
                 'Added Detail Maps for 25 Island maps in the west',
                 'Added 106 Mokoko Seeds',
                 'Added 4 Treasure Maps',
-                'Added more detaile Statistics per Area',
+                'Added more detailed Statistics per Area',
                 'Search now includes Cards',
                 'Changed "Show" command for treasure map list to not re-open the site but instead move to the right area and marker immediately'
             ]
