@@ -74,7 +74,7 @@
         5: {
             n:  "1.4",
             e: [
-                'Added Map for Orbis Island (thx #Elona)',
+                'Added Detail Maps for 25 Island maps in the west',
                 'Added 11 Mokoko Seeds',
                 'Added 2 Treasure Maps',
                 'Search now includes Cards',
