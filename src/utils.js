@@ -78,7 +78,7 @@ const RepositionRectangleMarker = function(marker, markerData){
 const RefreshMarkerLabel = function (marker, markerData) {
     labelIcon = L.divIcon({
         className: 'leaflet-label',
-        html:  '<span class="marker-label-' + GetKeyByValue(MarkerTypeEnum, markerData.type) + '"">' + markerData.title + '</span>'
+        html:  '<span class="marker-label-' + GetKeyByValue(MarkerTypeEnum, markerData.type) + '"">' + _L(markerData.title) + '</span>'
     });
 
     marker.setIcon(labelIcon);

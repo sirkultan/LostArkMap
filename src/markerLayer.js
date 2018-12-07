@@ -156,7 +156,7 @@
 
                         default:
                         {
-                            title = LAM.loc.getLocalizedTextElement(idPrefix + markerData.title);
+                            title = idPrefix + _L(markerData.title);
                             break;
                         }
                     }
