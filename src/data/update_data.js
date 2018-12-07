@@ -93,7 +93,8 @@
             e: [
                 'Added Changelog Content section',
                 'Added Localization (ongoing process)',
-                'Added 117 Crew Entries with more Info to come later'
+                'Added 117 Crew Entries with more Info to come later',
+                'Added Element Info image to cards section'
             ]
         }
     };

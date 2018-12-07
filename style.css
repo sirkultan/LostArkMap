@@ -310,3 +310,9 @@ body {
     width: 32px;
     height: 32px;
 }
+
+.cardElementsImage {
+    width: 600px;
+    height: 600px;
+    margin: 20px;
+}

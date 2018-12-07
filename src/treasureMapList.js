@@ -59,13 +59,13 @@
                 '<img class="card-img-top" src="images/marker_hints/'+ markerData.hintImage +'" style="width: 180px; height: 228px;"/>' +
                 '<div><p class="card-text">';
             if(markerData.zone !== undefined) {
-                elementText = elementText + markerData.zone + '<br>';
+                elementText = elementText + '<span class="loc-txt">' + markerData.zone + '</span><br>';
             }
 
-            elementText = elementText + '<b>' + markerData.area + '</b></p>';
+            elementText = elementText + '<b class="loc-txt">' + markerData.area + '</b></p>';
 
             if(markerData.hintText !== undefined) {
-                elementText = elementText + '<p class="small" style="width: 180px;">' + markerData.hintText + '</p>';
+                elementText = elementText + '<p class="small loc-txt" style="width: 180px;">' + markerData.hintText + '</p>';
             }
 
             elementText = elementText + '<a role="button" class="btn btn-sm btn-outline-secondary treasure-map-link" href="#" data-target="' + mapId +'">Show</a></div></div>';
