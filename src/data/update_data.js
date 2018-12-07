@@ -89,7 +89,7 @@
         },
         6: {
             n: "1.5",
-            d: "TBD",
+            d: "2018-12-06",
             e: [
                 'Added Changelog Content section',
                 'Added Localization (ongoing process)',
