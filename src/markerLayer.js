@@ -104,6 +104,45 @@
             LAM.statistics.rebuildStats();
         }
 
+        prepareMarkerDataTitle(markerData) {
+            let isZoningMarker = false;
+            switch (markerData.type) {
+                case MarkerTypeEnum.Zoning:
+                case MarkerTypeEnum.ZoningWorld: {
+                    if(markerData.teleportTo === undefined) {
+                        return;
+                    }
+
+                    isZoningMarker = true;
+                    break;
+                }
+            }
+
+
+            if(isZoningMarker === true) {
+
+                let targetArea = markerData.area;
+                if(markerData.teleportArea !== undefined){
+                    targetArea = markerData.teleportArea;
+                }
+
+                let targetZone = LAM.areas[targetArea].getZoneForPoint(markerData.teleportTo[0], markerData.teleportTo[1]);
+
+                if(markerData.area == 'World'){
+                    markerData.title = '##' + _L('To ') + _L(markerData.area);
+                } else {
+                    markerData.teleportTo
+                    markerData.title = '##' + _L('To ' + _L(targetZone))
+                }
+
+                return;
+            }
+
+            if(markerData.title === undefined) {
+                markerData.title = MarkerTypeDefaultTitle(markerData.type);
+            }
+        }
+
         prepareMarkerData(markerData) {
             // Set a marker id if none is set and its not a generated marker
             if(markerData.isGenerated !== true) {
@@ -114,10 +153,6 @@
                         this.nextMarkerId = markerData.id + 1;
                     }
                 }
-            }
-
-            if(markerData.title === undefined) {
-                markerData.title = MarkerTypeDefaultTitle(markerData.type);
             }
 
             markerData.area = this.area;
@@ -132,6 +167,9 @@
                     markerData.zone = markerZone;
                 }
             }
+
+            // set title After area + zone
+            this.prepareMarkerDataTitle(markerData);
         }
 
         createLeafletMarker(markerData, style) {
@@ -397,12 +435,12 @@
 
                     switch (zoneType) {
                         case MapTypeEnum.Dungeon: {
-                            zoneMarkerClone.title = _L(markerData.zone) + _L(" Dungeon");
+                            zoneMarkerClone.title = '##' + _L(markerData.zone) + _L(" Dungeon");
                             break;
                         }
 
                         default: {
-                            zoneMarkerClone.title = _L("To ") + _L(markerData.zone);
+                            zoneMarkerClone.title = '##' + _L("To ") + _L(markerData.zone);
                             break;
                         }
                     }
