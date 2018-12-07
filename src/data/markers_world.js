@@ -77,7 +77,6 @@
                 421.9
             ],
             "teleportArea": "Islands",
-            "title": "To Death Valley",
         },
         {
             "x": -210.62532242799605,
@@ -89,7 +88,6 @@
                 406.86
             ],
             "teleportArea": "Islands",
-            "title": "To Alteisen",
         },
         {
             "x": -234.81267789130817,
@@ -101,7 +99,6 @@
                 408.41
             ],
             "teleportArea": "Islands",
-            "title": "To Panda Pupu Island",
         },
         {
             "x": -149.87522792323858,
@@ -113,7 +110,6 @@
                 392.75
             ],
             "teleportArea": "Islands",
-            "title": "To Fugitive Village",
         },
         {
             "x": -158.87499242515852,
@@ -125,7 +121,6 @@
                 369.6
             ],
             "teleportArea": "Islands",
-            "title": "To Opportunity Island",
         },
         {
             "x": -126.90671696468395,
@@ -137,7 +132,6 @@
                 372.98
             ],
             "teleportArea": "Islands",
-            "title": "To Broken Glacier Island",
         },
         {
             "x": -106.37527795516903,
@@ -149,7 +143,6 @@
                 365.03
             ],
             "teleportArea": "Islands",
-            "title": "To Cold Home",
         },
         {
             "x": -129.87535578261634,
@@ -161,7 +154,6 @@
                 337.62
             ],
             "teleportArea": "Islands",
-            "title": "To Argon",
         },
         {
             "x": -154.25028907337577,
@@ -173,7 +165,6 @@
                 308.42
             ],
             "teleportArea": "Islands",
-            "title": "To Kaltes Herz",
         },
         {
             "x": -188.53143345041155,
@@ -185,7 +176,6 @@
                 318.09
             ],
             "teleportArea": "Islands",
-            "title": "To Alaquer",
         },
         {
             "x": -191.62517789130817,
@@ -197,7 +187,6 @@
                 345.01
             ],
             "teleportArea": "Islands",
-            "title": "To Slime Island",
         },
         {
             "x": -185.43760006386086,
@@ -209,7 +198,6 @@
                 363.29
             ],
             "teleportArea": "Islands",
-            "title": "To Secret Base X-301",
         },
         {
             "x": -199.00026683696225,
@@ -221,7 +209,6 @@
                 371
             ],
             "teleportArea": "Islands",
-            "title": "To Golden Wave Island",
         },
         {
             "x": -206.53126667731016,
@@ -233,7 +220,6 @@
                 319.85
             ],
             "teleportArea": "Islands",
-            "title": "To New Moon Island",
         },
         {
             "x": -208.93765565489466,
@@ -245,7 +231,6 @@
                 333.17
             ],
             "teleportArea": "Islands",
-            "title": "To Dreamy Seagull Island",
         },
         {
             "x": -230.12515565489466,
@@ -257,7 +242,6 @@
                 321.51
             ],
             "teleportArea": "Islands",
-            "title": "To Fortuna",
         },
         {
             "x": -225.5626334184811,
@@ -269,7 +253,6 @@
                 337.42
             ],
             "teleportArea": "Islands",
-            "title": "To Lonely Island Oper",
         },
         {
             "x": -241.1251334184811,
@@ -281,7 +264,6 @@
                 345.73
             ],
             "teleportArea": "Islands",
-            "title": "To Sunflower Island",
         },
         {
             "x": -236.5000555910338,
@@ -293,7 +275,6 @@
                 370.04
             ],
             "teleportArea": "Islands",
-            "title": "To Starlight Lighthouse Island",
         },
         {
             "x": -224.24989993613917,
@@ -305,7 +286,6 @@
                 379.83
             ],
             "teleportArea": "Islands",
-            "title": "To Lush Reed Island",
         },
         {
             "x": -252.6251111820676,
@@ -317,7 +297,6 @@
                 370.57
             ],
             "teleportArea": "Islands",
-            "title": "Turtle Island",
         },
         {
             "x": -259.6876556548947,
@@ -329,7 +308,6 @@
                 345.67
             ],
             "teleportArea": "Islands",
-            "title": "To Ocean Paradise Payto",
         },
         {
             "x": -267.2501556548947,
@@ -341,7 +319,6 @@
                 324.98
             ],
             "teleportArea": "Islands",
-            "title": "To Erasomoui Island",
         },
         {
             "x": -276.56262230027437,
@@ -353,7 +330,6 @@
                 337.44
             ],
             "teleportArea": "Islands",
-            "title": "To Lopang Island",
         },
         {
             "x": -277.18756670924057,
@@ -365,7 +341,6 @@
                 360.1
             ],
             "teleportArea": "Islands",
-            "title": "To Estella",
         },
         {
             "x": -286.4376778913082,
@@ -377,7 +352,6 @@
                 365.42
             ],
             "teleportArea": "Islands",
-            "title": "To Toto Silver Island",
         },
         {
             "x": -283.6876000638608,
@@ -389,7 +363,6 @@
                 372.28
             ],
             "teleportArea": "Islands",
-            "title": "To Notos Island",
         },
         {
             "x": -272.1876556548947,
@@ -401,7 +374,6 @@
                 393.24
             ],
             "teleportArea": "Islands",
-            "title": "To Forpe",
         },
         {
             "x": -299.25002223641354,
@@ -413,7 +385,6 @@
                 322.54
             ],
             "teleportArea": "Islands",
-            "title": "To Boom Bling Island",
         },
         {
             "x": -299.2501111820676,
@@ -425,7 +396,6 @@
                 339.9
             ],
             "teleportArea": "Islands",
-            "title": "To Giant Mushroom Island",
         },
         {
             "x": -309.06360070246933,
@@ -437,7 +407,6 @@
                 376.89
             ],
             "teleportArea": "Islands",
-            "title": "To Sleeping Song Island",
         },
         {
             "x": -315.24998888179323,
@@ -449,7 +418,6 @@
                 406.47
             ],
             "teleportArea": "Islands",
-            "title": "To Pirate Town Atlas",
         },
         {
             "x": -323.5,
@@ -461,7 +429,6 @@
                 404.37
             ],
             "teleportArea": "Islands",
-            "title": "To Freedom Island",
         },
         {
             "x": -344.81255559103386,
@@ -473,7 +440,6 @@
                 399.25
             ],
             "teleportArea": "Islands",
-            "title": "To Black-Tooth Post",
         },
         {
             "x": -325.1875,
@@ -485,7 +451,6 @@
                 373.17
             ],
             "teleportArea": "Islands",
-            "title": "To Mercia",
         },
         {
             "x": -321.75001111820677,
@@ -497,7 +462,6 @@
                 359.85
             ],
             "teleportArea": "Islands",
-            "title": "To Totopia",
         },
         {
             "x": -347.25,
@@ -509,7 +473,6 @@
                 349.46
             ],
             "teleportArea": "Islands",
-            "title": "To Silent Island",
         },
         {
             "x": -325.31253335462026,
@@ -521,7 +484,6 @@
                 311.43
             ],
             "teleportArea": "Islands",
-            "title": "To Pomona Island",
         },
         {
             "x": -314.06246664537974,
@@ -533,7 +495,6 @@
                 298.98
             ],
             "teleportArea": "Islands",
-            "title": "To Bikini Island",
         },
         {
             "x": -322.62505559103386,
@@ -545,7 +506,6 @@
                 275.89
             ],
             "teleportArea": "Islands",
-            "title": "To Small Lucky Island",
         },
         {
             "x": -301.81243329075943,
@@ -557,7 +517,6 @@
                 290.79
             ],
             "teleportArea": "Islands",
-            "title": "To Ribeheim",
         },
         {
             "x": -299.6875111182067,
@@ -569,7 +528,6 @@
                 217.8
             ],
             "teleportArea": "Islands",
-            "title": "To Distorted Dimension Island",
         },
         {
             "x": -368.06237769972563,
@@ -581,7 +539,6 @@
                 330.74
             ],
             "teleportArea": "Islands",
-            "title": "To Island of Wisdom",
         },
         {
             "x": -380.18737769972563,
@@ -593,7 +550,6 @@
                 378.92
             ],
             "teleportArea": "Islands",
-            "title": "To Forgotten City",
         },
         {
             "x": -394.81242217255266,
@@ -605,7 +561,6 @@
                 385.84
             ],
             "teleportArea": "Islands",
-            "title": "To Everglade Nest",
         },
         {
             "x": -398.81236658151886,
@@ -617,7 +572,6 @@
                 325.64
             ],
             "teleportArea": "Islands",
-            "title": "To Reminiscent Island",
         },
         {
             "x": -406.68737769972563,
@@ -629,7 +583,6 @@
                 298.37
             ],
             "teleportArea": "Islands",
-            "title": "To Island of the Years",
         },
         {
             "x": -171.1249777635865,
@@ -641,7 +594,6 @@
                 285.6
             ],
             "teleportArea": "Islands",
-            "title": "To Hallucination Island",
         },
         {
             "x": -182.00017789130817,
@@ -653,7 +605,6 @@
                 271.06
             ],
             "teleportArea": "Islands",
-            "title": "To Meteora",
         },
         {
             "x": -158.18730543138167,
@@ -665,7 +616,6 @@
                 237.61
             ],
             "teleportArea": "Islands",
-            "title": "To Medea",
         },
         {
             "x": -106.43779463247917,
@@ -677,7 +627,6 @@
                 244
             ],
             "teleportArea": "Islands",
-            "title": "To Island of Fire and Ice",
         },
         {
             "x": -208.03,
@@ -689,7 +638,6 @@
                 228.46
             ],
             "teleportArea": "Islands",
-            "title": "To Speeder Island",
         },
         {
             "x": -224.04,
@@ -701,7 +649,6 @@
                 229.05
             ],
             "teleportArea": "Islands",
-            "title": "To Thick Mist Ridge",
         },
         {
             "x": -225.625,
@@ -713,7 +660,6 @@
                 164.77
             ],
             "teleportArea": "Islands",
-            "title": "To Isle of Mist",
         },
         {
             "x": -281.31261118206766,
@@ -725,14 +671,12 @@
                 263.4
             ],
             "teleportArea": "Islands",
-            "title": "Club Avinue",
         },
         {
             "x": -111.37532242799605,
             "y": 331.81243161481063,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 65,
-            "title": "To Ice Maze Island",
             "teleportTo": [
                 -51.2,
                 331.14
@@ -744,7 +688,6 @@
             "y": 330.81191872589073,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 66,
-            "title": "To White Waves Island",
             "teleportTo": [
                 -146.88,
                 337.96
@@ -756,7 +699,6 @@
             "y": 344.08,
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 67,
-            "title": "To Duki Island",
             "teleportTo": [
                 -249.39,
                 330.75
@@ -769,7 +711,6 @@
             "y": 327.4999658074054,
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 68,
-            "title": "To Duki Island",
             "teleportTo": [
                 -249.39,
                 330.75
@@ -781,7 +722,6 @@
             "y": 340.250102577784,
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 69,
-            "title": "To Duki Island",
             "teleportTo": [
                 -249.39,
                 330.75
@@ -794,7 +734,6 @@
             "y": 337.062192266648,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 70,
-            "title": "To Orbis Island",
             "teleportTo": [
                 -440.47,
                 337.98
@@ -806,7 +745,6 @@
             "y": 274.77,
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 71,
-            "title": "To Bolard Island",
             "teleportTo": [
                 -262.93,
                 276.6
@@ -818,7 +756,6 @@
             "y": 248.0001709629733,
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 72,
-            "title": "To Duki Island",
             "teleportTo": [
                 -249.39,
                 330.75
@@ -831,7 +768,6 @@
             "y": 166.6876709629733,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 73,
-            "title": "To Lucky Island",
             "teleportTo": [
                 -99.17,
                 160.53
@@ -843,7 +779,6 @@
             "y": 158.68763677037865,
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 74,
-            "title": "To Unknown Island",
             "teleportTo": [
                 -126.47,
                 153.65
@@ -855,7 +790,6 @@
             "y": 175.37469226664803,
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 75,
-            "title": "To Tranquil Island",
             "teleportTo": [
                 -133.26,
                 167.29
@@ -867,7 +801,6 @@
             "y": 198.02,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 76,
-            "title": "To Isle of Shadows",
             "teleportTo": [
                 -146.92,
                 194.65
@@ -879,7 +812,6 @@
             "y": 144.43818385189326,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 77,
-            "title": "To Carmine's Post",
             "teleportTo": [
                 -153.73,
                 133.16
@@ -891,7 +823,6 @@
             "y": 182.812602577784,
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 78,
-            "title": "To Monte Island",
             "teleportTo": [
                 -180.97,
                 180.92
@@ -903,7 +834,6 @@
             "y": 156.31253419259465,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 79,
-            "title": "To Isle of Longing",
             "teleportTo": [
                 -201.4,
                 146.76
@@ -915,7 +845,6 @@
             "y": 127.43739742221601,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 80,
-            "title": "To Isle of Eternity",
             "teleportTo": [
                 -194.62,
                 119.54
@@ -927,7 +856,6 @@
             "y": 96.12503419259465,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 81,
-            "title": "To Isle of Dreams",
             "teleportTo": [
                 -208.41,
                 85.39
@@ -939,7 +867,6 @@
             "y": 103.09364742221601,
             "type": MarkerTypeEnum.ZoningIslandFlux,
             "id": 82,
-            "title": "To Harmony Island",
             "teleportTo": [
                 -256.25,
                 92.23
@@ -951,7 +878,6 @@
             "y": 113.4375,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 83,
-            "title": "To Valpurgis",
             "teleportTo": [
                 -228.78,
                 105.86
@@ -963,7 +889,6 @@
             "y": 132.18743161481066,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 84,
-            "title": "To Metus Islands",
             "teleportTo": [
                 -221.96,
                 126.37
@@ -975,7 +900,6 @@
             "y": 148.4,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 85,
-            "title": "To Island of Rejoice",
             "teleportTo": [
                 -242.44,
                 140.03
@@ -987,7 +911,6 @@
             "y": 173.34316872589073,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 86,
-            "title": "To Nichel Tarov's Thought",
             "teleportTo": [
                 -242.48,
                 160.49
@@ -999,7 +922,6 @@
             "y": 120.68698711108007,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 87,
-            "title": "To Primeval Island",
             "teleportTo": [
                 -290.21,
                 112.7
@@ -1011,7 +933,6 @@
             "y": 145.87448711108007,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 88,
-            "title": "To Island of Hope",
             "teleportTo": [
                 -276.61,
                 140.07
@@ -1023,7 +944,6 @@
             "y": 163.7492819555121,
             "type": MarkerTypeEnum.ZoningIslandPVP,
             "id": 89,
-            "title": "To Goblin Island",
             "teleportTo": [
                 -269.73,
                 160.53
@@ -1035,7 +955,6 @@
             "y": 168.62496580740535,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 90,
-            "title": "To Atropose",
             "teleportTo": [
                 -297.04,
                 167.24
@@ -1047,7 +966,6 @@
             "y": 191.37448711108007,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 91,
-            "title": "To Blue Hole Island",
             "teleportTo": [
                 -283.38,
                 180.99
@@ -1059,7 +977,6 @@
             "y": 186.62424776291743,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 92,
-            "title": "To Naruni Island",
             "teleportTo": [
                 -317.52,
                 180.99
@@ -1071,7 +988,6 @@
             "y": 158.6248290370267,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 93,
-            "title": "To Gravis Resort",
             "teleportTo": [
                 -310.67,
                 153.64
@@ -1083,7 +999,6 @@
             "y": 120.56219226664804,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 94,
-            "title": "To Welcome Butterfly Island",
             "teleportTo": [
                 -317.56,
                 112.63
@@ -1095,7 +1010,6 @@
             "y": 135.749897422216,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 95,
-            "title": "To Hypnose Eye",
             "teleportTo": [
                 -351.66,
                 126.38
@@ -1107,7 +1021,6 @@
             "y": 175.18705549626938,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 96,
-            "title": "To Twilight Island",
             "teleportTo": [
                 -351.72,
                 167.3
@@ -1119,7 +1032,6 @@
             "y": 187.937397422216,
             "type": MarkerTypeEnum.ZoningIslandPVP,
             "id": 97,
-            "title": "To Outlaw Island",
             "teleportTo": [
                 -365.35,
                 180.96
@@ -1131,7 +1043,6 @@
             "y": 199.99962388145872,
             "type": MarkerTypeEnum.ZoningIsland,
             "id": 98,
-            "title": "To Torrent Island",
             "teleportTo": [
                 -344.79,
                 194.63
@@ -1471,7 +1382,6 @@
             "y": 297.4999316148107,
             "type": MarkerTypeEnum.ZoningIslandPVP,
             "id": 138,
-            "title": "To Misguided Island",
             "teleportTo": [
                 -215.11,
                 297.05

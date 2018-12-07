@@ -4,7 +4,6 @@
         {
             "x": -438.5,
             "y": 359.26,
-            "title": "To Lake Bars",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -421.12,
@@ -218,7 +217,6 @@
         {
             "x": -429,
             "y": 180.07,
-            "title": "Ridge of Brilliance Dungeon",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -468.5,
@@ -229,7 +227,6 @@
         {
             "x": -354,
             "y": 258.14,
-            "title": "To Medlinic Monastery",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -328.19,
@@ -377,7 +374,6 @@
         {
             "x": -180.81,
             "y": 254.51,
-            "title": "To Vilblin Forest",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -158.19,
@@ -546,7 +542,6 @@
         {
             "x": -89,
             "y": 320.01,
-            "title": "To Plains of Battle",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -72.75,
@@ -557,7 +552,6 @@
         {
             "x": -100.12,
             "y": 190.51,
-            "title": "Gray Hammer Mine Dungeon",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -153,
@@ -736,7 +730,6 @@
         {
             "x": -37,
             "y": 473.14,
-            "title": "To Castle of Lutheran",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -376,

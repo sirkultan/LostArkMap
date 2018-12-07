@@ -1,5 +1,6 @@
 (function () {
 
+    LAM.locMissing[LocalizationLanguage.Korean] = {};
     LAM.locData[LocalizationLanguage.Korean] = {
         "World": "항해",
         "Artemis": "아르테미스",

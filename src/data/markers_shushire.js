@@ -15,7 +15,6 @@
             "y": 120.51,
             "type": MarkerTypeEnum.Zoning,
             "id": 1,
-            "title": "To Frozen Sea",
             "teleportTo": [
                 -247,
                 97
@@ -26,7 +25,6 @@
             "y": 181.38,
             "type": MarkerTypeEnum.Zoning,
             "id": 2,
-            "title": "To Blade Wind Hill",
             "teleportTo": [
                 -332,
                 127
@@ -127,7 +125,6 @@
             "y": 88.57,
             "type": MarkerTypeEnum.Zoning,
             "id": 15,
-            "title": "Baedan's Hideout Dungeon",
             "teleportTo": [
                 -395.97,
                 350.69
@@ -290,7 +287,6 @@
             "y": 239.51,
             "type": MarkerTypeEnum.Zoning,
             "id": 37,
-            "title": "To Blade Wind Hill",
             "teleportTo": [
                 -321,
                 133
@@ -301,7 +297,6 @@
             "y": 280.87,
             "type": MarkerTypeEnum.Zoning,
             "id": 38,
-            "title": "To Ice Butterfly Cliff",
             "teleportTo": [
                 -259,
                 316
@@ -312,7 +307,6 @@
             "y": 255,
             "type": MarkerTypeEnum.Zoning,
             "id": 39,
-            "title": "Circleside Dungeon",
             "teleportTo": [
                 -198,
                 258
@@ -440,7 +434,6 @@
             "y": 11.65,
             "type": MarkerTypeEnum.ZoningWorld,
             "id": 56,
-            "title": "To World",
             "teleportArea": "World",
             "teleportTo": [-129, 256.8]
         },
@@ -561,7 +554,6 @@
             "y": 390.63,
             "type": MarkerTypeEnum.Zoning,
             "id": 73,
-            "title": "Labyrinth of Mirrors Dungeon",
             "teleportTo": [
                 -200,
                 433
@@ -572,7 +564,6 @@
             "y": 393.75,
             "type": MarkerTypeEnum.Zoning,
             "id": 74,
-            "title": "Shadow Labyrinth Dungeon"
         },
         {
             "x": -283.09,
@@ -725,7 +716,6 @@
             "y": 169.56,
             "type": MarkerTypeEnum.Zoning,
             "id": 98,
-            "title": "To Lake of Time",
             "teleportTo": [
                 -468,
                 12

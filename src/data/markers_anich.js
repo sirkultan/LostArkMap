@@ -111,7 +111,6 @@
             "y": 176.61,
             "type": MarkerTypeEnum.Zoning,
             "id": 14,
-            "title": "To Wisteria Hills",
             "teleportTo": [
                 -416,
                 133
@@ -122,7 +121,6 @@
             "y": 234.14,
             "type": MarkerTypeEnum.ZoningWorld,
             "id": 15,
-            "title": "To World",
             "teleportTo": [
                 -264.79,
                 383.97
@@ -134,7 +132,6 @@
             "y": 244.32,
             "type": MarkerTypeEnum.Zoning,
             "id": 16,
-            "title": "To Delphi Prefecture",
             "teleportTo": [
                 -333,
                 37
@@ -145,7 +142,6 @@
             "y": 148.59,
             "type": MarkerTypeEnum.Zoning,
             "id": 20,
-            "title": "To Forest of Sound",
             "teleportTo": [
                 -325,
                 128
@@ -156,7 +152,6 @@
             "y": 153.59,
             "type": MarkerTypeEnum.Zoning,
             "id": 21,
-            "title": "Barrier of Yeon Dungeon",
             "teleportTo": [
                 -406,
                 181
@@ -319,7 +314,6 @@
             "y": 122.45,
             "type": MarkerTypeEnum.Zoning,
             "id": 46,
-            "title": "To Twilight Mist",
             "teleportTo": [
                 -246,
                 142
@@ -330,7 +324,6 @@
             "y": 159.3,
             "type": MarkerTypeEnum.Zoning,
             "id": 48,
-            "title": "Barrier of Red Dungeon",
             "teleportTo": [
                 -309,
                 197
@@ -463,7 +456,6 @@
             "y": 101.42,
             "type": MarkerTypeEnum.Zoning,
             "id": 67,
-            "title": "To Mirror Valley",
             "teleportTo": [
                 -201,
                 53
@@ -474,7 +466,6 @@
             "y": 131.91,
             "type": MarkerTypeEnum.Zoning,
             "id": 68,
-            "title": "Headquarter Cave Dungeon",
             "teleportTo": [
                 -162,
                 129
@@ -620,7 +611,6 @@
             "y": 42.3,
             "type": MarkerTypeEnum.Zoning,
             "id": 91,
-            "title": "To Mirror Valley",
             "teleportTo": [
                 -246,
                 46

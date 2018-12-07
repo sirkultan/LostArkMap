@@ -4,7 +4,6 @@
 
         constructor(name, data) {
             this.name = name;
-            this.nameKr = data.kr;
             this.imagePath = data.path;
             this.zoomLevel = data.zoomLevel;
             this.bounds = data.bounds;
@@ -48,7 +47,7 @@
                                 y: position[1] + 1,
                                 type: MarkerTypeEnum.IslandHeart,
                                 isGenerated: true,
-                                popupText: 'Heart of ' + name,
+                                popupText: '##' + _L('Heart of ') + _L(name),
                                 hintText: mapData.meta.heart
                             };
 

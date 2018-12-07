@@ -90,7 +90,6 @@
             "y": 236.26,
             "type": MarkerTypeEnum.Zoning,
             "id": 13,
-            "title": "To Wind Hill",
             "teleportTo": [
                 -422,
                 272
@@ -101,7 +100,6 @@
             "y": 239.26,
             "type": MarkerTypeEnum.Zoning,
             "id": 14,
-            "title": "To Riza Waterfall",
             "teleportTo": [
                 -233,
                 291
@@ -112,7 +110,6 @@
             "y": 185.02,
             "type": MarkerTypeEnum.Zoning,
             "id": 15,
-            "title": "To Cracked Land",
             "teleportTo": [
                 -245,
                 201
@@ -313,7 +310,6 @@
             "y": 185.28,
             "type": MarkerTypeEnum.Zoning,
             "id": 41,
-            "title": "Nest of Battle Ants Dungeon",
             "teleportTo": [
                 -114,
                 196
@@ -324,7 +320,6 @@
             "y": 151.53,
             "type": MarkerTypeEnum.Zoning,
             "id": 42,
-            "title": "To Nebelhorn",
             "teleportTo": [
                 -223,
                 94
@@ -546,7 +541,6 @@
             "y": 67.82,
             "type": MarkerTypeEnum.Zoning,
             "id": 74,
-            "title": "Heart of Klaer Dungeon",
             "teleportTo": [
                 -110,
                 67
@@ -777,7 +771,6 @@
             "y": 331.53,
             "type": MarkerTypeEnum.Zoning,
             "id": 107,
-            "title": "Air Gate Dungeon",
             "teleportTo": [
                 -121,
                 272
@@ -788,7 +781,6 @@
             "y": 372.01,
             "type": MarkerTypeEnum.Zoning,
             "id": 108,
-            "title": "To Red Sand Desert",
             "teleportTo": [
                 -174,
                 405
@@ -924,7 +916,6 @@
             "y": 358.26,
             "type": MarkerTypeEnum.Zoning,
             "id": 129,
-            "title": "To Totrerich",
             "teleportTo": [
                 -329,
                 407
@@ -1183,7 +1174,6 @@
             "y": 186.87,
             "type": MarkerTypeEnum.Zoning,
             "id": 166,
-            "title": "To Barren Passage",
             "teleportTo": [
                 -395,
                 67

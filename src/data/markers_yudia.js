@@ -4,7 +4,6 @@
         {
             "x": -353.75,
             "y": 426.74,
-            "title": "Morai Ruins Dungeon",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -457.94,
@@ -15,7 +14,6 @@
         {
             "x": -317.44,
             "y": 409.07,
-            "title": "To Ozhorn Hills",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -229.62,
@@ -357,7 +355,6 @@
         {
             "x": -197.75,
             "y": 142.63,
-            "title": "Sapira Cave Dungeon",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -209.5,
@@ -368,7 +365,6 @@
         {
             "x": -43.31,
             "y": 277.19,
-            "title": "To Zagoras Mountain (Lutheran West)",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -489.12,

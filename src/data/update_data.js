@@ -96,6 +96,16 @@
                 'Added 117 Crew Entries with more Info to come later',
                 'Added Element Info image to cards section'
             ]
+        },
+        7: {
+            n: "1.6",
+            d: "TBD",
+            e: [
+                'Cards are now properly translating to the current localization (not all strings are set yet)',
+                'Search now searches in english and the current selected localization, the results will be in displayed in the current language',
+                'Search now includes Skill and How to Obtain information for Cards and Crew',
+                'Removed some no longer needed data points for zone markers, they are now auto populated'
+            ]
         }
     };
 

@@ -261,7 +261,7 @@
             popupContent = popupContent + '<a href="#" class="markerPinLink" id="' + pinId + '"><img src="images/icons/map-pin.svg"/></a>';
 
             if(markerData.popupText !== undefined){
-                popupContent = popupContent + '<h4 class="' + Constants.LocalizedTextClass + '">' + _L(markerData.popupText) + '</h4>';
+                popupContent = popupContent + '<h4>' + _L(markerData.popupText) + '</h4>';
             }
 
             if(markerData.hintImage !== undefined){
@@ -269,7 +269,7 @@
             }
 
             if(markerData.hintText !== undefined){
-                popupContent = popupContent + '<p class="' + Constants.LocalizedTextClass + '">' + _L(markerData.hintText) + '</p>';
+                popupContent = popupContent + '<p>' + _L(markerData.hintText) + '</p>';
             }
 
             popupContent = popupContent + '</div>';
@@ -317,6 +317,8 @@
 
                     for(let meta in zoneData.meta){
                         let title = undefined;
+                        let value = zoneData.meta[meta];
+
                         switch (meta) {
                             case 'heartKR': {
                                 continue;
@@ -334,6 +336,11 @@
 
                             case 'entry': {
                                 title = 'Entry';
+
+                                if(value.indexOf('/') > 0) {
+                                    value = '##' + value;
+                                }
+
                                 break;
                             }
 
@@ -343,8 +350,8 @@
                         }
 
                         metaList.append('<tr class="w-100 island-tooltip-meta">' +
-                            '<td class="island-tooltip-metatitle align-top ' + Constants.LocalizedTextClass + '">' + _L(title) + ':</td>' +
-                            '<td class="float-right island-tooltip-metavalue ' + Constants.LocalizedTextClass + '">' + _L(zoneData.meta[meta]) + '</td>' +
+                            '<td class="island-tooltip-metatitle align-top">' + _L(title) + ':</td>' +
+                            '<td class="float-right island-tooltip-metavalue">' + _L(zoneData.meta[meta]) + '</td>' +
                             '</tr>')
                     }
 
