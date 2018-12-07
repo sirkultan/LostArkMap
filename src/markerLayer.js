@@ -132,7 +132,7 @@
                     markerData.title = '##' + _L('To ') + _L(markerData.area);
                 } else {
                     markerData.teleportTo
-                    markerData.title = '##' + _L('To ' + _L(targetZone))
+                    markerData.title = '##' + _L('To ') + _L(targetZone)
                 }
 
                 return;
