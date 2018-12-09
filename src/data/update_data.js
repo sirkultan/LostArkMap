@@ -99,7 +99,7 @@
         },
         7: {
             n: "1.6",
-            d: "TBD",
+            d: "2018-12-09",
             e: [
                 'Added Detailed map of Harmony Island (thx #Elona)',
                 'Added 2 Mokoko Seeds',
