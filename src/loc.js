@@ -59,6 +59,11 @@
                 return text;
             }
 
+            if(text.startsWith('##')){
+                // Consider the string localized already
+                return text.substring(2, text.length);
+            }
+
             switch (this.lang) {
                 case LocalizationLanguage.English: {
                     return text;
@@ -71,6 +76,7 @@
 
             let localized = LAM.locData[this.lang][text];
             if(localized === undefined){
+                LAM.locMissing[this.lang][text] = "";
                 return text;
             }
 
@@ -97,6 +103,8 @@
     }
 
     LAM.locData = {};
+    LAM.locMissing = {};
+
     LAM.loc = new LostArkLocalization();
 
     $(document).ready(function() {

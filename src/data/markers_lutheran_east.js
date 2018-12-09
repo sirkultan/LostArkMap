@@ -4,7 +4,6 @@
         {
             "x": -366.8118812823637,
             "y": 52.06703051879273,
-            "title": "To Diorika Plains",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -363,
@@ -134,7 +133,6 @@
         {
             "x": -352.4046413341456,
             "y": 116.62653866675979,
-            "title": "To Solar Halo Hill",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -376,
@@ -254,7 +252,6 @@
         {
             "x": -338.24941935729515,
             "y": 172.53442991130356,
-            "title": "Lastra Forest (+Kings Tomb) Dungeon",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -313,
@@ -265,7 +262,6 @@
         {
             "x": -346.6863958269875,
             "y": 177.34681023722226,
-            "title": "To Nursery Rhizome",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -377,
@@ -378,7 +374,6 @@
         {
             "x": -326.68864224794396,
             "y": 219.94153472617012,
-            "title": "To Black Rose Chapel",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -309,
@@ -507,7 +502,6 @@
         {
             "x": -284.4378426743832,
             "y": 247.31612441503415,
-            "title": "To Ria Monogamies",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -299,
@@ -518,7 +512,6 @@
         {
             "x": -280.37473347547973,
             "y": 198.25030773335197,
-            "title": "Underground Chapel Dungeon",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -233,
@@ -668,7 +661,6 @@
         {
             "x": -276.93647197685044,
             "y": 311.0629445037306,
-            "title": "To Borea Manor",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -311,
@@ -829,7 +821,6 @@
         {
             "x": -276.43713828815106,
             "y": 370.4976065183737,
-            "title": "To Mane Waves Harbor",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -293,
@@ -959,7 +950,6 @@
         {
             "x": -303.93757614986293,
             "y": 405.5001367703786,
-            "title": "To Crocnice Beach",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -362,
@@ -977,7 +967,6 @@
             ],
             "teleportArea": "World",
             "id": 134,
-            "title": "To World"
         },
         {
             "x": -291.43786171184894,
@@ -1032,7 +1021,6 @@
         {
             "x": -327.2507043862321,
             "y": 434.7486664888082,
-            "title": "Crying Storm Dungeon",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -360,

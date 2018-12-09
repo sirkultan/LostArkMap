@@ -21,10 +21,10 @@
                 includeMatches: true,
                 keys: [
                     'text',
-                    'textAlt',
                     'title',
                     'hintText',
                     'popupText',
+                    'loc',
 
                     // Note: Disabled heart cause we make markers with special text on the island, removes double search result
                     //'meta.heart',
@@ -33,7 +33,11 @@
                     'meta.entry',
                     'meta.card-line',
                     'meta.card-obtain',
+                    'meta.card-skill-names',
+                    'meta.card-skill-text',
                     'meta.crew-obtain',
+                    'meta.crew-skill-names',
+                    'meta.crew-skill-text',
                 ]
             }
         }
@@ -64,10 +68,10 @@
                         area: areaName,
                         zone: zoneName,
                         type: SearchResultTypeEnum.Area,
+                        loc: [areaName, zoneName],
 
                         // Fields to search in
                         text: areaName + ' - ' + zoneName,
-                        textAlt: zoneData.kr,
                         meta: {}
                     };
 
@@ -76,6 +80,7 @@
                             let metaValue = zoneData.meta[metaKey];
                             if(typeof metaValue === 'string') {
                                 entry.meta[metaKey] = metaValue;
+                                entry.loc.push(metaValue);
                             }
                         }
                     }
@@ -114,6 +119,7 @@
                         id: markerData.id,
                         area: areaName,
                         type: SearchResultTypeEnum.Marker,
+                        loc: [areaName, markerData.title, markerData.popupText, markerData.hintText],
 
                         // Fields to search in
                         title: markerData.title,
@@ -129,16 +135,43 @@
             this.entryCountByType[SearchResultTypeEnum.Card] = 0;
             for(let id in LAM.cards.entries) {
                 let cardData = LAM.cards.entries[id];
-                entries.push({
+                let entry = {
                     id: cardData.id,
                     type: SearchResultTypeEnum.Card,
+                    loc: [cardData.name, LAM.cards.getLineName(cardData.line)],
 
                     title: cardData.name,
                     meta: {
-                        'card-line': LAM.cards.getLineName(cardData.line),
-                        'card-obtain': cardData.obtain === undefined ? undefined : cardData.obtain.join('\n')
+                        'card-line': LAM.cards.getLineName(cardData.line)
                     }
-                });
+                };
+
+                if(cardData.obtain !== undefined){
+                    entry.meta['card-obtain'] = [];
+                    for (let i in cardData.obtain) {
+                        entry.loc.push(cardData.obtain[i]);
+                        entry.meta['card-obtain'].push(cardData.obtain[i])
+                    }
+                }
+
+                if(cardData.skills !== undefined){
+                    entry.meta['card-skill-names'] = [];
+                    entry.meta['card-skill-text'] = [];
+
+                    for(let i in cardData.skills) {
+                        let skillId = cardData.skills[i][0];
+                        let skillVariant = cardData.skills[i][1];
+                        let skillData = LAM.cardSkills[skillId];
+
+                        entry.loc.push(skillData.name);
+                        entry.loc.push(skillData.var[skillVariant]);
+
+                        entry.meta['card-skill-names'].push(skillData.name);
+                        entry.meta['card-skill-text'].push(skillData.var[skillVariant]);
+                    }
+                }
+
+                entries.push(entry);
 
                 this.entryCountByType[SearchResultTypeEnum.Card]++;
             }
@@ -147,15 +180,42 @@
             this.entryCountByType[SearchResultTypeEnum.Crew] = 0;
             for(let id in LAM.crew.entries) {
                 let crewData = LAM.crew.entries[id];
-                entries.push({
+                let entry = {
                     id: crewData.id,
                     type: SearchResultTypeEnum.Crew,
+                    loc: [crewData.name],
 
                     title: crewData.name,
                     meta: {
                         'crew-obtain': crewData.obtain === undefined ? undefined : crewData.obtain.join('\n')
                     }
-                });
+                };
+
+                if(crewData.obtain !== undefined){
+                    entry.meta['crew-obtain'] = [];
+                    for (let i in crewData.obtain) {
+                        entry.loc.push(crewData.obtain[i]);
+                        entry.meta['crew-obtain'].push(crewData.obtain[i]);
+                    }
+                }
+
+                if(crewData.skills !== undefined){
+                    entry.meta['crew-skill-names'] = [];
+                    entry.meta['crew-skill-text'] = [];
+
+                    for(let i in crewData.skills) {
+                        let skillId = crewData.skills[i];
+                        let skillData = LAM.crewSkills[skillId];
+
+                        entry.loc.push(skillData.name);
+                        entry.loc.push(skillData.text);
+
+                        entry.meta['crew-skill-names'].push(skillData.name);
+                        entry.meta['crew-skill-text'].push(skillData.text);
+                    }
+                }
+
+                entries.push(entry);
 
                 this.entryCountByType[SearchResultTypeEnum.Card]++;
             }
@@ -167,6 +227,7 @@
                 entries.push({
                     id: faqData.id,
                     type: SearchResultTypeEnum.FAQ,
+                    loc: [faqData.n, faqData.a],
 
                     // Fields to search in
                     text: faqData.n,
@@ -183,12 +244,33 @@
                 entries.push({
                     id: guideData.id,
                     type: SearchResultTypeEnum.Guide,
+                    loc: [guideData.title],
 
                     // Fields to search in
                     title: guideData.title
                 });
 
                 this.entryCountByType[SearchResultTypeEnum.Guide]++;
+            }
+
+            // Process the localization
+            for(let i in entries) {
+                let entry = entries[i];
+                if(entry.loc === undefined) {
+                    continue;
+                }
+
+                let newLoc = [];
+                for(let ic in entry.loc) {
+                    let str = entry.loc[ic];
+                    if(str === undefined || str === ""){
+                        continue;
+                    }
+
+                    newLoc.push(_L(str));
+                }
+
+                entry.loc = newLoc;
             }
 
             this.entryCountTotal = entries.length;
@@ -471,7 +553,7 @@
             }
 
             let title = this.getSearchResultTitle(result.item);
-            contentBody.append($('<h4 class=title>' + title + '<span class="float-right search-type ' + result.item.type + '">(' + GetKeyByValue(SearchResultTypeEnum, result.item.type) + ')</span></h4>'));
+            contentBody.append($('<h4 class="title">' + _L(title) + '<span class="float-right search-type ' + result.item.type + '">(' + GetKeyByValue(SearchResultTypeEnum, result.item.type) + ')</span></h4>'));
 
             // Content
             let matchList = $('<ul></ul>');

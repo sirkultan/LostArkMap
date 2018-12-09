@@ -1,7 +1,6 @@
 (function(){
 
     let area = LAM.createArea("Islands", {
-        kr: "섬",
         path: "maps/areas/Islands",
         zoomLevel: 7,
         bounds: [[0,0], [-515, 515]]
@@ -139,7 +138,6 @@
      */
 
     area.registerMap("Island of the Years", {
-        "kr": "세월의 섬",
         "type": MapTypeEnum.Island,
         "meta": {
             "heart": "Boss kill: Sabnak (사브나크)",
@@ -159,7 +157,6 @@
     });
 
     area.registerMap("Reminiscent Island", {
-        "kr": "회상의 섬",
         "type": MapTypeEnum.Island,
         "meta": {
             "heart": "Adventure Quest: 'Light, my True Friend' (나의 빛, 나의 진실한 벗)",

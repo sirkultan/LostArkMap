@@ -353,7 +353,6 @@
         {
             "x": -397.5,
             "y": 145.63,
-            "title": "To Loghills",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -496.25,
@@ -364,7 +363,6 @@
         {
             "x": -356.12,
             "y": 260.89,
-            "title": "To Angemos Mountains",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -314.25,
@@ -375,7 +373,6 @@
         {
             "x": -404.87,
             "y": 284.02,
-            "title": "Poisonclaw Robber Cave Dungeon",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -356.12,
@@ -636,7 +633,6 @@
         {
             "x": -206.75,
             "y": 236.28,
-            "title": "To Borderlands",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -148.75,
@@ -647,7 +643,6 @@
         {
             "x": -206.25,
             "y": 307.02,
-            "title": "아길로스의 머리 Dungeon",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -249,
@@ -810,7 +805,6 @@
         {
             "x": -33.5,
             "y": 234.54,
-            "title": "Agiloth's Tail Dungeon",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -154.5,
@@ -821,7 +815,6 @@
         {
             "x": -16.94,
             "y": 255.63,
-            "title": "To Saland Hills (Yudia)",
             "type": MarkerTypeEnum.Zoning,
             "teleportTo": [
                 -468.69,

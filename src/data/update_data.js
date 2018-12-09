@@ -102,7 +102,12 @@
             d: "TBD",
             e: [
                 'Added Detailed map of Harmony Island (thx #Elona)',
-                'Added 2 Mokoko Seeds'
+                'Added 2 Mokoko Seeds',
+                'Cards are now properly translating to the current localization (not all strings are set yet)',
+                'Search now searches in english and the current selected localization, the results will be in displayed in the current language',
+                'Search now includes Skill and How to Obtain information for Cards and Crew',
+                'Removed some no longer needed data points for zone markers, they are now auto populated'
+                
             ]
         }
     };

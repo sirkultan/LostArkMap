@@ -77,7 +77,6 @@
             "y": 304.79,
             "type": MarkerTypeEnum.ZoningWorld,
             "id": 10,
-            "title": "To World",
             "teleportTo": [
                 -307,
                 357
@@ -89,7 +88,6 @@
             "y": 271.4,
             "type": MarkerTypeEnum.Zoning,
             "id": 11,
-            "title": "To Mokoko Village",
             "teleportTo": [
                 -477,
                 161
@@ -110,7 +108,6 @@
             "y": 234.89,
             "type": MarkerTypeEnum.Zoning,
             "id": 14,
-            "title": "To Sweet Forest",
             "teleportTo": [
                 -371,
                 315
@@ -121,7 +118,6 @@
             "y": 276.65,
             "type": MarkerTypeEnum.Zoning,
             "id": 16,
-            "title": "To Rocky Forest",
             "teleportTo": [
                 -376,
                 198
@@ -132,7 +128,6 @@
             "y": 323.62,
             "type": MarkerTypeEnum.Zoning,
             "id": 17,
-            "title": "Pirate Lair Dungeon",
             "teleportTo": [
                 -229,
                 280
@@ -231,7 +226,6 @@
             "y": 194.71,
             "type": MarkerTypeEnum.Zoning,
             "id": 30,
-            "title": "To Silent Giants Forest",
             "teleportTo": [
                 -249,
                 181

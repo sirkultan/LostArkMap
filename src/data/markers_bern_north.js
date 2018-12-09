@@ -73,7 +73,6 @@
             "y": 312.64,
             "type": MarkerTypeEnum.ZoningWorld,
             "id": 8,
-            "title": "To World",
             "teleportArea": "World",
             "teleportTo": [-240.1, 292.6]
         },
@@ -82,7 +81,6 @@
             "y": 279.79,
             "type": MarkerTypeEnum.Zoning,
             "id": 9,
-            "title": "To Bern Castle",
             "teleportTo": [
                 -479,
                 171
@@ -93,7 +91,6 @@
             "y": 303.82,
             "type": MarkerTypeEnum.Zoning,
             "id": 10,
-            "title": "To Rania Village",
             "teleportTo": [
                 -373,
                 305
@@ -237,7 +234,6 @@
             "y": 316.76,
             "type": MarkerTypeEnum.Zoning,
             "id": 32,
-            "title": "To Pesnar Plateau",
             "teleportTo": [
                 -243,
                 191
@@ -248,7 +244,6 @@
             "y": 342.88,
             "type": MarkerTypeEnum.Zoning,
             "id": 33,
-            "title": "To Bernil Forest",
             "teleportTo": [
                 -234,
                 297
@@ -259,7 +254,6 @@
             "y": 351.75,
             "type": MarkerTypeEnum.Zoning,
             "id": 34,
-            "title": "To Parna Forest",
             "teleportTo": [
                 -248,
                 457
@@ -484,7 +478,6 @@
             "y": 192.62,
             "type": MarkerTypeEnum.Zoning,
             "id": 64,
-            "title": "Elberia Ancient Ruins Dungeon",
             "teleportTo": [
                 -364,
                 76
@@ -523,7 +516,6 @@
             "y": 276.12,
             "type": MarkerTypeEnum.Zoning,
             "id": 71,
-            "title": "To Balancar Mountains",
             "teleportTo": [
                 -328,
                 230
@@ -657,7 +649,6 @@
             "y": 355,
             "type": MarkerTypeEnum.Zoning,
             "id": 92,
-            "title": "Gorgon Nest Dungeon",
             "teleportTo": [
                 -117,
                 451

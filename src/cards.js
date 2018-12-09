@@ -52,12 +52,12 @@
                 let img = 'images/cards/' + RarityImage(cardData.rarity) + '/' + cardData.img;
                 let icon = '<div class="align-self-center"><img class="cardIcon" src="' + img + '"/></div>';
 
-                let text = '<div class="media-body"><h4 class="text-center">' + cardData.name + '</h4>';
-                text = text + '<div class="text-center">' + this.getLineName(cardData.line) + '</div>';
+                let text = '<div class="media-body"><h4 class="text-center loc-txt">' + cardData.name + '</h4>';
+                text = text + '<div class="text-center loc-txt">' + this.getLineName(cardData.line) + '</div>';
                 text = text + '<table class="table">';
-                text = text + '<tr><td class="cardStatLabel">Cost</td><td class="cardStatValue">' + cardData.cost + '</td></tr>';
-                text = text + '<tr><td class="cardStatLabel">Offense</td><td class="cardStatValue">' + cardData.offense + '</td></tr>';
-                text = text + '<tr><td class="cardStatLabel">Health</td><td class="cardStatValue">' + cardData.health + '</td></tr>';
+                text = text + '<tr><td class="cardStatLabel loc-txt">Cost</td><td class="cardStatValue">' + cardData.cost + '</td></tr>';
+                text = text + '<tr><td class="cardStatLabel loc-txt">Offense</td><td class="cardStatValue">' + cardData.offense + '</td></tr>';
+                text = text + '<tr><td class="cardStatLabel loc-txt">Health</td><td class="cardStatValue">' + cardData.health + '</td></tr>';
                 let b = '</div></table></div></div></div></div></div>';
 
                 this.entries[cardData.id] = cardData;
