@@ -2052,6 +2052,26 @@
             "id": 334,
             "hintImage": "islands/TreasureMap4.jpg",
             "rarity": RarityEnum.Epic
+        },
+        {
+            "x": -255.34,
+            "y": 91.93,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 335
+        },
+        {
+            "x": -255.41,
+            "y": 91.8,
+            "type": MarkerTypeEnum.Mokoko,
+            "id": 336
+        },
+        {
+            "x": -255.12,
+            "y": 92.1,
+            "type": MarkerTypeEnum.PlayInstrument,
+            "id": 337,
+            "popupText": "Minuet of the Forest",
+            "hintText": "Play Minuet in the forest to gain access to the 2 seeds"
         }
     ];
 

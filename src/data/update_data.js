@@ -96,6 +96,14 @@
                 'Added 117 Crew Entries with more Info to come later',
                 'Added Element Info image to cards section'
             ]
+        },
+        7: {
+            n: "1.6",
+            d: "TBD",
+            e: [
+                'Added Detailed map of Harmony Island (thx #Elona)',
+                'Added 2 Mokoko Seeds'
+            ]
         }
     };
 
