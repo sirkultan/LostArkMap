@@ -1167,7 +1167,7 @@
             "type": MarkerTypeEnum.HiddenStory,
             "id": 164,
             "hintImage": "bern/ParnaHiddenStoryHint6.jpg",
-            "popupText": "버려진 아이 #2"
+            "popupText": "버려진 아이 #3"
         },
         {
             "x": -330.04,
